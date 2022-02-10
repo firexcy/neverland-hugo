@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/design/</link>
+    <description>Recent content in design on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/design/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小议超链接的规范使用</title>
+      <link>https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/</guid>
+      <description>超链接是互联网最突出的功能之一，添加超链接也是所有网络用户需要掌握的基本功。 然而，「会用」超链接并不等于能「用好」超链接。或许是因为操作太过容易，我们在添加超链接的时候往往颇为随意，而不会仔细考虑做成</description>
+    </item>
+    
+    <item>
+      <title>My Alfred Themes</title>
+      <link>https://type.cyhsu.xyz/2019/12/my-alfred-themes/</link>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/12/my-alfred-themes/</guid>
+      <description>Today I finally decided it’s time to swallow the bullet — too many built-in actions in LaunchBar have been broken by Catalina to keep me in its orbit. I installed Alfred and started my self-inflicted journey upward along its learning curve.
+The culture shock aside, I’ve been pretty impressed by the granularity and flexibility of Alfred’s theming options. So, here’re some outcomes of a charlatan designer’s tinkering. I hope you can enjoy them. If you don’t, kindly don’t tell me and let me enjoy them alone.
+Note: Alfred 4 supports macOS’s scheduled dark mode natively. Simply switch to your preferred light/dark theme under the system light/dark mode to associate it with that mode.</description>
+    </item>
+    
+    <item>
+      <title>译文 | Marzipan 带来的期待</title>
+      <link>https://type.cyhsu.xyz/2019/05/what-to-expect-from-marzipan/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/05/what-to-expect-from-marzipan/</guid>
+      <description>**译者按：**本文原题为《What to Expect From Marzipan》，是国外知名设计团队 Iconfactory 的博客文章。文章讨论了苹果预计将在今年 WWDC 上正式发布、用于将 iOS 应用迁移到 macOS 上的 Marzipan 框架，及其对开发者和设计师两个群体的潜在</description>
+    </item>
+    
+    <item>
+      <title>「第一步」&gt;「第二步」，还是「第一步 - 第二步」？</title>
+      <link>https://type.cyhsu.xyz/2019/04/how-to-style-multiple-step-procedures/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/04/how-to-style-multiple-step-procedures/</guid>
+      <description>在写操作说明类文章时，经常需要描述包含多步的操作。这种场合，我个人倾向的用法是 「第一步」&amp;gt;「第二步」。这个用法最初是从苹果那里学来的，中文的苹果说明书统一使用 “第一步” &amp;gt; “第二步” 的体例，将其中</description>
+    </item>
+    
+    <item>
+      <title>论 iOS 11 上的 Drag and Drop</title>
+      <link>https://type.cyhsu.xyz/2017/10/drag-and-drop-on-ios-11/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/10/drag-and-drop-on-ios-11/</guid>
+      <description>曾几何时，「交互简单」一直是 iOS 引以为傲的资本。WWDC 2007 上，乔布斯演示的点击（tap）、滑动（swipe）、捏合（pinch）三个手势惊艳了世界，也奠定了 iOS 交互方式的基本格局。此后，iOS 极少引入新的</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 向左，Apple 向右</title>
+      <link>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</guid>
+      <description>title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags: Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的</description>
+    </item>
+    
+  </channel>
+</rss>

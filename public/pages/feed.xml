@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Neverland</title>
+    <link>https://type.cyhsu.xyz/pages/</link>
+    <description>Recent content in Pages on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/pages/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Topics</title>
+      <link>https://type.cyhsu.xyz/topics/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/topics/</guid>
+      <description>I don’t intend to write around agendas; but over the years it seems some recurring bubbles keep floating on my mind. Annual Reviews 2020: 你的下一个应用，未必是程序 2019: 当数字生活与工作相遇 2018: 信息消费——从入门到放弃 Review of… Software/Services Hypothesis Apple News+ RSS 服务对比评测 The Information Yoink for iOS Tiny Tiny RSS DuckDuckGo iOS 11 中的新播客 App 播客客</description>
+    </item>
+    
+    <item>
+      <title>Colophon</title>
+      <link>https://type.cyhsu.xyz/colophon/</link>
+      <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/colophon/</guid>
+      <description>About Me Who are you? I’m an editor at SSPAI by day (used to be a transaction lawyer), and a tech nerd through the day. Fascinated with the digital world, I appreciate all the convenience and sparks brought by ether and gadgets. I enjoy facilitating everyday life with digital devices and I’m always in search of methods to improve productivity. That being said, laziness, impatience, and hubris are the virtues I always extol. Personalities MBTI: INTJ (Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling, Judging/Perceiving) Big Five: Openness to experience (3.7/5.0), Conscientiousness (3.4/5.0), Extraversion (2.2/5.0), Agreeableness (2.9/5.0), Neuroticism (2.9/5.0) Politics Self-identified</description>
+    </item>
+    
+  </channel>
+</rss>

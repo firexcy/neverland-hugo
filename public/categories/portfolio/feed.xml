@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>portfolio on Neverland</title>
+    <link>https://type.cyhsu.xyz/categories/portfolio/</link>
+    <description>Recent content in portfolio on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Mon, 29 Feb 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/categories/portfolio/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keynote | Security v. Privacy</title>
+      <link>https://type.cyhsu.xyz/2016/02/security-v-privacy/</link>
+      <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2016/02/security-v-privacy/</guid>
+      <description>Good morning, everyone. Today I&#39;d like to share a special case with you, which is called Privacy v. Security. Imagine that you were an officer of the FBI. You just caught some terrorists who cruelly killed 14 people in San Bernardino.
+To get more information about their crime, you want to take a look into their phone, an iPhone 5c. However, it was protected by password. Normally, for guys working in the FBI, a 4-digit password is nothing more than a piece of cake - you can bypass it within 10,000 attempts, which can be easily done automatically and shortly with an external machine attached to the phone.</description>
+    </item>
+    
+    <item>
+      <title>Keynote | The Renaissance of Sound as A Medium</title>
+      <link>https://type.cyhsu.xyz/2015/10/the-renaissance-of-sound-as-a-medium/</link>
+      <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2015/10/the-renaissance-of-sound-as-a-medium/</guid>
+      <description>Good morning everyone.
+Once upon a time, radio was the main conduit of getting information for most people. Over the air, they heard about news, listened to music, and tuned between channels talking about topics they were interested in.
+Gone were the days when families gathered round to listen to their favorite broadcast. The dominance of sound as the medium of information had been replaced by vision, at first on TV, and nowadays on touch screens. We&#39;ve been so pleased by visual contents that hardly can we understand those days when we can only catch information by our ears.
+But vision has its inferiority: it is attention-absorbing.</description>
+    </item>
+    
+    <item>
+      <title>Graphic Design | The Life of Law</title>
+      <link>https://type.cyhsu.xyz/2015/04/graphic-design-the-life-of-law/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2015/04/graphic-design-the-life-of-law/</guid>
+      <description>-- NORMAL --</description>
+    </item>
+    
+  </channel>
+</rss>

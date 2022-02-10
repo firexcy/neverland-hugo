@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stratechery on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/stratechery/</link>
+    <description>Recent content in stratechery on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/stratechery/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>译文 | 对抗互联网的欧盟</title>
+      <link>https://type.cyhsu.xyz/2018/09/the-european-union-versus-the-internet/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2018/09/the-european-union-versus-the-internet/</guid>
+      <description>**译者按：**本文以欧洲近期备受关注和争议的「链接税」立法动态为切入点，分析了为何传统思维指导下的互联网规制措施往往是无效的，甚至适得其反。作者认为，严厉的规制措施会给互联网行业造成高额成本，只有大</description>
+    </item>
+    
+    <item>
+      <title>译文 | 「想哭」（WANNACRY）的商业模式</title>
+      <link>https://type.cyhsu.xyz/2017/05/wannacry-about-business-models/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/05/wannacry-about-business-models/</guid>
+      <description>Translated from WannaCry About Business Models, by Ben Thompson, first published on Stratechery on May 15, 2017. **译者按：**WannaCry 病毒爆发后，舆论一方面惊叹其波及范围之广、危害之大，一方面也对谁来承担责任产生了分歧：责备微软修补不力者有之，慨叹用户惰于更新者有之，</description>
+    </item>
+    
+    <item>
+      <title>译文 | 科技现状：2016 年末</title>
+      <link>https://type.cyhsu.xyz/2016/12/the-state-of-tech-at-the-end-of-2016/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2016/12/the-state-of-tech-at-the-end-of-2016/</guid>
+      <description>今年是我第三年写关于科技现状的文章了。2014 年，我描述了消费科技的三个历史纪元——个人电脑纪元、浏览器纪元和移动纪元，并描绘了第四个纪元的轮廓，我当时认为会是消息纪元；2015 年，我修改了对第四纪元</description>
+    </item>
+    
+    <item>
+      <title>译文 | 「技术故障」</title>
+      <link>https://type.cyhsu.xyz/2016/07/a-technical-glitch/</link>
+      <pubDate>Thu, 14 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2016/07/a-technical-glitch/</guid>
+      <description>一周前，Diamond Reynolds 的男友 Philando Castile 在一次常规的交通拦截中被警察开枪击中。她很快打开了 Facebook 的直播功能，记录了她对事件经过的描述、也拍下了她与警官发生的冲突。这段视频立刻像野火一般四处传播。 然后视频就消失了</description>
+    </item>
+    
+  </channel>
+</rss>

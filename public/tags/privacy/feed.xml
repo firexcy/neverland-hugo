@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>privacy on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/privacy/</link>
+    <description>Recent content in privacy on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Sat, 22 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/privacy/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一只叛逆的鸭子——DuckDuckGo 简介</title>
+      <link>https://type.cyhsu.xyz/2017/07/duckduckgo-intro/</link>
+      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/07/duckduckgo-intro/</guid>
+      <description>1993 年，《纽约客》（The New Yorker）杂志刊登了一幅漫画：一只黑狗站在电脑椅上，爪子扶着键盘。它望向站在地上、表情迷茫的一只同类，无不兴奋地说：「在互联网上，没人知道你是一条狗。」（On the Internet, nobody knows you&#39;re a</description>
+    </item>
+    
+  </channel>
+</rss>

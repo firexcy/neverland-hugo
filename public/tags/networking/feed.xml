@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>networking on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/networking/</link>
+    <description>Recent content in networking on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Wed, 28 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/networking/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何正确地叫外卖</title>
+      <link>https://type.cyhsu.xyz/2018/02/how-to-request-a-takeout-behind-a-wall/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2018/02/how-to-request-a-takeout-behind-a-wall/</guid>
+      <description>（一） 假设你是某个寄宿高中的住校生。你知道学校附近、最多几分钟路程之外，有很多好吃的小吃摊点，比如推特炸鸡排、油管烤串、汤不热辣糊汤、谷哥大排档等等。但是，学校管理者执着于父爱式的管理理念，以出校门不</description>
+    </item>
+    
+    <item>
+      <title>Surge 的隐性价值</title>
+      <link>https://type.cyhsu.xyz/2018/01/the-implied-value-of-surge/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2018/01/the-implied-value-of-surge/</guid>
+      <description>今天早上看到 Surge 3 上架，基本没动脑子就把内购买了。其实我很清楚这绝对不是一笔划算买卖：Surge 在我这大概有一半的能力是被浪费的。校园网带宽很少能稳定在百兆以上，因此其他 NE 类 app 的性能瓶颈并不明显；Mit</description>
+    </item>
+    
+  </channel>
+</rss>

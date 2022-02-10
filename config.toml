@@ -53,3 +53,8 @@ typographer = false
 [markup.goldmark.renderer]
 hardWraps = false
 unsafe = true
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"

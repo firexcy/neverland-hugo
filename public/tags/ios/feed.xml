@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ios on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/ios/</link>
+    <description>Recent content in ios on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Thu, 16 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/ios/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>译文 | Marzipan 带来的期待</title>
+      <link>https://type.cyhsu.xyz/2019/05/what-to-expect-from-marzipan/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/05/what-to-expect-from-marzipan/</guid>
+      <description>**译者按：**本文原题为《What to Expect From Marzipan》，是国外知名设计团队 Iconfactory 的博客文章。文章讨论了苹果预计将在今年 WWDC 上正式发布、用于将 iOS 应用迁移到 macOS 上的 Marzipan 框架，及其对开发者和设计师两个群体的潜在</description>
+    </item>
+    
+    <item>
+      <title>挖掘 Safari 阅读列表的潜力</title>
+      <link>https://type.cyhsu.xyz/2019/04/digging-safari-reading-list/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/04/digging-safari-reading-list/</guid>
+      <description>Safari 阅读列表是 macOS 和 iOS 上一个比较容易被忽视的功能。该功能最初出现在 2011 年的 OS X Lion 和 iOS 5 系统中，但除了在次年加入了离线缓存，它基本就在这八年间一成不变，与 Pocket、Instapaper 等专职的稍后读服务相</description>
+    </item>
+    
+    <item>
+      <title>用小书签改善 Safari 网页阅读效果</title>
+      <link>https://type.cyhsu.xyz/2019/01/improve-webpage-readability-with-bookmarklets/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/01/improve-webpage-readability-with-bookmarklets/</guid>
+      <description>我们每天都要浏览大量的网页，但不是每个网页的设计都能做到为读者着想。实际上，相当比例的网页设计十分糟糕，读起来非常费劲。对此，Safari 的阅读模式是一个不错的解决方案，但并不是在所有网页上都能成功启</description>
+    </item>
+    
+    <item>
+      <title>在 iOS 主屏幕上添加 iCloud 文件快捷方式</title>
+      <link>https://type.cyhsu.xyz/2018/12/create-springboard-icons-for-icloud-files/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2018/12/create-springboard-icons-for-icloud-files/</guid>
+      <description>文件操作是 iOS 长久以来让人感到「别扭」的功能弱项。究其原因，很大程度上是 iOS 的文件操作逻辑与桌面系统截然不同：同样是打开一个文档，在桌面端，第一步通常是在文件管理器中找到文档本身，然后再考虑用什么程序打开</description>
+    </item>
+    
+    <item>
+      <title>用 Apple Configurator 给 iOS 设备安装中文字体</title>
+      <link>https://type.cyhsu.xyz/2017/11/install-custom-cjk-fonts-to-ios/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/11/install-custom-cjk-fonts-to-ios/</guid>
+      <description>随着 iOS 设备的性能和功能日渐强大，越来越多的人选择将其作为主力工作设备使用。然而，相比于桌面操作系统，iOS 在办公应用上的一大缺失就是无法自由安装字体。如果说系统内建的西文字体数量尚可满足需求，中文字体</description>
+    </item>
+    
+    <item>
+      <title>iOS 11 中的新播客 App</title>
+      <link>https://type.cyhsu.xyz/2017/07/podcasts-app-in-ios-11/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/07/podcasts-app-in-ios-11/</guid>
+      <description>在 iOS 的众多内置 app 中，「播客」应当算是资历尚浅的一个。比起筚路蓝缕时就陪伴 iOS 一起成长的 Safari、邮件和音乐这几个元老级 app，在 2012 年之前，播客一直都是以音乐 app 的一个子功能形式存在的。2012 年 6 月，</description>
+    </item>
+    
+    <item>
+      <title>用 Drafts 优化 OmniFocus 的批量任务收集</title>
+      <link>https://type.cyhsu.xyz/2017/04/use-drafts-to-optimize-batch-tasks-collecting-in-omnifocus/</link>
+      <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/04/use-drafts-to-optimize-batch-tasks-collecting-in-omnifocus/</guid>
+      <description>一、文本化的任务收集 「收集」是 GTD 流程中的第一步，也是至关重要的一步。面对头脑中随时一闪而过的各种想法，能否准确而快速地将其收集到 Inbox 中，决定了任务管理是否有效。此外，在收集想法到 Inbox 中时，我们往往需要同时</description>
+    </item>
+    
+    <item>
+      <title>记构建阅读列表的几次尝试</title>
+      <link>https://type.cyhsu.xyz/2017/03/ways-to-build-a-personal-reading-list/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2017/03/ways-to-build-a-personal-reading-list/</guid>
+      <description>问题的提出和需求分析 关于数字阅读流程的分析和分享，现有的讨论已经很充分了。不过，这些讨论**主要关注阅读和处理两个阶段，而对收集阶段则着墨不多。**这本身固然没错：一方面，收集阶段一个不可回避的话题是</description>
+    </item>
+    
+    <item>
+      <title>译文 | 我刚删了 iPhone 里一半的应用——你也该删</title>
+      <link>https://type.cyhsu.xyz/2016/07/%E6%88%91%E5%88%9A%E5%88%A0%E4%BA%86-iphone-%E9%87%8C%E4%B8%80%E5%8D%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E4%BD%A0%E4%B9%9F%E8%AF%A5%E5%88%A0/</link>
+      <pubDate>Fri, 22 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2016/07/%E6%88%91%E5%88%9A%E5%88%A0%E4%BA%86-iphone-%E9%87%8C%E4%B8%80%E5%8D%8A%E7%9A%84%E5%BA%94%E7%94%A8-%E4%BD%A0%E4%B9%9F%E8%AF%A5%E5%88%A0/</guid>
+      <description>按：沃特·莫斯伯格（Walt Mossberg）是美国知名的资深科技记者，现在科技媒体 The Verge 担任执行编辑，兼任 Recode 的总编，并在两站上设有以自己名字命名的每周专栏，内容主要为科技评论和设备评测。本文译自他 2016 年</description>
+    </item>
+    
+  </channel>
+</rss>

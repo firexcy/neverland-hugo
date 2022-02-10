@@ -5,7 +5,7 @@ categories:
   - "translations"
 ---
 
-**按：**本文[原文](https://www.nytimes.com/2022/02/01/magazine/garamond.html)发表在 2022 年 2 月 6 日出版的《纽约时报杂志》（_The New York Times Magazine_）上，作者为 R.E.Hawley，作家、设计师，其文章曾发表于《新共和》（_The New Republic_）、_Gawker_ 等。
+**按：**本文 [原文](https://www.nytimes.com/2022/02/01/magazine/garamond.html) 发表在 2022 年 2 月 6 日出版的《纽约时报杂志》（_The New York Times Magazine_）上，作者为 R.E.Hawley，作家、设计师，其文章曾发表于《新共和》（_The New Republic_）、_Gawker_ 等。
 
 * * *
 
@@ -13,7 +13,7 @@ categories:
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/P8u6N7v8/1bf1b398-2559-4a25-a905-2bd8950e7498.png?v=8a4d64d9ec918cb600a0ac1cdef936f1)
 
-关于加拉蒙字体的更多中文讨论和延伸阅读，可参考播客[《字谈字畅》第 90 期](https://www.thetype.com/typechat/ep-090/)（巴黎城内加拉蒙）及其附注。
+关于加拉蒙字体的更多中文讨论和延伸阅读，可参考播客 [《字谈字畅》第 90 期](https://www.thetype.com/typechat/ep-090/)（巴黎城内加拉蒙）及其附注。
 
 如希望尝试加拉蒙字体，一种开源免费的选择是 [EB Garamond](http://www.georgduffner.at/ebgaramond/)。
 

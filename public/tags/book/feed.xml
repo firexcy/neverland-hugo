@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>book on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/book/</link>
+    <description>Recent content in book on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Sat, 18 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/book/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《超文本和超链接》, Excerpts &amp; Notes</title>
+      <link>https://type.cyhsu.xyz/2021/12/hypertext-and-hyperlinks-excerpts-notes/</link>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2021/12/hypertext-and-hyperlinks-excerpts-notes/</guid>
+      <description>超文本和超链接，李恪，新星出版社（2021），ISBN 9787513344258。（豆瓣） [pp. 18] Memex, the origin of 1939 年，布什写了一篇新文章，投给《财富》（Fortune）杂志，但没有被发表。 六年之后，战争即将结束</description>
+    </item>
+    
+    <item>
+      <title>使用 Calibre 的命令行工具下载新闻</title>
+      <link>https://type.cyhsu.xyz/2019/08/download-news-automatically-with-calibre-cli/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2019/08/download-news-automatically-with-calibre-cli/</guid>
+      <description>Calibre 具有完善的新闻下载功能，可以从各种媒体的网站抓取最新的文章并生成电子书文件。得益于开源社区的贡献，它还内置了针对一千多个不同网站编写的配置方案（称作 recipe），并且更新非常及时。 但是，Calib</description>
+    </item>
+    
+    <item>
+      <title>《喀提林阴谋》书评</title>
+      <link>https://type.cyhsu.xyz/2015/11/conspiracy-of-catiline-a-review/</link>
+      <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2015/11/conspiracy-of-catiline-a-review/</guid>
+      <description>设想你是罗马共和国公元前 63 年的执政官。在前一年度的竞选中，一位纨绔贵族败给了你，一个没有任何家族背景的「新人」。他对此记恨在心，因为他原本是指望通过当选执政官，捞取一笔政治资本，然后借任期满后外派当行</description>
+    </item>
+    
+    <item>
+      <title>Becoming Steve Jobs, Reviewed</title>
+      <link>https://type.cyhsu.xyz/2015/05/becoming-steve-jobs-reviewed/</link>
+      <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2015/05/becoming-steve-jobs-reviewed/</guid>
+      <description>It is hard to become ourselves.
+We are gifted with various characteristics and abilities, which distinguish us from any other people in the world. But it’s quite uneasy to identify and fulfill the potential of them. We make wrong choices for immaturity, seek for temporary pleasure led by impulse, and miss the voice of heart in blind conformity. It’s strange but true that we are born to be ourselves while there’s a long way to go before we can approach them.
+So did it work on Steve Jobs.
+Featured an Apple-endorsed corrective to Walter Isaacson’s Steve Jobs, the previous generally-acknowledged authoritative biography for the legendary Apple co-founder, Brent Schlender and Rick Tetzeli’s Becoming Steve Jobs focused on the “evolution of a reckless upstart into a visionary leader”.</description>
+    </item>
+    
+  </channel>
+</rss>
