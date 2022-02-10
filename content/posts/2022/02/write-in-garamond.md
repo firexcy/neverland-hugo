@@ -5,7 +5,7 @@ categories:
   - "translations"
 ---
 
-**按：**本文 [原文](https://www.nytimes.com/2022/02/01/magazine/garamond.html) 发表在 2022 年 2 月 6 日出版的《纽约时报杂志》（_The New York Times Magazine_）上，作者为 R.E.Hawley，作家、设计师，其文章曾发表于《新共和》（_The New Republic_）、_Gawker_ 等。
+**按：** 本文 [原文](https://www.nytimes.com/2022/02/01/magazine/garamond.html) 发表在 2022 年 2 月 6 日出版的《纽约时报杂志》（_The New York Times Magazine_）上，作者为 R.E.Hawley，作家、设计师，其文章曾发表于《新共和》（_The New Republic_）、_Gawker_ 等。
 
 * * *
 

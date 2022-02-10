@@ -46,6 +46,16 @@ name = "topics"
 url = "/topics/"
 weight = 3
 
+[[menu.main]]
+name = "readings"
+url = "https://platylinks.substack.com"
+weight = 10
+
+[[menu.main]]
+name = 'rss'
+url = '/feed.xml'
+weight = 100
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.extensions]
@@ -56,5 +66,6 @@ unsafe = true
 
 [outputFormats]
 [outputFormats.RSS]
-mediatype = "application/rss"
+mediatype = "application/rss+xml"
 baseName = "feed"
+noUgly = true
