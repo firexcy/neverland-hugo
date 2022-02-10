@@ -79,6 +79,10 @@ img {
   max-width: 70%;
 }
 
+code, pre {
+  font-family: var(--mono-font);
+}
+
 figure {
   box-sizing: border-box;
   display: inline-block;

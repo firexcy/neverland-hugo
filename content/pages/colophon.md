@@ -29,18 +29,12 @@ Self-identified as [progressive conservatism](https://en.wikipedia.org/wiki/Prog
 | Phone | iPhone 13 Pro |
 | Tablet | iPad Pro (12.9 inch, 2021) |
 | External Display | LG UltraFine 4K (21.5 inch) |
-| Keyboard | \- Keychron K3  
-\- Apple Magic Keyboard |
-| Pointing device | \- Apple Magic Mouse ([Review](/2020/05/defense-for-magic-mouse/))  
-\- Apple Magic Trackpad |
-| e-Reader | Boox Air (a.k.a. Dedao Reader Pro Max) ([Review](/2021/05/dedao-max-review/))  
-Hisense Touch ([Review](/2021/09/hisense-touch-quick-review/)) |
+| Keyboard | Keychron K3 <br>Apple Magic Keyboard |
+| Pointing device | Apple Magic Mouse ([Review](/2020/05/defense-for-magic-mouse/))<br> Apple Magic Trackpad |
+| e-Reader | Boox Air (a.k.a. Dedao Reader Pro Max) ([Review](/2021/05/dedao-max-review/))<br>Hisense Touch ([Review](/2021/09/hisense-touch-quick-review/)) |
 | Console | Nintendo Switch (battery-enhanced revision, 2019) |
-| Audio | \- Wireless earbuds: Apple AirPods Pro  
-\- IEM: AKG N5005 & UE900 (remodeled as custom-fitted)  
-\- Amplifier: Fiio Q5s (Type-C, 2020) |
-| Accessories | \- Dock: CalDigit TS3 Plus  
-\- Charging: Apple MagSafe |
+| Audio | Wireless earbuds: Apple AirPods Pro  <br>IEM: AKG N5005 & UE900 (remodeled as custom-fitted)  <br>Amplifier: Fiio Q5s (Type-C, 2020) |
+| Accessories | Dock: CalDigit TS3 Plus<br>Charging: Apple MagSafe |
 
 #### Software & Services
 
@@ -57,13 +51,8 @@ Hisense Touch ([Review](/2021/09/hisense-touch-quick-review/)) |
 | Feed reader | [NewsBlur](https://www.newsblur.com/) |
 | Pod catcher | Pocket Casts |
 | Bookmarking | [Instapaper](https://www.instapaper.com/), [Raindrop.io](https://raindrop.io/), and [vanilla browser bookmarks](https://support.mozilla.org/en-US/kb/bookmarks-firefox) |
-| Notable utilities | \- CLI: fzf, homebrew, ranger, qpdf, youtube-dl  
-\- GUI: [yabai](https://github.com/koekeishiya/yabai), Moom, Keyboard Maestro, Alfred  
-\- Mobile: VSCO, Taio, Tweetbot, Vvebo |
-| Subscriptions | \- Music: Apple Music, Youtube Music, QQ Music, and Netease Music (phew)  
-\- Video: Apple TV+  
-\- Publications: The New York Times, The New Yorker, The Wall Street Journal  
-\- Misc.: Apple Arcade, Apple Fitness+ |
+| Notable utilities | CLI: fzf, homebrew, ranger, qpdf, youtube-dl<br>GUI: [yabai](https://github.com/koekeishiya/yabai), Moom, Keyboard Maestro, Alfred<br>Mobile: VSCO, Taio, Tweetbot, Vvebo |
+| Subscriptions | Music: Apple Music, Youtube Music, QQ Music, and Netease Music (phew)<br>Video: Apple TV+<br>Publications: The New York Times, The New Yorker, The Wall Street Journal<br>Misc.: Apple Arcade, Apple Fitness+ |
 
 ### Where else can I find you on the net?
 
@@ -109,31 +98,7 @@ For two reasons:
 
 ### How is this site built?
 
-#### Backend
-
-As of April 2021, _Neverland_ is built with WordPress.
-
-In the past, I have also tried several static site generators, including Hexo and Jekyll. But since I have no coding background after all, it turns out that too much headache is involved to (a) make it possible to post from anywhere including from mobile devices and (b) customize the style and functions beyond the scope of the limited themes and plugins in the frameworks’ official catalogs. WordPress provides an all-in-one solution that is well tested, easily extensible, and infinitely customizable, which caters to my needs well at this stage. That said, I may look to greener grass on other sides in the future; who knows.
-
-#### Hosting
-
-_Neverland_, along with other public and private sites I run, is hosted on a VPS instance on [Hetzner](https://hetzner.cloud/?ref=htmJiZ9xVmcV) (affiliated link).
-
-In the past, I have also hosted my blog on Github Pages (as a static site), Vultr, and DigitalOcean (as a WordPress site). The load and traffic of the site is so light that I haven’t got a chance to experienced any performance or networking issue with any of them. I switched to Hetzner simply for value considerations. They provide a combo of 2-core AMD EPYC processor, 2 GB of RAM, and 40 GB of SSD storage at a NVMe-level speed, at a reasonable price of €3.5 per month; that’s a significantly generous offer compared with the 1 core vCPU, 512 MB of RAM, and 20 GB SATA SSD storage spec you usually get from U.S. operators for $5 per month.
-
-Images and occasional downloadables are hosted externally on CloudApp, which in turn uses Amazon S3 as their storage bucket. I’m neither satisfied nor unsatisfied with the service — file sharing and hosting is an established SaaS sector and dullness is more a feature than a bug. I’ve been using it after purchasing a “lifetime” unlimited license years ago on a sale.
-
-#### Routing, and why the site appears to be slow
-
-The aforementioned Hetzner instance where _Neverland_ floats is physically located at Falkenstein, Germany. As far as I know, the routing between their data center and mainland China is not “optimized” whatsoever (e.g., no _CN2_ routing or `59.43` in _Hostloc_ers’ jargon), resulting in an average latency around 200 milliseconds. Not ideal, but good enough for a petite, personal weblog.
-
-The subdomain `type.cyhsu.xyz` is registered with Cloudflare and put behind their CDN; its certificate is issued by Let’s Encrypt.
-
-CloudApp, the image hosting service, appears to distribute the resources utilizing AWS’ CDN capacities and the responding server varies with the visitor’s IP. Unfortunately, as AWS being a frequent target of `$YOU_KNOW_WHAT`, domestic visitors’ access to blog images may be throttled or failed.
-
-Frankly, I have a reckless and Hedonist attitude towards the domestic availability of this site. No proud if the connection is fast and undisturbed; no worry if not. I particularly won’t bother to register my site with the PenguinCo and the OldWaveCo so that links to here posted inside their walls can be followed without warnings — I deem such annoyances as Certificates of Quality™.
-
-After all, I don’t think most readers of this site will be fazed by those artificial barriers — I’ve noticed from the site’s statistics that it has visitors from all over the world, who I believe are mostly inorganic agents of my compatriots and welcome warmly. For the sake of such flatter, don’t be mad at me if you think _Neverland_ is too slow.
+As of February 2022, _Neverland_ is built with Hugo and hosted on Netfily, migrated from a self-hosted instance of Wordpress.
 
 ### I’m feeling generous. How can I buy you a cup of coffee?
 
