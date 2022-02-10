@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "nordic"
+license = "MIT"
+licenselink = "https://github.com/athul/nordic/blob/master/LICENSE"
+description = "nordic is a minimal and clean theme for hugo with a markdown-ish UI."
+homepage = "https://github.com/athul/nordic"
+tags = ["blog","simple","responsive","minimal","tags","personal","clean","shortcodes"]
+features = ["blog", "Clean and minimal", "Responsive", "Syntax highlighting",]
+min_version = "0.41"
+
+[author]
+  name = "Platy Hsu"
+  homepage = "https://github.com/firexcy"
