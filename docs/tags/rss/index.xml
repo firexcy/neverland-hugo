@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rss on Neverland</title>
+    <link>http://example.org/tags/rss/</link>
+    <description>Recent content in rss on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Fri, 04 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/rss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSS 服务对比评测</title>
+      <link>http://example.org/2018/05/rss-aggregators-review-2018/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2018/05/rss-aggregators-review-2018/</guid>
+      <description>一、引言 很难想象 RSS 会在年届二十之际重新获得这样的关注度。有赖 Facebook 的「衬托」，人们最近似乎重新发现了 RSS 这样一个古老技术的朴素之美。《连线》在上个月发文呼吁复兴 RSS 在网络上引起了一阵涟漪，此后，与之应和的文章</description>
+    </item>
+    
+    <item>
+      <title>论 RSS 的「复兴」</title>
+      <link>http://example.org/2018/04/on-the-so-called-revival-of-rss/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2018/04/on-the-so-called-revival-of-rss/</guid>
+      <description>最近，《连线》杂志网站上刊出了一篇题为《是时候让 RSS 复兴了》（It’s Time for an RSS Revival）的文章。文章开篇便动员道，「Twitter 让你心累了吗？Facebook 让你厌倦了吗？是时候回归 RSS 了。」之后</description>
+    </item>
+    
+    <item>
+      <title>用 Tiny Tiny RSS 自建 RSS 服务</title>
+      <link>http://example.org/2017/10/use-ttrss-to-build-a-self-hosted-rss-service/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/10/use-ttrss-to-build-a-self-hosted-rss-service/</guid>
+      <description>1.1 为什么要考虑自己搭建 RSS 服务 Google Reader 在 2013 年的下线似乎标志着 RSS 黄金时代的结束。在那之后，虽然陆续出现过很多替代品，但 RSS 的地位已经被无限刷新的信息流、算法推荐等新技术逐渐取代了。 不过，尽管小众，RSS 仍然是不</description>
+    </item>
+    
+  </channel>
+</rss>

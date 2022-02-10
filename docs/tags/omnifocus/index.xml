@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>omnifocus on Neverland</title>
+    <link>http://example.org/tags/omnifocus/</link>
+    <description>Recent content in omnifocus on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Sat, 15 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/omnifocus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 Drafts 优化 OmniFocus 的批量任务收集</title>
+      <link>http://example.org/2017/04/use-drafts-to-optimize-batch-tasks-collecting-in-omnifocus/</link>
+      <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/04/use-drafts-to-optimize-batch-tasks-collecting-in-omnifocus/</guid>
+      <description>一、文本化的任务收集 「收集」是 GTD 流程中的第一步，也是至关重要的一步。面对头脑中随时一闪而过的各种想法，能否准确而快速地将其收集到 Inbox 中，决定了任务管理是否有效。此外，在收集想法到 Inbox 中时，我们往往需要同时</description>
+    </item>
+    
+  </channel>
+</rss>

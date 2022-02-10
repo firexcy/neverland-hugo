@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>用 Calibre 命令行优化 Kindle 电子书字体 - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="1. 需求分析与解决思路 排版问题一直是 Kindle 的顽疾，而其在字体选用方面的不作为又特为尤甚。因此，更换字体一直是 Kindle 用户折腾的主要动力之一。早先，这一需求经常通过越狱并替换系统字体来实现。但随着 Kindle 越狱难度的加大，" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="用 Calibre 命令行优化 Kindle 电子书字体" />
+<meta property="og:description" content="1. 需求分析与解决思路 排版问题一直是 Kindle 的顽疾，而其在字体选用方面的不作为又特为尤甚。因此，更换字体一直是 Kindle 用户折腾的主要动力之一。早先，这一需求经常通过越狱并替换系统字体来实现。但随着 Kindle 越狱难度的加大，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-04-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-02T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="用 Calibre 命令行优化 Kindle 电子书字体"/>
+<meta name="twitter:description" content="1. 需求分析与解决思路 排版问题一直是 Kindle 的顽疾，而其在字体选用方面的不作为又特为尤甚。因此，更换字体一直是 Kindle 用户折腾的主要动力之一。早先，这一需求经常通过越狱并替换系统字体来实现。但随着 Kindle 越狱难度的加大，"/>
+<script src="http://example.org/js/feather.min.js"></script>
+	
+	
+        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://example.org/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">用 Calibre 命令行优化 Kindle 电子书字体</h1>
+			<div class="meta">2018-04-02</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="1-需求分析与解决思路">1. 需求分析与解决思路</h2>
+<p>排版问题一直是 Kindle 的顽疾，而其在字体选用方面的不作为又特为尤甚。因此，更换字体一直是 Kindle 用户折腾的主要动力之一。早先，这一需求经常通过越狱并替换系统字体来实现。但随着 Kindle 越狱难度的加大，加上替换文件容易导致的诸多故障，尝试这种方法的成本已经越来越高了。</p>
+<p>另外一种更为方便和安全的方式，则是利用 Calibre 这一强大的管理、编辑工具对电子书进行处理，在其中嵌入自定义字体。但直接应用这种方法得到的排版效果其实也并不完善，因为 Calibre 一次只能嵌入一个字体文件，在显示粗体和西文部分时，就会出现字体缺失或效果不佳的问题（很多中文字体附带的西文质量是十分平庸的）。</p>
+<p>实际上，对于常见的中西文混排电子书，实现较为完善的排版效果至少需要两款字体、共计六个字体文件（中文常规体和粗体，西文常规体和粗体、及各自对应的斜体）。这在 Calibre 的图形界面上并不容易实现。但利用 Calibre 完善的命令行支持，则不仅能最大限度地实现字体嵌入的自定义，还能与其他效率工具结合，达到自动化、可复用的效果。</p>
+<p>下图是原电子书的显示效果、使用 Calibre 直接嵌入字体的效果、以及嵌入多种字体效果的对比。请特别注意西文和粗体、斜体的显示效果。</p>
+<p><img src="https://cl.ly/qZIB/Untitled.png" alt=""></p>
+<p>本文的目的，即在于说明如何利用 Calibre 的命令行支持，通过在电子书中嵌入自定义的 CSS 和字体文件，以实现更完善的排版效果。</p>
+<p><img src="https://cl.ly/qYud/iPad.png" alt="本文方法原理图示"></p>
+<h2 id="2-前期准备和字体选择">2. 前期准备和字体选择</h2>
+<p>要使用本文方法修改电子书文件，需要提前准备的条件有：</p>
+<ol>
+<li>安装 <a href="https://calibre-ebook.com">Calibre</a>；</li>
+<li>待修改的电子书文件（如果该电子书是从商店购买，则需要先行移除其 DRM 保护）；</li>
+<li>将需要嵌入的中西文字体文件（<code>.ttf</code> 或 <code>.otf</code>，不支持 <code>.ttc</code>）放在同一文件夹中（例如 <code>~/Documents/KindleFonts</code>）。</li>
+</ol>
+<p>字体的推荐并非本文重点，且中文互联网上已有不少较为完善的讨论（例如<a href="https://wzyboy.im/post/736.html">这篇</a>和<a href="https://www.douban.com/note/557634901/">这篇</a>）。至于免费字体的推荐和获取，则可参看我<a href="https://sspai.com/post/42889">之前的文章</a>。这里只提出几点建议供读者参考：</p>
+<ul>
+<li>衬线体/宋体总体上更适合长文阅读（前提是分辨率足够高，但这对较新的 Kindle 不是问题）；</li>
+<li>中文和西文字体在风格和粗细程度上应当尽量接近；</li>
+<li>电子墨水屏的显示效果看起来偏淡，因此尽量选择略粗的字体；</li>
+<li>嵌入的字体以够用为原则，不要数量过多或体积过大，否则容易导致 Kindle 无法打开或死机；</li>
+<li>从尊重版权角度出发，请始终注意电子书和字体的正规来源，并且<strong>不要传播</strong>修改后的文件。</li>
+</ul>
+<p>例如，如果从获取和使用最为便利的开源字体中选择，IBM 推出的 IBM Plex Serif 和 Adobe/Google 制作的思源宋体就是一组较为协调的搭配。但考虑到电子书屏幕的上述显示特点以及两种字体的字重差异，比起直接选用思源宋体常规体和粗体，更好的做法是以其 Medium 字重（比 Regular 稍粗一些）作为常规体、以 Heavy 字重作为粗体。下文也将以这一组合为例进行演示。(🔗 你可以<a href="https://cl.ly/qaRn/KindleFonts.zip">下载</a>我准备好的这两种字体进行尝试。)</p>
+<p><img src="https://cl.ly/qVCi/iPad.png" alt="IBM Plex Serif 搭配思源宋体"></p>
+<h2 id="3-css-的编写">3. CSS 的编写</h2>
+<p>Kindle 等阅读器读取和显示电子书的原理和浏览器显示网页几乎是一样的，都是以 html 文件为内容载体，而通过 CSS 来决定颜色、字体、排版等显示特性。为了让 Kindle 在显示时能正确调用嵌入的字体，就要同时嵌入相对应的 CSS，用于说明使用了哪些字体、分别应当在什么地方使用。</p>
+<p>例如，如果准备嵌入上文提及的 IBM Plex Serif 配思源宋体的组合，并让中文字体加粗一档，所用到的 CSS 应如下图所示（已经放在上文提供字体压缩包中的 <code>KindleFonts.css</code> 内）：</p>
+<p><img src="https://cl.ly/qbCs/iPad%20Copy.png" alt=""></p>
+<p>可以看到，这段 CSS 主要分为两大部分：</p>
+<p>首先，用 <code>@font-face</code> 来声明将要嵌入的字体文件的各项属性（上图第 1—36 行）。这本不是必须的（因为字体文件本身已经记载了这些信息），但当需要改变字体原有的属性时（如将较粗字体当作常规体来用），就要借助 <code>@font-face</code> 来进行修改。这里拿出上面代码中涉及中文粗体的部分来具体说明：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">@font-face {
+    font-family: &#34;Source Han Serif&#34;;
+    font-style: normal;
+    font-weight: normal;
+    src: url(SourceHanSerifCN-Medium.otf);
+}
+</code></pre></div><p>上面这段代码的作用是将名为 <code>SourceHanSerifSC-Medium.otf</code> 的字体文件重新定义为「Source Han Serif」家族中的常规体。其中：</p>
+<ul>
+<li><code>font-family</code>：字体家族名称，可以任意填写，易于识别即可；</li>
+<li><code>font-style</code>：字体样式，取值为 <code>normal</code>（常规体）或 <code>italic</code>（斜体）；</li>
+<li><code>font-weight</code>：字重，取值为 <code>normal</code>（常规体）或 <code>bold</code>（粗体）；</li>
+<li><code>src</code>：字体文件的路径，此处填写字体文件名即可。</li>
+</ul>
+<p>每有一个要嵌入的字体文件，都要配以对应的一段 <code>@font-face</code> 代码。</p>
+<p>接着，用 CSS 选择器「告诉」Kindle 在哪些地方使用嵌入的字体（上图第 36 行以下）。在 <code>font-family</code> 属性中列举字体时要注意顺序，<strong>把西文字体放在中文字体之前</strong>；否则，Kindle 在显示时就会调用中文字体自带的西文，这不符合我们的目的。</p>
+<p>最后，将写好的代码保存为一个 <code>.css</code> 文件（例如 <code>~/Documents/KindleFonts/KindleFonts.css</code>），记下其路径备用。</p>
+<h2 id="4-命令的构建">4. 命令的构建</h2>
+<p>完成上述准备后，就可以着手构建用来嵌入字体的终端命令了。该命令的结构如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ /Applications/calibre.app/Contents/MacOS/ebook-convert 原始电子书文件路径 ~/Desktop/temp.htmlz --extra-css &#34;$(cat 自定义CSS文件路径 | tr &#39;\n&#39;,&#39;\t&#39; &#39; &#39;)&#34; \
+&amp;&amp; zip -urj0 ~/Desktop/temp.htmlz 字体所在文件夹路径 \
+&amp;&amp; /Applications/calibre.app/Contents/MacOS/ebook-convert ~/Desktop/output.htmlz ~/Desktop/output.azw3 --language zh-Hans \
+&amp;&amp; rm ~/Desktop/temp.htmlz
+</code></pre></div><p>其中，<code>原始电子书文件路径</code>、<code>自定义 CSS 文件路径</code>和<code>字体所在文件夹路径</code>在上面的步骤中都已经准备好，填入对应位置即可。</p>
+<p>**注：**如果你不确定文件路径的写法，可以将其拖入终端窗口来显示（macOS），或点击右键选择「属性」（Windows）来查看。</p>
+<p>一个填写完整的命令如下图所示（🔗 <a href="https://cl.ly/qb8g/Embed%20with%20custom%20fonts.sh">下载</a>）：</p>
+<p><img src="https://cl.ly/qaLH/carbon%20(7).png" alt=""></p>
+<p>对该命令中其余部分的解释如下：</p>
+<ul>
+<li><code>/Applications/calibre.app/Contents/MacOS/ebook-convert</code>：Calibre 格式转换模块的路径。在 macOS 上，该可执行文件位于 Calibre 的 <code>.app</code> 包中。在 Windows 和 Linux 上，该文件可在 Calibre 的安装目录中找到。此命令的基本用法为 <code>ebook-convert 原始文件 目标文件.目标格式 [-参数]</code></li>
+<li><code>--extra-css &quot;$(cat 自定义CSS文件路径 | tr '\n','\t' ' ')&quot;</code>：去除 CSS 文件中的换行和 tab（为了符合终端命令的语法要求）并嵌入到电子书中。</li>
+<li><code>temp.htmlz</code>：上述思路中用于「中转」的电子书文件。<code>htmlz</code> 格式本质上就是一个 zip 压缩包，内容是电子书中的资源文件。</li>
+<li><code>zip -urj0</code>：将自定义字体文件夹中的文件（<code>-rj</code>）更新到（<code>-u</code>）用于中转的 <code>htmlz</code> 格式电子书中，且不压缩其大小（<code>-0</code>）；</li>
+<li><code>output.azw3</code>：最终生成的 Kindle 电子书文件，本命令中将其放在桌面。如果你使用非 Kindle 阅读器，也可以将其后缀名改为 <code>.epub</code> 以生成 ePub 格式的电子书。</li>
+<li><code>--language zh-Hans</code>：指定电子书语言，这影响到 Kindle 中字体菜单中提供的选项。如果你是用本文方法转换英文电子书，不要使用该参数。</li>
+<li><code>rm ~/Desktop/temp.htmlz</code>：删除用于中转的<code>htmlz</code> 格式电子书。</li>
+</ul>
+<p>执行命令并稍等片刻，即可在桌面看到输出的 <code>output.azw3</code> 文件。这就是嵌入了字体的电子书。将其拷贝到 Kindle 设备上后，在字体菜单中选择新出现的「出版方字体」选项，即可看到效果。</p>
+<p><img src="https://cl.ly/qYcx/Amazon%20Kindle%20Paperwhite%20Mockup.png" alt="在 Kindle 字体菜单中选择「出版方字体」"></p>
+<h2 id="5-延伸应用">5. 延伸应用</h2>
+<p>在实际使用中，如果每次都要根据上述步骤重新编写一次命令，未免显得麻烦。其实，由于想要嵌入的字体一般相对固定，每次操作中需要改变的只有电子书文件的路径而已。为此，只需将原命令中的电子书路径改为变量 <code>&quot;$1&quot;</code>，就可以将其当作一段 shell 脚本，放在各类效率工具中反复利用。</p>
+<p>例如，你可以用 Automator 将其变为一个服务项，从而通过在电子书上点击右键直接调用（🔗 <a href="https://cl.ly/qaX3/Embed%20with%20Custom%20Fonts.workflow.zip">下载</a>）：</p>
+<p><img src="https://cl.ly/qaUa/Image%202018-04-01%20at%2010.45.02%20PM.png" alt=""></p>
+<p>或者，可以将其制作成 LaunchBar 动作，通过快捷键调用（🔗 <a href="https://cl.ly/qath/Kindle%20Fonts%20Embedder.lbaction.zip">下载</a>）：</p>
+<p><img src="https://cl.ly/qZgy/08.png" alt=""></p>
+<p>顺带提及，本方法的幕后主角 <code>ebook-convert</code> 是一个极其强大的命令，可以实现 Calibre 图形界面的一切格式转换选项。你可以参阅其<a href="https://manual.calibre-ebook.com/generated/en/ebook-convert.htm">文档</a>来进一步定制出适合自己需求的命令。</p>
+<p>-- NORMAL --</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/ereader">ereader</a></li>
+					
+					<li><a href="/tags/kindle">kindle</a></li>
+					
+					<li><a href="/tags/tips">tips</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>
