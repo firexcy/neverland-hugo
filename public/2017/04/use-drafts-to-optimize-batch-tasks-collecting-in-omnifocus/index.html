@@ -7,28 +7,28 @@
 	<meta property="og:title" content="用 Drafts 优化 OmniFocus 的批量任务收集" />
 <meta property="og:description" content="一、文本化的任务收集 「收集」是 GTD 流程中的第一步，也是至关重要的一步。面对头脑中随时一闪而过的各种想法，能否准确而快速地将其收集到 Inbox 中，决定了任务管理是否有效。此外，在收集想法到 Inbox 中时，我们往往需要同时" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/2017/04/use-drafts-to-optimize-batch-tasks-collecting-in-omnifocus/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://type.cyhsu.xyz/2017/04/use-drafts-to-optimize-batch-tasks-collecting-in-omnifocus/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-04-15T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-04-15T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="用 Drafts 优化 OmniFocus 的批量任务收集"/>
 <meta name="twitter:description" content="一、文本化的任务收集 「收集」是 GTD 流程中的第一步，也是至关重要的一步。面对头脑中随时一闪而过的各种想法，能否准确而快速地将其收集到 Inbox 中，决定了任务管理是否有效。此外，在收集想法到 Inbox 中时，我们往往需要同时"/>
-<script src="http://example.org/js/feather.min.js"></script>
+<script src="https://type.cyhsu.xyz/js/feather.min.js"></script>
 	
 	
-        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+        <link href="https://type.cyhsu.xyz/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
 	
 	
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://example.org/">Neverland</a>
+		<a href="https://type.cyhsu.xyz/">Neverland</a>
 	</div>
 	<nav>
 		
@@ -54,7 +54,7 @@
 			<h2 id="一文本化的任务收集">一、文本化的任务收集</h2>
 <p>「收集」是 GTD 流程中的第一步，也是至关重要的一步。面对头脑中随时一闪而过的各种想法，能否<strong>准确而快速</strong>地将其收集到 Inbox 中，决定了任务管理是否有效。此外，在收集想法到 Inbox 中时，我们往往需要同时添加若干条新事项，而不希望被繁琐的「添加—保存」步骤拖慢效率、打断思路。</p>
 <p>针对这种需求，主流任务管理 app 大多都提供一种「快速添加」的功能，即在界面上提供一个按钮（如 OmniFocus 中的「Save+」），当用户输入完一条任务信息并点击该按钮时，应用不会回到主界面，而是保存该条任务并清空输入框，让用户可以直接继续输入。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fehxdrdk4vj20h40cqt9n.jpg" alt="OmniFocus 中的快捷输入功能"></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fehxdrdk4vj20h40cqt9n.jpg" alt="OmniFocus 中的快捷输入功能"></p>
 <p>但这种功能的局限也是明显的，所谓的「快速添加」并没有那么快捷。用户不仅需要手动打开 app、点击添加按钮，而且如果想修改截止日期、备注等具体参数，仍然需要多次点击。</p>
 <p>这不禁促使我们思考：是否存在这样一种方式，能够一步到位地<strong>批量</strong>收集任务并<strong>定义其具体参数</strong>呢？</p>
 <p>事实上，这样的方法是存在的，那就是用<strong>文本</strong>来描述任务。</p>
@@ -67,18 +67,18 @@
 <p>**那么，对于 OmniFocus 用户，能否利用 Taskpaper 语法在任务输入上的便利来优化收集流程呢？**答案是肯定的。OmniFocus 在 2.14 版后，增加了大量<a href="https://discourse.omnigroup.com/t/implementation-details-for-omnifocus-2-14-automation/24179">自动化功能</a>，其中就包括对 Taskpaper 语法的支持。在该版本之后，只要通过如下 URL Scheme：</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">omnifocus:///paste?content=内容
 </code></pre></div><p>将符合 Taskpaper 格式的文本传送到 OmniFocus，后者即可自动识别其中包含的任务和属性。OmniFocus 目前支持的 Taskpaper 语法如下表所示：</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fel5qwreeqj21gc136grz.jpg" alt="Taskpaper 标签"></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fel5qwreeqj21gc136grz.jpg" alt="Taskpaper 标签"></p>
 <p><strong>不过，用什么工具承担撰写 Taskpaper 语句并发送给 OmniFocus 的职能呢？<strong>理论上，只要是能接受输入并运行 URL Scheme 的 app，如常用的 Workflow、Launch Center Pro 等，都可以做到。不过，本文还是</strong>首推 Drafts</strong>，这不仅是因为其简洁的界面和宽裕的输入空间十分适合任务收集的情境，更是因为其内建的快捷键和脚本支持能进一步提高输入的效率。基于此，下面就以 Drafts 为例演示如何建立和优化这一工作流。</p>
 <p>首先建立最基础的动作，将 Drafts 和 OmniFocus 连接起来。我们在 Drafts 中新建一个动作，其中包含一个 URL 步骤，内容为：</p>
 <div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">omnifocus:///paste?content=[[draft]]&amp;x-success=drafts4://
 </code></pre></div><p>并将该动作的「after success」属性改为「Trash」。（你可以点击<a href="https://drafts4-actions.agiletortoise.com/a/2A5">这里</a>直接导入该动作。）</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fehxdrpjwyj22bo112nc9.jpg" alt="在 Drafts 中新建动作"></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fehxdrpjwyj22bo112nc9.jpg" alt="在 Drafts 中新建动作"></p>
 <p>接着，我们在 Drafts 的工具栏中增加一个<strong>指向上述动作的快捷按钮</strong>。（你可以点击<a href="https://drafts4-actions.agiletortoise.com/k/2A6">这里</a>直接导入该按钮。）另外，我还为该按钮设置了一个快捷键（Ctrl-Option-O，与 Mac 版 OmniFocus 的 Quick Entry 保持一致），便于使用 iPad 时直接在键盘上完成全过程。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fehxdri1b1j21qq112qbs.jpg" alt="在 Drafts 中新建脚本按钮"></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fehxdri1b1j21qq112qbs.jpg" alt="在 Drafts 中新建脚本按钮"></p>
 <p>这样，只要按照 Taskpaper 语法输入需要批量添加的任务，然后点击键盘上方的按钮/按下 Ctrl-Option-O，就能将这些任务批量添加到 OmniFocus 的 Inbox 中、并自动返回到 Drafts，该条 draft 会在动作执行完毕后被自动删除。</p>
 <p>此外，为了加快标签的输入，你还可以<strong>将下面这些常用标签的快捷键导入 Drafts 中。</strong>（<a href="https://drafts4-actions.agiletortoise.com/k/2A7">@context</a>、<a href="https://drafts4-actions.agiletortoise.com/k/2A8">@due</a>、<a href="https://drafts4-actions.agiletortoise.com/k/2A9">@defer</a>、<a href="https://drafts4-actions.agiletortoise.com/k/2A0">@flagged</a>）它们的效果是点击后在当前位置插入对应标签，并将光标移动到括号之间；如果选中一段文本再点击该按钮，则可以直接将选中文本包括在标签之内。</p>
 <p>这样一来，我们就实现了用 Taskpaper 语法批量收集任务到 OmniFocus 的流程。下面的动画演示了在 iPad 上使用快捷键操作的过程：</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fel4xi5motg20qo0k0wto.gif" alt="发送 Taskpaper 语句到 OmniFocus"></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fel4xi5motg20qo0k0wto.gif" alt="发送 Taskpaper 语句到 OmniFocus"></p>
 <p>需要注意的是，目前 OmniFocus 尚未支持<strong>指定任务所在的文件夹或项目</strong>。当然，这或许不应在本文讨论之列——按照 GTD 的逻辑，收集任务到 Inbox 时无须考虑其具体归属，因为那是后一个步骤（整理）中要做的事情。但需求不主流并不代表需求不存在。例如，我在 OmniFocus 中有一个叫做「Curiosity」的 Single Action List，用来保存我在日常阅读、浏览中偶然遇到、希望进一步了解的各种东西。在录入这种目的性明确的任务时，我就希望能直接将其发送到指定位置，而不用事后再进入 Inbox 手动归类。</p>
 <p>好在，得益于 Drafts 强大的脚本功能，我们可以「自力更生」，间接实现指定文件夹/项目的功能；事实上，**上文中提供的动作已经增加了对 <code>@project</code> 和 <code>@folder</code> 两种标签的支持。**只要在输入时添加 <code>@project(项目名)</code> 或 <code>@folder(文件夹名)</code> 之一，再运行该动作，即可实现发送到指定项目或文件夹的效果。</p>
 <p>例如，下面的输入：</p>
@@ -92,7 +92,7 @@
 </code></pre></div><p>会在名为「Personal」的文件夹中新建一个名为「Project 1」的项目，其中包含两个任务「Task 1」和「Task 2」。</p>
 <p>需要注意的是：第一，<strong>输入的项目名或文件夹名无须完全正确</strong>，因为 OmniFocus 对输入有一定的模糊识别能力；第二，由于实现机制本身的限制，每次输入中<strong>只能指定一个项目或文件夹</strong>，而不能单独指定。如果输入中出现多个 <code>@project</code> 或 <code>@folder</code> 标签，所有输入都会被发送到第一个标签指定的项目或文件夹。但反过来说，要给输入的任务/项目指定目的地，只要写一次 <code>@project</code> 或 <code>@folder</code> 即可，无须每条任务指定一次。（你还可以导入这两个标签的快捷输入按钮：<a href="https://drafts4-actions.agiletortoise.com/k/2Aa">@project</a>、<a href="https://drafts4-actions.agiletortoise.com/k/2Ab">@folder</a>。）</p>
 <p>来看一下最终的实现效果：</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fel4xi6k8sg20qo0k0k4w.gif" alt="发送任务到指定项目"></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fel4xi6k8sg20qo0k0k4w.gif" alt="发送任务到指定项目"></p>
 <hr>
 <h2 id="二细节探究">二、细节探究</h2>
 <p>经过上文的配置，我们已经实现了借助 Taskpaper 语法，用纯文本的形式批量快速收集任务到 OmniFocus。那么，这些功能是怎样实现的？如何修改这些功能使其更加符合自己的偏好？为此，下文就来具体说明上面导入的动作和按钮是<strong>如何通过 Drafts 内建的 JavaScript 和正则表达式支持实现其功能的</strong>。</p>

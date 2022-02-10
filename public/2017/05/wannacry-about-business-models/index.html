@@ -7,28 +7,28 @@
 	<meta property="og:title" content="译文 | 「想哭」（WANNACRY）的商业模式" />
 <meta property="og:description" content="Translated from WannaCry About Business Models, by Ben Thompson, first published on Stratechery on May 15, 2017. **译者按：**WannaCry 病毒爆发后，舆论一方面惊叹其波及范围之广、危害之大，一方面也对谁来承担责任产生了分歧：责备微软修补不力者有之，慨叹用户惰于更新者有之，" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/2017/05/wannacry-about-business-models/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://type.cyhsu.xyz/2017/05/wannacry-about-business-models/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-05-16T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-05-16T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="译文 | 「想哭」（WANNACRY）的商业模式"/>
 <meta name="twitter:description" content="Translated from WannaCry About Business Models, by Ben Thompson, first published on Stratechery on May 15, 2017. **译者按：**WannaCry 病毒爆发后，舆论一方面惊叹其波及范围之广、危害之大，一方面也对谁来承担责任产生了分歧：责备微软修补不力者有之，慨叹用户惰于更新者有之，"/>
-<script src="http://example.org/js/feather.min.js"></script>
+<script src="https://type.cyhsu.xyz/js/feather.min.js"></script>
 	
 	
-        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+        <link href="https://type.cyhsu.xyz/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
 	
 	
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://example.org/">Neverland</a>
+		<a href="https://type.cyhsu.xyz/">Neverland</a>
 	</div>
 	<nav>
 		
@@ -55,7 +55,7 @@
 <p>**译者按：**WannaCry 病毒爆发后，舆论一方面惊叹其波及范围之广、危害之大，一方面也对谁来承担责任产生了分歧：责备微软修补不力者有之，慨叹用户惰于更新者有之，怪罪美国政府泄漏漏洞者亦有之。本文作者则另辟蹊径，在一一分析上述因素并非本质问题的基础上，指出软件行业根深蒂固的「付费在先」模式才是幕后的罪魁祸首——它不仅使用户误以为安全保障是软件价格中的应有之义，也让厂商缺乏长期维护的经济动机，这才让一些长年潜伏的漏洞迟迟得不到修补，最终导致安全危机集中爆发。在此基础上，作者指出将软件服务化（SaaS）才能给各方提供最大的正向激励，既确保厂商的持续经济来源，又保障用户时刻保持更新，因此是正确的发展道路。抛开文中的个别预测是否在近期具有可操作性，本文这种追根溯源的思路的确具有参考价值。</p>
 <hr>
 <p>根据预测，大约有 200000 名用户和管理员的电脑被「WannaCry」病毒感染——随着病毒新变种的出现，这个数字估计还会上升（原始版本被一名安全研究人员<a href="https://www.malwaretech.com/2017/05/how-to-accidentally-stop-a-global-cyber-attacks.html">无意中拦截了</a>）。对他们来说，本文标题所隐含问题的答案是肯定的。[1]</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1ffni5wv0cxj20hs0a0ab9.jpg" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1ffni5wv0cxj20hs0a0ab9.jpg" alt=""></p>
 <p>WannaCry 是一种被称为「勒索软件」的恶意程序：它加密电脑上的文件，然后要求付费解密。勒索软件并不是什么新事物；WannaCry 之所以如此具有破坏性，是因为它以计算机蠕虫病毒为基础。所谓蠕虫病毒，是一种能将在同一个网络中不断自我复制的恶意软件（当然，这里所谓的网络可以包括整个互联网）。</p>
 <p>蠕虫病毒从来都是恶意软件中最具破坏力的那一种——也是最臭名昭著的：即便不熟悉技术的读者也可能听过 Conficker（2008 年爆发，预计造成损失 90 亿美元）、爱虫（ILOVEYOU，2000 年爆发，预计造成损失 150 亿美元）、MyDoom（2004 年爆发，预计造成损失 380 亿美元）的大名。其实爆发过的蠕虫病毒远不止这些，但近年来已经没有那么多了：21 世纪头十年是蠕虫的黄金时期，当时数亿台联网的计算机都安装着一个极度不安全的操作系统——Windows XP，而用户们被诱导着点击按钮，[染上病毒，最后只能]把钱交给骗子来摆脱那些吓人的弹窗。</p>
 <p>接下来的几年，微软从 Windows XP SP2 开始对安全性重视了许多；网络管理员变得聪明起来，知道把网络与外部隔离；而用户也多少有所长进，知道不要乱点不该点的东西。然而，正如上周的事件所揭示的，蠕虫病毒仍然是一个威胁；而且像往常一样，每个人都在把责任推卸给别人。只不过，这次多了一个冤大头：美国政府。</p>
@@ -105,7 +105,7 @@
 <p>但现实是，软件及其带来的安全问题是永不终结的。因此，认为购买软件是一锤子买卖是说不通的。</p>
 <h2 id="saas-救场">SaaS 救场</h2>
 <p>四年前，我借 Adobe 抛弃盒装软件一事写过为什么订阅制对开发者和用户都<a href="https://stratechery.com/2013/adobes-subscription-model-why-platform-owners-should-care/">更有利</a>：</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1ffni5wvc61j20sg0lcwii.jpg" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1ffni5wvc61j20sg0lcwii.jpg" alt=""></p>
 <p>那篇文章的主题是 Adobe 如何将用户获得的价值更好地体现在营收上：在订阅制下，虽然价格门槛降低了，但随着时间推移，Adobe 从用户身上获得的收入却与其提供的价值却更相称。而且正如我当时提到的，「Adobe 有充足的动机通过持续维护来减少用户流失，而用户也得以一直用上最新版本。」</p>
 <p>这也<strong>正是</strong>维护良好的安全性所必须的：销售者应当让软件保持更新（这次事件里的销售者就是微软，它卖的软件就是操作系统），而用户则应当永远使用最新版本。不仅如此，把软件当作服务来定价意味着摆脱了那种「一锤子买卖」的假定，购买软件不再是一种资本成本：相反，它变成了一种持续的开支，其中就隐含了维护[的成本]，无论这种成本是由销售者还是用户承担（也可能是双方共同承担）。</p>
 <p>当然，我是在说 SaaS（Software-as-a-service，软件即服务）模式。这种模式的兴起，加上云端计算的普遍应用，是对于 WannaCry 事件保持乐观的最大理由——WannaCry 不过是一个糟糕商业模式的苟延残喘罢了（尽管要先花上很长时间收回沉没成本、并摆脱那种完全贬值的资产就「免费」的假定）。</p>

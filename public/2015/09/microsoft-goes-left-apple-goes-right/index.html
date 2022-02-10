@@ -7,28 +7,28 @@
 	<meta property="og:title" content="Microsoft 向左，Apple 向右" />
 <meta property="og:description" content="title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags: Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/2015/09/microsoft-goes-left-apple-goes-right/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-09-20T00:00:00+00:00" />
 <meta property="article:modified_time" content="2015-09-20T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Microsoft 向左，Apple 向右"/>
 <meta name="twitter:description" content="title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags: Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的"/>
-<script src="http://example.org/js/feather.min.js"></script>
+<script src="https://type.cyhsu.xyz/js/feather.min.js"></script>
 	
 	
-        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+        <link href="https://type.cyhsu.xyz/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
 	
 	
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://example.org/">Neverland</a>
+		<a href="https://type.cyhsu.xyz/">Neverland</a>
 	</div>
 	<nav>
 		
@@ -65,11 +65,11 @@
 <p>为什么宋体字在屏幕上和纸上看起来<strong>不一样</strong>？</p>
 </blockquote>
 <p>要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的内文，然后输入电脑，观察它在不同条件下是怎样被显示的：</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117gy1feq2fjw6esj21jk0hvqpi.jpg" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117gy1feq2fjw6esj21jk0hvqpi.jpg" alt=""></p>
 <p>不难看出，在 Windows 下2，宋体的显示的确和纸书有所区别，申言之，文本整体看起来很「硬」，远远看去很容易辨认，但细看却觉得笔画扭曲、失去了原来的结构。而 Mac（OS X 系统） 的字体显示就是另外一种风格3：它的字型更接近于打印在纸张上的效果，但细看起来却有些「糊」，没有 Windows 下那种一眼就能辨认出的锐利感。</p>
 <p>此外，我们还能看出 Windows 系统的字体显示效果会受字号影响。当我们改用一个较大的字号（图中为 16 磅）后，可以看到原本丢失的笔画细节重新出现，整体效果更接近于印刷，但比起 Mac 上那种圆润的感觉仍显得较为粗糙。与此相对，Mac 上的字体效果受字号的影响则很小。</p>
 <p>那么，是什么导致了这种区别呢？我们不妨再把画面放大：</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117gy1feq2fjp6vhj20rs0dwjut.jpg" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117gy1feq2fjp6vhj20rs0dwjut.jpg" alt=""></p>
 <p>上图是「默」字在三种不同场景下的显示效果，图中的一个个小方块就是像素点。我们发现，在 Windows 中以较小字号显示时，文字就像 LED 灯箱上的字一样，是由一个个像素整齐排列而成的；而当字号变大时，文字的边缘变得不那么明晰，在笔画周围出现了不少灰色的像素。同样的现象在 Mac 下则尤其明显——文字几乎已经没有一个明确的边界，围绕着笔画的是大量彩色像素点。</p>
 <p>事实上，不仅是宋体，其他字体在 Windows 和 OS X 中也会出现这种显示效果的分异。但我们所关心的是，<strong>字体在屏幕上为何要用这种「拐弯抹角」的方法显示呢？不同操作系统的字体显示效果为何区别很大、又是受何种设计理念的指导呢？</strong></p>
 <p>首先应当明确的是，屏幕上显示的任何元素都是由一个个像素构成的4，但像素的数量是有限的，对于文字这种细节丰富的形状难免力不从心。因此，如何用有限的像素最大程度地表现出文字，就成为一个重要的问题。</p>

@@ -7,7 +7,7 @@ tags:
   - "diary"
 ---
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fer62bha5aj2140140u0x.jpg)
+![](https://ww1.sinaimg.cn/large/73403117ly1fer62bha5aj2140140u0x.jpg)
 
 按照正常的逻辑，我今天应该放飞自我，用消费和娱乐这两种利人利己、益国益民的活动，来庆祝自己成功存活了六亿六千多秒，或者 21 年。
 

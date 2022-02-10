@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apple-silicon on Neverland</title>
-    <link>http://example.org/tags/apple-silicon/</link>
+    <link>https://type.cyhsu.xyz/tags/apple-silicon/</link>
     <description>Recent content in apple-silicon on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/apple-silicon/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/apple-silicon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 M1 芯片 Mac 上使用 Homebrew</title>
-      <link>http://example.org/2020/12/use-homebred-on-m1-macs/</link>
+      <link>https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2020/12/use-homebred-on-m1-macs/</guid>
+      <guid>https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/</guid>
       <description>Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的说明，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构</description>
     </item>
     

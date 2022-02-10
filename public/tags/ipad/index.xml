@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ipad on Neverland</title>
-    <link>http://example.org/tags/ipad/</link>
+    <link>https://type.cyhsu.xyz/tags/ipad/</link>
     <description>Recent content in ipad on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实体笔记本启发的 iPad 笔记模板小改进</title>
-      <link>http://example.org/2019/02/panobook-inspired-goodnotes-template/</link>
+      <link>https://type.cyhsu.xyz/2019/02/panobook-inspired-goodnotes-template/</link>
       <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/02/panobook-inspired-goodnotes-template/</guid>
+      <guid>https://type.cyhsu.xyz/2019/02/panobook-inspired-goodnotes-template/</guid>
       <description>前段时间偶尔逛到键盘保护套 Canopy 的官网，发现它的厂商是一家挺有意思的设计工作室。除了苹果设备配件，这家名叫 Studio Neat 的工作室还设计了一些文具，包括一款叫做 Panobook 的笔记本。 从介绍看，Panobook 最主要的卖点在于其</description>
     </item>
     
     <item>
       <title>10.5 寸 iPad Pro 的学术应用体验——兼论 iPad 的「生产力」迷思</title>
-      <link>http://example.org/2017/07/ipad-pro-10-5-productivity/</link>
+      <link>https://type.cyhsu.xyz/2017/07/ipad-pro-10-5-productivity/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2017/07/ipad-pro-10-5-productivity/</guid>
+      <guid>https://type.cyhsu.xyz/2017/07/ipad-pro-10-5-productivity/</guid>
       <description>「iPad 与生产力」是一个长盛不衰的话题。每次 iPad 硬件或 iOS 软件迭代，都会促使这个话题被重新翻出来讨论。今年适逢 iPad Pro 和 iOS 11 同步更新，「生产力」再次成为热词也毫不奇怪了。 然而，iPad 生产力讨论了这么多年，</description>
     </item>
     

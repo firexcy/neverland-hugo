@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Neverland</title>
-    <link>http://example.org/categories/</link>
+    <link>https://type.cyhsu.xyz/categories/</link>
     <description>Recent content in Categories on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>translations</title>
-      <link>http://example.org/categories/translations/</link>
+      <link>https://type.cyhsu.xyz/categories/translations/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/translations/</guid>
+      <guid>https://type.cyhsu.xyz/categories/translations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>post</title>
-      <link>http://example.org/categories/post/</link>
+      <link>https://type.cyhsu.xyz/categories/post/</link>
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/post/</guid>
+      <guid>https://type.cyhsu.xyz/categories/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>portfolio</title>
-      <link>http://example.org/categories/portfolio/</link>
+      <link>https://type.cyhsu.xyz/categories/portfolio/</link>
       <pubDate>Mon, 29 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/portfolio/</guid>
+      <guid>https://type.cyhsu.xyz/categories/portfolio/</guid>
       <description></description>
     </item>
     

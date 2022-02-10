@@ -7,28 +7,28 @@
 	<meta property="og:title" content="记构建阅读列表的几次尝试" />
 <meta property="og:description" content="问题的提出和需求分析 关于数字阅读流程的分析和分享，现有的讨论已经很充分了。不过，这些讨论**主要关注阅读和处理两个阶段，而对收集阶段则着墨不多。**这本身固然没错：一方面，收集阶段一个不可回避的话题是" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/2017/03/ways-to-build-a-personal-reading-list/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://type.cyhsu.xyz/2017/03/ways-to-build-a-personal-reading-list/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-03-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2017-03-12T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="记构建阅读列表的几次尝试"/>
 <meta name="twitter:description" content="问题的提出和需求分析 关于数字阅读流程的分析和分享，现有的讨论已经很充分了。不过，这些讨论**主要关注阅读和处理两个阶段，而对收集阶段则着墨不多。**这本身固然没错：一方面，收集阶段一个不可回避的话题是"/>
-<script src="http://example.org/js/feather.min.js"></script>
+<script src="https://type.cyhsu.xyz/js/feather.min.js"></script>
 	
 	
-        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+        <link href="https://type.cyhsu.xyz/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
 	
 	
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="http://example.org/">Neverland</a>
+		<a href="https://type.cyhsu.xyz/">Neverland</a>
 	</div>
 	<nav>
 		
@@ -64,40 +64,40 @@
 <p>在我之前的阅读流程中，并不存在满足上述需求的工具；唯一比较接近的是 Instapaper。但我更倾向于将 Instapaper 作为一个纯粹的长文阅读工具，如果将大量内容格式庞杂且很可能无须精读的网页堆积其中，不仅不符合其定位、也会破坏长文阅读环境应有的整洁和秩序。至于使用 OmniFocus 之类的 GTD 工具作为阅读列表，先前已有不少文章论证了其不合理性。因此，引入一个新的工具是必要的；正是在这样的需求驱动下，我开始了一次长达一个多月的寻找。</p>
 <h2 id="safari-阅读列表">Safari 阅读列表</h2>
 <p>在明确需求后，我首先想到的工具就是<strong>内建的 Safari 阅读列表功能</strong>。作为一项「亲生」功能，Safari 阅读列表在体验上的优势不言而喻：无论是 Safari 的 Share Sheet、还是第三方 app 中长按链接弹出的菜单，你几乎可以在系统的任何一个角落找到它；通过 iCloud 的多端同步几乎是即时的；基本功能齐全，可以通过 Safari 的 3D Touch 菜单快速打开，可以自动获取网页的标题和概要，具备已读/未读状态的区分等等。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj97pida0j211y0sgn3t" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj97pida0j211y0sgn3t" alt=""></p>
 <p>然而，这个乍看完美的解决方案并不经得起仔细推敲：首先，<strong>抓取链接标题的功能并非总是有效</strong>，在添加短网址和 Newsletter 里经改写的链接时，Safari 阅读列表往往不能正确抓取其标题，从而使得整个列表里堆积着一些「裸」的 URL，完全不具备可读性，而这类链接正是我每天需要大量添加的（这也可能是网络环境的问题，但即便这样也不改变问题的普遍性）。此外，Safari 阅读列表虽然可以借助 iCloud 的优势获得无缝的同步体验，但由于其只是 Safari 的一个功能组件，<strong>不能独立于浏览器而运行</strong>；而我在使用电脑时则往往需要用到 Chrome（相信很多朋友也是如此），这时再用 Safari 阅读列表来收集链接就十分不方便了。因此，我只能放弃这个最方便的原生解决方案，转投他途。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zspzvqj211y0sg13v" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zspzvqj211y0sg13v" alt=""></p>
 <h2 id="pinboard">Pinboard</h2>
 <p>我第二个尝试的解决方案是使用 <a href="https://pinboard.in">Pinboard</a>。这是一个较为小众的在线收藏夹服务，且有每年 11 美元的收费门槛，在国外科技圈中有较高的知名度。我本来只用它来替换浏览器内建的收藏功能，但注意到它也支持将保存的链接标记为「unread」，并提供一个单独的「Unread」列表，因此也具备当作阅读列表使用的可行性。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsawc3j211k142gq0" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsawc3j211k142gq0" alt=""></p>
 <p>Pinboard 在自身提供的 Web 端上可谓十分简陋，但它之所以为人称道，主要在于<a href="https://pinboard.in/howto/">令人吃惊的 API 开放程度和第三方支持</a>。因此，将链接保存到 Pinboard 的方式相当多元：你既可以使用官方提供的 JavaScript 书签，也可以使用<a href="https://pinboard.in/resources/">众多第三方客户端</a>，而 iOS 上著名的 Workflow 也提供了对 Pinboard 的支持。在实际体验中，我只需在收集链接时勾选上「unread」选项（很多 app 支持自动勾选），有空阅读时打开 Unread 列表逐一浏览即可。读完后，没有重复阅读价值的链接直接删除，希望保存的链接则去掉未读标记、打上标签，它就会自动从未读列表中消失。整个体验非常顺畅。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsdc8bj211y0sg430" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsdc8bj211y0sg430" alt=""></p>
 <p>不过，这个解决方案的不足也是明显的，最主要的问题就是 <strong>Pinboard 本身不支持抓取链接的标题</strong>。当然，丰富的第三方支持一定程度上缓解了这一问题：例如，我使用的 <a href="https://itunes.apple.com/us/app/spillo/id873245660?mt=12">Spillo</a>（macOS 端）和 <a href="https://itunes.apple.com/us/app/pinner-for-pinboard/id591613202?mt=8">Pinner</a>（iOS 端）两款客户端均支持在添加链接时自动获取网页标题。可惜的是，<strong>iOS 上的 Pinner 在添加链接时十分缓慢</strong>，在确保网络通畅的情况下，也往往需要 5 秒以上的时间（这也是该应用在 App Store 评论中最被诟病的一点），且在 Safari 之外的场合使用时往往抓取不到标题；更致命的是，其 Share Extension 在整个等待过程中始终处于前台可见状态，从而<strong>将其他 app 的操作全部挂起</strong>。对于以效率为首要追求的链接收集操作来说，这显然是不可忍受的。作为 iOS 上目前评价最高、更新最及时的 Pinboard 客户端，Pinner 的表现尚且如此；那些最近更新时间停留在一两年前 app 的使用体验，就可想而知了。</p>
 <p>不过，我并没有直接放弃。考虑到 Workflow 也支持添加到 Pinboard，我便试着自己造一个轮子，<strong>组装一个简易的 Workflow 来解决问题</strong>。<a href="https://workflow.is/workflows/aeea5d9d167b415cbf5d1a790d74e7bb">这个 Workflow</a> 的原理大致如下：首先，从 Share Sheet 的输入中获取 URL，传输给「Get Details of Safari Web Page」这个动作抓取其名称（Name）。如果这个 Workflow 是从 Safari 中启动的，由于网页已经加载，上述操作就能直接获取网页标题。如果不是从 Safari 中启动，则上述操作只能将 URL 原封不动地传递下去；换句话说，<strong>其输出一定以 <code>http://</code>开头</strong>。为此，我们使用一个 If 判断将这种情况过滤出来，然后利用「Get Contents of URL」和「Get Name」两个动作，手动获取网页标题。最后，通过 Workflow 内建的 Pinboard 支持将链接和标题发布出去即可。实际体验中，这样做在效率和成功率上都要比借助第三方 app 插件高不少，在相当程度上满足了我的需求。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsxs7yj210k0pxgpg" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsxs7yj210k0pxgpg" alt=""></p>
 <h2 id="workflow--evernotedropbox">Workflow + Evernote/Dropbox</h2>
 <p>Pinboard + Workflow 的组合总体上让我比较满意，但也向我揭示了另外一种可能性：能否用同样的思路，将阅读列表<strong>完全文本化</strong>呢？这不仅有利于进一步摆脱平台和客户端的束缚，而且由于文本的同步几乎不需要时间，可以进一步提高整个流程的效率。为此，我首先以 Evernote 为载体进行了尝试。</p>
 <p>作为链接的收集容器，我在自己的 Inbox 文件夹中建立了一条名为「URL Inbox」的笔记；然后<a href="https://workflow.is/workflows/1be9ef57b53443cbbd58c849338b78f8">简单修改上文提到的 Workflow</a>，使其将获取到的链接和标题添加到这条笔记的头部（对应的 HTML 写法为 <code>&lt;a href=&quot;链接&quot;&gt;网页标题&lt;/a&gt;</code>）。此外，为了增强这个列表的交互性和信息量，我又<strong>在每条链接的前面加上一个复选框</strong>（可以通过添加 <code>&lt;en-todo/&gt;</code> 这个 Evernote 的私有标签实现，见<a href="http://dev.evernote.com/doc/articles/enml.php">官方文档</a>）、并在其结尾附上添加时间（藉由 Workflow 1.7 新增的魔法变量非常便利）。为了便于快速操作，我<strong>获取了这条笔记的 URL Scheme 并将其添加到 Launch Center Pro 的 Today Widget 和 3D Touch 菜单中</strong>，从而实现了随时访问。（直接跳转 Evernote 特定笔记的 URL Scheme 可通过其获取其分享链接，然后转写得到，参见<a href="http://dev.evernote.com/doc/articles/note_links.php">官方文档</a>，或使用我制作的这个<a href="https://workflow.is/workflows/0983476d52884380a341828de463cee3">简易 Workflow</a>，但请注意我仅在自己的国际版账号进行了尝试。）</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsoz2wj210k0px0zu" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsoz2wj210k0px0zu" alt=""></p>
 <p>当然，作为半个纯文本爱好者，我也尝试了用 Dropbox 替换 Evernote。得益于 <a href="https://itunes.apple.com/us/app/editorial/id673907758?mt=8">Editorial</a> 对 <a href="http://omz-software.com/editorial/docs/ios/editorial_writing_todo_lists.html">Taskpaper 格式</a>的良好支持，只要在 Dropbox 中建立一个以 <code>.taskpaper</code> 为后缀的文本文件，并将修改 Workflow 将链接和标题以 <code>- [标题](链接) @due(today)</code> 的格式写入其中，Editorial 就会<strong>自动以 todo list 的样式将其高亮呈现出来</strong>，还可以使用每行右端的手柄上下拖拽排序，读完网页后打勾标记即可。而在 Mac 端，<a href="http://brettterpstra.com/projects/nvalt/">nvALT</a> 这一常用的快速笔记工具同样提供了对 Taskpaper 的基本支持，虽然不能为每一条链接显示出复选框，但可以通过在行尾添加 <code>@done</code> 的标签手动实现（可以用文本替换/Text Expander 进一步简化这一操作）。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsrqr3j211y0sg7jf" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsrqr3j211y0sg7jf" alt=""></p>
 <h2 id="linnk">Linnk</h2>
 <p>本以为已经找到了最适合自己的解决方案，没过两天，话题作品 <a href="https://linnk.net">Linnk</a> 宣布<a href="https://sspai.com/post/37862">完成测试、正式发布</a>的消息又让我看到了新的可能性。Linnk 是我从内测阶段就开始关注的产品；按照我的理解（未必准确），它大约可以看作是 Pinboard + Instapaper 的融合。作为一个采用 Freemium 模式的服务，Linnk 对免费用户有<a href="https://help.linnk.net/?p=447">保存链接数量的限制</a>，但这并不影响将其作为一个纯粹阅读列表的可用性。</p>
 <p>不可否认，Linnk 本身是一个相当用心的产品，对于从纯文本解决方案转换过来的我来说，光是其清新精致的图标和界面，就足以构成使用理由。尤其令我惊喜的是，其 iOS 客户端的 Share Extension <strong>响应十分迅速</strong>，大多数链接都能在一两秒间保存完毕，从而不会给收集流程造成不必要的干扰（这可能是由于 Linnk 的插件只保存 URL 本身，而抓取网页信息的操作则通过服务器在后台完成）；Today Widget 的设计也美观实用，可以随时下拉检阅自己保存的链接并直接访问；内建的<strong>网页重排、夜间主题</strong>等功能则更是锦上添花。相较于 Pinboard 第三方客户端那种让人抓耳挠腮的体验，Linnk 的流畅和完善简直让我产生了「受宠若惊」的感觉。</p>
 <p>可惜的是，Linnk 土生土长的国内服务身份在带来诸多便利的同时，也成了一种「原罪」——<strong>它必然受到国内特殊网络状况的束缚</strong>。正如其文档所述，对于国内无法正常访问的网站，Linnk 无法保证正常处理。我的实际体验也确实如此：我每天大量阅读的《纽约时报》网站的大量链接，Linnk 都不能抓取其标题、更遑论进一步的文本重排了。当然，指出这一点并非是批评——我完全理解国内独立互联网服务在功能和生存间取舍的艰难；但对于以大量上述类型网站为主要信息来源的我（我们）来说，只能暂时遗憾地把 Linnk 收进第二屏，继续踏上折腾之路。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsb5dbj210k0pxgp3" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsb5dbj210k0pxgp3" alt=""></p>
 <h2 id="copied">Copied</h2>
 <p><a href="https://itunes.apple.com/us/app/copied-copy-and-paste-everywhere/id1015767349?mt=8">Copied</a> 本身跟阅读列表可谓毫无关联：作为一款<strong>剪贴板管理 app</strong>，它本应与国内 app 圈知名的 Pin 归于一类。事实上，虽然很早之前就从 <a href="https://www.macstories.net/reviews/copied-a-full-featured-clipboard-manager-for-ios-9/">MacStories 的推荐</a>中得知了这款 app、且有自己试用，我一开始也从未将其和阅读列表联系起来。而在 Pin 的功能逐渐完善后，我也有很长一段时间没有用过 Copied 了。</p>
 <p>重新捡起这款 app 纯属巧合。Workflow + Evernote/Dropbox 的解决方案虽然满足了我大多数的需求，但仍有一个明显不足：操作起来略显繁琐。每次添加链接时，我都要重复「点击分享按钮/长按链接—点击 Run Workflow—选择 Workflow 运行」的流程，即要<strong>三步操作才能实现</strong>。一旦需要连续添加多个链接时，这就令人感到十分乏味冗余。考虑到 Copied 支持将多条剪贴板记录合成一条并分享，我便想到这样一种改进措施：先将链接保存到 Copied，然后一次性通过 Workflow 处理并写入阅读列表中。于是，我重新下载了 Copied 并开始试验。</p>
 <p>但我很快发现这个措施的第二步完全是多余的：<strong>Copied 本身就能够抓取所保存链接的标题</strong>。再加上其对 macOS 和 iCloud 同步的支持，将其作为一个阅读列表来使用便完全可行了。实践也应证了这一构思的可行性：Copied 的 Share Extension 同样响应迅速，无需耗费多余的步骤和时间；基于 iCloud 的同步效率毫不逊于 Safari 阅读列表；应用界面和 Today Widget 简洁实用，便于随时查阅访问。另外值得称道的是，<a href="https://itunes.apple.com/us/app/copied-copy-and-paste-everywhere/id1026349850?mt=12">Copied 的 macOS 客户端</a>同样水准较高，一些功能的设计也有意无意地便利了将其用作阅读列表的需求：例如，可以选中多条记录，并按 ⌘O 全部打开；可以设置为用 ⇧⌘C <strong>在当前鼠标指针位置唤出窗口</strong>，并在<strong>失去鼠标焦点时自动隐藏等</strong>。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zsqkhzj211y0sg4az" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zsqkhzj211y0sg4az" alt=""></p>
 <p>对 Copied 潜力的重新发现终于使得我一个多月的反复寻找告一段落，得到了一个在各个角度上都基本满足需求的「阅读列表」。</p>
 <h2 id="总结和反思">总结和反思</h2>
 <p>以上就是我对构建阅读列表的整个思考和探索过程。<strong>记录这个过程，并非是想要提供一个答案</strong>——我自己也仍然在持续思考新的可能性，而暂时令我满意的 Copied 也很可能并非最优解。事实上，我列举的这些 app 和服务<strong>并无绝对的优劣之分</strong>，每个人都可能因自己的需求不同而偏好其中的某一个。例如，如果你在全平台上都以 Safari 为主力、而且是「断舍离」主义的追随者，那么 Safari 阅读列表显然最适合你；如果你是一个重度的 Markdown/Taskpaper 使用者，笃信只有纯文本才是全在、全能的解决方案，那么用 Workflow 配合 Dropbox 可能最贴近你所熟悉的工作流；而如果你以国内网站、微信公众号为重要信息来源，或注重工具的美观度和设计感，那么 Linnk 肯定值得一试。更何况，这些工具自身也处在不断的迭代和更新中，新的工具也将<a href="https://9to5mac.com/2017/03/09/chrome-reading-list-feature/">不断进入我们的视野</a>；因此，<strong>给出一个确定的答案是不必要也不可能的。</strong></p>
 <p>**在文章的最后，我还希望借此机会，简单讨论一下所谓「折腾」app 的问题。**去年以来，国内的 app 爱好圈逐渐开始反思不断「折腾」各类 app/服务，并为之投入大量时间和经济成本的必要性。很多论者指出，<strong>为了节省很少的操作步骤或时间而在各种 app 间反复尝试、切换是毫无必要的，花费的成本远高于其带来的价值</strong>；而那种展示、炫耀驱动下的「炫机」「晒主屏」行为则招致了更为激烈的批判。</p>
 <p>在我看来，<strong>这种讨论是之前热浪消退后的一种理性回潮</strong>，应当说是十分必要的。事实上，在相对更加成熟的国外爱好者圈子中，也早有类似的讨论，很多博客和播客中都明确反对所谓的「fiddling」、也即「折腾」行为。**但另一方面，用纯粹基于时间和效率的经济性考量来彻底否定「折腾」行为，也许同样没有必要。**以我的上述经历为例：为了寻找这个最适合我的阅读列表，我花费的时间可能累计十数小时；即便最终成果能大大便利我的日常操作、节约我有限的注意力和时间，要收回投入的时间成本，恐怕短时间内是难以实现的——到那时候，或许我又找到更好的解决方案了。那么，能否因此就说我的探索是不经济的、因此是没有价值的呢？不同读者可能有不同的思考，但我自己的答案显然是否定的：如上所述，我找到的每个解决方案都有不同的适用场景，即使最终没有被用于搭建阅读列表，也很可能在今后的某个场合被我迅速想到而无须另外寻找；<strong>在反复试验的过程中，我还有一些原本目标之外的收获</strong>，例如，在调试 Workflow 的过程中学习了网页 API 的使用方法、在探索 Editorial 的过程中学习了正则表达式等。因此，<strong>如果说一定要给「折腾」的必要性施加一个客观标准，我想应该是「需求」：明确需求驱动下的「折腾」、无论纸面上的投入产出比，最终很可能是有效率的，反之亦然。</strong></p>
 <p>**最后，探索 app 所能带来的精神愉悦也是不可忽视的。**不知道有多少朋友小时候玩过一种叫做「电子积木」的玩具：将导线、二极管、电阻等基本电路元件封装成乐高那样可以自由拼接的积木，根据指南的指引，就能组装出逻辑电路、光控灯泡、收音机等等。</p>
-<p><img src="http://ww1.sinaimg.cn/large/73403117ly1fdj8zswxzhj20xc0xcwhd" alt=""></p>
+<p><img src="https://ww1.sinaimg.cn/large/73403117ly1fdj8zswxzhj20xc0xcwhd" alt=""></p>
 <p>现在回想，当初电子积木所能实现的电路相当简陋，实现某个效果所要花费的精力，也远远高于用实打实的元器件组装之所需。类似地，在更高阶的用户、即「造轮子」的人看来，「折腾」app 或许也就像拼装电子积木一样，并不「Pro」，也不是最有效率的选择。这固然没错，可我至今仍然记得当初花费一个下午拼成的收音机发出声音时的满足感。同样地，<strong>我能体会到作为数字化「积木」的 app 实现需求时为我带来的愉悦；我赞赏它们向我揭示的可能性。</strong></p>
 <p>-- NORMAL --</p>
 

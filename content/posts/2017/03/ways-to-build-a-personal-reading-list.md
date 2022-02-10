@@ -28,27 +28,27 @@ tags:
 
 在明确需求后，我首先想到的工具就是**内建的 Safari 阅读列表功能**。作为一项「亲生」功能，Safari 阅读列表在体验上的优势不言而喻：无论是 Safari 的 Share Sheet、还是第三方 app 中长按链接弹出的菜单，你几乎可以在系统的任何一个角落找到它；通过 iCloud 的多端同步几乎是即时的；基本功能齐全，可以通过 Safari 的 3D Touch 菜单快速打开，可以自动获取网页的标题和概要，具备已读/未读状态的区分等等。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj97pida0j211y0sgn3t)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj97pida0j211y0sgn3t)
 
 然而，这个乍看完美的解决方案并不经得起仔细推敲：首先，**抓取链接标题的功能并非总是有效**，在添加短网址和 Newsletter 里经改写的链接时，Safari 阅读列表往往不能正确抓取其标题，从而使得整个列表里堆积着一些「裸」的 URL，完全不具备可读性，而这类链接正是我每天需要大量添加的（这也可能是网络环境的问题，但即便这样也不改变问题的普遍性）。此外，Safari 阅读列表虽然可以借助 iCloud 的优势获得无缝的同步体验，但由于其只是 Safari 的一个功能组件，**不能独立于浏览器而运行**；而我在使用电脑时则往往需要用到 Chrome（相信很多朋友也是如此），这时再用 Safari 阅读列表来收集链接就十分不方便了。因此，我只能放弃这个最方便的原生解决方案，转投他途。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zspzvqj211y0sg13v)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zspzvqj211y0sg13v)
 
 ## Pinboard
 
 我第二个尝试的解决方案是使用 [Pinboard](https://pinboard.in)。这是一个较为小众的在线收藏夹服务，且有每年 11 美元的收费门槛，在国外科技圈中有较高的知名度。我本来只用它来替换浏览器内建的收藏功能，但注意到它也支持将保存的链接标记为「unread」，并提供一个单独的「Unread」列表，因此也具备当作阅读列表使用的可行性。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsawc3j211k142gq0)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsawc3j211k142gq0)
 
 Pinboard 在自身提供的 Web 端上可谓十分简陋，但它之所以为人称道，主要在于[令人吃惊的 API 开放程度和第三方支持](https://pinboard.in/howto/)。因此，将链接保存到 Pinboard 的方式相当多元：你既可以使用官方提供的 JavaScript 书签，也可以使用[众多第三方客户端](https://pinboard.in/resources/)，而 iOS 上著名的 Workflow 也提供了对 Pinboard 的支持。在实际体验中，我只需在收集链接时勾选上「unread」选项（很多 app 支持自动勾选），有空阅读时打开 Unread 列表逐一浏览即可。读完后，没有重复阅读价值的链接直接删除，希望保存的链接则去掉未读标记、打上标签，它就会自动从未读列表中消失。整个体验非常顺畅。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsdc8bj211y0sg430)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsdc8bj211y0sg430)
 
 不过，这个解决方案的不足也是明显的，最主要的问题就是 **Pinboard 本身不支持抓取链接的标题**。当然，丰富的第三方支持一定程度上缓解了这一问题：例如，我使用的 [Spillo](https://itunes.apple.com/us/app/spillo/id873245660?mt=12)（macOS 端）和 [Pinner](https://itunes.apple.com/us/app/pinner-for-pinboard/id591613202?mt=8)（iOS 端）两款客户端均支持在添加链接时自动获取网页标题。可惜的是，**iOS 上的 Pinner 在添加链接时十分缓慢**，在确保网络通畅的情况下，也往往需要 5 秒以上的时间（这也是该应用在 App Store 评论中最被诟病的一点），且在 Safari 之外的场合使用时往往抓取不到标题；更致命的是，其 Share Extension 在整个等待过程中始终处于前台可见状态，从而**将其他 app 的操作全部挂起**。对于以效率为首要追求的链接收集操作来说，这显然是不可忍受的。作为 iOS 上目前评价最高、更新最及时的 Pinboard 客户端，Pinner 的表现尚且如此；那些最近更新时间停留在一两年前 app 的使用体验，就可想而知了。
 
 不过，我并没有直接放弃。考虑到 Workflow 也支持添加到 Pinboard，我便试着自己造一个轮子，**组装一个简易的 Workflow 来解决问题**。[这个 Workflow](https://workflow.is/workflows/aeea5d9d167b415cbf5d1a790d74e7bb) 的原理大致如下：首先，从 Share Sheet 的输入中获取 URL，传输给「Get Details of Safari Web Page」这个动作抓取其名称（Name）。如果这个 Workflow 是从 Safari 中启动的，由于网页已经加载，上述操作就能直接获取网页标题。如果不是从 Safari 中启动，则上述操作只能将 URL 原封不动地传递下去；换句话说，**其输出一定以 `http://`开头**。为此，我们使用一个 If 判断将这种情况过滤出来，然后利用「Get Contents of URL」和「Get Name」两个动作，手动获取网页标题。最后，通过 Workflow 内建的 Pinboard 支持将链接和标题发布出去即可。实际体验中，这样做在效率和成功率上都要比借助第三方 app 插件高不少，在相当程度上满足了我的需求。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsxs7yj210k0pxgpg)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsxs7yj210k0pxgpg)
 
 ## Workflow + Evernote/Dropbox
 
@@ -56,11 +56,11 @@ Pinboard + Workflow 的组合总体上让我比较满意，但也向我揭示了
 
 作为链接的收集容器，我在自己的 Inbox 文件夹中建立了一条名为「URL Inbox」的笔记；然后[简单修改上文提到的 Workflow](https://workflow.is/workflows/1be9ef57b53443cbbd58c849338b78f8)，使其将获取到的链接和标题添加到这条笔记的头部（对应的 HTML 写法为 `<a href="链接">网页标题</a>`）。此外，为了增强这个列表的交互性和信息量，我又**在每条链接的前面加上一个复选框**（可以通过添加 `<en-todo/>` 这个 Evernote 的私有标签实现，见[官方文档](http://dev.evernote.com/doc/articles/enml.php)）、并在其结尾附上添加时间（藉由 Workflow 1.7 新增的魔法变量非常便利）。为了便于快速操作，我**获取了这条笔记的 URL Scheme 并将其添加到 Launch Center Pro 的 Today Widget 和 3D Touch 菜单中**，从而实现了随时访问。（直接跳转 Evernote 特定笔记的 URL Scheme 可通过其获取其分享链接，然后转写得到，参见[官方文档](http://dev.evernote.com/doc/articles/note_links.php)，或使用我制作的这个[简易 Workflow](https://workflow.is/workflows/0983476d52884380a341828de463cee3)，但请注意我仅在自己的国际版账号进行了尝试。）
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsoz2wj210k0px0zu)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsoz2wj210k0px0zu)
 
 当然，作为半个纯文本爱好者，我也尝试了用 Dropbox 替换 Evernote。得益于 [Editorial](https://itunes.apple.com/us/app/editorial/id673907758?mt=8) 对 [Taskpaper 格式](http://omz-software.com/editorial/docs/ios/editorial_writing_todo_lists.html)的良好支持，只要在 Dropbox 中建立一个以 `.taskpaper` 为后缀的文本文件，并将修改 Workflow 将链接和标题以 `- [标题](链接) @due(today)` 的格式写入其中，Editorial 就会**自动以 todo list 的样式将其高亮呈现出来**，还可以使用每行右端的手柄上下拖拽排序，读完网页后打勾标记即可。而在 Mac 端，[nvALT](http://brettterpstra.com/projects/nvalt/) 这一常用的快速笔记工具同样提供了对 Taskpaper 的基本支持，虽然不能为每一条链接显示出复选框，但可以通过在行尾添加 `@done` 的标签手动实现（可以用文本替换/Text Expander 进一步简化这一操作）。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsrqr3j211y0sg7jf)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsrqr3j211y0sg7jf)
 
 ## Linnk
 
@@ -70,7 +70,7 @@ Pinboard + Workflow 的组合总体上让我比较满意，但也向我揭示了
 
 可惜的是，Linnk 土生土长的国内服务身份在带来诸多便利的同时，也成了一种「原罪」——**它必然受到国内特殊网络状况的束缚**。正如其文档所述，对于国内无法正常访问的网站，Linnk 无法保证正常处理。我的实际体验也确实如此：我每天大量阅读的《纽约时报》网站的大量链接，Linnk 都不能抓取其标题、更遑论进一步的文本重排了。当然，指出这一点并非是批评——我完全理解国内独立互联网服务在功能和生存间取舍的艰难；但对于以大量上述类型网站为主要信息来源的我（我们）来说，只能暂时遗憾地把 Linnk 收进第二屏，继续踏上折腾之路。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsb5dbj210k0pxgp3)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsb5dbj210k0pxgp3)
 
 ## Copied
 
@@ -80,7 +80,7 @@ Pinboard + Workflow 的组合总体上让我比较满意，但也向我揭示了
 
 但我很快发现这个措施的第二步完全是多余的：**Copied 本身就能够抓取所保存链接的标题**。再加上其对 macOS 和 iCloud 同步的支持，将其作为一个阅读列表来使用便完全可行了。实践也应证了这一构思的可行性：Copied 的 Share Extension 同样响应迅速，无需耗费多余的步骤和时间；基于 iCloud 的同步效率毫不逊于 Safari 阅读列表；应用界面和 Today Widget 简洁实用，便于随时查阅访问。另外值得称道的是，[Copied 的 macOS 客户端](https://itunes.apple.com/us/app/copied-copy-and-paste-everywhere/id1026349850?mt=12)同样水准较高，一些功能的设计也有意无意地便利了将其用作阅读列表的需求：例如，可以选中多条记录，并按 ⌘O 全部打开；可以设置为用 ⇧⌘C **在当前鼠标指针位置唤出窗口**，并在**失去鼠标焦点时自动隐藏等**。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zsqkhzj211y0sg4az)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zsqkhzj211y0sg4az)
 
 对 Copied 潜力的重新发现终于使得我一个多月的反复寻找告一段落，得到了一个在各个角度上都基本满足需求的「阅读列表」。
 
@@ -94,7 +94,7 @@ Pinboard + Workflow 的组合总体上让我比较满意，但也向我揭示了
 
 **最后，探索 app 所能带来的精神愉悦也是不可忽视的。**不知道有多少朋友小时候玩过一种叫做「电子积木」的玩具：将导线、二极管、电阻等基本电路元件封装成乐高那样可以自由拼接的积木，根据指南的指引，就能组装出逻辑电路、光控灯泡、收音机等等。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1fdj8zswxzhj20xc0xcwhd)
+![](https://ww1.sinaimg.cn/large/73403117ly1fdj8zswxzhj20xc0xcwhd)
 
 现在回想，当初电子积木所能实现的电路相当简陋，实现某个效果所要花费的精力，也远远高于用实打实的元器件组装之所需。类似地，在更高阶的用户、即「造轮子」的人看来，「折腾」app 或许也就像拼装电子积木一样，并不「Pro」，也不是最有效率的选择。这固然没错，可我至今仍然记得当初花费一个下午拼成的收音机发出声音时的满足感。同样地，**我能体会到作为数字化「积木」的 app 实现需求时为我带来的愉悦；我赞赏它们向我揭示的可能性。**
 

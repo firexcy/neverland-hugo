@@ -16,7 +16,7 @@ Translated from _WannaCry About Business Models_, by [Ben Thompson](http://twitt
 
 根据预测，大约有 200000 名用户和管理员的电脑被「WannaCry」病毒感染——随着病毒新变种的出现，这个数字估计还会上升（原始版本被一名安全研究人员[无意中拦截了](https://www.malwaretech.com/2017/05/how-to-accidentally-stop-a-global-cyber-attacks.html)）。对他们来说，本文标题所隐含问题的答案是肯定的。\[1\]
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ffni5wv0cxj20hs0a0ab9.jpg)
+![](https://ww1.sinaimg.cn/large/73403117ly1ffni5wv0cxj20hs0a0ab9.jpg)
 
 WannaCry 是一种被称为「勒索软件」的恶意程序：它加密电脑上的文件，然后要求付费解密。勒索软件并不是什么新事物；WannaCry 之所以如此具有破坏性，是因为它以计算机蠕虫病毒为基础。所谓蠕虫病毒，是一种能将在同一个网络中不断自我复制的恶意软件（当然，这里所谓的网络可以包括整个互联网）。
 
@@ -90,7 +90,7 @@ Smith 在博文中写道：
 
 四年前，我借 Adobe 抛弃盒装软件一事写过为什么订阅制对开发者和用户都[更有利](https://stratechery.com/2013/adobes-subscription-model-why-platform-owners-should-care/)：
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ffni5wvc61j20sg0lcwii.jpg)
+![](https://ww1.sinaimg.cn/large/73403117ly1ffni5wvc61j20sg0lcwii.jpg)
 
 那篇文章的主题是 Adobe 如何将用户获得的价值更好地体现在营收上：在订阅制下，虽然价格门槛降低了，但随着时间推移，Adobe 从用户身上获得的收入却与其提供的价值却更相称。而且正如我当时提到的，「Adobe 有充足的动机通过持续维护来减少用户流失，而用户也得以一直用上最新版本。」
 

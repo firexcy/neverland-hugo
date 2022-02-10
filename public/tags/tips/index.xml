@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tips on Neverland</title>
-    <link>http://example.org/tags/tips/</link>
+    <link>https://type.cyhsu.xyz/tags/tips/</link>
     <description>Recent content in tips on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Word 文档导出为 PDF 时出现额外脚注</title>
-      <link>http://example.org/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</link>
+      <link>https://type.cyhsu.xyz/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</guid>
+      <guid>https://type.cyhsu.xyz/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</guid>
       <description>昨天在把一个合同从 Word 版本导出为 PDF 的时候，发现导出的 PDF 版总是会在页脚处多出一串代码（形如 XY&amp;amp;Z\12345.67），但在 Word 中并不能看到任何对应的文字。 打印时页脚自动出现的编号（文件内容和代码都</description>
     </item>
     
     <item>
       <title>如何在 Word 文档的同一段落内插入自动编号</title>
-      <link>http://example.org/2019/12/word-inline-numbering-with-seq-field/</link>
+      <link>https://type.cyhsu.xyz/2019/12/word-inline-numbering-with-seq-field/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/12/word-inline-numbering-with-seq-field/</guid>
+      <guid>https://type.cyhsu.xyz/2019/12/word-inline-numbering-with-seq-field/</guid>
       <description>在使用 Word 编辑文档的过程中，我们经常会遇到需要在一段话内列举带编号项目的情况，例如： 鼓励网络信息内容服务平台坚持主流价值导向，优化信息推荐机制，加强版面页面生态管理，在下列重点环节（包括服务类型、位置版</description>
     </item>
     
     <item>
       <title>挖掘 Safari 阅读列表的潜力</title>
-      <link>http://example.org/2019/04/digging-safari-reading-list/</link>
+      <link>https://type.cyhsu.xyz/2019/04/digging-safari-reading-list/</link>
       <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/04/digging-safari-reading-list/</guid>
+      <guid>https://type.cyhsu.xyz/2019/04/digging-safari-reading-list/</guid>
       <description>Safari 阅读列表是 macOS 和 iOS 上一个比较容易被忽视的功能。该功能最初出现在 2011 年的 OS X Lion 和 iOS 5 系统中，但除了在次年加入了离线缓存，它基本就在这八年间一成不变，与 Pocket、Instapaper 等专职的稍后读服务相</description>
     </item>
     
     <item>
       <title>实体笔记本启发的 iPad 笔记模板小改进</title>
-      <link>http://example.org/2019/02/panobook-inspired-goodnotes-template/</link>
+      <link>https://type.cyhsu.xyz/2019/02/panobook-inspired-goodnotes-template/</link>
       <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/02/panobook-inspired-goodnotes-template/</guid>
+      <guid>https://type.cyhsu.xyz/2019/02/panobook-inspired-goodnotes-template/</guid>
       <description>前段时间偶尔逛到键盘保护套 Canopy 的官网，发现它的厂商是一家挺有意思的设计工作室。除了苹果设备配件，这家名叫 Studio Neat 的工作室还设计了一些文具，包括一款叫做 Panobook 的笔记本。 从介绍看，Panobook 最主要的卖点在于其</description>
     </item>
     
     <item>
       <title>用小书签改善 Safari 网页阅读效果</title>
-      <link>http://example.org/2019/01/improve-webpage-readability-with-bookmarklets/</link>
+      <link>https://type.cyhsu.xyz/2019/01/improve-webpage-readability-with-bookmarklets/</link>
       <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/01/improve-webpage-readability-with-bookmarklets/</guid>
+      <guid>https://type.cyhsu.xyz/2019/01/improve-webpage-readability-with-bookmarklets/</guid>
       <description>我们每天都要浏览大量的网页，但不是每个网页的设计都能做到为读者着想。实际上，相当比例的网页设计十分糟糕，读起来非常费劲。对此，Safari 的阅读模式是一个不错的解决方案，但并不是在所有网页上都能成功启</description>
     </item>
     
     <item>
       <title>在 iOS 主屏幕上添加 iCloud 文件快捷方式</title>
-      <link>http://example.org/2018/12/create-springboard-icons-for-icloud-files/</link>
+      <link>https://type.cyhsu.xyz/2018/12/create-springboard-icons-for-icloud-files/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/12/create-springboard-icons-for-icloud-files/</guid>
+      <guid>https://type.cyhsu.xyz/2018/12/create-springboard-icons-for-icloud-files/</guid>
       <description>文件操作是 iOS 长久以来让人感到「别扭」的功能弱项。究其原因，很大程度上是 iOS 的文件操作逻辑与桌面系统截然不同：同样是打开一个文档，在桌面端，第一步通常是在文件管理器中找到文档本身，然后再考虑用什么程序打开</description>
     </item>
     
     <item>
       <title>如何临时修改 macOS 应用程序的显示语言</title>
-      <link>http://example.org/2018/05/macos-launch-app-in-another-locale/</link>
+      <link>https://type.cyhsu.xyz/2018/05/macos-launch-app-in-another-locale/</link>
       <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/05/macos-launch-app-in-another-locale/</guid>
+      <guid>https://type.cyhsu.xyz/2018/05/macos-launch-app-in-another-locale/</guid>
       <description>一般情况下，应用程序的界面语言会和系统语言保持一致。但有些时候，我们也会希望临时换用一种不同的界面语言。例如，一些程序的中文翻译词不达意，有必要参考英文界面来确定功能的准确含义；又如，一些网页会强制按</description>
     </item>
     
     <item>
       <title>用 Calibre 命令行优化 Kindle 电子书字体</title>
-      <link>http://example.org/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</link>
+      <link>https://type.cyhsu.xyz/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</link>
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</guid>
+      <guid>https://type.cyhsu.xyz/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</guid>
       <description>1. 需求分析与解决思路 排版问题一直是 Kindle 的顽疾，而其在字体选用方面的不作为又特为尤甚。因此，更换字体一直是 Kindle 用户折腾的主要动力之一。早先，这一需求经常通过越狱并替换系统字体来实现。但随着 Kindle 越狱难度的加大，</description>
     </item>
     
     <item>
       <title>[macOS] 如何在全屏 App 或拥挤的桌面间便捷拖动文件</title>
-      <link>http://example.org/2017/04/macos-drag-to-fullscreen-apps/</link>
+      <link>https://type.cyhsu.xyz/2017/04/macos-drag-to-fullscreen-apps/</link>
       <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2017/04/macos-drag-to-fullscreen-apps/</guid>
+      <guid>https://type.cyhsu.xyz/2017/04/macos-drag-to-fullscreen-apps/</guid>
       <description>「拖动」是 macOS 图形界面操作的精华。但是，在很多情况下，拖动并不像我们希望的那样随心所欲。例如，在当前 app 处于全屏模式的情况下，如何将其他桌面上的文件拖动到该 app 中？在桌面堆满了窗口的时候，如何在桌面和众多 app</description>
     </item>
     
     <item>
       <title>在移除 Word 文档样式的同时保留格式</title>
-      <link>http://example.org/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</link>
+      <link>https://type.cyhsu.xyz/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</link>
       <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</guid>
+      <guid>https://type.cyhsu.xyz/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</guid>
       <description>有时，我们需要将他人传过来的多份 Word 文档进行整合。这种情况下，他人文档中预设的样式可能会给排版造成不便。但是，如果一刀切地将其粘贴为纯文本，又会导致文本层级难以辨识。本文介绍一种利用 Office 中的 VBA 脚本，在移除</description>
     </item>
     

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kindle on Neverland</title>
-    <link>http://example.org/tags/kindle/</link>
+    <link>https://type.cyhsu.xyz/tags/kindle/</link>
     <description>Recent content in kindle on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用 Calibre 命令行优化 Kindle 电子书字体</title>
-      <link>http://example.org/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</link>
+      <link>https://type.cyhsu.xyz/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</link>
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</guid>
+      <guid>https://type.cyhsu.xyz/2018/04/embed-multiple-fonts-into-ebooks-with-calibre/</guid>
       <description>1. 需求分析与解决思路 排版问题一直是 Kindle 的顽疾，而其在字体选用方面的不作为又特为尤甚。因此，更换字体一直是 Kindle 用户折腾的主要动力之一。早先，这一需求经常通过越狱并替换系统字体来实现。但随着 Kindle 越狱难度的加大，</description>
     </item>
     

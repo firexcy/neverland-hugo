@@ -15,7 +15,7 @@ tags:
 
 针对这种需求，主流任务管理 app 大多都提供一种「快速添加」的功能，即在界面上提供一个按钮（如 OmniFocus 中的「Save+」），当用户输入完一条任务信息并点击该按钮时，应用不会回到主界面，而是保存该条任务并清空输入框，让用户可以直接继续输入。
 
-![OmniFocus 中的快捷输入功能](http://ww1.sinaimg.cn/large/73403117ly1fehxdrdk4vj20h40cqt9n.jpg)
+![OmniFocus 中的快捷输入功能](https://ww1.sinaimg.cn/large/73403117ly1fehxdrdk4vj20h40cqt9n.jpg)
 
 但这种功能的局限也是明显的，所谓的「快速添加」并没有那么快捷。用户不仅需要手动打开 app、点击添加按钮，而且如果想修改截止日期、备注等具体参数，仍然需要多次点击。
 
@@ -44,7 +44,7 @@ omnifocus:///paste?content=内容
 
 将符合 Taskpaper 格式的文本传送到 OmniFocus，后者即可自动识别其中包含的任务和属性。OmniFocus 目前支持的 Taskpaper 语法如下表所示：
 
-![Taskpaper 标签](http://ww1.sinaimg.cn/large/73403117ly1fel5qwreeqj21gc136grz.jpg)
+![Taskpaper 标签](https://ww1.sinaimg.cn/large/73403117ly1fel5qwreeqj21gc136grz.jpg)
 
 **不过，用什么工具承担撰写 Taskpaper 语句并发送给 OmniFocus 的职能呢？**理论上，只要是能接受输入并运行 URL Scheme 的 app，如常用的 Workflow、Launch Center Pro 等，都可以做到。不过，本文还是**首推 Drafts**，这不仅是因为其简洁的界面和宽裕的输入空间十分适合任务收集的情境，更是因为其内建的快捷键和脚本支持能进一步提高输入的效率。基于此，下面就以 Drafts 为例演示如何建立和优化这一工作流。
 
@@ -56,11 +56,11 @@ omnifocus:///paste?content=[[draft]]&x-success=drafts4://
 
 并将该动作的「after success」属性改为「Trash」。（你可以点击[这里](https://drafts4-actions.agiletortoise.com/a/2A5)直接导入该动作。）
 
-![在 Drafts 中新建动作](http://ww1.sinaimg.cn/large/73403117ly1fehxdrpjwyj22bo112nc9.jpg)
+![在 Drafts 中新建动作](https://ww1.sinaimg.cn/large/73403117ly1fehxdrpjwyj22bo112nc9.jpg)
 
 接着，我们在 Drafts 的工具栏中增加一个**指向上述动作的快捷按钮**。（你可以点击[这里](https://drafts4-actions.agiletortoise.com/k/2A6)直接导入该按钮。）另外，我还为该按钮设置了一个快捷键（Ctrl-Option-O，与 Mac 版 OmniFocus 的 Quick Entry 保持一致），便于使用 iPad 时直接在键盘上完成全过程。
 
-![在 Drafts 中新建脚本按钮](http://ww1.sinaimg.cn/large/73403117ly1fehxdri1b1j21qq112qbs.jpg)
+![在 Drafts 中新建脚本按钮](https://ww1.sinaimg.cn/large/73403117ly1fehxdri1b1j21qq112qbs.jpg)
 
 这样，只要按照 Taskpaper 语法输入需要批量添加的任务，然后点击键盘上方的按钮/按下 Ctrl-Option-O，就能将这些任务批量添加到 OmniFocus 的 Inbox 中、并自动返回到 Drafts，该条 draft 会在动作执行完毕后被自动删除。
 
@@ -68,7 +68,7 @@ omnifocus:///paste?content=[[draft]]&x-success=drafts4://
 
 这样一来，我们就实现了用 Taskpaper 语法批量收集任务到 OmniFocus 的流程。下面的动画演示了在 iPad 上使用快捷键操作的过程：
 
-![发送 Taskpaper 语句到 OmniFocus](http://ww1.sinaimg.cn/large/73403117ly1fel4xi5motg20qo0k0wto.gif)
+![发送 Taskpaper 语句到 OmniFocus](https://ww1.sinaimg.cn/large/73403117ly1fel4xi5motg20qo0k0wto.gif)
 
 需要注意的是，目前 OmniFocus 尚未支持**指定任务所在的文件夹或项目**。当然，这或许不应在本文讨论之列——按照 GTD 的逻辑，收集任务到 Inbox 时无须考虑其具体归属，因为那是后一个步骤（整理）中要做的事情。但需求不主流并不代表需求不存在。例如，我在 OmniFocus 中有一个叫做「Curiosity」的 Single Action List，用来保存我在日常阅读、浏览中偶然遇到、希望进一步了解的各种东西。在录入这种目的性明确的任务时，我就希望能直接将其发送到指定位置，而不用事后再进入 Inbox 手动归类。
 
@@ -97,7 +97,7 @@ omnifocus:///paste?content=[[draft]]&x-success=drafts4://
 
 来看一下最终的实现效果：
 
-![发送任务到指定项目](http://ww1.sinaimg.cn/large/73403117ly1fel4xi6k8sg20qo0k0k4w.gif)
+![发送任务到指定项目](https://ww1.sinaimg.cn/large/73403117ly1fel4xi6k8sg20qo0k0k4w.gif)
 
 * * *
 

@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>microsoft-office on Neverland</title>
-    <link>http://example.org/tags/microsoft-office/</link>
+    <link>https://type.cyhsu.xyz/tags/microsoft-office/</link>
     <description>Recent content in microsoft-office on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/microsoft-office/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/microsoft-office/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Word 编号的内部结构与工作原理</title>
-      <link>http://example.org/2021/08/word-numbering-internals/</link>
+      <link>https://type.cyhsu.xyz/2021/08/word-numbering-internals/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2021/08/word-numbering-internals/</guid>
+      <guid>https://type.cyhsu.xyz/2021/08/word-numbering-internals/</guid>
       <description>**注：**本文为发布在少数派上的付费教程节选。利益相关：员工。 在从宏观角度了解 Word 中的编号如何定义和应用后，我们再将镜头拉近，观察编号段落的内部结构。 再次回忆：**编号是段落格式的一部分，也必须依附于</description>
     </item>
     
     <item>
       <title>理解 Word 中的段落</title>
-      <link>http://example.org/2021/06/word-tutorial-para/</link>
+      <link>https://type.cyhsu.xyz/2021/06/word-tutorial-para/</link>
       <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2021/06/word-tutorial-para/</guid>
+      <guid>https://type.cyhsu.xyz/2021/06/word-tutorial-para/</guid>
       <description>**利益相关：**这篇节选自给少数派一个订阅服务写的 Word 教程（准确地说是研究些我认为重要的问题；Word 可能是没法写真正意义上的教程的，因为微软自己已经放弃写帮助文档了）。总共计划写七篇，目前因为各种原</description>
     </item>
     
     <item>
       <title>用自定义属性功能管理 Word 文档中的「待定内容」</title>
-      <link>http://example.org/2021/01/manage-tbd-content-with-word-custom-properties/</link>
+      <link>https://type.cyhsu.xyz/2021/01/manage-tbd-content-with-word-custom-properties/</link>
       <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2021/01/manage-tbd-content-with-word-custom-properties/</guid>
+      <guid>https://type.cyhsu.xyz/2021/01/manage-tbd-content-with-word-custom-properties/</guid>
       <description>在使用 Word 制作合同等格式文本的过程中，经常会需要处理一些「待定内容」，例如签署方的全称、签署日期等。对此，常见的处理方法是用「[*]」、下划线等方式做标记，等确认后再填上。 这种方法是有很多缺陷的。如果待</description>
     </item>
     
     <item>
       <title>Word 文档导出为 PDF 时出现额外脚注</title>
-      <link>http://example.org/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</link>
+      <link>https://type.cyhsu.xyz/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</guid>
+      <guid>https://type.cyhsu.xyz/2020/06/phantom-footnote-in-pdf-exported-from-word-document/</guid>
       <description>昨天在把一个合同从 Word 版本导出为 PDF 的时候，发现导出的 PDF 版总是会在页脚处多出一串代码（形如 XY&amp;amp;Z\12345.67），但在 Word 中并不能看到任何对应的文字。 打印时页脚自动出现的编号（文件内容和代码都</description>
     </item>
     
     <item>
       <title>如何在 Word 文档的同一段落内插入自动编号</title>
-      <link>http://example.org/2019/12/word-inline-numbering-with-seq-field/</link>
+      <link>https://type.cyhsu.xyz/2019/12/word-inline-numbering-with-seq-field/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/12/word-inline-numbering-with-seq-field/</guid>
+      <guid>https://type.cyhsu.xyz/2019/12/word-inline-numbering-with-seq-field/</guid>
       <description>在使用 Word 编辑文档的过程中，我们经常会遇到需要在一段话内列举带编号项目的情况，例如： 鼓励网络信息内容服务平台坚持主流价值导向，优化信息推荐机制，加强版面页面生态管理，在下列重点环节（包括服务类型、位置版</description>
     </item>
     
     <item>
       <title>用邮件合并为 Word 文档批量配图</title>
-      <link>http://example.org/2019/10/embed-images-in-word-with-mail-merge/</link>
+      <link>https://type.cyhsu.xyz/2019/10/embed-images-in-word-with-mail-merge/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/10/embed-images-in-word-with-mail-merge/</guid>
+      <guid>https://type.cyhsu.xyz/2019/10/embed-images-in-word-with-mail-merge/</guid>
       <description>引言 在 Word 文档中插入图片是再日常不过的操作之一。然而，如果你有过批量向 Word 中插入图片的经历，那大概不会是什么令人愉快的体验——不仅要考虑粘贴格式、文字环绕等千奇百怪的格式问题，还要应对 Word 顽疾一般的卡顿和崩</description>
     </item>
     
     <item>
       <title>在移除 Word 文档样式的同时保留格式</title>
-      <link>http://example.org/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</link>
+      <link>https://type.cyhsu.xyz/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</link>
       <pubDate>Thu, 13 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</guid>
+      <guid>https://type.cyhsu.xyz/2016/10/how-to-remove-all-styles-in-word-documents-while-preserve-formats/</guid>
       <description>有时，我们需要将他人传过来的多份 Word 文档进行整合。这种情况下，他人文档中预设的样式可能会给排版造成不便。但是，如果一刀切地将其粘贴为纯文本，又会导致文本层级难以辨识。本文介绍一种利用 Office 中的 VBA 脚本，在移除</description>
     </item>
     

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>translations on Neverland</title>
-    <link>http://example.org/tags/translations/</link>
+    <link>https://type.cyhsu.xyz/tags/translations/</link>
     <description>Recent content in translations on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/translations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/translations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>译文 | 雪埋</title>
-      <link>http://example.org/2020/11/snowed-under/</link>
+      <link>https://type.cyhsu.xyz/2020/11/snowed-under/</link>
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2020/11/snowed-under/</guid>
+      <guid>https://type.cyhsu.xyz/2020/11/snowed-under/</guid>
       <description>（本文原载于《纽约时报杂志》2020 年 11 月 8 日刊，题为 Snowed Under，作者为 Sam Anderson。） 在 2020 年求生，意味着活在两个相互矛盾的时间线里。一边是没完没了的现实。「喂！喂！喂！喂！喂！」2020 不停</description>
     </item>
     

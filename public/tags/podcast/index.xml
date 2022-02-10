@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>podcast on Neverland</title>
-    <link>http://example.org/tags/podcast/</link>
+    <link>https://type.cyhsu.xyz/tags/podcast/</link>
     <description>Recent content in podcast on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>播客客户端音频特效探微</title>
-      <link>http://example.org/2017/03/podcast-apps-audio-fx-internals/</link>
+      <link>https://type.cyhsu.xyz/2017/03/podcast-apps-audio-fx-internals/</link>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2017/03/podcast-apps-audio-fx-internals/</guid>
+      <guid>https://type.cyhsu.xyz/2017/03/podcast-apps-audio-fx-internals/</guid>
       <description>修订 2017/05/27：加入了对 Castro 2.4 版中 Enhanced Audio 功能的测试。 问题的提出 播客可能已经迎来了自己最好的时代。随着聆听播客时间日渐延长，用户自然也会对播客传播流程中的最后一站——播客客户端提出更高的要求。因此</description>
     </item>
     
     <item>
       <title>Keynote | The Renaissance of Sound as A Medium</title>
-      <link>http://example.org/2015/10/the-renaissance-of-sound-as-a-medium/</link>
+      <link>https://type.cyhsu.xyz/2015/10/the-renaissance-of-sound-as-a-medium/</link>
       <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/10/the-renaissance-of-sound-as-a-medium/</guid>
+      <guid>https://type.cyhsu.xyz/2015/10/the-renaissance-of-sound-as-a-medium/</guid>
       <description>Good morning everyone.
 Once upon a time, radio was the main conduit of getting information for most people. Over the air, they heard about news, listened to music, and tuned between channels talking about topics they were interested in.
 Gone were the days when families gathered round to listen to their favorite broadcast. The dominance of sound as the medium of information had been replaced by vision, at first on TV, and nowadays on touch screens. We&#39;ve been so pleased by visual contents that hardly can we understand those days when we can only catch information by our ears.

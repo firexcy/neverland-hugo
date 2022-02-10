@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>typography on Neverland</title>
-    <link>http://example.org/tags/typography/</link>
+    <link>https://type.cyhsu.xyz/tags/typography/</link>
     <description>Recent content in typography on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/typography/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/typography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>「第一步」&gt;「第二步」，还是「第一步 - 第二步」？</title>
-      <link>http://example.org/2019/04/how-to-style-multiple-step-procedures/</link>
+      <link>https://type.cyhsu.xyz/2019/04/how-to-style-multiple-step-procedures/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2019/04/how-to-style-multiple-step-procedures/</guid>
+      <guid>https://type.cyhsu.xyz/2019/04/how-to-style-multiple-step-procedures/</guid>
       <description>在写操作说明类文章时，经常需要描述包含多步的操作。这种场合，我个人倾向的用法是 「第一步」&amp;gt;「第二步」。这个用法最初是从苹果那里学来的，中文的苹果说明书统一使用 “第一步” &amp;gt; “第二步” 的体例，将其中</description>
     </item>
     
     <item>
       <title>疑难符号使用与输入指南</title>
-      <link>http://example.org/2018/07/a-guide-to-compositions-2/</link>
+      <link>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions-2/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/07/a-guide-to-compositions-2/</guid>
+      <guid>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions-2/</guid>
       <description>一、引言 在电脑和手机上，文本输入是我们再熟悉不过的操作。但提到输入，很多人首先想到的只是输入文字，而符号——包括标点符号和特殊字符——的输入则往往不太受到重视。观念上，这似乎是一件非常琐碎而简单的事情</description>
     </item>
     
     <item>
       <title>免费字体获取和使用指南</title>
-      <link>http://example.org/2018/01/guide-to-free-fonts/</link>
+      <link>https://type.cyhsu.xyz/2018/01/guide-to-free-fonts/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/01/guide-to-free-fonts/</guid>
+      <guid>https://type.cyhsu.xyz/2018/01/guide-to-free-fonts/</guid>
       <description>导语 一个不难发现的现象是，最近几年，中文互联网上对字体的关注和认知明显比过去更深了。在各类网页、app 中，我们开始看到了更多样的字体选择；更换字体功能已经成为了国内 Android 手机的标配；一些企业开始注意到字体</description>
     </item>
     
     <item>
       <title>Microsoft 向左，Apple 向右</title>
-      <link>http://example.org/2015/09/microsoft-goes-left-apple-goes-right/</link>
+      <link>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</link>
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2015/09/microsoft-goes-left-apple-goes-right/</guid>
+      <guid>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</guid>
       <description>title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags: Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的</description>
     </item>
     

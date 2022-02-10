@@ -11,7 +11,7 @@ tags:
 
 1993 年，《纽约客》（_The New Yorker_）杂志刊登了一幅漫画：一只黑狗站在电脑椅上，爪子扶着键盘。它望向站在地上、表情迷茫的一只同类，无不兴奋地说：「在互联网上，没人知道你是一条狗。」（On the Internet, nobody knows you're a dog.）这幅漫画成了《纽约客》历史上重印最多的一幅，画中那只狗的台词也成了 IT 界广为流传的经典笑话。
 
-![「在互联网上，没人知道你是一条狗。」](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvnrcej208c09bmym.jpg)
+![「在互联网上，没人知道你是一条狗。」](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvnrcej208c09bmym.jpg)
 
 然而，这句笑话或许真的要变成**笑话**了。
 
@@ -25,7 +25,7 @@ tags:
 
 直到你看到这个网站的图标。
 
-![DuckDuckGo 首页](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvtg20j223w1kwq8e.jpg)
+![DuckDuckGo 首页](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvtg20j223w1kwq8e.jpg)
 
 初见 DuckDuckGo 的人恐怕都会第一眼被它那古怪的 logo 所吸引：一只鸭子傻乎乎地张着大嘴，挂着一副人畜无害的表情，两撮鸭毛在头顶戏谑地翘起，脖子上不合时宜地挂着一副与红色背景格格不入的绿色领结。这样一副似乎是从搞笑漫画中走出来的形象，与页面下方那句严肃的标语「The search engine that doesn't track you（不会追踪你的搜索引擎）」形成了鲜明的对比——这只鸭子真的没有跑错片场吗？
 
@@ -59,7 +59,7 @@ DuckDuckGo 最基础的搜索功能与其他主流产品别无二致，对常见
 
 将会发起一次关键词为「wikipedia」（`q=wikipedia`）、不过滤搜索结果（`kp=0`）、地区范围为中国（`kl=cn-zh`）的搜索。
 
-![DuckDuckGo URL 参数](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvq968j223w16gn29.jpg)
+![DuckDuckGo URL 参数](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvq968j223w16gn29.jpg)
 
 但与 Google 等具备类似功能的搜索引擎不同的是，DuckDuckGo 不仅支持通过 URL 参数定义搜索的**方式**，而且支持定义搜索页面的**行为**（如是否在新标签页中打开链接）和**外观**（如主题背景）。（可以在 DuckDuckGo 的[文档](https://duckduckgo.com/params)中找到全部可用的参数。）
 
@@ -69,7 +69,7 @@ DuckDuckGo 最基础的搜索功能与其他主流产品别无二致，对常见
 
 前已述及，DuckDuckGo 认为自己区分于其他所有搜索引擎的关键特征就在于重视维护用户隐私。那么，它具体做了哪些努力呢？要回答这个问题，首先要知道搜索引擎在哪些环节可能泄露我们的隐私。
 
-![搜索引擎的隐私泄露风险](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvubdnj223w16gwl2.jpg)
+![搜索引擎的隐私泄露风险](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvubdnj223w16gwl2.jpg)
 
 一方面，搜索引擎通常会搜集并记录你的各种信息，包括但不限于你的 IP 地址、地理位置、搜索历史等。这么做的目的在于给用户「画像」——如果搜索引擎能更了解你的居所、身份、偏好，就能更为精准地给你投放推广信息，使你更有可能对其感兴趣并点击访问，从而提高其广告收益。另外，更令人担忧的可能是用户信息被转卖和窃取的潜在危险，类似的事件在近年来早已屡见不鲜。
 
@@ -83,11 +83,11 @@ DuckDuckGo 同样考虑到了这种风险。为此，它在转发你的访问时
 
 例如，它允许用户通过 POST 方法而非 GET 方法发送搜索请求。[两者技术上的区别](http://www.w3school.com.cn/tags/html_ref_httpmethods.asp)在此不赘；仅从现象上而言，启用该选项后，从浏览器地址栏的 URL 中将无法看出你的搜索关键词，因而搜索历史也不会呈现在历史记录中，实现了类似于「隐身模式」的效果，在公用设备上有利于进一步保护隐私。
 
-![POST 方法和 GET 方法产生的 URL 和历史记录](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvthdcj223w0tm42s.jpg)
+![POST 方法和 GET 方法产生的 URL 和历史记录](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvthdcj223w0tm42s.jpg)
 
 再如，DuckDuckGo 是少有的提供 Tor 站点的搜索引擎。如果你能够访问 Tor 网络（洋葱路由，俗称「暗网」），则可以通过访问 [3g2upl4pq6kufc4m.onion](3g2upl4pq6kufc4m.onion) 来使用 DuckDuckGo，并获得端到端的匿名和加密。
 
-![Tor 网络上的 DuckDuckGo](http://ww1.sinaimg.cn/large/73403117ly1fhsqrwm3byj223w1kw4j7.jpg)
+![Tor 网络上的 DuckDuckGo](https://ww1.sinaimg.cn/large/73403117ly1fhsqrwm3byj223w1kw4j7.jpg)
 
 综上所述，DuckDuckGo 确实远比其他主流搜索引擎更为注重用户隐私。当然，任何收益都是有成本的，隐私保护的代价就是你无法在 DuckDuckGo 中得到其他服务中那种「私人订制」的搜索结果，HTTPS 连接的响应通常更慢，而启用 POST 方法将会影响「返回」按钮的正常功能。但在笔者看来，在隐私面前，这些小小的妥协都是值得的。
 
@@ -99,11 +99,11 @@ DuckDuckGo 同样考虑到了这种风险。为此，它在转发你的访问时
 
 正因如此，Instant Answers 的覆盖范围十分广泛：它可以转换汇率、查询天气、寻找食谱，可以呈现维基百科的词条、特定地理位置的地图和简介，甚至 Photoshop 的快捷键、DoTA 2 的英雄资料、Swift 函数的文档都能直接搜出结果。目前，Instant Answers [支持的各类功能](https://duck.co/ia)已经有 1000 多个，而且还在不断增加。想到这些功能的背后都是开源爱好者无偿的劳动，不得不赞叹社区文化的力量。
 
-![各种 Instant Answers](http://ww1.sinaimg.cn/large/73403117ly1fhsqrwj36qj223w1kw1kx.jpg)
+![各种 Instant Answers](https://ww1.sinaimg.cn/large/73403117ly1fhsqrwj36qj223w1kw1kx.jpg)
 
 而需求 (b)，即搜索结果的准确度，则是一个十分主观的标准——对于同一份搜索结果是否令人满意，不同人可能有不同的判断。固然有很多人因为不堪忍受百度那种充斥着推广和竞价排名的搜索结果而坚持使用 Google，但也有同样多的人觉得只有这种把贴吧之类的来源置顶的搜索结果才是正确（expected）的。因此，笔者在此并不能对 DuckDuckGo 的准确度作出一个客观评判。
 
-![DuckDuckGo 和 Google 的中文搜索结果对比](http://ww1.sinaimg.cn/large/73403117ly1fhsqrwo4bxj223w1kw7wh.jpg)
+![DuckDuckGo 和 Google 的中文搜索结果对比](https://ww1.sinaimg.cn/large/73403117ly1fhsqrwo4bxj223w1kw7wh.jpg)
 
 仅就主观印象而言，DuckDuckGo 在英文搜索结果上与 Google 并无明显水平差异，至少与 Bing 等二线搜索引擎处于同一基准上（事实上，DuckDuckGo 在组织搜索结果时会[参考 Bing、Yahoo、Yandex 等服务的结果](https://duck.co/help/results/sources)），大多数情况下可代替 Google 使用；但在中文搜索上，离 Google 或百度的结果尚有一定差距，对国内主要站点的索引有待加强。对此，将地区过滤设为中国有助于一定程度上提高准确度，也可利用后文介绍的 Bangs 功能间接解决。
 
@@ -115,7 +115,7 @@ DuckDuckGo 同样考虑到了这种风险。为此，它在转发你的访问时
 
 DuckDuckGo 的外观设置分布在在设置页面的「Theme」（主题）和「Appearance」（外观）两个选项卡中。前者允许你从预置的六个主题中选择——其中包括一套颇为实用的夜间主题，而后者中则可任意定制字体、字号、对齐方式、页面宽度，以至搜索结果页面背景、链接、文字的颜色。如果你熟悉设计或对某个网站的配色情有独钟，完全可以将其在 DuckDuckGo 中「像素级」复刻出来。
 
-![DuckDuckGo 的主题](http://ww1.sinaimg.cn/large/73403117ly1fhsqrxwkpwj223w1gq4qq.jpg)
+![DuckDuckGo 的主题](https://ww1.sinaimg.cn/large/73403117ly1fhsqrxwkpwj223w1gq4qq.jpg)
 
 当然，如果你真的还是对那只鸭子心存芥蒂的话，可以通过 Stylish 插件的[主题](https://userstyles.org/styles/browse?search_terms=duckduckgo)把它换成看着更顺眼的图标。不过，偶尔离经叛道一点有什么坏处呢？
 
@@ -134,7 +134,7 @@ DuckDuckGo 的外观设置分布在在设置页面的「Theme」（主题）和�
 
 在 DuckDuckGo 设置页面的 「Cloud Save」（云端保存）部分点击 「Save Settings」 按钮，网页会要求你输入一段密码，或者直接点击「Suggest a pass phrase」自动生成一个，然后点击「Save」保存。这样，你的偏好设置就被保存在了 DuckDuckGo 的服务器中；其他设备上，只要在同一页面上点击「Load Settings」并输入密码，即可载入设置，而新的更改也会在设备间同步。
 
-![DuckDuckGo 的设置同步](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvtel9j223w0tmaew.jpg)
+![DuckDuckGo 的设置同步](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvtel9j223w0tmaew.jpg)
 
 很明显，在 DuckDuckGo 设计的这套机制中，并不存在「账号」的概念。而所要求的「密码」与其说是为了**保密**，不如说是为了**识别**，其唯一的作用是建立一个对应关系，在你需要时将服务器中保存的特定设置调取出来。因此即使密码泄露，由于 DuckDuckGo 不存储你的 IP 地址或身份信息，攻击者也得不到任何有用的数据。反过来说，即使忘记了密码，你也没有任何损失，只需重新生成一个就好了——如果你仍然抱有疑虑，也可以随时点击「Delete my data」，彻底删除密码和设置信息间的对应关系。
 
@@ -144,7 +144,7 @@ DuckDuckGo 的外观设置分布在在设置页面的「Theme」（主题）和�
 
 调用默认之外的其他搜索引擎是一个非常经典且常见的需求，现有的解决方案也很成熟，如在 Mac 上利用 Alfred、LaunchBar 等启动器的自定义动作，在 iOS 上利用 Drafts、Launch Center Pro 等可启动自定义 URL 的 app 等。但 DuckDuckGo 直接将这个功能放进了搜索引擎里，并将其称为 **Bangs**。不夸张地说，这个功能填平了将其真正作为默认搜索引擎的最后一道障碍。
 
-![Bangs 功能](http://ww1.sinaimg.cn/large/73403117ly1fhsqrvwww7j223w1kw0z6.jpg)
+![Bangs 功能](https://ww1.sinaimg.cn/large/73403117ly1fhsqrvwww7j223w1kw0z6.jpg)
 
 Bang 的运行机制很简单，只要在你的搜索关键词之前（或结尾）加上一个以半角感叹号 `!` 开头的标识符（称为 **bang**），DuckDuckGo 就会替你调用这个 bang 所指向的搜索引擎或网站进行搜索。例如，如果你搜索：
 

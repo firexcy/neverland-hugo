@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pdf on Neverland</title>
-    <link>http://example.org/tags/pdf/</link>
+    <link>https://type.cyhsu.xyz/tags/pdf/</link>
     <description>Recent content in pdf on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>你说的框是什么框——理解 PDF 中的五种页面边界</title>
-      <link>http://example.org/2020/07/understand-pdf-page-boundaries/</link>
+      <link>https://type.cyhsu.xyz/2020/07/understand-pdf-page-boundaries/</link>
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2020/07/understand-pdf-page-boundaries/</guid>
+      <guid>https://type.cyhsu.xyz/2020/07/understand-pdf-page-boundaries/</guid>
       <description>最近工作中，我经常遇到需要裁剪 PDF 页面的情况。例如，收到的扫描版 PDF 文件不是标准的 A4 尺寸，而是有些多余的白边需要裁掉。 过去偶尔需要裁剪 PDF 时，我一般会通过 macOS 自带的预览 app 实现：用标记工具栏中的「矩形选择」工具</description>
     </item>
     
     <item>
       <title>用 Shell 脚本制作签字页</title>
-      <link>http://example.org/2020/06/make-signature-pages-with-shell-script/</link>
+      <link>https://type.cyhsu.xyz/2020/06/make-signature-pages-with-shell-script/</link>
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2020/06/make-signature-pages-with-shell-script/</guid>
+      <guid>https://type.cyhsu.xyz/2020/06/make-signature-pages-with-shell-script/</guid>
       <description>在我目前的工作中，一项常见但繁琐的任务就是制作文件的「签字页」。具体而言，这项任务包含如下步骤： 将 Word 格式的交易文件导出为 PDF 格式； 逐页提取 PDF 版中的签字页部分； 将单页签字页按照类似于 合同名称_SigPag</description>
     </item>
     
     <item>
       <title>PDF 复制中的文字重复问题</title>
-      <link>http://example.org/2018/12/why-do-pdf-copy-results-in-preview-app-have-redundant-characters/</link>
+      <link>https://type.cyhsu.xyz/2018/12/why-do-pdf-copy-results-in-preview-app-have-redundant-characters/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/12/why-do-pdf-copy-results-in-preview-app-have-redundant-characters/</guid>
+      <guid>https://type.cyhsu.xyz/2018/12/why-do-pdf-copy-results-in-preview-app-have-redundant-characters/</guid>
       <description>前两天，编辑 @⽂⼑漢三 在 Slack 上发给我一个 PDF 文件，问我知不知道为什么从里面复制出的中文会出现「重字」现象。他还提到，这个问题只在用系统自带的预览 app 打开时会出现，用其他 PDF 阅读器复制文字是正常的。 文刀拿这个问</description>
     </item>
     
     <item>
       <title>数字世界中的纸张——理解 PDF</title>
-      <link>http://example.org/2018/09/understanding-pdf-the-digitalized-paper/</link>
+      <link>https://type.cyhsu.xyz/2018/09/understanding-pdf-the-digitalized-paper/</link>
       <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2018/09/understanding-pdf-the-digitalized-paper/</guid>
+      <guid>https://type.cyhsu.xyz/2018/09/understanding-pdf-the-digitalized-paper/</guid>
       <description>引言 PDF 是我们打交道最多的文件格式之一。提到这个格式，即使是对技术并不熟悉的用户，也能说出「通用性好」「格式不会乱变」这些优点。但同时，PDF 也是让我们感到困惑最多的格式之一。与 Word 文档等其他常见办公软件</description>
     </item>
     

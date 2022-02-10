@@ -10,11 +10,11 @@ tags:
 
 「拖动」是 macOS 图形界面操作的精华。但是，在很多情况下，拖动并不像我们希望的那样随心所欲。例如，在当前 app 处于全屏模式的情况下，如何将其他桌面上的文件拖动到该 app 中？在桌面堆满了窗口的时候，如何在桌面和众多 app 间互相拖动文件？在屏幕空间局促的 MacBook 上，这种问题显得尤为突出。
 
-![拥挤的 macOS 桌面](http://ww1.sinaimg.cn/large/73403117ly1ff4x7aockpj22801e0npd.jpg)
+![拥挤的 macOS 桌面](https://ww1.sinaimg.cn/large/73403117ly1ff4x7aockpj22801e0npd.jpg)
 
 针对这种需求，市场上出现了大量充当拖动操作「中转站」作用的 app，如 Unclutter、Yoink、Dropzone 等。这些 app 的共同点在于，当检测到用户拖动文件时，会在屏幕边缘弹出一个容器；用户可以将文件先拖动到该容器中暂存起来，然后切换到目标 app 中，再将文件从这个「中转站」里拖到对应位置。
 
-![用 Dropzone 作拖动的中转站](http://ww1.sinaimg.cn/large/73403117ly1ff4x79urjhj218i11khdt.jpg)
+![用 Dropzone 作拖动的中转站](https://ww1.sinaimg.cn/large/73403117ly1ff4x79urjhj218i11khdt.jpg)
 
 这种方法固然能达到目的，却未免有些隔靴搔痒；何况，购买这些 app 也是一笔额外的成本。其实，macOS 已经提供了解决问题的全部工具，只要进行很少量的配置，就能一步到位地实现高效拖动文件的需求。
 
@@ -30,7 +30,7 @@ tags:
 2. 屏幕将滑动到当前桌面右侧的全屏 app 或桌面；
 3. 将文件拖动到目标位置并释放。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4x7cuc13g20k00cib2c.gif)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4x7cuc13g20k00cib2c.gif)
 
 #### 1.1.2 使用键盘快捷键
 
@@ -42,7 +42,7 @@ tags:
 4. 该 app 的缩略图将开始闪烁，然后屏幕将切换到该 app；
 5. 将文件拖动到目标位置并释放。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4x7feor1g20k00cix6t.gif)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4x7feor1g20k00cix6t.gif)
 
 ### 1.2 在全屏 app 中访问 Dock 中的文件
 
@@ -51,7 +51,7 @@ tags:
 1. 将鼠标指针滑动到屏幕的下边缘之外（如果 Dock 被设置为位于屏幕的两侧，则对应地将指针移出屏幕的左/右边缘）；
 2. 再次向屏幕的下方（或左右两侧，取决于 Dock 的位置）滑动指针。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4xqyea87g20cu0367fx.gif)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4xqyea87g20cu0367fx.gif)
 
 当然，也可以利用 Mission Control 界面下会显示 Dock 的特性，按 F3 键或 ⌃↑ 唤出 Misson Control，从而在全屏 app 中访问 Dock。不过，前一种方法在视觉上干扰更少一些，不容易打断注意力。
 
@@ -64,7 +64,7 @@ tags:
 1. 打开 「」>「系统偏好设置」>「桌面和屏幕保护程序」，切换到「屏幕保护程序」选项卡；
 2. 点击「触发角」按钮，在弹出的窗口中，将屏幕的某一角落指定为触发「桌面」，例如左下角；
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4x79a5bvj217c11g16f.jpg)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4x79a5bvj217c11g16f.jpg)
 
 这样，就可以利用触发角的特性便利文件拖动操作了。例如，在屏幕上堆积了很多窗口时，想将桌面上的文件拖动到 Pages 中，则可以进行如下操作：
 
@@ -73,11 +73,11 @@ tags:
 3. 找到桌面上所需的文件，将其拖动到屏幕左下角（或你指定的其他角落），原有的窗口将回到原始位置；
 4. 将该文件拖动到 Pages 窗口中的目标位置并释放。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4x7e46k3g20k00cie86.gif)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4x7e46k3g20k00cie86.gif)
 
 类似地，如果希望在同一屏幕上的大量不同 app 间拖动文件，则可以将某个角落设置为触发 Mission Control。这样，只要从一个 app 中将文件拖动到该触发角、激活 Mission Control，再将其拖动到目标 app 的缩略图上、切换到该 app 并释放，即可方便地达成目标。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4x7e33dgg20k00ciqv8.gif)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4x7e33dgg20k00ciqv8.gif)
 
 ### 2.2 使用键盘快捷键
 
@@ -91,4 +91,4 @@ tags:
 
 类似地，你可以使用 ⌃↑ 唤出 Mission Control，以实现在同一屏幕上的大量不同 app 间拖动文件的目的。如果想修改这些快捷键，可以打开 「」>「系统偏好设置」>「键盘」，切换到「快捷键」选项卡，在窗口左侧选择「Mission Control」，然后在右侧双击你想要修改的快捷键。
 
-![](http://ww1.sinaimg.cn/large/73403117ly1ff4x799kbuj217c12itfq.jpg)
+![](https://ww1.sinaimg.cn/large/73403117ly1ff4x799kbuj217c12itfq.jpg)

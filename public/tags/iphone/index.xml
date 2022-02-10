@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>iphone on Neverland</title>
-    <link>http://example.org/tags/iphone/</link>
+    <link>https://type.cyhsu.xyz/tags/iphone/</link>
     <description>Recent content in iphone on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iPhone X 参数深究</title>
-      <link>http://example.org/2017/09/iphone-x-comparison/</link>
+      <link>https://type.cyhsu.xyz/2017/09/iphone-x-comparison/</link>
       <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/2017/09/iphone-x-comparison/</guid>
+      <guid>https://type.cyhsu.xyz/2017/09/iphone-x-comparison/</guid>
       <description>每次新 iPhone 发布，人们最关注的除了外观，恐怕就是它们的详细参数了。虽然苹果一向以「重体验、轻数字」著称，但它越是对那些具体数字顾左右而言他，外界就越是渴望一探究竟。也正因此，每当 iPhone 正式发售，就有 iFixit 这样的媒</description>
     </item>
     
