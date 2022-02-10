@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opinion on Neverland</title>
+    <link>http://example.org/tags/opinion/</link>
+    <description>Recent content in opinion on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小议超链接的规范使用</title>
+      <link>http://example.org/2020/08/hyperlink-best-practices/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2020/08/hyperlink-best-practices/</guid>
+      <description>超链接是互联网最突出的功能之一，添加超链接也是所有网络用户需要掌握的基本功。 然而，「会用」超链接并不等于能「用好」超链接。或许是因为操作太过容易，我们在添加超链接的时候往往颇为随意，而不会仔细考虑做成</description>
+    </item>
+    
+    <item>
+      <title>为 Magic Mouse 辩护</title>
+      <link>http://example.org/2020/05/defense-for-magic-mouse/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2020/05/defense-for-magic-mouse/</guid>
+      <description>引言 如果要问什么苹果产品最能体现这家公司对于简约不惜代价的执念，它的鼠标系列产品显然可以堪此「重任」。 早年，从圆盘形的 Apple USB Mouse，到坚持只做一个按键的 Apple Pro Mouse，再到滚轮只有豆粒大小的 Apple Mighty Mo</description>
+    </item>
+    
+    <item>
+      <title>从邮件通讯的流行谈起</title>
+      <link>http://example.org/2020/03/on-the-popularity-of-newsletters/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2020/03/on-the-popularity-of-newsletters/</guid>
+      <description>一、引言 和时尚界类似，科技行业似乎也时常出现「复古」的风潮——沉寂的旧技术被发掘出新用途、重新走入聚光灯下，开拓出新的市场和商机。 2018 年，在 Facebook 泄露信息等事件的催化下，RSS 这项有二十多年历史的资讯订阅技</description>
+    </item>
+    
+    <item>
+      <title>Year in Review 2019 — 当数字生活与工作相遇</title>
+      <link>http://example.org/2020/02/year-in-review-2019/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2020/02/year-in-review-2019/</guid>
+      <description>对我个人而言，2019 是充满变化的一年。 这一年，我从美国回到国内，走出学校，走上了工作岗位。地理位置和社会角色的改变，自然会在生活中有所反映。但或许是因为我习惯了比较简单而规律的生活方式，这些变化对我</description>
+    </item>
+    
+    <item>
+      <title>信息消费——从入门到放弃</title>
+      <link>http://example.org/2019/02/2018-review-art-of-forsaking/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2019/02/2018-review-art-of-forsaking/</guid>
+      <description>本文参加少数派 2019 年度征文。（链接） 我一直认为自己是一个喜欢被信息包裹的人。对我来说，「网上冲浪」不是一种比喻，而更像是真实的感受。信息的浸泡能让我感到和游泳一般的满足和愉快。 我也一直对自己掌握了不少获</description>
+    </item>
+    
+    <item>
+      <title>Apple Watch 表盘的设计问题</title>
+      <link>http://example.org/2018/10/apple-watch-face-problems/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2018/10/apple-watch-face-problems/</guid>
+      <description>Apple Watch Series 4 发布后，收到了比较积极的评价。大多数评论都认为，经过四年的摸索，苹果对这一产品的定位和思路已经比较清晰，将开发和宣传的重点聚焦在健康、运动和联系上；硬件迭代虽然不算激进，但逐年积累下来，相比早</description>
+    </item>
+    
+    <item>
+      <title>论 RSS 的「复兴」</title>
+      <link>http://example.org/2018/04/on-the-so-called-revival-of-rss/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2018/04/on-the-so-called-revival-of-rss/</guid>
+      <description>最近，《连线》杂志网站上刊出了一篇题为《是时候让 RSS 复兴了》（It’s Time for an RSS Revival）的文章。文章开篇便动员道，「Twitter 让你心累了吗？Facebook 让你厌倦了吗？是时候回归 RSS 了。」之后</description>
+    </item>
+    
+    <item>
+      <title>Surge 的隐性价值</title>
+      <link>http://example.org/2018/01/the-implied-value-of-surge/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2018/01/the-implied-value-of-surge/</guid>
+      <description>今天早上看到 Surge 3 上架，基本没动脑子就把内购买了。其实我很清楚这绝对不是一笔划算买卖：Surge 在我这大概有一半的能力是被浪费的。校园网带宽很少能稳定在百兆以上，因此其他 NE 类 app 的性能瓶颈并不明显；Mit</description>
+    </item>
+    
+    <item>
+      <title>论 iOS 11 上的 Drag and Drop</title>
+      <link>http://example.org/2017/10/drag-and-drop-on-ios-11/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/10/drag-and-drop-on-ios-11/</guid>
+      <description>曾几何时，「交互简单」一直是 iOS 引以为傲的资本。WWDC 2007 上，乔布斯演示的点击（tap）、滑动（swipe）、捏合（pinch）三个手势惊艳了世界，也奠定了 iOS 交互方式的基本格局。此后，iOS 极少引入新的</description>
+    </item>
+    
+    <item>
+      <title>The Disconnection Between Religions And Radicalism</title>
+      <link>http://example.org/2017/04/the-disconnection-between-religions-and-radicalism/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/04/the-disconnection-between-religions-and-radicalism/</guid>
+      <description>An interesting piece from The Guardian:
+ ISIS did not invent terrorism: it draws from a pool that already exists. The genius of Isis is the way it offers young volunteers a narrative framework within which they can achieve their aspirations.
+  To summarise: the typical radical is a young, second-generation immigrant or convert, very often involved in episodes of petty crime, with practically no religious education, but having a rapid and recent trajectory of conversion/reconversion, more often in the framework of a group of friends or over the internet than in the context of a mosque.
+ Which becomes even more inspiring when read along with this one from Aeon:</description>
+    </item>
+    
+    <item>
+      <title>从「斗鱼案」看网络游戏直播的著作权问题</title>
+      <link>http://example.org/2017/04/douyu-and-the-copyright-of-online-game-streaming/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/04/douyu-and-the-copyright-of-online-game-streaming/</guid>
+      <description>《DOTA 2》系世界知名的电子竞技类网络游戏，在中国内地的代理商为完美世界（北京）网络技术有限公司（完美公司）。该游戏在 2 个游戏玩家团队（每队 5 人）之间以比赛形式进行，网络用户可以通过该游戏官方网站的</description>
+    </item>
+    
+    <item>
+      <title>Keynote | The Renaissance of Sound as A Medium</title>
+      <link>http://example.org/2015/10/the-renaissance-of-sound-as-a-medium/</link>
+      <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/10/the-renaissance-of-sound-as-a-medium/</guid>
+      <description>Good morning everyone.
+Once upon a time, radio was the main conduit of getting information for most people. Over the air, they heard about news, listened to music, and tuned between channels talking about topics they were interested in.
+Gone were the days when families gathered round to listen to their favorite broadcast. The dominance of sound as the medium of information had been replaced by vision, at first on TV, and nowadays on touch screens. We&#39;ve been so pleased by visual contents that hardly can we understand those days when we can only catch information by our ears.
+But vision has its inferiority: it is attention-absorbing.</description>
+    </item>
+    
+    <item>
+      <title>Understand WeChat The Hard Way</title>
+      <link>http://example.org/2015/10/understand-wechat-the-hard-way/</link>
+      <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2015/10/understand-wechat-the-hard-way/</guid>
+      <description>前两天，我在国外科技网站 a16z 上看到了一篇题为《When One App Rules Them All: The Case of WeChat and Mobile in China》（当一个 App 统治一切：微信与移动互联网在中国）的文章。文章中，作者从五个角度论述了微信的工作原理，展示了微信作为中</description>
+    </item>
+    
+  </channel>
+</rss>

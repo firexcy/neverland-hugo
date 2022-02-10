@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>WWDC’21: Notable Documentations - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Most users don’t follow the WWDC beyond the Keynote session. The trove of recorded sessions are thought to be relevant to only coders, not to mention the developer documentations. However, there are actually many summary articles that are easy to follow and full of tasteful tidbits, and even the rest of us can find interesting to read. If you have ever wondered how sites like MacStories and Ars Techinica can dig out so many details in their reviews of the annual OS releases, here lies the answer.
+The following is an inconclusive list of such approachable documentations updated during WWDC’21 that I’ve discovered." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="WWDC’21: Notable Documentations" />
+<meta property="og:description" content="Most users don’t follow the WWDC beyond the Keynote session. The trove of recorded sessions are thought to be relevant to only coders, not to mention the developer documentations. However, there are actually many summary articles that are easy to follow and full of tasteful tidbits, and even the rest of us can find interesting to read. If you have ever wondered how sites like MacStories and Ars Techinica can dig out so many details in their reviews of the annual OS releases, here lies the answer.
+The following is an inconclusive list of such approachable documentations updated during WWDC’21 that I’ve discovered." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2021/06/wwdc21-notable-documentations/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-08T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WWDC’21: Notable Documentations"/>
+<meta name="twitter:description" content="Most users don’t follow the WWDC beyond the Keynote session. The trove of recorded sessions are thought to be relevant to only coders, not to mention the developer documentations. However, there are actually many summary articles that are easy to follow and full of tasteful tidbits, and even the rest of us can find interesting to read. If you have ever wondered how sites like MacStories and Ars Techinica can dig out so many details in their reviews of the annual OS releases, here lies the answer.
+The following is an inconclusive list of such approachable documentations updated during WWDC’21 that I’ve discovered."/>
+<script src="http://example.org/js/feather.min.js"></script>
+	
+	
+        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://example.org/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">WWDC’21: Notable Documentations</h1>
+			<div class="meta">2021-06-08</div>
+		</div>
+		
+
+		<section class="body">
+			<hr>
+<p>Most users don’t follow the WWDC beyond the Keynote session. The trove of recorded sessions are thought to be relevant to only coders, not to mention the developer documentations. However, there are actually many summary articles that are easy to follow and full of tasteful tidbits, and even the rest of us can find interesting to read. If you have ever wondered how sites like MacStories and Ars Techinica can dig out so many details in their reviews of the annual OS releases, here lies the answer.</p>
+<p>The following is an inconclusive list of such approachable documentations updated during WWDC’21 that I’ve discovered. I may (or may not, dependent on my time available) update the list with further readings. For an official list of new technologies across the Apple platforms, see <a href="https://developer.apple.com/documentation/New-Technologies-WWDC-2021">New Technologies WWDC 2021</a>.</p>
+<hr>
+<h3 id="managedsettingshttpsdeveloperapplecomdocumentationmanagedsettings"><a href="https://developer.apple.com/documentation/ManagedSettings">ManagedSettings</a></h3>
+<p>Managed Settings provides a privacy-preserving way for users to restrict access to certain settings and features on their devices. With the user’s permission, your app can limit media showings, restrict app purchases, lock passcode settings, and configure other device behavior.</p>
+<p><img src="https://docs-assets.developer.apple.com/published/acc1e9abeed55948d8f76d19856eac54/10200/managed-settings-overview@2x.png" alt="A web diagram consisting of three arrows to the left, below and right with a settings icon in the center. On the left side is a yield sign toward 18+ content. To the right is a restrict sign toward app store content, and below is a lock sign toward iPhone passcode."></p>
+<p>Managed Settings works together with <a href="https://developer.apple.com/documentation/ManagedSettingsUI">ManagedSettingsUI</a>, <a href="https://developer.apple.com/documentation/DeviceActivity">DeviceActivity</a>, and <a href="https://developer.apple.com/documentation/FamilyControls">FamilyControls</a> to allow your app to restrict, authorize, and monitor device usage.</p>
+<h3 id="audio-graphshttpsdeveloperapplecomdocumentationaccessibilityaudio_graphs"><a href="https://developer.apple.com/documentation/accessibility/audio_graphs">Audio Graphs</a></h3>
+<p>Use the Audio Graphs API to provide all the information that VoiceOver needs to construct an audible representation of the data in your charts and graphs, giving people who are blind or have low vision access to valuable data insights.</p>
+<p><img src="https://docs-assets.developer.apple.com/published/b1012142b1/rendered2x-1621039087.png" alt="Conceptual illustration of an audio graph that shows data points modulating in pitch along the Y-axis as a slider moves in time along the X-axis. "></p>
+<p>An <em>audio graph</em> turns the data in your chart into an audible representation by encoding the data on each axis as audio. Typically, the audio graph represents the X-axis as time, and the Y-axis as pitch. For example, an audible representation of a scatter plot that shows a linear downward trend might be a series of individual tones descending in pitch over time. An audible representation of a stock chart might be a single continuous tone with a pitch that modulates up or down with the stock price (Y-axis) as the audio plays over time (X-axis).</p>
+<h3 id="sound-analysishttpsdeveloperapplecomdocumentationsoundanalysis"><a href="https://developer.apple.com/documentation/soundanalysis">Sound Analysis</a></h3>
+<ul>
+<li>Identify specific sounds, such as laughter or applause, in your app by creating an <code>SNClassifySoundRequest</code> to analyze an audio file or stream. Sound requests can identify over 300 sounds.</li>
+<li>Alternatively, you identify a custom set of sounds by providing the sound request with a custom Core ML model. You train a custom sound classification model by creating an <code>MLSoundClassifier</code> with audio data in Create ML.</li>
+</ul>
+<h4 id="discover-built-in-sound-classification-in-soundanalysishttpsdeveloperapplecomvideosplaywwdc202110036"><a href="https://developer.apple.com/videos/play/wwdc2021/10036/">Discover built-in sound classification in SoundAnalysis</a></h4>
+<p>Mentioned in <a href="https://sixcolors.com/post/2021/06/wwdc-2021-more-cowbell/">WWDC 2021: More cowbell</a> by Jason Snell</p>
+<ul>
+<li>Presenter Jon Huang of Apple’s audio team demonstrates a built-in audio recognition model
+<ul>
+<li>that allows his Mac to dynamically recognize different sounds as they occur around it:</li>
+<li>talking, music, elements of the music like vocals and guitars</li>
+</ul>
+</li>
+<li>Kevin Durand [then] uses Shortcuts on a Mac running macOS Monterey to process a folder full of movies,
+<ul>
+<li>looking for any that contain the sound of a cowbell—and then clipping out that movie and saving it to a new location.</li>
+<li>Shortcuts doesn’t have audio classification built into it (yet?),</li>
+<li>but Durand has built a simple app using Apple’s new SoundAnalysis APIs
+<ul>
+<li>that identifies whether a particular sound is found inside a particular file.</li>
+</ul>
+</li>
+<li>a good example of what Shortcuts enables on the Mac</li>
+</ul>
+</li>
+</ul>
+<h3 id="shazamkithttpsdeveloperapplecomdocumentationshazamkit"><a href="https://developer.apple.com/documentation/shazamkit">ShazamKit</a></h3>
+<ul>
+<li>The process
+<ul>
+<li>ShazamKit uses the unique acoustic <em>signature</em> of an audio recording to find a match.</li>
+<li>ShazamKit generates a <em>reference signature</em> for each searchable full audio recording.</li>
+<li>A <em>catalog</em> stores the reference signatures and their associated metadata, or media items.</li>
+<li>Searching for a match compares a <em>query signature</em>, which ShazamKit generates for captured audio, with the reference signatures in the catalog.</li>
+</ul>
+</li>
+<li>You can create a custom catalog with your own reference signatures and their associated metadata.
+<ul>
+<li>a virtual learning app
+<ul>
+<li>reference signatures = teaching videos</li>
+<li>associated metadata = the timecodes for questions</li>
+<li>offer choices for a possible answer for a matched question; updates with fwd. and bwd.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="nearby-interactionhttpsdeveloperapplecomdocumentationnearbyinteraction"><a href="https://developer.apple.com/documentation/nearbyinteraction">Nearby Interaction</a></h3>
+<h4 id="nearby-interactions-with-u1---apple-developerhttpsdeveloperapplecomnearby-interaction"><a href="https://developer.apple.com/nearby-interaction/">Nearby Interactions with U1 - Apple Developer</a></h4>
+<ul>
+<li>Accessory manufacturers: Use the Nearby Interaction accessory protocol and an Apple-approved UWB solution to manufacture accessories that interact with U1 in supported Apple products. Get started by previewing the <a href="https://developer.apple.com/nearby-interaction/specification/">specifications</a>.</li>
+<li>Chipset manufacturers: Provide Apple U1 interoperability with your UWB solution. Chipset manufacturers who are interested should join the MFi Program to access the necessary <a href="https://mfi.apple.com/">technical specifications and resources</a>.</li>
+</ul>
+<h4 id="interact-with-apple-watch">Interact with Apple Watch</h4>
+<p>The U1 chip-capable Apple Watch running watchOS 8 supports Nearby Interaction sessions. Apps share discovery tokens to begin an interaction session. The <a href="https://developer.apple.com/documentation/multipeerconnectivity">Multipeer Connectivity</a> framework provides a way for apps to share discovery tokens over a local network on iOS; on watchOS, apps share discovery tokens using a custom server, <a href="https://developer.apple.com/documentation/corebluetooth">Core Bluetooth</a>, LAN (TCP/UDP), or <a href="https://developer.apple.com/documentation/watchconnectivity">Watch Connectivity</a>.</p>
+<p>The system backgrounds the foreground Watch app <strong>after two minutes</strong>; when the system backgrounds an app, Nearby Interaction sessions suspend.</p>
+<p>Nearby Interaction on iOS provides a peer device’s distance and direction, whereas Nearby Interaction <strong>on watchOS provides only a peer device's distance</strong>.</p>
+<h4 id="interact-with-third-party-devices">Interact with Third-Party Devices</h4>
+<p>In iOS 15, iPhones can interact with third-party accessories that you partner with or develop with a U1-compatible UWB chip.</p>
+<h3 id="increasing-the-visibility-of-widgets-in-smart-stackshttpsdeveloperapplecomdocumentationwidgetkitwidget-suggestions-in-smart-stacks"><a href="https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks">Increasing the Visibility of Widgets in Smart Stacks</a></h3>
+<p>When users configure Smart Stacks, they have two options for surfacing widgets:</p>
+<ol>
+<li>Smart Rotate <strong>automatically rotates widgets</strong> to the top of the stack when they have timely, relevant information to show.</li>
+<li>Widget Suggestions <strong>automatically suggest widgets</strong> that the user doesn’t already have in their stack, perhaps exposing them to widgets they don’t even know exist.</li>
+</ol>
+<ul>
+<li>Your app <strong>donates intents</strong> and <strong>identifies relevant shortcuts</strong> to provide a <em>signal</em> about <strong>how</strong> the user uses your app, <strong>when</strong> they use it, and <strong>what</strong> is most relevant to them.</li>
+<li>While intent donations using <code>INInteraction</code> give Smart Stacks insight into the past user behavior, <code>INRelevantShortcut</code> informs future suggestions.
+<ul>
+<li>The app conveys this information by specifying a <em>relevance provider</em> as part of the INRelevantShortcut.</li>
+<li>Relevance providers determine when a shortcut is relevant, such as at a specific time of day: <code>INDateRelevanceProvider</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="delivering-an-enhanced-privacy-experience-in-your-photos-apphttpsdeveloperapplecomdocumentationphotokitdelivering_an_enhanced_privacy_experience_in_your_photos_app"><a href="https://developer.apple.com/documentation/photokit/delivering_an_enhanced_privacy_experience_in_your_photos_app">Delivering an Enhanced Privacy Experience in Your Photos App</a></h3>
+<ul>
+<li>In iOS 15.0 and later, you can present the limited-library picker with a <em>callback</em>.
+<ul>
+<li>The callback provides a list of local identifiers that reflect the user’s new selections.</li>
+<li>This method only works when the user enables limited-library mode.</li>
+</ul>
+</li>
+<li>To monitor changes to the user’s limited-library selection, use the standard change observer API as described in Observing Changes in the Photo Library.</li>
+<li>Register your app to receive notifications and update your user interface as the system notifies it of state changes.</li>
+</ul>
+<h3 id="about-continuous-integration-and-delivery-with-xcode-cloudhttpsdeveloperapplecomdocumentationxcodeabout-continuous-integration-and-delivery-with-xcode-cloud"><a href="https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud">About Continuous Integration and Delivery with Xcode Cloud</a></h3>
+<ul>
+<li>Xcode Cloud is a CI/CD system that
+<ul>
+<li>uses Git for source control and</li>
+<li>provides you with an integrated system that
+<ul>
+<li>ensures the quality and stability of your codebase.</li>
+<li>It also helps you publish apps efficiently.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Xcode supports source control with Git.
+<ul>
+<li>By using source control, you improve your project’s quality by tracking and reviewing code changes.</li>
+</ul>
+</li>
+<li>The Importance of Automated Building and Testing
+<ul>
+<li>A typical development process starts with making changes to your code, building the project, and running your app in the Simulator or on a test device.
+<ul>
+<li>take a significant amount of your time.</li>
+<li>especially true for complex apps or frameworks</li>
+</ul>
+</li>
+<li>With Xcode Cloud, however, you can build, run, and test your project on multiple simulated devices in less time than you can traditionally</li>
+<li>After verifying a change, Xcode Cloud automatically notifies you about the result via email.</li>
+</ul>
+</li>
+<li>Continuous Delivery
+<ul>
+<li>The flip side to continuous integration (CI) is continuous delivery (CD).</li>
+<li>When Xcode Cloud verifies a change to your code (CI), it can
+<ul>
+<li>automatically deliver (CD) a new version of your app to testers with TestFlight, or</li>
+<li>make a new version available for release in the App Store.</li>
+<li>upload the exported app archive or a framework to your own server.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Collaborative Software Development with Xcode Cloud
+<ul>
+<li>support for pull requests (PRs): When you create a PR, you inform your team that a change is ready for review, and you and your team can take a look at each other’s code changes, and provide and address feedback before merging branches.</li>
+<li>In Xcode 13 and later, you can create, view, and comment on PRs, and merge changes into your codebase if you host your Git repository with Bitbucket Server, GitHub, or GitHub Enterprise.</li>
+<li>You can also configure Xcode Cloud to detect new PRs, or changes to an existing PR.</li>
+</ul>
+</li>
+</ul>
+<h3 id="safari-web-extensionshttpsdeveloperapplecomdocumentationsafariservicessafari_web_extensions"><a href="https://developer.apple.com/documentation/safariservices/safari_web_extensions">Safari Web Extensions</a></h3>
+<p>Safari web extensions are available in macOS 11 and later, macOS 10.14.6 or 10.15.6 with Safari 14 installed, and iOS 15 and later.</p>
+<h3 id="designing-your-app-for-the-always-on-statehttpsdeveloperapplecomdocumentationwatchkitdesigning_your_app_for_the_always_on_state"><a href="https://developer.apple.com/documentation/watchkit/designing_your_app_for_the_always_on_state">Designing Your App for the Always On State</a></h3>
+<ul>
+<li>watchOS 8 expands Always On to include your apps.</li>
+<li>Even though your app is inactive or running in the background,
+<ul>
+<li>the system continues to update and monitor many of the user interface elements.</li>
+<li>any controls in the user interface remain interactive.</li>
+</ul>
+</li>
+<li>Apps compiled for watchOS 8 and later have Always On enabled by default.
+<ul>
+<li>Always On isn’t available on Apple Watch SE or Apple Watch Series 4 and earlier; the screen turns off when the app transitions to the background or inactive states.</li>
+</ul>
+</li>
+<li>Understand Frontmost App Behavior
+<ul>
+<li>By default, when the user lowers their wrist or stops interacting with their watch, your app transitions to the <strong>inactive state</strong>.</li>
+<li>The system continues to display your app’s user interface as long as your app remains <strong>the frontmost app</strong> (usually <strong>two minutes</strong>) before transitioning to the background and becoming <strong>suspended</strong>.</li>
+<li>If the user <strong>dismisses</strong> the app (for example, by pressing the crown or by covering the screen), the app transitions immediately to the background and doesn’t become the frontmost app.</li>
+<li>Users can set the amount of time that apps remains the frontmost app by changing the settings at Settings &gt; General &gt; Wake Screen &gt; Return to Clock.
+<ul>
+<li>They can also specify a <strong>custom time</strong> for individual apps from the Wake Screen.</li>
+<li>In WatchOS 8 and later, apps can remain in the frontmost app state for a <strong>maximum of 1 hour</strong>.</li>
+</ul>
+</li>
+<li>When the app is inactive, the user interface doesn’t update by default. However, you can use a <code>TimelineView</code> to schedule periodic updates.</li>
+</ul>
+</li>
+<li>Update the Display During Background Sessions
+<ul>
+<li>Unlike frontmost apps, apps running a background session can continue to update their user interface;
+<ul>
+<li>however, to save battery life, the system reduces the update frequency.</li>
+</ul>
+</li>
+<li>For the best UX,
+<ul>
+<li>pause any animation and show the final state (or a good static image), and</li>
+<li>remove any subsecond updates.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hide Sensitive Information
+<ul>
+<li>Add the <code>privacySensitive(_:)</code> <strong>view modifier</strong> to blur out specific user interface elements during Always On.</li>
+<li>Or access the <code>redactionReasons</code> environment variable.
+<ul>
+<li>If [this variable contains the <code>privacy</code> value.], eliminate or obscure any sensitive data.</li>
+</ul>
+</li>
+<li>Always hide any highly sensitive information, such as financial information or health data.
+<ul>
+<li>If the user has any concerns, they can disable Always On on a per-app basis.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Customize the Reduced Luminance Appearance
+<ul>
+<li>The system determines the screen’s overall luminance by comparing the ratio of lit pixels to dark pixels.</li>
+<li>It then reduces the overall brightness to an appropriate level.</li>
+<li>Many system controls also automatically update their appearance during Always On.</li>
+<li>You can customize the appearance during Always On to highlight glanceable, important information in your user interface.</li>
+<li>To customize your interface, use the <code>isLuminanceReduced</code> environment variable.</li>
+</ul>
+</li>
+</ul>
+<h3 id="accessing-the-camera-while-multitaskinghttpsdeveloperapplecomdocumentationavfoundationcameras_and_media_captureaccessing_the_camera_while_multitasking"><a href="https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture/accessing_the_camera_while_multitasking">Accessing the Camera While Multitasking</a></h3>
+<ul>
+<li><strong>Starting with iOS 13.5</strong>, you can use the new Multitasking Camera Access Entitlement to let your app continue using the camera when Multitasking.
+<ul>
+<li>This scenario occurs in both Split View and Slide Over modes.</li>
+</ul>
+</li>
+<li>In <strong>iOS 15.0 or later</strong>, this behavior <strong>extends to Picture in Picture</strong> mode using AVKit’s new API.</li>
+<li>Respond to System Pressure
+<ul>
+<li>Multitasking introduces the possibility of performance degradation; Increased device temperature and power usage can lead to frame drops or poor capture quality.</li>
+<li>Monitor[] the <code>systemPressureState</code> property on <code>AVCaptureDevice</code>
+<ul>
+<li>When the pressure reaches excessive levels, the capture system shuts down and emits an <code>AVCaptureSessionWasInterrupted</code> notification.</li>
+<li>Apps reduce their footprint on the system by lowering the frame rate or requesting lower-resolution, binned, or non-HDR formats.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Observe Capture Session Notifications
+<ul>
+<li>The system only allows <strong>one</strong> app to use the device’s camera at a given time.</li>
+<li>Prepare your app to respond when another app starts using the camera
+<ul>
+<li>observe two notifications: <code>AVCaptureSessionWasInterrupted</code> and <code>AVCaptureSessionInterruptionEnded</code>.</li>
+<li>The notification object’s user information dictionary contains <strong>the reason for an interruption</strong>, [which] lets you configure your user interface as your camera access changes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="storekit---apple-developerhttpsdeveloperapplecomstorekit"><a href="https://developer.apple.com/storekit/">StoreKit - Apple Developer</a></h3>
+<p>StoreKit 2 introduces modern Swift-based APIs that make it easier than ever to deliver high-quality in-app purchase experiences.</p>
+<ul>
+<li>Simple and secure transactions: In StoreKit 2, transactions are cryptographically signed by the App Store in JSON Web Signature format for increased security and easier parsing of transaction information. And StoreKit 2 automatically makes up-to-date transactions available to your app, whether a user launches it for the first time or downloads it on another device.</li>
+<li>Customer support: let users request refunds and manage their subscriptions from within your app; confirming a user’s purchase details during a customer support call and extending the renewal date</li>
+</ul>
+<h4 id="choosing-a-storekit-api-for-in-app-purchasehttpsdeveloperapplecomdocumentationstorekitchoosing_a_storekit_api_for_in-app_purchase"><a href="https://developer.apple.com/documentation/storekit/choosing_a_storekit_api_for_in-app_purchase">Choosing a StoreKit API for In-App Purchase</a></h4>
+<p>The StoreKit framework provides two APIs for implementing a store in your app and offering in-app purchases:</p>
+<ul>
+<li><a href="https://developer.apple.com/documentation/storekit/in-app_purchase">In-App Purchase</a>, a Swift-based API that provides Apple-signed transactions in JSON Web Signature (JWS) format, available starting in iOS 15, macOS 12, tvOS 15, and watchOS 8.</li>
+<li><a href="https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase">Original API for In-App Purchase</a>, an API that provides transaction information using App Store receipts, available starting in iOS 3, macOS 10.7, tvOS 9, and watchOS 6.2.</li>
+</ul>
+<p>Both APIs provide access to your data in the App Store, such as your configured in-app purchases and transaction information for your customers. They also provide the same user experience with the App Store for your customers. In-app purchases that users make using either API are fully available to both APIs.</p>
+<h4 id="beginrefundrequestinhttpsdeveloperapplecomdocumentationstorekittransaction3803220-beginrefundrequest"><a href="https://developer.apple.com/documentation/storekit/transaction/3803220-beginrefundrequest">beginRefundRequest(in:)</a></h4>
+<p>[Revealing that the Refund API doesn't let you programmatically issue a refund to your customers. It merely lets you show a sheet to customers, so they can request a refund from Apple. They hear back within 48 hrs. See @jakemor’s <a href="https://twitter.com/jakemor/status/1402047383882637314">tweet</a>]</p>
+<ul>
+<li>When you call this function, the system displays a refund sheet with the customer’s purchase details and list of reason codes for the customer to choose from.</li>
+<li>The App Store takes up to 48 hours to either approve or deny a refund.</li>
+</ul>
+<h3 id="sf-symbols---apple-developerhttpsdeveloperapplecomsf-symbols"><a href="https://developer.apple.com/sf-symbols/">SF Symbols - Apple Developer</a></h3>
+<ul>
+<li>[Notable features]
+<ul>
+<li>600+ new symbols</li>
+<li>Enhanced color customization
+<ul>
+<li>Hierarchical rendering adds depth and emphasis to symbols using a single tint color with multiple levels of opacity.</li>
+<li>Palette rendering allows symbols to be customized with multiple contrasting colors.</li>
+<li>And Multicolor rendering provides intrinsic color across hundreds of symbols.</li>
+</ul>
+</li>
+<li>Configure, preview, copy, paste
+<ul>
+<li>Symbols can be previewed using adaptive Apple platform colors and custom colors on Light and Dark backgrounds.</li>
+<li>symbols can now be copied as images with color annotations and pasted in design tools.</li>
+</ul>
+</li>
+<li>Improved support for custom symbols: Custom symbols can now be imported, organized, and annotated with layers to support Hierarchical, Palette, and Multicolor rendering.</li>
+</ul>
+</li>
+</ul>
+<p>See also:</p>
+<p><a href="https://sixcolors.com/post/2021/06/wwdc-2021-for-sf-symbols-cyan-is-the-new-teal/">WWDC 2021: For SF Symbols, Cyan is the new Teal – Six Colors</a></p>
+<h4 id="sf-symbols---sf-symbols---human-interface-guidelines---apple-developerhttpsdeveloperapplecomdesignhuman-interface-guidelinessf-symbolsoverview"><a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/">SF Symbols - SF Symbols - Human Interface Guidelines - Apple Developer</a></h4>
+<ul>
+<li>Colors</li>
+<li>SF Symbols 3 provides four rendering modes that enable multiple options when applying color to symbols.</li>
+<li>SF Symbols 3 organizes a symbol’s paths into distinct layers
+<ul>
+<li>e.g.: cloud.sun.rain.fill = cloud + sun &amp; rays + raindrop</li>
+<li>annotating: assign a specific color/level to each layer in a symbol</li>
+</ul>
+</li>
+<li>Rendering modes: monochrome, hierarchical (1 color with varying opacity), palette (2+ contrasting colors), and multicolor</li>
+<li>Weights and Scales: small, medium (the default), and large.</li>
+<li>Variants</li>
+<li>outline, fill, slash, and enclosed
+<ul>
+<li>variants for specific languages</li>
+</ul>
+</li>
+<li>Creating Custom Symbols</li>
+<li>export a symbol that’s similar to the design you want, then use a vector-editing tool like Sketch or Illustrator to modify it.</li>
+<li>When you export a 3.0 template to create a custom symbol, you can choose between <em>static</em> or <em>variable</em> (i.e., a master template) setups</li>
+<li>When rendering a symbol, the system <strong>adheres to the Z order of its layers</strong>, so paths in the top layer may occlude paths in the bottom layers where they overlap.</li>
+</ul>
+<h3 id="secure-login-with-icloud-keychain-verification-codes---wwdc-2021---videos---apple-developerhttpsdeveloperapplecomvideosplaywwdc202110105"><a href="https://developer.apple.com/videos/play/wwdc2021/10105/">Secure login with iCloud Keychain verification codes - WWDC 2021 - Videos - Apple Developer</a></h3>
+<ul>
+<li>New in iOS 15 and macOS Monterey, we've built time-based verification code generators into iCloud Keychain Password Manager</li>
+<li>the basics: looking up and copying codes to use on this device or another device
+<ul>
+<li>When you add a special link or a button to your TOTP setup pages, someone using iOS 15 or macOS Monterey will be able to set up a new verification code on the same device with just a couple taps</li>
+<li>verification codes are synced and securely backed up with iCloud Keychain.</li>
+</ul>
+</li>
+<li>iCloud Keychain uses <code>otpauth:</code> URLs to suggest an account to add the verification code to.
+<ul>
+<li>These URLs contain all of the information required to set up a code generator, including
+<ul>
+<li>the base32-encoded secret key,</li>
+<li>the number of digits in each code,</li>
+<li>the period of time that each code is valid for, and</li>
+<li>an issuer field that you should set to your domain name.</li>
+</ul>
+</li>
+<li>You can link directly to the iCloud Keychain Password Manager by prefixing the URL with &quot;apple-&quot;.</li>
+</ul>
+</li>
+<li>How to implement a link
+<ul>
+<li>On web pages: take this apple- otpauth: URL and put it in an anchor tag</li>
+<li>In apps: create a link by adding the &quot;link&quot; attribute to an NSAttributedString that you assign to a textView's attributedString property, or open the URL in response to a button tap</li>
+</ul>
+</li>
+<li>If Safari determines that the QR code contains an otpauth: URL, it will offer to set up the code generator in the context menu for the QR code image.
+<ul>
+<li>Annotate username, password, verification code fields with content types</li>
+</ul>
+</li>
+<li>A step beyond any of these is to get rid of passwords altogether.
+<ul>
+<li>The WebAuthentication standard, or &quot;WebAuthn,&quot; does exactly this by using public key cryptography</li>
+<li>iOS 15 and macOS Monterey contain a preview of this technology that offers a usable replacement for passwords.</li>
+</ul>
+</li>
+<li>verification codes delivered over SMS</li>
+</ul>
+<h3 id="meet-testflight-on-mac---wwdc-2021---videos---apple-developerhttpsdeveloperapplecomvideosplaywwdc202110170"><a href="https://developer.apple.com/videos/play/wwdc2021/10170/">Meet TestFlight on Mac - WWDC 2021 - Videos - Apple Developer</a></h3>
+<ul>
+<li>To make it easy to recognize it as a beta app, we show a yellow dot next to the app name in the Dock, in Launchpad, and as a Beta Application in Finder.</li>
+<li>Native Mac apps require a provisioning profile to be distributed with TestFlight on Mac.
+<ul>
+<li>You can create groups to manage testers and distribute each one, very similar to iOS or tvOS.</li>
+</ul>
+</li>
+<li>iOS apps on Apple Silicon Macs
+<ul>
+<li>For each tester group, you can control the TestFlight availability. When this is disabled, all iOS builds from that group will stop being available on Mac</li>
+</ul>
+</li>
+<li>You can now create multiple internal groups similar to external groups. You can also configure distribution of builds and collection of feedback per internal group.</li>
+<li>Xcode Cloud integrates with TestFlight and provides a seamless experience to automatically build, test, and distribute your apps.</li>
+</ul>
+<h3 id="build-mail-app-extensions---wwdc-2021---videos---apple-developerhttpsdeveloperapplecomvideosplaywwdc202110168"><a href="https://developer.apple.com/videos/play/wwdc2021/10168/">Build Mail app extensions - WWDC 2021 - Videos - Apple Developer</a></h3>
+<ul>
+<li>Like other app extensions, [Mail app exts.]
+<ul>
+<li>can be in any properly signed Mac app,</li>
+<li>can be bundled in your existing apps, and</li>
+<li>can also be distributed in the App Store</li>
+</ul>
+</li>
+<li>Plug-ins will stop functioning in a future macOS release.</li>
+<li>4 new ways you can extend Mail's user experience
+<ul>
+<li>Compose</li>
+<li>Action ext</li>
+<li>Content blocking</li>
+<li>Message security</li>
+</ul>
+</li>
+<li>Eg. Big Secrecy Extension
+<ul>
+<li>A button on toolbar</li>
+<li>an icon indicating that an extension performed an action on a message</li>
+</ul>
+</li>
+<li>Compose ext.
+<ul>
+<li>Capabilities
+<ul>
+<li>Annotate recipient email addresses</li>
+<li>Present view controller</li>
+<li>Set additional headers</li>
+<li>Validate message before sending</li>
+</ul>
+</li>
+<li>Steps to create
+<ul>
+<li>Select the new Mail Extension template</li>
+<li>Choose a type and capabilities</li>
+<li>In the Info.plist, specify an icon and a descriptive tooltip in the MEComposeSession dictionary.</li>
+</ul>
+</li>
+<li>How does the API works
+<ul>
+<li>Mail creates a unique MEComposeSession instance for every Mail compose window.</li>
+<li>It has a MEMessage property that exposes various details of the message being edited</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Action ext
+<ul>
+<li>Capabilities
+<ul>
+<li>modify read status and flags of incoming messages,</li>
+<li>move messages to system mailboxes such as Junk, Trash or Archive, or</li>
+<li>apply colors to messages</li>
+</ul>
+</li>
+<li>Mechanism
+<ul>
+<li>Mail calls your handler's decideAction for message for every new message that it downloads before it is even visible in the inbox.
+<ul>
+<li>But your decideAction for message method can return an invokeAgainWithBody decision, which will cause Mail to fetch the complete message body and headers before invoking your handler's decideAction for message method again.</li>
+</ul>
+</li>
+<li>You can provide a decision such as coloring the message based on the available headers (a subset of all).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Content blocker extension
+<ul>
+<li>hook into Mail's WebKit configuration for its message view to allow extensions to block loading content based on triggers in the message's HTML.</li>
+<li>The content rule lists are specified using the same syntax as Safari content blockers.
+<ul>
+<li>Provided to Mail by returning it in the contentRulesJSON method.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Message security extensions
+<ul>
+<li>Capabilities
+<ul>
+<li>encode and decode encrypted messages</li>
+<li>view certificates of signed messages</li>
+</ul>
+</li>
+<li>Encoding a message is broken down into two parts.
+<ul>
+<li>UI indications: lets the extension show if it has the ability to sign and encrypt the current message</li>
+<li>actually encrypt and sign the message as it is being sent</li>
+</ul>
+</li>
+<li>Mechanism
+<ul>
+<li>As a message is composed, Mail will send the message, including the sender and current list of recipients to the extension, which will .</li>
+<li>when the message is sent, Mail will take the RFC822 message data and pass it to the extension. The extension will sign and encrypt the message as needed, and return</li>
+<li>When a message is viewed
+<ul>
+<li>the signer certificate can be clicked next to the signer label to view the sender's certificate information.</li>
+<li>Mail allows extensions to provide its own view controller to render this certificate information</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="groupactivitieshttpsdeveloperapplecomdocumentationgroupactivities"><a href="https://developer.apple.com/documentation/GroupActivities">GroupActivities</a></h3>
+<ul>
+<li>Create app-specific activities your users can share and experience together.</li>
+<li>Implementation
+<ul>
+<li>This framework leverages the FaceTime infrastructure to synchronize your app’s activities and to invite other participants to join those activities.</li>
+<li>When your app’s UI contains shareable activities, adopt the GroupActivity protocol in the objects you use to represent those activities.</li>
+<li>When a group activity begins, use the GroupSession object to synchronize your app’s behavior with other participating devices.</li>
+</ul>
+</li>
+<li>end-to-end encryption on all session data
+<ul>
+<li>Apple doesn’t have the keys to decrypt this data.</li>
+<li>Occasionally, Apple may ask a small number of users to help troubleshoot issues</li>
+<li>which may incidentally result in Apple collecting some information related to content shared in your app.</li>
+</ul>
+</li>
+</ul>
+<h4 id="inviting-participants-to-share-an-activityhttpsdeveloperapplecomdocumentationgroupactivitiesinviting-participants-to-share-an-activity"><a href="https://developer.apple.com/documentation/groupactivities/inviting-participants-to-share-an-activity">Inviting Participants to Share an Activity</a></h4>
+<ul>
+<li>Separate activity types makes it easier to customize the experience for each activity.</li>
+<li>your app must have the com.apple.developer.group-session entitlement</li>
+<li>Activity instances provide descriptive information about a specific activity your app makes available to participants.
+<ul>
+<li>The activity instance might actually be an existing data type in your app.</li>
+<li>For example, an activity instance for a movie-watching app might contain
+<ul>
+<li>the name of the movie,</li>
+<li>a poster image, and</li>
+<li>app-specific information about how to play the movie.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="joining-and-managing-a-shared-activityhttpsdeveloperapplecomdocumentationgroupactivitiesjoining-your-app-to-a-shared-activity"><a href="https://developer.apple.com/documentation/groupactivities/joining-your-app-to-a-shared-activity">Joining and Managing a Shared Activity</a></h4>
+<ul>
+<li>When a participant accepts an invitation, the system:
+<ul>
+<li>Launches your app, as needed.</li>
+<li>Creates a GroupSession object for the selected activity.</li>
+<li>Delivers the session asynchronously to your app.</li>
+</ul>
+</li>
+<li>Perform any required validation of the activity and session before you present any UI for that activity.
+<ul>
+<li>If your app requires participants to pay for content, provide login credentials, download content, or perform other tasks, display UI for those tasks first.</li>
+</ul>
+</li>
+<li>A new GroupSession object doesn’t synchronize data with the group right away.
+<ul>
+<li>the object starts in the GroupSession.State.waiting state, and</li>
+<li>you must explicitly call its join() method to let the system know that your app is ready to begin the associated activity.</li>
+</ul>
+</li>
+</ul>
+<h4 id="meet-group-activities---wwdc-2021---videos---apple-developerhttpsdeveloperapplecomvideosplaywwdc202110183"><a href="https://developer.apple.com/videos/play/wwdc2021/10183/">Meet Group Activities - WWDC 2021 - Videos - Apple Developer</a></h4>
+<ul>
+<li>we built an entirely new playback-sync protocol with deep integration into the AVFoundation stack on the device.
+<ul>
+<li>That means someone hits play, and everyone in the group immediately starts playback at the same time.</li>
+</ul>
+</li>
+<li>Jump to a favorite scene and everyone else sees it too,
+<ul>
+<li>allowing people to experience moments together in perfect sync</li>
+</ul>
+</li>
+<li>The magic behind this playback synchronization means we won’t retransmit your media in any way.
+<ul>
+<li>Everyone will get your full-fidelity video because it’s playing right from your app and streaming from your servers as it always does.</li>
+</ul>
+</li>
+<li>With smart volume, when people speak up during playback, we’ll automatically duck the audio of the content and bring it back up when appropriate.</li>
+<li>works with Picture in Picture</li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>

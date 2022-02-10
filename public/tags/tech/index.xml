@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Neverland</title>
+    <link>http://example.org/tags/tech/</link>
+    <description>Recent content in tech on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>译文 | 推荐信：程序排错</title>
+      <link>http://example.org/2019/06/letter-of-recommendation-bug-fixes/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2019/06/letter-of-recommendation-bug-fixes/</guid>
+      <description>按：《推荐信》（Letter of Recommendations）是《纽约时报杂志》的固定专栏之一，每周选取一件事物或一项活动进行「推荐」，栏目副题是「颂扬被忽视或低估的物件和体验」（celebratio</description>
+    </item>
+    
+    <item>
+      <title>译文 | 对抗互联网的欧盟</title>
+      <link>http://example.org/2018/09/the-european-union-versus-the-internet/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2018/09/the-european-union-versus-the-internet/</guid>
+      <description>**译者按：**本文以欧洲近期备受关注和争议的「链接税」立法动态为切入点，分析了为何传统思维指导下的互联网规制措施往往是无效的，甚至适得其反。作者认为，严厉的规制措施会给互联网行业造成高额成本，只有大</description>
+    </item>
+    
+    <item>
+      <title>译文 | 会写代码的法官</title>
+      <link>http://example.org/2017/10/oracle-vs-google-judge-william-alsup-interview-waymo-uber/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/10/oracle-vs-google-judge-william-alsup-interview-waymo-uber/</guid>
+      <description>**按：**Waymo 和 Uber 的知识产权纠纷还在发酵，引发行业持续关注。但或许少有人知的是，审理该案的法官本人也是一位「技术宅」，写了几十年的程序，其对技术细节的熟悉程度甚至让很多科技公司的律师汗颜。在法</description>
+    </item>
+    
+    <item>
+      <title>译文 | 英航诉欧共体委员会判决书</title>
+      <link>http://example.org/2017/09/british-airline-v-european-commission/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/09/british-airline-v-european-commission/</guid>
+      <description>2 份文件中的第 1 份 英国航空公众有限公司诉欧洲共同体委员会1（案例 C–95/04） 欧洲共同体法院 欧洲共同体法院判决书 [2007] All ER (D) 272 (Mar)，（判决已被批准） **庭审日期：**2007 年 3 月 15 日 2007 年 3 月 15 日</description>
+    </item>
+    
+    <item>
+      <title>苹果式资本主义与谷歌式资本主义</title>
+      <link>http://example.org/2017/07/apple-google-capitalism/</link>
+      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/07/apple-google-capitalism/</guid>
+      <description>按：作为当今两大科技巨头，苹果和谷歌的差异是人们津津乐道的话题。不过，现有的比较多着眼于其产品、文化等外在特征；而本文中，哈佛大学商学院、法学院教授 Mihir A. Desai 另辟蹊径，从两家公司对待投资者的不同方式入手，</description>
+    </item>
+    
+    <item>
+      <title>译文 | 「想哭」（WANNACRY）的商业模式</title>
+      <link>http://example.org/2017/05/wannacry-about-business-models/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/05/wannacry-about-business-models/</guid>
+      <description>Translated from WannaCry About Business Models, by Ben Thompson, first published on Stratechery on May 15, 2017. **译者按：**WannaCry 病毒爆发后，舆论一方面惊叹其波及范围之广、危害之大，一方面也对谁来承担责任产生了分歧：责备微软修补不力者有之，慨叹用户惰于更新者有之，</description>
+    </item>
+    
+    <item>
+      <title>译文 | 透视科技界对永生的执念</title>
+      <link>http://example.org/2017/02/only-human/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2017/02/only-human/</guid>
+      <description>图：Harry Campbell **译者按：**健康与科技从未像今天这样紧密地结合在一起：从用编程思维研发的代餐，到指导生活饮食方式的 DNA 检测，再到保存人体的冷冻库——层出不穷的新概念、新产品令人眼花缭乱，其形式越发新</description>
+    </item>
+    
+    <item>
+      <title>译文 | 科技现状：2016 年末</title>
+      <link>http://example.org/2016/12/the-state-of-tech-at-the-end-of-2016/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2016/12/the-state-of-tech-at-the-end-of-2016/</guid>
+      <description>今年是我第三年写关于科技现状的文章了。2014 年，我描述了消费科技的三个历史纪元——个人电脑纪元、浏览器纪元和移动纪元，并描绘了第四个纪元的轮廓，我当时认为会是消息纪元；2015 年，我修改了对第四纪元</description>
+    </item>
+    
+    <item>
+      <title>译文 | 暴民是怎样毁掉互联网的</title>
+      <link>http://example.org/2016/08/how-trolls-are-ruining-the-internet/</link>
+      <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/2016/08/how-trolls-are-ruining-the-internet/</guid>
+      <description>**按：**本文是《时代》周刊 2016 年 8 月 29 日刊的封面文章，原文标题为《How Trolls Are Ruining the Internet》，深入描绘和分析了美国互联网上的网络暴力（trolling）行为。作者 Joel Stein 对愈发猖獗的网络暴力深感忧</description>
+    </item>
+    
+  </channel>
+</rss>

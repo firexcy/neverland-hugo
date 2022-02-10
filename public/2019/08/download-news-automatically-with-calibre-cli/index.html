@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>使用 Calibre 的命令行工具下载新闻 - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Calibre 具有完善的新闻下载功能，可以从各种媒体的网站抓取最新的文章并生成电子书文件。得益于开源社区的贡献，它还内置了针对一千多个不同网站编写的配置方案（称作 recipe），并且更新非常及时。 但是，Calib" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="使用 Calibre 的命令行工具下载新闻" />
+<meta property="og:description" content="Calibre 具有完善的新闻下载功能，可以从各种媒体的网站抓取最新的文章并生成电子书文件。得益于开源社区的贡献，它还内置了针对一千多个不同网站编写的配置方案（称作 recipe），并且更新非常及时。 但是，Calib" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2019/08/download-news-automatically-with-calibre-cli/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-08-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-17T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 Calibre 的命令行工具下载新闻"/>
+<meta name="twitter:description" content="Calibre 具有完善的新闻下载功能，可以从各种媒体的网站抓取最新的文章并生成电子书文件。得益于开源社区的贡献，它还内置了针对一千多个不同网站编写的配置方案（称作 recipe），并且更新非常及时。 但是，Calib"/>
+<script src="http://example.org/js/feather.min.js"></script>
+	
+	
+        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://example.org/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">使用 Calibre 的命令行工具下载新闻</h1>
+			<div class="meta">2019-08-17</div>
+		</div>
+		
+
+		<section class="body">
+			<p>Calibre 具有完善的<a href="https://manual.calibre-ebook.com/news.html">新闻下载功能</a>，可以从各种媒体的网站抓取最新的文章并生成电子书文件。得益于开源社区的贡献，它还内置了针对一千多个不同网站编写的<a href="https://github.com/kovidgoyal/calibre/tree/master/recipes">配置方案</a>（称作 recipe），并且更新非常及时。</p>
+<p>但是，Calibre 的图形界面非常简陋且经常卡顿，使用起来体验较差。如果要使用定时下载新闻的功能，还必须保证软件一直在后台运行。另外，如果想在 Linux 服务器上运行 Calibre，一般也没有图形界面可用。</p>
+<p><img src="https://cl.ly/89866a/calibre-fetch-news.png" alt="Calibre 一言难尽的图形界面"></p>
+<p>Calibre 一言难尽的图形界面</p>
+<p>因此，使用命令行来下载新闻是更快捷、通用、且适合自动化的做法。本文将介绍用 Calibre 的命令行工具下载新闻的一般方法，然后在此基础上说明如何配置自动运行，并将下载好的文件通过不同方式传输到其他设备上阅读。</p>
+<h3 id="基本用法">基本用法</h3>
+<p>Calibre 在命令行中的新闻下载功能是整合在其格式转换命令 <a href="https://manual.calibre-ebook.com/generated/en/ebook-convert.html"><code>ebook-convert</code></a> 中的。其基本用法是：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ebook-convert &#34;Title of news source.recipe&#34; outputfile.epub
+</code></pre></div><p>其中，第一个参数是 recipe 的名称。不过，Calibre 在文档中没有指出的是，在使用内置方案时，<code>Title of news source.recipe</code> 不是指内置方案的文件名，而是指新闻网站的全称，<code>.recipe</code> 不是扩展名，只是一个后缀。只有在找不到对应的内置方案时，Calibre 才认为该参数是自定义方案的绝对路径。</p>
+<p>要知道自己想阅读的网站有没有专用的内置方案，除了可以在 Calibre 的图形界面的新闻下载界面中查询，还可以使用 <code>ebook-convert --list-recipes</code> 命令。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ ebook-convert --list-recipes | grep &#39;New York Times&#39;
+	New York Times Book Review
+	New York Times Sports Beat
+	New York Times Technology Beat
+	The New York Times
+	The New York Times (Web)
+</code></pre></div><p>所以，如果要下载当天的《纽约时报》，完整的命令应该是</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ebook-convert &#34;The New York Times.recipe&#34; nytimes.epub
+</code></pre></div><p>下载所得的 EPUB 文件如下图所示，除个别特殊样式不能正常显示之外，整体效果比较令人满意。</p>
+<p><img src="https://cl.ly/8428e1/calibre-nyt.png" alt="用 Calibre 下载的报纸"></p>
+<p>用 Calibre 下载的报纸</p>
+<h3 id="定时下载报纸期刊">定时下载报纸期刊</h3>
+<p>对于更新时间固定的报纸或期刊，在每次出新时手动下载显然是没有必要的。另外，最好能够在所下载文件的名称中标明日期，以便区分。</p>
+<p>还是以下载每天的《纽约时报》为例。创建一个名为 <code>getnyt.sh</code> 的脚本文件（同时使用 <code>chmod +x</code> 为其增加运行权限），其内容为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#5e81ac;font-style:italic">#!/bin/bash
+</span><span style="color:#5e81ac;font-style:italic"></span>
+TODAY<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>date +%m%d<span style="color:#81a1c1;font-weight:bold">)</span>
+ebook-convert <span style="color:#a3be8c">&#34;The New York Times.recipe&#34;</span> nytimes-$TODAY.epub
+</code></pre></div><p>这里，<code>TODAY</code> 变量使用了 <code>date</code> 命令的自定义日期格式功能，为下载的文件标注了日期。其他更复杂的日期格式可以用 <code>man date</code> 查阅。</p>
+<p>下一个要解决的问题是如何让脚本定期运行。在 macOS 或 Linux 上，显而易见的答案是使用 <code>cron</code>。运行 <code>crontab -e</code> 打开 crontab 文件的编辑界面，在其中加入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">CRON_TZ=America/New_York
+30 0 * * * /root/getnyt.sh &gt;/dev/null 2&gt;&amp;1
+</code></pre></div><p>这里用到了 <code>CRON_TZ</code> 变量来指定时区。《纽约时报》的更新时间是美国东部时间每天凌晨，虽然可以手工换算成国内时区，但直接使用纽约时区可以避免考虑夏时制的问题。<code>30 0 * * *</code> 指全年每月、每周七天的 0:30 分。类似地，对于一般每周四中午更新周刊内容的《经济学人》，相应的 cron 日程应该是 <code>0 12 * * 4</code>。（更详细的 cron 日程写法可以使用<a href="https://crontab.guru">这个工具</a>阅读并测试。）</p>
+<p>最后，由于 Calibre 在下载新闻时会输出很多日志，这里用<code>&gt;/dev/null 2&gt;&amp;1</code> 让脚本静默运行。</p>
+<h3 id="将下载的期刊发送给其他设备">将下载的期刊发送给其他设备</h3>
+<p>当然，新闻下载成电子书格式以后，终归还是要搬运到其他设备里阅读的。具体做法因需求而异，包括：</p>
+<p>**直接连接到服务器下载：**如果你使用 iPad 等设备作为阅读器，那么可以直接使用 Documents 这类支持 SFTP 的文件管理工具登录服务器下载。</p>
+<p>**添加到 Calibre 资料库：**如果你习惯用 Calibre 来管理所有的电子书，并且就是在平时存放 Calibre 资料库的电脑上运行脚本，那么可以考虑将下载好的电子书直接添加到资料库。Calibre 在命令行下使用 <a href="https://manual.calibre-ebook.com/generated/en/calibredb.html"><code>calibredb</code></a> 工具来维护资料库，对应的完整命令形如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">calibredb add --with-library /path/to/library nytimes.epub
+</code></pre></div><p>你还可以进一步使用 Calibre 的<a href="https://manual.calibre-ebook.com/server.html">内容服务器</a>功能在其他设备上访问下载好的新闻。</p>
+<p>**存入网盘：**如果你是在远程服务器上运行 Calibre 下载新闻，那么更实际的方法或许是直接把下载好的电子书存进网盘。这可以通过 <a href="https://rclone.org/">rclone</a> 来实现。该工具支持包括 Dropbox、OneDrive 和 Google Drive 等各大主流在线存储服务，具体的<a href="https://rclone.org/overview/">配置方式</a>可以参考官方文档。以 OneDrive 为例，配置好以后，在上文脚本后加入一行</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">rclone copy nytimes.epub onedrive:/Documents/News; rm nytimes.epub
+</code></pre></div><p>即可将 Calibre 下载的期刊文件转移到网盘。</p>
+<p>如果想使用百度网盘，那么也可以配置 <a href="https://github.com/iikira/BaiduPCS-Go">BaiduPCS-Go</a>，然后使用 <code>BaiduPCS-Go upload</code> 命令来上传。</p>
+<p>**通过邮件发送：**最后，你也可以考虑将下载好的新闻通过邮件形式发送。这对于 Kindle 用户可能尤其实用，因为可以配合 Kindle 的文档服务功能实现新闻推送的效果。</p>
+<p>Calibre 内置了一个用于发送邮件的命令行工具 <code>calibre-smtp</code>。由于该命令涉及的参数太多，建议使用脚本和变量来控制。例如，下面片段的作用是以 Gmail 发送下载好的当日《纽约时报》（注意很多开启了两步验证的邮件服务需要<a href="https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor&amp;visit_id=637016307474904521-2410294637&amp;rd=1&amp;hl=zh-Hans">配置专用密码</a>）。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">TODAY=$(date +%m%d)
+DATELONG=$(date +%Y/%m/%d)
+SMTP=&#34;smtp.gmail.com&#34;
+PORT=&#34;587&#34;
+USER=&#34;username&#34;
+PASSWD=&#34;password&#34;
+FROM=&#34;from@gmail.com&#34;
+TO=&#34;to@kindle.com&#34;
+MSG=&#34;Please find attached today’s New York Times. Have a good day!&#34;
+
+calibre-smtp --attachment nytimes-$TODAY.epub --relay &#34;$SMTP&#34; --port &#34;$PORT&#34; --username &#34;$USER&#34; --password &#34;$PASSWD&#34; --encryption-method TLS --subject &#34;Today’s New York Times ($DATELONG)&#34; &#34;$FROM&#34; &#34;$TO&#34; &#34;$MSG&#34;
+</code></pre></div><h3 id="额外考虑calibre-的网络环境配置">额外考虑：Calibre 的网络环境配置</h3>
+<p>最后需要考虑的是，如果你的服务器本身访问新闻网站有困难，Calibre 也无法直接下载新闻。Calibre 遵从系统的代理设置，支持的代理类型为 HTTP 和 HTTPS，但不包括 Socks（但可以先通过 <a href="https://www.privoxy.org">Privoxy</a>、<a href="https://proxifier.com/">Proxifier</a> 这类工具转换）。对于 macOS，该设置位于「系统偏好设置」&gt;「网络」&gt;「高级」&gt;「代理」；对于 Windows 10，则位于「设置」&gt;「网络和 Internet」&gt;「代理」。Linux 系统或者使用脚本的场景，则需执行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">export https_proxy=https://username:password@servername; export http_proxy=http://username:password@servername
+</code></pre></div>
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/book">book</a></li>
+					
+					<li><a href="/tags/ereader">ereader</a></li>
+					
+					<li><a href="/tags/tutorial">tutorial</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>

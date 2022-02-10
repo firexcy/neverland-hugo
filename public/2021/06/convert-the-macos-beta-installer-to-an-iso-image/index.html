@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Convert the macOS Beta Installer to an ISO Image - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="As a cautious explorer, you may want to try out the newly released Developer Preview of macOS Monterey while keeping your production installation safe; it is a preferable choice to run the beta in a VM.
+However, since most hypervisors recognize only an ISO image, and not the “Install macOS Beta.app” bundle provided by Apple, as the installation source, it is necessary to convert the app bundle to a disk image.
+The process can be done within the following steps, which essentially (a) create an empty disk image, (b) prepare it as an installation media (as you’d do with a physical drive), and (c) convert it to the ISO format." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Convert the macOS Beta Installer to an ISO Image" />
+<meta property="og:description" content="As a cautious explorer, you may want to try out the newly released Developer Preview of macOS Monterey while keeping your production installation safe; it is a preferable choice to run the beta in a VM.
+However, since most hypervisors recognize only an ISO image, and not the “Install macOS Beta.app” bundle provided by Apple, as the installation source, it is necessary to convert the app bundle to a disk image.
+The process can be done within the following steps, which essentially (a) create an empty disk image, (b) prepare it as an installation media (as you’d do with a physical drive), and (c) convert it to the ISO format." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2021/06/convert-the-macos-beta-installer-to-an-iso-image/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-13T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Convert the macOS Beta Installer to an ISO Image"/>
+<meta name="twitter:description" content="As a cautious explorer, you may want to try out the newly released Developer Preview of macOS Monterey while keeping your production installation safe; it is a preferable choice to run the beta in a VM.
+However, since most hypervisors recognize only an ISO image, and not the “Install macOS Beta.app” bundle provided by Apple, as the installation source, it is necessary to convert the app bundle to a disk image.
+The process can be done within the following steps, which essentially (a) create an empty disk image, (b) prepare it as an installation media (as you’d do with a physical drive), and (c) convert it to the ISO format."/>
+<script src="http://example.org/js/feather.min.js"></script>
+	
+	
+        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://example.org/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Convert the macOS Beta Installer to an ISO Image</h1>
+			<div class="meta">2021-06-13</div>
+		</div>
+		
+
+		<section class="body">
+			<p>As a cautious explorer, you may want to try out the newly released Developer Preview of macOS Monterey while keeping your production installation safe; it is a preferable choice to run the beta in a VM.</p>
+<p>However, since most hypervisors recognize only an ISO image, and not the “Install macOS Beta.app” bundle provided by Apple, as the installation source, it is necessary to convert the app bundle to a disk image.</p>
+<p>The process can be done within the following steps, which essentially (a) create an empty disk image, (b) prepare it as an installation media (as you’d do with a physical drive), and (c) convert it to the ISO format.</p>
+<ol>
+<li>Create an empty DMG image:<br>
+<code>hdiutil create -o /tmp/macOS12 -size 12000m -volname macOS12 -layout SPUD -fs HFS+J</code></li>
+<li>Mount the DMG:<br>
+<code>hdiutil attach /tmp/macos12.dmg -noverify -mountpoint /Volumes/macos12</code></li>
+<li>Write to the DMG with <code>createinstallmedia</code><br>
+<code>sudo /Applications/Install\ macOS\ 12\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/macos12 --nointeraction</code></li>
+<li><strong>[Easy to forget but necessary for proceeding]</strong> Unmount the DMG:<br>
+<code>hdiutil detach /Volumes/macos12</code></li>
+<li>Convert DMG to CDR:<br>
+<code>hdiutil convert /tmp/macos12.dmg -format UDTO -o ~/Downloads/macos12.cdr</code></li>
+<li>Convert (essentially rename) CDR to ISO:<br>
+<code>mv ~/Downloads/macos12.cdr ~/Downloads/macos12.iso</code></li>
+</ol>
+<p>You may want to free disk space by removing the temporary disk image created during the creation process: <code>rm /tmp/macos12.dmg</code> or moving it to another location for archiving.</p>
+<p>References:</p>
+<p><a href="https://ss64.com/osx/hdiutil.html"><code>hdiutil(1)</code></a></p>
+<p>See also:</p>
+<ul>
+<li><a href="https://osxdaily.com/2020/07/20/how-convert-macos-installer-iso/">How to Convert a MacOS Installer to ISO</a></li>
+<li><a href="https://blog.eucse.com/how-to-run-macos-monterey-12-beta-in-vmware-fusion/">How to run macOS Monterey (12) Beta in VMware Fusion – EUCSE Blog</a></li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/macos">macos</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>

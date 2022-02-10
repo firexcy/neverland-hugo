@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>理解 Word 中的段落 - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="**利益相关：**这篇节选自给少数派一个订阅服务写的 Word 教程（准确地说是研究些我认为重要的问题；Word 可能是没法写真正意义上的教程的，因为微软自己已经放弃写帮助文档了）。总共计划写七篇，目前因为各种原" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="理解 Word 中的段落" />
+<meta property="og:description" content="**利益相关：**这篇节选自给少数派一个订阅服务写的 Word 教程（准确地说是研究些我认为重要的问题；Word 可能是没法写真正意义上的教程的，因为微软自己已经放弃写帮助文档了）。总共计划写七篇，目前因为各种原" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2021/06/word-tutorial-para/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-18T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="理解 Word 中的段落"/>
+<meta name="twitter:description" content="**利益相关：**这篇节选自给少数派一个订阅服务写的 Word 教程（准确地说是研究些我认为重要的问题；Word 可能是没法写真正意义上的教程的，因为微软自己已经放弃写帮助文档了）。总共计划写七篇，目前因为各种原"/>
+<script src="http://example.org/js/feather.min.js"></script>
+	
+	
+        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://example.org/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">理解 Word 中的段落</h1>
+			<div class="meta">2021-06-18</div>
+		</div>
+		
+
+		<section class="body">
+			<p>**利益相关：**这篇节选自给少数派一个<a href="https://sspai.com/series/183">订阅服务</a>写的 Word 教程（准确地说是研究些我认为重要的问题；Word 可能是没法写真正意义上的教程的，因为微软自己已经放弃写帮助文档了）。总共计划写七篇，目前因为各种原因还鸽子了两篇。虽然说利益相关，但其实也没有很相关，因为我忘记问能分多少钱了；主要是因为太讨厌这个软件了，不当付费内容写，迟早也会白写的。如果有对 Office 软件的需求，欢迎去理性消费。（至于替代品，坦率地说，如果偶尔用用，WPS 总体还行，iWorks 除了幻灯片都不行，LibreOffice……祝你度过愉快的一天。）</p>
+<hr>
+<h2 id="什么是段落">什么是段落</h2>
+<p>先来回答一道送分题：下面这张图里有几个段落？</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/mXupRAE2/a5616976-9478-4142-a95a-3e8411df44a2.png?source=viewer&amp;v=dbeea1e08fb5754c48038346e9f839fe" alt=""></p>
+<p>答案是有 7 个。</p>
+<p>如果你答错了这个数数问题，并不需要反思自己的小学语文和数学是不是体育老师教的。这主要是因为 Word 眼中的「段落」确实与日常用语中的含义完全不同。</p>
+<p>事实上，Word 对段落的理解非常机械——以段落标记结尾的一段连续文本就是段落。</p>
+<p>由于段落标记一般是通过回车键输入的，可以粗略认为<strong>按了几次回车，就会产生多少段落</strong>。再观察一下上图，可以看到 7 个段落标记（<code>‌↵</code>），因此段落数量就是 7 个。</p>
+<p>尽管从语义角度看，图中的标题、称呼、落款和段落间空行都算不上段落，但因为它们以段落标记结尾，Word 会将其一视同仁地当作段落。相反，「吟诗一首」后面虽然分了行，但可以发现结尾显示的是手动换行符 <code>‌↓</code>，说明是用 Shift + 回车输入的手动换行，没有产生段落标记，因此并没有产生一个新的段落。</p>
+<p>（<strong>注：</strong> 不同语言版本的 Word 显示的格式标记略有不同。在英文版 Word 下，段落标记显示为 <code>¶</code>、手动换行符显示为 <code>‌↵</code>，格式标记开关按钮的图标是一个段落标记；而在中文版 Word、或启用了「东亚语言支持」的英文版 Word 中，段落标记显示为 <code>‌↵</code>，手动换行符显示为 <code>‌↓</code>，格式标记开关按钮的图标的形状也变为一个制表符和一个换行符的组合。请根据自己使用的版本相应识别。）</p>
+<h2 id="段落的层次">段落的层次</h2>
+<p>用上面的例子作为本系列第一篇正式内容的开头，并不只是为了博读者一乐。如序言所介绍，段落是 Word 文档中最基础、最常见的元素；在使用 Word 的过程中，大多数操作也是在段落层级进行的。因此，准确认识段落是正确、高效设置格式的基础。</p>
+<p>在此基础上，我们再来近距离认识一下段落的内部层次。Word 文档中的段落由<strong>段落—文本范围—文本的三层结构</strong>组成，每一层结构负责的功能都各不相同，其中：</p>
+<ul>
+<li><strong>段落：</strong> 只记录与段落整体相关的格式。大致可分为两类，即<strong>段落的位置</strong>（如缩进、间距、段落内/段落间禁止分页等<a href="https://support.microsoft.com/zh-cn/office/%e5%b0%86%e6%96%87%e6%9c%ac%e6%94%be%e5%9c%a8%e4%b8%80%e8%b5%b7-af94e5b8-3a5a-4cb0-9c53-dea56b43d96d?ui=zh-CN&amp;rs=zh-CN&amp;ad=CN">分页控制选项</a>、制表符等）和<strong>段落的外观</strong>（如对齐方式、边框和底纹、样式、编号等）。</li>
+<li><strong>文本范围（run）：</strong> 是指段落内部具有共同属性的一段文本。这里的「共同属性」既可能是加粗、下划线、颜色、字体等格式属性，也可以是拼写检查、文本方向等设置属性。</li>
+<li><strong>文本：</strong> 只记录纯粹的文字内容，不包含任何格式。</li>
+</ul>
+<p>上面这堆定义或许有些抽象，但结合实际用例就不难理解。下图演示了一种最普通的操作：选中一段话中的关键词（如图中的「小明」），将文字加粗以示强调。从语文角度看，段落的内容并没有发生任何变化。但对于 Word 来说，这个加粗操作就将原本连续的文本范围一分为三：未加粗的「我是」，加粗的「小明」，和最后未加粗的句号。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/7KuP1L7L/ac259d14-bf61-44d5-a8af-2d476561aa71.png?source=viewer&amp;v=b29c2a1b7760347b38060a692e469783" alt=""></p>
+<p>然而，可能是出于降低上手门槛的考虑，Word 主界面上的大多格式选项都没有明确限制设置对象：即使选中的是段落，也可以设置字号、字体、颜色等文本范围层面的文字格式。这在大多数时候并没有什么问题，但在使用格式刷这类效果取决于所选对象的功能时，就会导致混淆。</p>
+<p>好在鉴别的方式也很简单，那就是回到定义——段落是以<strong>段落标记</strong>结尾的一段连续文本。事实上，段落标记起的不仅是分隔作用，而且还包含了段落的全部格式设置，Word 也是通过段落标记是否被选中判断操作的。</p>
+<p>以格式刷为例。这看起来是一个很简单实用的工具：先选中一段文字，点击格式刷按钮，再选中另一段文字——仿佛魔杖一挥，前一段文字的格式就被复制到了后一段文字上。打工人的贴心帮手，加班党的救命稻草。</p>
+<p>但实际上，由于前后两个选中过程都存在 3 种可能：选中的是段内文本（不包含段落标记）、选中的是段落（包含段落标记）和没有选中（直接点击），格式刷的真实面目实际上多达 9 种，如果在使用时不有意识地加以区分，很容易就变成烦恼的源泉：</p>
+<table>
+<thead>
+<tr>
+<th><strong>应用对象\选中对象</strong></th>
+<th><strong>选中段内文本</strong></th>
+<th><strong>选中段落</strong></th>
+<th><strong>直接点击格式刷</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>段内文本</strong></td>
+<td>所选文本的格式</td>
+<td>所选段落中文本的格式</td>
+<td>光标所在文本区域的格式</td>
+</tr>
+<tr>
+<td><strong>段落</strong></td>
+<td>所选文本的格式，应用到整段文本</td>
+<td>所选段落及其中文本的格式</td>
+<td>光标所在段落及所在文本区域的格式</td>
+</tr>
+<tr>
+<td><strong>直接点击目标文本</strong></td>
+<td>所选文本的格式，应用到点击的单词</td>
+<td>所选段落及其中文本的格式，应用到点击的段落和单词</td>
+<td>光标所在段落及所在文本区域的格式，应用到点击的段落和单词</td>
+</tr>
+</tbody>
+</table>
+<p>在下图的例子中，第一次操作选中的文本不包含段落标记，因此只有文字格式（加粗）被复制到了被点击的单词；第二次操作选中的文本包含段落标记，因此除了加粗格式外，段落格式（首行缩进）也被复制到了被点击的单词所在段落。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/6qu8eEk2/8873659e-34bc-4616-90a9-c65b2cf086ba.gif?v=41f9127bc3db72846633036f855fe927" alt=""></p>
+<p>类似地，在添加文本高亮时，如果为一段话设置高亮时选中了段落标记，段落开头的数字编号也会被高亮（因为编号属于段落层级的样式）；否则，只有段落内的文本会被高亮。</p>
+<p>不幸的是，Word 是默认不显示段落标记的，导致用户很难识别操作对象是段落还是段内文本；即使启用了段落标记，Word 也会在选中操作接近段末时，自作主张地将选区扩张到包含段落标记，进一步提高了误操作概率。因此，建议读者在排版阶段始终开启段落标记的显示；如果不需要选中段落标记，可以按 Shift + ←（左箭头）缩减选区范围。</p>
+<h2 id="段落格式的调试">段落格式的调试</h2>
+<p>在了解了段落的定义和层次的基础上，我们下面具体讨论一下段落层面几种最常用格式：缩进、行距和段落间距（见下图）。在开始之前，请首先确保<a href="https://support.microsoft.com/zh-cn/office/%e5%9c%a8-word-%e4%b8%ad%e4%bd%bf%e7%94%a8%e6%a0%87%e5%b0%ba-775014ca-7bb9-4b75-ba19-4478c4a836d1?ui=zh-CN&amp;rs=zh-CN&amp;ad=CN">启用了标尺</a>，它是调试段落格式的最好帮手。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/7KuP18gx/039bfa85-5b1f-4f4e-8c0f-5afe50e4fab0.png?source=viewer&amp;v=5d229a9a2e121f2e2e9060a8ab64d48c" alt=""></p>
+<p><strong>缩进：</strong> 缩进的本质是文本边缘偏离某个基准线的距离。Word 中的缩进有四种：左侧缩进、右侧缩进、首行缩进和悬挂缩进。其中，前两种缩进是绝对量，即段落左右边缘偏离页面左右边缘的距离。后两种缩进（特殊缩进）则是相对量，即段落首行相对于后续各行的偏移量。如果偏移量是正的，首行比后续行缩进更大，就是首行缩进；如果偏移量是负的，首行比后续行缩进更小，就成了悬挂缩进。</p>
+<p>缩进的单位有两种：其一是实际长度（英寸或厘米，取决于 Word 的单位设置）。Word 中的长度是以一个特殊的单位 <em>twip</em>（twentieths of a point，二十分之一磅）存储的；其中一<a href="https://zh.wikipedia.org/wiki/%E9%BB%9E_(%E5%8D%B0%E5%88%B7)">磅</a>（point，也常译为「点」）等于 1/72 英寸，故缩进最小可以精确到 1/1440 英寸或 1/567 厘米。其二是字符宽度。如果选择这个单位，Word 会根据当前的文字磅数换算出具体的距离，最小可以精确到字符宽度的 1/100。</p>
+<p>标尺上总共有 <strong>4 个</strong>可以拖动的滑块：</p>
+<ul>
+<li>左侧顶部的倒三角：控制段落首行的缩进量。</li>
+<li>左侧底部的三角：控制段落后续各行的缩进量。</li>
+<li>左侧底部的矩形：同时控制上述两个缩进，并维持两者之间的相对距离不变。</li>
+<li>右侧底部的三角：控制段落右侧缩进。</li>
+</ul>
+<p>不难看出，段落设置中的首行缩进和悬挂缩进，在标尺上是通过左侧两个三角的<strong>相对位置</strong>控制的：当倒三角与下方的正三角对齐时，不存在特殊缩进；如果将倒三角向右或向左拖拽偏离下方滑块，就分别创建了首行缩进和悬挂缩进。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/6qu8eE2q/49f3f748-6919-4ea8-bb34-3fe3d6f3df54.gif?v=96df2b875661a304c14aefbbe58ed64b" alt=""></p>
+<p>对于缩进的困惑常常发生在单行段落上：当段落只有一行时，其左侧缩进实际上是取决于首行缩进或悬挂缩进的，因此要特别注意调整的是哪一种缩进。</p>
+<p><strong>行距：</strong> 这是一个颇有些张冠李戴的选项。Word 中的行距（spacing）指的并不是真正的<a href="https://zh.wikipedia.org/wiki/%E8%A1%8C%E8%B7%9D">行距（leading）</a>，即行之间的空白，而实际上是「行高」（line height），即相邻两行文字的基线之间的距离；设置时要在头脑中先转这个弯。行距的选项有六种之多，但实际上可以根据单位不同分为两类：</p>
+<ul>
+<li><strong>单倍（single） / 1.5 倍 / 2 倍 / 多倍（multiple，译为「倍数」更准确）行距构成一组</strong>，其共同点是用单行行高的倍数作为单位。在 Word 内部，这个值最小可以精确到一行的 1/240。</li>
+<li><strong>最小值（at least） / 准确值（exact）则构成另一组</strong>，其共同点是用作为单位，分别指行高应至少达到/必须等于某个具体数值。如上所述，可以精确到 1 twip 即 1/1440 英寸。</li>
+</ul>
+<p><strong>段落间距：</strong> 尽管没有提供专门的选项，但段间距和行高一样，也支持以行（line）或磅（pt）为单位。此外，和网页类似，Word 中的段间距也遵循「间距折叠」（margin collapse）的原则，即当某一段的段后间距和下一段的段前间距同时存在时，只有较大的间距会生效。</p>
+<p>例如，在下面的例子中，尽管我们为第二个段落设置了 1 行的段前间距，但似乎并不起作用。这是因为前一段设置了更大的 2 行段后间距，覆盖了较小的设置。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/X6ueNbvJ/e001d1f6-08c9-466e-8319-22b94b71f4ba.gif?v=2ae6f65be55a410410ea9adc4064eac0" alt=""></p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/microsoft-office">microsoft-office</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>

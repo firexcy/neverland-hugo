@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>用自定义属性功能管理 Word 文档中的「待定内容」 - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="在使用 Word 制作合同等格式文本的过程中，经常会需要处理一些「待定内容」，例如签署方的全称、签署日期等。对此，常见的处理方法是用「[*]」、下划线等方式做标记，等确认后再填上。 这种方法是有很多缺陷的。如果待" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="用自定义属性功能管理 Word 文档中的「待定内容」" />
+<meta property="og:description" content="在使用 Word 制作合同等格式文本的过程中，经常会需要处理一些「待定内容」，例如签署方的全称、签署日期等。对此，常见的处理方法是用「[*]」、下划线等方式做标记，等确认后再填上。 这种方法是有很多缺陷的。如果待" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2021/01/manage-tbd-content-with-word-custom-properties/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-01-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-26T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="用自定义属性功能管理 Word 文档中的「待定内容」"/>
+<meta name="twitter:description" content="在使用 Word 制作合同等格式文本的过程中，经常会需要处理一些「待定内容」，例如签署方的全称、签署日期等。对此，常见的处理方法是用「[*]」、下划线等方式做标记，等确认后再填上。 这种方法是有很多缺陷的。如果待"/>
+<script src="http://example.org/js/feather.min.js"></script>
+	
+	
+        <link href="http://example.org/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.26991c73d5dc6450c05be7e3bbe198b5ab1fb074d4ef1efff2d4d70e860df091.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://example.org/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">用自定义属性功能管理 Word 文档中的「待定内容」</h1>
+			<div class="meta">2021-01-26</div>
+		</div>
+		
+
+		<section class="body">
+			<p>在使用 Word 制作合同等格式文本的过程中，经常会需要处理一些「待定内容」，例如签署方的全称、签署日期等。对此，常见的处理方法是用「[*]」、下划线等方式做标记，等确认后再填上。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/xQun4bOp/101cb06e-5678-4d8b-95c4-9ce5ef66ba0d.png?v=bb150dc257a28092160e2cde709d84a1" alt=""></p>
+<p>这种方法是有很多缺陷的。如果待定内容很多，逐个输入这些「标记」和事后查找替换都很麻烦，而且容易遗漏（更别提它们真的很丑）。有什么办法可以更方便地插入、管理和更新这些待定内容呢？换种问法，Word 文档中有没有什么合适的地方存放这些信息呢？</p>
+<p>Word 文档的<a href="https://support.microsoft.com/en-us/office/view-or-change-the-properties-for-an-office-file-21d604c2-481e-4379-8e54-1dd4622c6b75">「属性」</a>（properties）功能就是这样一个理想的容器。</p>
+<p>提到 Word 文档属性，我们一般会想到创建日期、修改日期这些文件系统属性，或者作者、标题这些文档标准属性。但实际上，**Word 也支持用户创建「自定义属性」，其名称和值都可以自由设定。**不仅如此，Word 还提供了专门的文档属性设置界面，相当于附赠了「待定信息管理器」的功能。</p>
+<p>进一步想到，域（Field）功能可以读取文档属性的值、插入到正文中，并且具有自动更新的特性；两者结合，就是我们需要的解决方案。</p>
+<p>假定我们正在起草一份协议，其中甲乙双方的名称和签署日期都是待定的，并且将在协议中反复出现。我们先尝试手动将这些信息添加为自定义属性，然后通过域插入到文档中。</p>
+<p>首先，单击「文件」&gt;「信息」&gt;「属性」&gt;「高级属性」（对于 Mac，单击「文件」&gt;「属性」），然后切换到「自定义」选项卡。</p>
+<p>然后，在「名称」框中，为自定义属性键入一个名称。例如，对于甲乙双方的名称，可以分别命名为「partyA」「partyB」等；对于签署日期，可以命名为「ExeDate」。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/nOulzoJZ/828ffe9d-f198-411e-a1c9-5ced8d1043fc.png?v=932787ec74b34b0b6e37ecc5f2b0bc37" alt=""></p>
+<p>接着，在「类型」列表中选择数据的类型，然后在「值」框中输入属性的值。例如，甲乙方的名称应该是文本，而签署日期应该选为日期。</p>
+<p>需要注意，日期类型的数据<strong>必须以系统当前区域设置对应的日期格式输入</strong>。对于简体中文系统，这个格式一般是 <code>yyyy-MM-dd</code>（形如 2021-01-10），而英文系统则一般是 <code>M/d/yyyy</code>（形如 1/10/2021）。如果你不能确定，可以到 Windows 系统的「设置」&gt;「时间和语言」&gt;「地区」下的「地区格式」，或 macOS 的「系统偏好设置」&gt;「语言和地区」中查看。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/rRukwGDx/0ef21ebb-1bee-4808-9083-aebd6e5c4bd5.png?v=f68037e6f68d043fc35ef426f1aaeae1" alt=""></p>
+<p>接下来，我们通过域将自定义属性插入到正文中。点击「插入」&gt;「域」，然后在弹出的对话框中选择 <code>DocProperty</code> 域，并在域代码输入框中通过 <code>DOCPROPERTY &quot;自定义属性名称&quot;</code> 的格式指定要插入到正文的属性。例如，如果要插入甲方的名称，对应的域代码应是 <code>DOCPROPERTY partyA</code>。</p>
+<p>点击确定，就可以看到相应的文本被插入到了正文中。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/jkuegLjO/b08ded19-c220-4316-b92e-c4f6edd4b568.png?v=dfa11c7e71166c95932ad15f2b8e4c81" alt=""></p>
+<p>对于日期类型的属性，我们还可以进一步指定其格式，只要在域代码的结尾追加 <code>\@ &lt;格式&gt;</code> 即可。</p>
+<p>例如，对于中文合同，我们希望插入形如「2021年1月10日」这样的日期：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ DOCPROPERTY ExeDate \@ &#34;yyyy年M月d日&#34; }
+</code></pre></div><p>而对于英文合同，我们希望得到的格式就是「January 10, 2021」：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ DOCPROPERTY ExeDate \@ &#34;MMMM d, yyyy&#34; }
+</code></pre></div><p>更多日期格式的表达方式可以参考 <a href="https://docs.microsoft.com/en-us/office/vba/api/access.format.propertydate.time">VBA 文档的说明</a>。</p>
+<p>如果日后需要修改这些待定内容，只要回到自定义属性对话框，更新相应的属性值，然后全选文档内容按 F9 键更新域，就可以看到所有用上述方法插入的信息都被统一更新了。此外，在 Word 的默认设置下，域也会在打印（包括打印为 PDF）时自动更新。</p>
+<p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/E0u92AoK/fd43a1cd-528e-4539-a2b3-087ec0859d9a.gif?v=1ca225663fe4f5cd168ca36118567ed5" alt=""></p>
+<p>当然，如果只是用上面的手动方法插入自定义属性和域代码，似乎并没有快捷到哪里去。但属性和域功能的优点就在于可以方便地<strong>通过 VBA 实现自动化</strong>。</p>
+<p>与本文相关的 VBA 接口有两个。首先是 <a href="https://docs.microsoft.com/en-us/office/vba/api/word.document.customdocumentproperties"><code>CustomDocumentProperties</code> 对象</a>，它的 <code>Add</code> 方法可以向文档追加自定义属性：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">.Add (Name, Type, Value)
+</code></pre></div><p>其中，<code>Name</code> 参数和 <code>Value</code> 参数分别为自定义属性的名称和值。<code>Type</code> 参数为自定义属性的类型（<a href="https://docs.microsoft.com/en-us/office/vba/api/office.msodocproperties"><code>MsoDocProperties</code></a>），与本文相关的主要为 <code>msoPropertyTypeString</code>（文本类型）和 <code>msoPropertyTypeDate</code>（日期类型）。例如，如果要追加一个名为 <code>partyA</code> 的文本自定义属性，则执行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ActiveDocument.CustomDocumentProperties.Add _ 
+    Name:=newPropName, _
+    Type:=msoPropertyTypeString, _
+    Value:=&#34;Acme Co.&#34;
+</code></pre></div><p>其次是与域相关的 <a href="https://docs.microsoft.com/en-us/office/vba/api/word.fields.add"><code>Fields</code> 对象</a>，它的 <code>Add</code> 方法可以在选定位置插入域代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">.Add (Range, Type, Text)
+</code></pre></div><p>其中，<code>Type</code> 参数用于指定域的类型（<a href="https://docs.microsoft.com/en-us/office/vba/api/Word.WdFieldType"><code>WdFieldType</code></a>），本文用到的 <code>DocProperty</code>域对应的类型是 <code>wdFieldDocProperty</code>。<code>Text</code> 参数用于附加设定，即域代码中域名称之后的部分，如本文用到的自定义属性名称和日期格式。因此，如果要在光标位置插入一个「ExeDate」自定义属性域，则应该运行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ActiveDocument.Fields.Add _
+    Range:=Selection.Range, _
+    Type:=wdFieldDocProperty, _
+    Text:=&#34;ExeDate&#34;
+</code></pre></div><p>我已经预先写好了一些本文操作相关的 VBA 函数供使用。在 Word 中按 Alt-F11 组合键（对于 Mac，按 Option-F11）打开 VBA 编辑器。在左侧边栏中双击 Normal &gt; Microsoft Word Objects &gt; ThisDocument，然后粘贴如下代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Sub newCustomProp()
+Dim newPropName As String
+Dim newPropVal As String
+newPropName = InputBox(&#34;New Property Name&#34;, &#34;New Property Name&#34;)
+newPropVal = InputBox(&#34;New Property Value&#34;, &#34;New Property Value&#34;, &#34;[*]&#34;)
+&#39; If same property already exists, delete and update it
+For Each Prop In ActiveDocument.CustomDocumentProperties
+    If Prop.Name = newPropName Then
+        Prop.Delete
+    End If
+Next Prop
+With ActiveDocument.CustomDocumentProperties
+    .Add Name:=newPropName, _
+        LinkToContent:=False, _
+        Type:=msoPropertyTypeString, _
+        Value:=newPropVal
+End With
+End Sub
+
+Sub insCustomProp()
+Dim propName As String
+Dim propNameDoesExist As Boolean
+propName = InputBox(&#34;Insert Custom Property&#34;, &#34;Property Name&#34;)
+propNameDoesExist = False
+For Each Prop In ActiveDocument.CustomDocumentProperties
+    If Prop.Name = propName Then
+        propNameDoesExist = True
+    End If
+Next Prop
+&#39; Complain if no such property exists
+If propNameDoesExist = False Then
+    MsgBox (&#34;Property Not Found.&#34;)
+    Else
+    ActiveDocument.Fields.Add Range:=Selection.Range, Type:=wdFieldDocProperty, Text:=propName
+End If
+End Sub
+
+Sub setAgtExeDate()
+Dim newExeDate As Date
+&#39; Get user-input execution date, default to today
+newExeDate = InputBox(&#34;Execution Date&#34;, &#34;Set execution date to: &#34;, Date)
+&#39; Delete old ExeDate
+For Each Prop In ActiveDocument.CustomDocumentProperties
+    If Prop.Name = &#34;ExeDate&#34; Then
+        Prop.Delete
+    End If
+Next Prop
+With ActiveDocument.CustomDocumentProperties
+    .Add Name:=&#34;ExeDate&#34;, _
+        LinkToContent:=False, _
+        Type:=msoPropertyTypeDate, _
+        Value:=newExeDate
+End With
+End Sub
+
+Sub insAgtExeDateFmtC()
+Dim dateFmtC As String
+&#39; Use ChrW() to insert CJK chars properly
+dateFmtC = &#34;yyyy&#34; &amp; ChrW(&amp;H5E74) &amp; &#34;M&#34; &amp; ChrW(&amp;H6708) &amp; &#34;d&#34; &amp; ChrW(&amp;H65E5)
+ActiveDocument.Fields.Add Range:=Selection.Range, _
+ Type:=wdFieldDocProperty, Text:=&#34;ExeDate \@ &#34; &amp; &#34;&#34;&#34;&#34; &amp; dateFmtC &amp; &#34;&#34;&#34;&#34;
+End Sub
+
+Sub insAgtExeDateFmtE()
+Dim dateFmtE As String
+dateFmtE = &#34;MMMM d, yyyy&#34;
+ActiveDocument.Fields.Add Range:=Selection.Range, _
+ Type:=wdFieldDocProperty, Text:=&#34;ExeDate \@ &#34; &amp; &#34;&#34;&#34;&#34; &amp; dateFmtE &amp; &#34;&#34;&#34;&#34;
+End Sub
+</code></pre></div><p>上述代码中，前两个函数分别用来创建/更新和插入自定义属性：</p>
+<ul>
+<li><code>newCustomProp</code>：创建一个新的文本型自定义属性，依次提示输入属性名称和值（默认为「[*]」，如果该属性已存在，则更新为新输入的值</li>
+<li><code>insCustomProp</code>：插入指定名称的自定义属性到正文</li>
+</ul>
+<p>我日常工作中要处理签署日的情况尤其多，所以专门写了几个处理签署日的函数：</p>
+<ul>
+<li><code>setAgtExeDate</code>：创建一个名为「ExeDate」的自定义函数用于存放签署日（默认为今天），如果「ExeDate」已存在，则更新为新输入的值</li>
+<li><code>insAgtExeDateFmtC</code>（<code>insAgtExeDateFmtE</code>）：插入「ExeDate」属性中存储的签署日到正文，并修改为中文（英文）的常见日期格式</li>
+</ul>
+<p>此后，点击「视图」&gt;「宏」&gt;「查看宏」（对于 Mac，「工具」&gt;「宏」&gt;「宏…」），在弹出的对话框中双击相应函数名，就可以快速运行相关功能。对于 Windows 版的 Word，还可以进入「文件」&gt;「选项」&gt;「自定义功能区」，将上述函数创建为工具栏中的按钮。</p>
+<p>Mac 版 Word 没有这种功能，但可以通过 KeyboardMaestro、Alfred 等工具实现类似效果，只要将如下格式的 Apple Script 创建为 Marco/Workflow 并分配快捷键即可：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tell application &#34;Microsoft Word&#34;
+    activate
+    run VB macro macro name &#34;&lt;宏名称&gt;&#34;
+end tell
+</code></pre></div>
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/microsoft-office">microsoft-office</a></li>
+					
+					<li><a href="/tags/tutorial">tutorial</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>
