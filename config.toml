@@ -1,4 +1,4 @@
-baseURL = 'http://typo.cyhsu.xyz/'
+baseURL = 'https://type.cyhsu.xyz/'
 copyright = "© Platy Hsu"
 defaultContentLanguage = 'zh-cn'
 enableInlineShortcodes = true
