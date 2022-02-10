@@ -5,7 +5,6 @@ enableInlineShortcodes = true
 hasCJKLanguage = true
 languageCode = 'zh-cn'
 paginate = 5
-publishDir = 'docs'
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsstyle = "nord"
