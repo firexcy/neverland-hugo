@@ -1,0 +1,55 @@
+baseURL = 'http://example.org/'
+copyright = "© Platy Hsu"
+defaultContentLanguage = 'zh-cn'
+enableInlineShortcodes = true
+hasCJKLanguage = true
+languageCode = 'zh-cn'
+paginate = 5
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsstyle = "nord"
+rssLimit = 20
+summaryLength = 100
+theme = 'nordic'
+title = 'Neverland'
+
+[params]
+Toc = true
+centerTheme = true
+showLastUpdated = true
+themeColor = 'blue'
+toggle = true
+updatedDatePrefix = "Updated"
+[[params.social]]
+icon = "twitter"
+name = "Twitter"
+url = "https://twitter.com/platyhsu"
+
+[permalinks]
+pages = '/:filename/'
+posts = '/:year/:month/:filename/'
+
+[menu]
+
+[[menu.main]]
+name = "colophon"
+url = "/colophon/"
+weight = 1
+
+[[menu.main]]
+name = "archive"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+name = "topics"
+url = "/topics/"
+weight = 3
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+typographer = false
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="http://example.org/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>译文 | 推荐信：程序排错</title>
+</head>
+<body><header id="banner">
+    <h2><a href="http://example.org/">Neverland</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>译文 | 推荐信：程序排错</h1>
+        <div>
+                <time>Jun 14, 2019</time>
+            </div>
+    </header><p><strong>按：</strong><a href="https://www.nytimes.com/column/letter-of-recommendation">《推荐信》</a>（Letter of Recommendations）是《纽约时报杂志》的固定专栏之一，每周选取一件事物或一项活动进行「推荐」，栏目副题是「颂扬被忽视或低估的物件和体验」（celebrations of objects and experiences that have been overlooked or underappreciated）。除了本周的「程序排错」，近期获得推荐的对象还包括<a href="https://www.nytimes.com/2019/06/04/magazine/letter-of-recommendation-washing-dishes.html">「洗碗」</a><a href="https://www.nytimes.com/2019/05/09/magazine/letter-of-recommendation-superstitions.html">「迷信」</a><a href="https://www.nytimes.com/2019/04/23/magazine/letter-of-recommendation-eavesdropping.html">「偷听」</a><a href="https://www.nytimes.com/2019/04/30/magazine/jury-duty-recommendation.html">「陪审」</a><a href="https://www.nytimes.com/2019/04/16/magazine/letter-of-recommendation-digging-a-trench.html">「开渠」</a>等。</p>
+<hr>
+<p>我在软件行业工作，这意味着我活在一个<a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">由计算机代码统治</a>的世界里。这些代码很多是私有、保密的。你看得到它的运行成果，却看不到它的运作方式，除非你在开发这个软件的公司上班。</p>
+<p>然而，有些代码的工作方式是看得见的。如今世上很多东西的运行依赖于<a href="https://opensource.com/resources/what-open-source">「开源」代码</a>，开源的意思是根据代码许可条款，它是免费且可以重复使用的。Firefox 浏览器，以及 Chrome 和 Safari 浏览器的主要组件都是开源的；一些操作系统整个都是开源的，macOS 的核心部件亦然；还有服务器软件，它们支撑着我们的数字云端，为手机提供数据，将我们包裹在或好或糟的环境中——这些软件<a href="https://www.cncf.io/">大多数</a>也是开源的。如果你是在网上读这篇文章，那你几乎肯定就正在使用开源代码。</p>
+<p>开源殿堂的大门永远都是敞开的。你可以通过 GitHub 这类网站（建立在称为 Git 的版本控制软件基础上；Git 是由 Linus Torvalds 创作的，他同时也是 Linux 系统的创始者）走进这扇门。GitHub 提供着数量过亿的各种代码仓库。GitHub 的所有者是微软，这本身又是一个沧海桑田的印记：微软曾经还在公司备忘录里写过如何摧毁自由软件。</p>
+<p>在 2019 年，你可以追踪到任何人对代码库所做的每一次改动，无论他们是在改一个错字还是改动 5000 个文件。你可以看到是谁做了改动，可以读到对这次改动的描述。如果什么功能突然失灵了，你可以回溯到一个早先的版本，然后找出原因。</p>
+<p>21 世纪的秘史写在代码的「提交」（commit）记录里——「提交」是程序员对错误修复和功能更新等改动的称呼。我喜欢像读报纸一样去读提交记录，特别是那些我自己用的软件。我这么做，部分原因是想知道今天能实现什么昨天还不能的事情。细节能积少成多；或许是多了一种用方向键操作的方式，能让我每天省下几分钟时间，或许是多了一项搜索功能，让我能更好地整理邮件。</p>
+<p>在每一次提交中，你都能看到代码怎样成长、变动、响应世界的变化：「使图片缩放功能不依赖于 eww 中的 ImageMagick 支持」（ Emacs 文本编辑器）。「禁用十六进制输入框中的自动填充/自动补全/拼写检查」（一个名为 Make8BitArt.com、运行在浏览器中的像素编辑器）。「修正了按下 Alt + 其他按键时响铃的问题（#1006）」（微软的命令行终端应用）。</p>
+<p>我并不期待一个编程外行能理解上面这些话，但你能凭直觉理解发生了什么变化：我们不再需要用 ImageMagick 来缩放图片了；对十六进制数值进行拼写检查是件坏事，因为十六进制是用来指定颜色的；按下 Alt 键的时候响铃提示会变得很诡异；等等。</p>
+<p>但阅读排错记录还有些更重大、更令人愉悦的意义。</p>
+<p>我用的文本编辑器 Emacs 是一个可以上溯到四十多年前的<a href="https://www.gnu.org/software/emacs/">自由软件项目</a>；它的代码库创建于八十年代，写这篇文章时，它距今已有 136,586 次提交记录。超过 600 位贡献者参与过工作。这些数字让我感到神奇：一套可以编辑各类文件的巨大、复杂的系统就这样从无到有，随着接近 14 万次有记录的人类活动，发展到如今的规模。这个工程有指挥、却没有主人，顺着人们所选择的路径发展。它是代码版的忒修斯之船。我日常使用 Emacs 大概已经二十多年了，它也改变着我。它会比我更长寿。</p>
+<p>开源软件是一项运动，但即使有志慈善的人都可能管它叫一种极端的抱团。戏剧色彩是少不了的。人们在提交记录中争斗，小到争论一个分号，大到争论行为守则。但争到最后，软件只分能用和不能用。有些东西，比如政治、个人健康、职业，或者整个人生，都无法让我们阐述出一条不掺杂质的发展轨迹。但软件就可以，而且<strong>正是</strong>这么被阐述的。观察代码的变动和改进是件乐事，而观察大公司、受雇和自发的程序员学会携手修改和改进代码，同样令人着迷（国防部也深入参与了开源项目）。读着代码的修改记录，我在心里想的是：<strong>人类是办得成事的。</strong></p>
+<p>立场使然，技术主义者往往建议我们将一切都变得像 Git 一样［有迹可循］：国会立法、新闻报道，等等。有时候，我也希望「真」新闻能像 GitHub 一样运作。但这怎么实现得了呢？美国文化没有一个集中的代码仓库，也没有一份源代码。大多数人都不会在生活中感念，「如果人生如软件该多好。」如果你热爱科技，这是你要努力学会的一课。</p>
+<p>我喜欢研究事物是如何被创造的。这也是软件教会我的重要一课：开源代码和版本控制让人的活动记录成为了软件最重要的文档。我们往往被教导「眼不见为净」。如果说的是立法、电视剧、炸鸡、并购，那确实不要刨根问底为好。但对软件不能这么说，因为软件是永无终点的。观察软件的提交记录，你就能看到它的故事被充实起来。或者，你就能自己构想出它的故事。</p>
+<hr>
+<p>**关于作者：**Paul Ford 是数字产品开发公司 Postlight 的创始人之一、首席执行官，公司总部位于纽约。他也是科技散文作者。</p>
+<p>本文<a href="https://www.nytimes.com/2019/06/11/magazine/letter-of-recommendation-bug-fixes-git.html">原文</a>发表在 2019 年 6 月 16 日的《纽约时报》周日版杂志上，标题为《程序排错》（Bug Fixes）。</p>
+</article>
+
+        </main><footer id="footer">
+    
+</footer>
+</body>
+</html>

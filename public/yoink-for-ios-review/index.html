@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="http://example.org/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>Yoink for iOS 评测</title>
+</head>
+<body><header id="banner">
+    <h2><a href="http://example.org/">Neverland</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Yoink for iOS 评测</h1>
+        <div>
+                <time>Oct 16, 2017</time>
+            </div>
+    </header><p><strong>Yoink</strong> 是上世纪随着《辛普森一家》（<em>The Simpsons</em>）动画的热播而进入英语词汇的<a href="http://www.urbandictionary.com/define.php?term=Yoink">拟声词</a>。每当片中人物从别人那里一把抓来什么东西时，总是会喊一声<a href="https://www.youtube.com/watch?v=CJh1hmmLLzw">「Yoink!」</a>宣告得手。</p>
+<p>iOS 11 中，随着 Drag and Drop（拖放）功能的加入，用户也终于可以随意地从各个 app 中「抓」走自己想要的内容，包括文字、图片、链接、文档等等。随之而来的问题是：**抓来的东西该往哪放？**实际操作中，我们往往并不能当即确定拖拽操作的目的地，或者想用来接收的 app 尚未打开，不方便一步拖动到位。一种解决思路是，给拖拽项目找一个临时的「停放地」，允许我们先把精力集中在收集上，事后再决定去向问题。</p>
+<p>这正是 <a href="https://eternalstorms.at/yoink/ios/">Yoink</a> 要解决的需求。</p>
+<p>在英文 app 圈中，Yoink 这类工具往往被统称为「shelf」（架子）类 app。顾名思义，它们的作用就是充当一个临时的「置物架」，临时存放我们想要收集却又未确定归属的内容。显然，它们的功能也就是围绕着项目从拖进到拖出的流程开发的。</p>
+<p>Yoink 也不例外。如下图所示，其交互和功能可划分为<strong>输入—管理—输出</strong>三个前后相连的部分。下面，我们也按照这样的顺序介绍 Yoink 的使用。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16cea5f342.png" alt="Yoink 的功能和交互"></p>
+<h2 id="输入">输入</h2>
+<p>将外部数据导入 Yoink 有三种方法：拖拽、<strong>导入</strong>按钮和分享菜单。</p>
+<p>拖拽导入是最主要、最简单的应用场景，无须过多描述。拖入过程中支持排序，你可以将项目插入到 Yoink 列表中任意位置。一个独特的细节是，如果你同时拖入了一个以上的项目，Yoink 会将其自动归组为一个「堆栈」（stack，下文详述），便于维持列表的清爽紧凑。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16d32eb918.png" alt="将多个项目拖入 Yoink"></p>
+<p>除了拖拽导入之外，你还可以点击 Yoink 左上角的加号按钮，以从剪贴板、相册或文件 app 导入项目；或者在系统任意位置通过分享菜单将内容传输到 Yoink 中。</p>
+<h2 id="管理">管理</h2>
+<p>Yoink 的主界面很简洁，以列表形式显示了各项目的预览及其标题（支持重命名）。点击列表中的项目，即可打开预览界面。值得一提的是，根据 iOS 11 的拖拽机制，同一个项目内部可能包含不同类型的子项目。例如，从 Safari 中拖出的网页文本就同时包含了带格式的富文本（RTFD）和不带格式的纯文本两个项目。在点击此类项目时，Yoink 会要求选择预览其中的哪种格式。另外，Yoink 在一些细节上也做的比较用心，例如对于 App Store 链接，点击后会直接在当前界面弹出 app 详情，而不是跳转到 App Store 应用中；地图项目的预览可以切换普通和卫星视图等。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16d6c38df9.png" alt="Yoink 界面纵览"></p>
+<p>前面提到，将多个文件同时拖入 Yoink 时，Yoink 会将其自动组成一个「堆栈」（stack），实际上就相当于一个文件夹。点击堆栈，即可看到其中包含的项目。如果想事后创建堆栈，点击 <strong>Edit</strong>，选中想要组合的项目，然后点击左下角的堆栈按钮即可。如果要分开堆栈，同样点击 <strong>Edit</strong>，然后点击堆栈左上角出现的黄色按钮。</p>
+<p>当列表中积累了过多的项目时，可以通过 Yoink 的过滤器快速找出需要的内容。点击界面底部的 <strong>Show All</strong> 字样，弹出过滤选项，你可以从中选择只显示今天添加的内容（Show Today&rsquo;s）、只显示堆栈（Show Stacks）或只显示特定类型的项目（Show Text、Show URL）等。</p>
+<p>对于不再需要的项目，可以点击 <strong>Edit</strong> 后选中，然后点击右下角的垃圾桶按钮将其删除。在 iPad 上，还可以直接将项目拖动到垃圾桶图标上达到删除的目的。不用担心误删——点击垃圾桶按钮 &gt; <strong>Show Deleted Items</strong>，即可看到并恢复近期（默认为一周内）删除的项目。</p>
+<p>最后介绍一下 Yoink 的偏好设置，其位置比较隐蔽，需要打开 iOS 的设置 app，向下滚动找到 Yoink 一项并点击进入（也可以点击 app 标题栏中的「Yoink」字样，然后点击 <strong>Open Yoink&rsquo;s Settings</strong>）。从中可以设定(a)拖入多个项目时是否自动组成堆栈、(b)是否为网址和地理位置显示预览，和(c)自动清空回收站的时间。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16e02bd165.png" alt="Yoink 偏好设置"></p>
+<h2 id="输出">输出</h2>
+<p>Yoink 导出项目的方式和导入基本是一一对应的，也包括拖拽、剪贴板、分享菜单等途径。项目可以单独拖拽，也可以在开始拖拽后点击其他项目，从而结组一并拖拽。点击界面右上角的 <strong>Edit</strong> 按钮，并选中需要导出的项目（支持多选），然后点击左上角的分享按钮，即可将所选项目复制或分享到其他 app。</p>
+<p>值得一提的细节是，Yoink 界面左下角有一个锁型按钮，点击可在锁定/解锁状态间切换，其作用在于：<strong>解锁状态下，从 Yoink 中拖出的项目会被自动删除。<strong>这个功能乍看起来有些莫名其妙，但如果你用过 Mac 上的 shelf 类应用（如 Yoink 的 Mac 版、Dropzone 等），就会知道它们并不会将拖入的文件真正复制一份，而只是为其创建了一个「快捷方式」。相比之下，iOS 上此类 app 的实现方式都是复制并存储文件，其实已经偏离了 shelf 工具的本意，只是 iOS 沙盒机制限制下的妥协选择。换句话说，通过将拖出的文件自动删除，Yoink 的解锁模式实际上用一种近似 hack 的方法</strong>模拟了 Mac 版的行为</strong>。</p>
+<p>前面曾提到，一个拖拽项目内部可能包含不同类型的子项目，那么是否可以只导出其中的某一个子项目呢？还是以从 Safari 中获取的网页文本为例，能否只拖出其包含的纯文本？答案是肯定的。在 Yoink 中，用<strong>双指点击</strong>一个包含多种数据类型的项目，即可在弹出的菜单中看到各个子项目，且均支持单独拖拽。</p>
+<p>除了上述导出方式之外，Yoink 还支持 iOS 的第三方键盘扩展。开启后，在文本输入时切换到 Yoink 键盘，即可从中直接拖出项目（iPhone 不支持跨 app 拖拽，故操作方法改为点击项目复制到剪贴板）。不过，在 iPad 上，这一功能的演示性质大于实用价值——其使用场景局限在文本框中，效率并未比从 Slide Over 中唤出 Yoink 的浮动窗口高出多少；而多一个第三方键盘给输入法切换造成的不便却是十分明显的。因此，该键盘扩展只在 iPhone 上具有一定使用价值。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16e07e3f92.png" alt="Yoink 键盘扩展"></p>
+<p>最后，Yoink 同样支持 Spotlight 搜索，而且在 iPad 上，搜索结果同样可以直接从 Spotlight 拖出。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16e447ce28.png" alt="用 Spotlight 搜索 Yoink 中的项目"></p>
+<h2 id="总结">总结</h2>
+<p>近年来，iOS 每年的大版本升级都会开放一些以往没有的新接口，如 iOS 8 的第三方键盘、iOS 9 的分屏多任务、iOS 10 的 CarPlay 等。自然地，每次的开放都会引发第三方开发者的积极尝试，使得大量旨在充分利用系统新功能的 app 涌现出来。</p>
+<p>Yoink 的问世正是借了 iOS 11 中 Drag and Drop 的东风。加上其 <a href="https://eternalstorms.at/yoink/mac/Yoink_for_Mac_-_Simplify_and_Improve_Drag_and_Drop_on_your_Mac/Yoink_for_Mac_-_Simplify_drag_and_drop_on_your_Mac.html">Mac 版</a>已开发多年，在圈内早有名气，从夏天宣布开发计划起，Yoink 就一直保持着较高的曝光度，并引得 MacStories 等站点为其背书。然而在上架前夕，Yoink 却莫名被苹果<a href="https://twitter.com/YoinkApp/status/910765771109879808">拒绝通过审核</a>，导致错过先前宣布的上架时间，反倒进一步吊起了用户的胃口和关注。</p>
+<p>从最终成品看，Yoink 基本没有辜负其 Mac 版的名声和用户的期待。与抢先上架的同类 app 相比，Yoink 的界面和交互设计是具有明显优势的，能明显感受出这是出自一个有开发经验的团队之手。一些不易发现、但一经使用便形成依赖的特色功能，如解锁、堆栈等，也让人感到充分的诚意。另外，Yoink 的开发者耕耘 Mac 平台多年，更新一直较为稳定，因此购买 Yoink for iOS 可谓「放心之选」，基本不用担心其变成不少小众开发者那些「捞一笔就跑」的玩票之作。</p>
+<p>当然，名声越大，期望越高。可能正是因为 Yoink 事前的风头太大，我在试用时也常常发现和期待不符之处。首先，Yoink 虽然支持 iPhone，但在 iOS 的限制和开发者的忽视下，其实际表现只能用「后妈养的孩子」来形容，实用价值很小。另外，作为一个跨平台的 app，Yoink 完全不支持同步，也是一项出乎意料的缺失。好在，经过不少用户的呼吁，开发者已经表示将在后续版本中通过 CloudKit 加入同步功能。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16eb9d0442.jpg" alt="开发者宣布将加入同步功能"></p>
+<p>更大的问题在于，**谁会是 Yoink 的目标用户？**对于入门用户而言，他们很可能根本不知道拖拽功能的存在，更遑论寻找一个专用的 app 来管理拖拽内容。而对于高级用户而言，Yoink 能提供的又显得较少——大多数功能其实只要在文件 app 中建立一个存放临时数据的文件夹就可替代。而与多采用免费 + 内购的竞品相比，前置收费的 Yoink 也无绝对优势。例如，<a href="https://itunes.apple.com/us/app/workshelf/id1246964517?mt=8">Workshelf</a> 提供了极为强大的查看功能，可以分析拖拽项目中的每一个数据类型；<a href="https://itunes.apple.com/us/app/gladys/id1257526927?l=en&amp;mt=8">Gladys</a> 则提供了对 Documents Provider 的支持，其暂存的项目可以直接在文件 app 中看到。</p>
+<p><img src="https://ooo.0o0.ooo/2017/10/14/59e16f58ccc87.png" alt="在某些方面更有优势的竞品"></p>
+<p>总之，作为一个 iOS 新功能催生的 app，Yoink 较好地满足了自己所宣称的需求——为拖拽提供一个便捷的中转站。但这个「需求」在多大程度上具有普适性，则需要时间来检验。从理性角度看，不妨在购买之前，先试一试几个同类的免费 app，判断自己是否真的需要这样一个「置物架」，再做决定不迟。</p>
+<p><a href="https://itunes.apple.com/us/app/yoink-improved-drag-and-drop/id1260915283?mt=8">Yoink</a> 目前处于上架阶段，正以 $2.99 (¥18) 的价格促销，一段时间后将回归正常价格 $4.99 (¥30)。</p>
+<hr>
+<p><strong>The Good:</strong></p>
+<ul>
+<li>界面和交互设计领先</li>
+<li>堆栈、锁定/解锁、键盘扩展等细节功能多而实用</li>
+<li>开发者口碑较好，能保证稳定开发</li>
+</ul>
+<p><strong>The Bad:</strong></p>
+<ul>
+<li>iPhone 版功能很弱</li>
+<li>同步功能暂未开发完毕</li>
+<li>进阶功能不如同类应用</li>
+<li>价格门槛较高</li>
+</ul>
+<p><strong>The Ugly:</strong></p>
+<ul>
+<li>目标用户不明确，定位尴尬</li>
+</ul>
+</article>
+
+        </main><footer id="footer">
+    
+</footer>
+</body>
+</html>

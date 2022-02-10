@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="http://example.org/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>在 M1 芯片 Mac 上使用 Homebrew</title>
+</head>
+<body><header id="banner">
+    <h2><a href="http://example.org/">Neverland</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>在 M1 芯片 Mac 上使用 Homebrew</h1>
+        <div>
+                <time>Dec 7, 2020</time>
+            </div>
+    </header><p>Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的<a href="https://github.com/Homebrew/brew/issues/7857#issue-647960270">说明</a>，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构的持续集成框架、很多软件包依赖的框架或编译器（<code>go</code>、<code>gcc</code>、<code>qt</code>）未适配等。</p>
+<p>但是，Homebrew 目前在新 Mac 上仍然是可用的，并且已经发布了原生支持 ARM 架构的试验性版本。本文总结我在设置过程中探索出可行、相对实用的做法。</p>
+<p>概括而言：</p>
+<ul>
+<li>在不同路径分别安装针对 X86 和 ARM 架构的两个 Homebrew 版本；</li>
+<li>优先使用 ARM 版 Homebrew 安装软件包，用 X86 版 Homebrew 安装尚未支持新平台的命令行软件；</li>
+<li>使用 Homebrew Bundle 功能从旧 Mac 或 X86 版 Homebrew 迁移软件包。</li>
+</ul>
+<p>后文将展开说明具体步骤。由于 ARM 版 Homebrew 仍然处于早期开发阶段，且我对终端环境下系统管理的了解相对粗浅，文章内容难免存在过时或不准确之处，请不吝指正。</p>
+<h3 id="1-安装-arm-版-homebrew">1. 安装 ARM 版 Homebrew</h3>
+<p>根据官方规划，ARM 版 Homebrew 必须安装在 <code>/opt/homebrew</code> 路径下，而非此前的 <code>/usr/local/Homebrew</code>。由于官方的安装脚本还未更新，可以通过如下命令手动安装：</p>
+<pre tabindex="0"><code>cd /opt # 切换到 /opt 目录
+mkdir homebrew # 创建 homebrew 目录
+curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+</code></pre><p>（<strong>注：</strong> 如果安装和使用过程中报错，可能是因为当前用户对于 <code>/opt/homebrew</code> 路径没有权限。对此，可以通过 <code>sudo chown -R $(whoami) /opt/homebrew</code> 接管该目录。）</p>
+<p>虽然上面的步骤已经安装了 ARM 版 Homebrew，但此时在终端中运行 <code>brew</code> 命令并不能直接启动该版本。这是因为默认情况下，ARM 版 Homebrew 用来安装程序的路径 <code>/opt/homebrew/bin</code> 并不在环境变量 <code>PATH</code> 中，因此终端无法检索到该路径下的 <code>brew</code> 程序。</p>
+<p>为此，编辑配置文件 <code>~/.zshrc</code>，加入如下内容：</p>
+<pre tabindex="0"><code>path=('/opt/homebrew/bin' $path)
+export PATH
+</code></pre><p>（<strong>注：</strong> 本文推定读者使用 macOS Big Sur 的默认终端 zsh，如使用 bash 或 fish，则修改 <code>~/.bashrc</code> 或 <code>~/.config/fish/config.fish</code>，后同。）</p>
+<p>然后重新启动终端。这样，直接执行 <code>brew</code> 就可以启动 ARM 版的 Homebrew 了。</p>
+<hr>
+<h4 id="跑题为什么-arm-版-mac-要使用opt路径">跑题：为什么 ARM 版 Mac 要使用 <code>/opt</code> 路径？</h4>
+<p>根据《文件系统层次结构标准》（<a href="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html">Filesystem Hierarchy Standard</a>，主要为 Linux 系统制定，但对具有共同 UNIX 基因的 macOS 也有参考价值）：</p>
+<ul>
+<li><a href="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch04s09.html"><code>/usr/local</code></a> 目录用于系统管理员在本地安装软件。系统软件更新时，该目录应免于被覆盖。</li>
+<li><a href="https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s13.html"><code>/opt</code></a> 目录留作附加应用程序（add-on application）软件包的安装。安装在该目录下的软件包必须将其静态文件放置在单独的 <code>/opt/&lt;package&gt;</code> 或 <code>/opt/&lt;provider&gt;</code> 路径下。</li>
+</ul>
+<p>历史上，<code>/usr/local</code> 主要用于放置在本地编译并另行安装的程序，避免和 <code>/usr</code> 下的系统自带版本冲突；而 <code>/opt</code> 则用于安装非系统自带的、第三方预先编译并发行的独立软件包。</p>
+<p>显然，在如今的 macOS 使用场景下，用户很少会需要自行编译软件包，<code>/usr/local</code> 和 <code>/opt</code> 的区分一定程度上已经成为名义上的了。Homebrew 启用 <code>/opt</code> 作为 ARM 版的安装路径，可能更多是出于确保与 X86 版相互区隔的考虑。</p>
+<hr>
+<h3 id="2-安装-x86-版-homebrew">2. 安装 X86 版 Homebrew</h3>
+<p>如上所述，由于很多软件包目前还没有适配 ARM 架构（可以在 <a href="https://github.com/Homebrew/brew/issues/7857">Homebrew 的 Apple silicon issue 页面</a>查询），无法通过 ARM 版 Homebrew 安装，因此我们还需要安装一份 X86 版的 Homebrew 备用。</p>
+<p>X86 版 Homebrew 无法在 ARM 环境下安装。为此，需要先启动一个 X86 环境的终端。网络上<a href="https://osxdaily.com/2020/11/18/how-run-homebrew-x86-terminal-apple-silicon-mac/">传播较广</a>的方法是创建一个 Terminal.app 的副本，然后令其在 Rosetta 兼容模式下运行，显得有些麻烦。</p>
+<p>其实，注意到在任何命令前增加 <code>arch -x86_64</code>，就可以以 X86 模式运行该命令。因此，运行：</p>
+<pre tabindex="0"><code>arch -x86_64 $SHELL
+</code></pre><p>就可以启动一个 X86 模式终端，使得之后运行的命令都在 X86 模式下运行。</p>
+<p>此时，运行 Homebrew 的官方安装脚本</p>
+<pre tabindex="0"><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre><p>就可以完成 X86 版 Homebrew 的安装。</p>
+<h3 id="3-arm-和-x86-版-homebrew-的共存问题">3. ARM 和 X86 版 Homebrew 的共存问题</h3>
+<p>经过上面的步骤，系统中目前有了两个 <code>brew</code> 程序，即 X86 版的 <code>/usr/local/bin/brew</code> 和 ARM 版的 <code>/opt/homebrew/bin/brew</code>。那么，当在终端中执行 <code>brew</code> 命令时，系统会以哪个为准呢？</p>
+<p>当存在重名程序时，终端会按照重名程序在环境变量 <code>PATH</code> 中的先后顺序选择要执行的版本。由于之前配置 <code>~/.zshrc</code> 时，将 ARM 版 Homebrew 的路径放在了 <code>PATH</code> 的最前面，因此执行 <code>brew</code> 时，位于 <code>/opt/homebrew/bin/brew</code> 的 ARM 版将被优先运行。如果要运行 X86 版，则需要手动输入完整路径 <code>arch -x86_64 /usr/local/bin/brew</code>。</p>
+<p>如果觉得输入这么长的命令过于麻烦，可以在 <code>~/.zshrc</code> 中为两个版本分别设置简称（alias）：</p>
+<pre tabindex="0"><code>abrew='/opt/homebrew/bin/brew' # ARM Homebrew
+ibrew='arch -x86_64 /usr/local/bin/brew' # X86 Homebrew
+</code></pre><p>这样，执行 <code>abrew install &lt;package&gt;</code> 就可以调用 ARM 版 Homebrew 安装软件包，执行 <code>ibrew install &lt;package&gt;</code> 就可以调用 X86 版，从而不容易混淆。</p>
+<p>至于应该使用哪个版本的 Homebrew 安装软件包，需要区别考虑：</p>
+<ul>
+<li>对于<strong>命令行（CLI）程序</strong>：可以<strong>优先尝试使用 ARM 版 Homebrew 安装</strong>，保证获得针对新架构编译的版本，实现最佳的运行效果。但注意：
+<ul>
+<li>有的软件包已经兼容新架构、但还没有发布相应的编译版，需要安装的过程中在本地编译，耗时会相对很长；</li>
+<li>如果软件包还没有兼容新架构，使用 ARM 版 Homebrew 安装会报错，此时可以换用 X86 版 Homebrew 安装。</li>
+</ul>
+</li>
+<li>对于<strong>图形界面（GUI）程序</strong>，即通过 Homebrew Cask 安装的 <code>.app</code> 程序：对于这类软件，Homebrew 起的作用只是从官方渠道下载这些软件的安装包，然后安装到 <code>/Applications</code> 路径（及执行安装脚本，如果有）。因此无论其是否针对新架构优化，通过任一版本 Homebrew 都可以安装。考虑到日后维护方便，建议<strong>直接用 ARM 版 Homebrew 安装</strong>即可。</li>
+</ul>
+<h3 id="4-从旧-mac或-x86-版-homebrew迁移软件包">4. 从旧 Mac（或 X86 版 Homebrew）迁移软件包</h3>
+<p>如果你在拿到 M1 版 Mac 以后，选择了从旧 Mac 迁移数据、或恢复 Time Machine 备份，那么系统中可能已经有了遗留的 X86 版 Homebrew 和用它安装的软件包。此外，你可能也希望将以往惯用的软件包无遗漏地迁移到新 Mac。这些情况下，可以使用 Homebrew Bundle 功能辅助迁移工作。</p>
+<p>要导出使用 X86 版 Homebrew 安装的软件包列表，运行：</p>
+<pre tabindex="0"><code>/usr/local/bin/brew bundle dump
+</code></pre><p>就能在当前目录下得到一个名为 <code>Brewfile</code> 的备份文件。该文件可以用普通文本编辑器打开，列举了所有已安装软件包、添加的第三方软件源（tap）、Homebrew Cask 管理的 GUI 程序和 <a href="https://github.com/mas-cli/mas">mas-cli</a> 管理的 Mac App Store 程序：</p>
+<pre tabindex="0"><code>tap &quot;homebrew/bundle&quot;
+tap &quot;homebrew/cask&quot;
+[…]
+brew &quot;dash&quot;
+brew &quot;ffmpeg&quot;
+[…]
+cask &quot;bartender&quot;
+cask &quot;bettertouchtool&quot;
+[…]
+mas &quot;Apple Configurator 2&quot;, id: 1037126344
+mas &quot;Aviary&quot;, id: 1522043420
+[…]
+</code></pre><p>记下 Brewfile 的路径。然后，使用 ARM 版 Homebrew 导入其内容并安装：</p>
+<pre tabindex="0"><code>/opt/homebrew/bin/brew bundle --file /path/to/Brewfile
+</code></pre><p>就完成了迁移。</p>
+<p>需要注意的是，如果你是在同一台机器的两版 Homebrew 间迁移，那么并不需要迁移通过 Homebrew Cask 和 App Store 安装的 GUI 程序（Homebrew 也不会允许覆盖安装）。这时，可以手动编辑上述 <code>Brewfile</code>，将以 <code>cask</code> 和 <code>mas</code> 开头的记录删除，然后再通过 <code>brew bundle</code> 导入。</p>
+<p>如果想让 ARM 版 Homebrew 接管已经安装的 Homebrew Cask 软件，只要将位于 <code>/usr/local/Caskroom</code> 下的各文件夹移动到 <code>/opt/homebrew/Caskroom</code> 即可：</p>
+<pre tabindex="0"><code>mv /usr/local/Caskroom/* /opt/homebrew/Caskroom
+</code></pre></article>
+
+        </main><footer id="footer">
+    
+</footer>
+</body>
+</html>
