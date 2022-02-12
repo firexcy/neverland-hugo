@@ -94,11 +94,11 @@ Welcome. Here are some posts I’m satisfied with and illustrative of my persona
 For two reasons:
 
 - The technical reason: I prefer to write in whichever language my inner voice spoke when I was thinking about the topic because it’s easier.
-- The philosophical reason: The separation of language can serve as a [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). As the mother tongue, Chinese can sometimes feel too intimate and natural to express in candidly. Modern Chinese is also becoming regretfully meme- and Newspeak-liked, lacking the tool to write seriously and analytically with. English, though not without problem of its own, provides an alternative for a cowardly, escapist, or cynical me to think and write in. _See also_, the awesome Yiyun Li’s [_To Speak Is to Blunder_](https://www.newyorker.com/magazine/2017/01/02/to-speak-is-to-blunder), one of my favorite essays of all time.
+- The philosophical reason: The separation of language can serve as a [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). As the mother tongue, Chinese can sometimes feel too intimate and natural to express in candidly. Modern Chinese is also becoming regretfully meme- and Newspeak-liked, lacking the tool to write seriously and analytically with. English, though not without problem of its own, provides an alternative for a cowardly, escapist, or cynical me to think and write in. See also Yiyun Li’s [_To Speak Is to Blunder_](https://www.newyorker.com/magazine/2017/01/02/to-speak-is-to-blunder), one of my favorite essays of all time.
 
 ### How is this site built?
 
-As of February 2022, _Neverland_ is built with Hugo and hosted on Netfily, migrated from a self-hosted instance of Wordpress.
+As of February 2022, _Neverland_ is built with Hugo and hosted on Netlify. Prior to that, it was a self-hosted instance of WordPress. I may write about the rationale and process when time permits, but the gist is that the WordPress’ block-based [Gutenberg](https://wordpress.org/gutenberg/) experience turns out to be too voracious for my low-end virtual box and too fiddly for me as a minimalist. On the other hand, the static site generators and serverless providers have really come a long way since my previous flirting with Hexo. That you can set up a simple blog, certificated and CDN’d in minutes is no longer a goal, but a given.
 
 ### I’m feeling generous. How can I buy you a cup of coffee?
 
