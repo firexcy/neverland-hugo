@@ -4,6 +4,15 @@ date: "2022-02-12"
 tags:
 ---
 
+Previously: [给迟早过年的迟早反馈（2021）](https://type.cyhsu.xyz/2021/02/ones-podcast-feedback/)
+
+```
+From:    Platy Hsu <me@cyhsu.xyz>
+Subject: 给迟早过年的迟早反馈
+Date:    February 12, 2021 at 11:11 PM
+To:	     embrace@weareones.com
+```
+
 迟早更新的两位主播，
 
 新年好！
