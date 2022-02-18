@@ -1,9 +1,7 @@
 ---
 title: "播客客户端音频特效探微"
 date: "2017-03-20"
-categories: 
-  - "post"
-tags: 
+tags:
   - "app"
   - "podcast"
   - "review"

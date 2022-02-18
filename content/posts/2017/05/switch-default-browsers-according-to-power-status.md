@@ -1,9 +1,7 @@
 ---
 title: "根据电源连接状态自动切换默认浏览器"
 date: "2017-05-22"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
   - "tutorial"
 ---

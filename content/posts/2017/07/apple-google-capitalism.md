@@ -1,9 +1,8 @@
 ---
 title: "苹果式资本主义与谷歌式资本主义"
 date: "2017-07-14"
-categories: 
+tags:
   - "translations"
-tags: 
   - "apple"
   - "tech"
 ---

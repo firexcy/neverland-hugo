@@ -1,9 +1,7 @@
 ---
 title: "用 Shell 脚本制作签字页"
 date: "2020-06-17"
-categories: 
-  - "post"
-tags: 
+tags:
   - "automation"
   - "pdf"
 ---
@@ -12,7 +10,7 @@ tags:
 
 1. 将 Word 格式的交易文件导出为 PDF 格式；
 2. 逐页提取 PDF 版中的签字页部分；
-3. 将单页签字页按照类似于 `合同名称_SigPage_01_签署方名称.pdf` 的格式重命名。
+3. 将单页签字页按照类似于 `合同名称_SigPage_01_签署方名称。pdf` 的格式重命名。
 
 ![「签字页」](https://p178.p0.n0.cdn.getcloudapp.com/items/8Lu7PdbE/sigpage_eg.png?v=7788fcec612983304f82e5ce43c1a258)
 
@@ -86,7 +84,7 @@ $ ./sigpgs.sh 'Shareholders Agreement.pdf' signatories.txt 26
 
 在每次循环中，`$c` 变量起计数和编号作用，反映当前处理的是第几个签署方。（第 20–25 行的 `if` 循环用于处理上面提到的 `qpdf` 编号格式问题，即编号数超过两位数时在个位数编号前追加 `0`。）
 
-接着，第 27 行的 `mv` 命令找到对应序号的签字页，将其名称改为 `$newname` 变量指定的格式：`原始文件名_SigPage_编号_签署方名称.pdf`。
+接着，第 27 行的 `mv` 命令找到对应序号的签字页，将其名称改为 `$newname` 变量指定的格式：`原始文件名_SigPage_编号_签署方名称。pdf`。
 
 最后，第 28 行的 `echo` 命令提示最终输出的文件名。
 
@@ -94,7 +92,7 @@ $ ./sigpgs.sh 'Shareholders Agreement.pdf' signatories.txt 26
 
 在此基础上，如果想把这个脚本做成独立应用程序的形式以方便运行，只要用内建的 Automator 应用简单包装一下即可。
 
-你可以[下载](https://p178.p0.n0.cdn.getcloudapp.com/items/wbuW7r4X/SigPgMaker.zip?v=a5f7eeb62f68aacf0c53bf4737a5f486v)我打包好的 App Bundle。它的核心，就是下图中最后的 Run Shell Script 步骤，其内容原封不动地照搬了上面写好的 `sigpgs.sh` 脚本。图中上部还有几个要求选择或输入的步骤，作用都是引导用户提供脚本运行所需的变量（即原始 PDF 文件、签署方名单和签字页起始页码）。
+你可以 [下载](https://p178.p0.n0.cdn.getcloudapp.com/items/wbuW7r4X/SigPgMaker.zip?v=a5f7eeb62f68aacf0c53bf4737a5f486v) 我打包好的 App Bundle。它的核心，就是下图中最后的 Run Shell Script 步骤，其内容原封不动地照搬了上面写好的 `sigpgs.sh` 脚本。图中上部还有几个要求选择或输入的步骤，作用都是引导用户提供脚本运行所需的变量（即原始 PDF 文件、签署方名单和签字页起始页码）。
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/qGuKNg8o/automator.png?v=410fa814191c222c25cad9ede5f18e1f)
 

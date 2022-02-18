@@ -1,9 +1,7 @@
 ---
 title: "用 Tiny Tiny RSS 自建 RSS 服务"
 date: "2017-10-16"
-categories: 
-  - "post"
-tags: 
+tags:
   - "linux"
   - "rss"
   - "tutorial"

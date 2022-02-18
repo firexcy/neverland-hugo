@@ -1,9 +1,7 @@
 ---
 title: "在 iOS 主屏幕上添加 iCloud 文件快捷方式"
 date: "2018-12-04"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ios"
   - "tips"
 ---

@@ -1,9 +1,7 @@
 ---
 title: "一只叛逆的鸭子——DuckDuckGo 简介"
 date: "2017-07-22"
-categories: 
-  - "post"
-tags: 
+tags:
   - "internet"
   - "privacy"
   - "tutorial"

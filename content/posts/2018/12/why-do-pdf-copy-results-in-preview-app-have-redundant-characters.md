@@ -1,9 +1,7 @@
 ---
 title: "PDF 复制中的文字重复问题"
 date: "2018-12-20"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
   - "pdf"
 ---

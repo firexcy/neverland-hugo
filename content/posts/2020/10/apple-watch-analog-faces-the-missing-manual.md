@@ -1,9 +1,7 @@
 ---
 title: "Apple Watch 指针表盘 —— The Missing Manual"
 date: "2020-10-31"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
 ---
 
@@ -36,7 +34,7 @@ tags:
 
 ### 专业计时码表（Chronograph Pro）
 
-这是 watchOS 7 的新增表盘之一，在 Series 4 及以后的型号（即具有「圆角屏幕」的型号）上才能启用。该表盘的「专业」属性体现于更多的子表盘和支持[视距仪](https://en.wikipedia.org/wiki/Tachymeter_(watch))（tachymeter）功能。
+这是 watchOS 7 的新增表盘之一，在 Series 4 及以后的型号（即具有「圆角屏幕」的型号）上才能启用。该表盘的「专业」属性体现于更多的子表盘和支持 [视距仪](https://en.wikipedia.org/wiki/Tachymeter_(watch))（tachymeter）功能。
 
 ![Zenith Chronomaster El Primero Revival](https://p178.p0.n0.cdn.getcloudapp.com/items/GGurdwxm/zenith.jpg?v=0658aaff025affbd8c1dc2464e12eef3 "Zenith Chronomaster El Primero Revival")
 
@@ -70,7 +68,7 @@ Zenith Chronomaster El Primero Revival
 
 ### 正计时（Count-Up）
 
-正计时表盘是 watchOS 7 的新增表盘，其现实中的原型是[潜水表](https://en.wikipedia.org/wiki/Diving_watch)（Dive Watch）。由于潜水活动往往需要控制水下时间，潜水员会在入水时将潜水表外圈上的标记手动旋转到和分针对齐，这样，在水下就能直接根据分针指向的数字读出经过的时间。
+正计时表盘是 watchOS 7 的新增表盘，其现实中的原型是 [潜水表](https://en.wikipedia.org/wiki/Diving_watch)（Dive Watch）。由于潜水活动往往需要控制水下时间，潜水员会在入水时将潜水表外圈上的标记手动旋转到和分针对齐，这样，在水下就能直接根据分针指向的数字读出经过的时间。
 
 ![Three Seiko 55th Anniversary Dive Watches](https://p178.p0.n0.cdn.getcloudapp.com/items/Blu1q60E/seiko.png?v=134cf07e8463180c928cbcbd6dad184a "Three Seiko 55th Anniversary Dive Watches")
 
@@ -121,12 +119,12 @@ The Zodiac Aerospace GMT Limited Edition
 
 The Ochs Und Junior Day/Night
 
-太阳刻度盘的设计细节很难列举完全，建议阅读钟表媒体 Hodinkee 为其专门写的一篇[《Apple Watch 太阳刻度表盘的另类之美与黄昏的剖析》](https://www.hodinkee.com/articles/the-eerie-beauty-of-the-apple-watch-solar-face-and-the-anatomy-of-nightfall)（_The Eerie Beauty of the Apple Watch Solar Face, and the Anatomy of Nightfall_）。概括而言：
+太阳刻度盘的设计细节很难列举完全，建议阅读钟表媒体 Hodinkee 为其专门写的一篇 [《Apple Watch 太阳刻度表盘的另类之美与黄昏的剖析》](https://www.hodinkee.com/articles/the-eerie-beauty-of-the-apple-watch-solar-face-and-the-anatomy-of-nightfall)（_The Eerie Beauty of the Apple Watch Solar Face, and the Anatomy of Nightfall_）。概括而言：
 
 - 外圈共有 24 个刻度，对应一天中的 24 个小时，其中，12 点钟方向为正午 12 时，6 点钟方向为午夜 12 时；时针末端根据当前的日出或日落状态显示为实心或空心；
 - 时针的另一端是一个「迷你」表盘，可设置为数字或模拟表盘，以常规形式显示时间；
-- 在内圈上，日出和日落的时刻附近各有四个圆点，从下往上分别对应太阳高度为地平线下 18°、12°、6° 和 0° 50'（即日出/日落，非 0° 的原因是存在[大气折射](https://en.wikipedia.org/wiki/Atmospheric_refraction)）的四个时刻，这就将白天与黑夜间的[暮曙光](https://zh.wikipedia.org/wiki/%E6%9B%99%E6%9A%AE%E5%85%89)（twilight）分为三个阶段：
-    - 当 -6° ≤ 太阳高度 < -0° 50' 时，为**民用曙暮光**（civil twilight）。该时段主要关系到人的生活，被认为是尚可不借助补光继续从事户外活动的时间，一个与其相关的近似时间段——日落后 30 分钟至次日日出前 30 分钟——还关系到是否[需要开车前灯](https://en.wikipedia.org/wiki/Lighting-up_time)（lighting-up time）、是否构成[普通法上抢劫](https://en.wikipedia.org/wiki/Burglary)（burglary）等法律规定。
+- 在内圈上，日出和日落的时刻附近各有四个圆点，从下往上分别对应太阳高度为地平线下 18°、12°、6° 和 0° 50'（即日出/日落，非 0° 的原因是存在 [大气折射](https://en.wikipedia.org/wiki/Atmospheric_refraction)）的四个时刻，这就将白天与黑夜间的 [暮曙光](https://zh.wikipedia.org/wiki/%E6%9B%99%E6%9A%AE%E5%85%89)（twilight）分为三个阶段：
+    - 当 -6° ≤ 太阳高度 < -0° 50' 时，为**民用曙暮光**（civil twilight）。该时段主要关系到人的生活，被认为是尚可不借助补光继续从事户外活动的时间，一个与其相关的近似时间段——日落后 30 分钟至次日日出前 30 分钟——还关系到是否 [需要开车前灯](https://en.wikipedia.org/wiki/Lighting-up_time)（lighting-up time）、是否构成 [普通法上抢劫](https://en.wikipedia.org/wiki/Burglary)（burglary）等法律规定。
     - 当 -12° ≤ 太阳高度 < -6° 时，为**航海曙暮光**（nautical twilight）。之所以与「航海」挂钩，是因为在该时段，天空处于一个暗到可以看见星星，但亮到可以看见地平线的状态，对于海上导航意义重大。
     - 当 -18° ≤ 太阳高度 < -12° 时，为**天文曙暮光**（astronomical twilight）。该时段的「天文」意义在于，此时天空不被太阳照亮，所有肉眼可以看见的天体（最暗约六等星）逐一呈现或消失。
 - 点按表盘，界面上将会显示当前的白天/黑夜状态以及日照时间；

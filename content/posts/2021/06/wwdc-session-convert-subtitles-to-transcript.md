@@ -2,7 +2,6 @@
 title: "从无文字版 WWDC 视频的字幕转制文字版"
 date: "2021-06-13"
 categories: 
-  - "post"
 ---
 
 大多数 WWDC 视频都配有文字版，在视频页面点击「Transcript」即可看到，还可以下载 TXT 格式版本。但也有少量视频（例如 [Design for Safari 15](https://developer.apple.com/videos/play/wwdc2021/10029/)）没有文字版，给检索和浏览造成不便。实际上，这类视频也有自动转写的字幕，只要下载后简单处理即可当作文字版浏览。

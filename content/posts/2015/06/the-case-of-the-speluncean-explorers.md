@@ -1,9 +1,7 @@
 ---
 title: "回归法律的精神——对「洞穴奇案」的辩护陈词"
 date: "2015-06-15"
-categories: 
-  - "post"
-tags: 
+tags:
   - "academic"
   - "law"
 ---

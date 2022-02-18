@@ -1,9 +1,8 @@
 ---
 title: "译文 | 苹果之野望：统治音乐产业"
 date: "2016-07-03"
-categories: 
+tags:
   - "translations"
-tags: 
   - "above-avalon"
   - "apple"
   - "music"

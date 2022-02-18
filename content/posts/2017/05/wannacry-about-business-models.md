@@ -1,9 +1,8 @@
 ---
 title: "译文 | 「想哭」（WANNACRY）的商业模式"
 date: "2017-05-16"
-categories: 
+tags:
   - "translations"
-tags: 
   - "stratechery"
   - "tech"
 ---

@@ -1,9 +1,7 @@
 ---
 title: "要求不可能之事的法律——法理课发言稿"
 date: "2015-06-26"
-categories: 
-  - "post"
-tags: 
+tags:
   - "academic"
   - "law"
   - "satire"

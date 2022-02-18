@@ -1,9 +1,7 @@
 ---
 title: "用硬苹果捏软柿子：M1 系列 Mac 虚拟 Windows 11 免费方法谈"
 date: "2021-11-04"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
   - "tutorial"
 ---
@@ -16,13 +14,13 @@ tags:
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/mXuP14oQ/567e2b31-a318-4173-82b6-80e0041ff48b.jpg?v=cffa54311ffcc9dc8d1d61c07a62e39c)
 
-回到当下，BootCamp 已经被 Apple 抛弃，而虚拟机方案也因架构的鸿沟而进展迟缓。截至目前，只有新近发布的 [Parallels Desktop 17](https://www.parallels.com/cn/blogs/parallels-desktop-17-just-released/) 宣布支持 Windows 11 ARM64 版。这固然是利好消息，但不少用户可能对其较高的售价感到顾虑（每年 498 元，双十一期间[折扣](https://prf.hn/l/7R0aWV9)至 349 元；利益声明：通过前述链接购买，少数派将获得佣金）。
+回到当下，BootCamp 已经被 Apple 抛弃，而虚拟机方案也因架构的鸿沟而进展迟缓。截至目前，只有新近发布的 [Parallels Desktop 17](https://www.parallels.com/cn/blogs/parallels-desktop-17-just-released/) 宣布支持 Windows 11 ARM64 版。这固然是利好消息，但不少用户可能对其较高的售价感到顾虑（每年 498 元，双十一期间 [折扣](https://prf.hn/l/7R0aWV9) 至 349 元；利益声明：通过前述链接购买，少数派将获得佣金）。
 
 那么，是否有在 M1 系列 Mac 上虚拟 Windows 11 的免费方案，它们的表现是否能满足日常使用的需求呢？这就是本文要回答的问题。
 
 **请注意：**
 
-1. 本文适用于使用 M1、M1 Pro 或 M1 Max 芯片的 Mac 机型。对于使用 Intel 处理器的机型，一般建议直接使用免费且完善的 [VMware Fusion Player](https://customerconnect.vmware.com/web/vmware/evalcenter?p=fusion-player-personal) 即可。本文亦不介绍使用 Parallels Desktop 17 安装 Windows 11 的步骤，因为该操作有完整的[官方文档](https://kb.parallels.com/en/125375)，且属于开发商技术支持范围。
+1. 本文适用于使用 M1、M1 Pro 或 M1 Max 芯片的 Mac 机型。对于使用 Intel 处理器的机型，一般建议直接使用免费且完善的 [VMware Fusion Player](https://customerconnect.vmware.com/web/vmware/evalcenter?p=fusion-player-personal) 即可。本文亦不介绍使用 Parallels Desktop 17 安装 Windows 11 的步骤，因为该操作有完整的 [官方文档](https://kb.parallels.com/en/125375)，且属于开发商技术支持范围。
 2. 本文所述运行情况及方法步骤仅适用于写作时（2021 年 11 月初）的情况，这随时间推移会发生变化，请注意检索后续进展。
 3. 本文假定读者了解 macOS 下「终端」和 Windows 下 PowerShell 的基本操作，已经在 Mac 上安装了包管理工具 [Homebrew](https://brew.sh/) 并了解其基本用法。
 
@@ -39,9 +37,9 @@ tags:
 
 ### 方法一：从 UUP 文件打包 ISO 镜像
 
-UUP [上线](https://blogs.windows.com/windows-insider/2016/11/03/introducing-unified-update-platform-uup/#tbWVyzxoZgZ75qLv.97)于 2016 年年底，可以理解为微软的「增量更新」技术，即在更新系统时根据硬件环境、与最新版本的差距等条件，只下载所需的升级文件，从而加快升级效率。换个角度看，UUP 也就为不同硬件平台提供了下载专用安装文件的渠道。
+UUP [上线](https://blogs.windows.com/windows-insider/2016/11/03/introducing-unified-update-platform-uup/#tbWVyzxoZgZ75qLv.97) 于 2016 年年底，可以理解为微软的「增量更新」技术，即在更新系统时根据硬件环境、与最新版本的差距等条件，只下载所需的升级文件，从而加快升级效率。换个角度看，UUP 也就为不同硬件平台提供了下载专用安装文件的渠道。
 
-不过，UUP 并没有公开文件目录和下载渠道；而且，能从 UUP 直接获得只是增量更新文件，离我们需要的 ISO 安装镜像还有不小差距。好在，已经有人帮忙做完了功课；诸如 [UUP dump](https://uupdump.net/) 这类的第三方网站，将过滤、下载和转换的步骤简化为了向导和自动化脚本。由于这个项目是[开源](https://github.com/uup-dump/converter)的，其下载来源和安全性均较有保障。
+不过，UUP 并没有公开文件目录和下载渠道；而且，能从 UUP 直接获得只是增量更新文件，离我们需要的 ISO 安装镜像还有不小差距。好在，已经有人帮忙做完了功课；诸如 [UUP dump](https://uupdump.net/) 这类的第三方网站，将过滤、下载和转换的步骤简化为了向导和自动化脚本。由于这个项目是 [开源](https://github.com/uup-dump/converter) 的，其下载来源和安全性均较有保障。
 
 使用 UUP dump 获取 Windows 11 安装镜像的方法是：首先，访问 UUP dump 网站（有中文翻译），从首页的「快速选项」中，点选「最新 Beta 通道版本」右侧的「arm64」按钮（因为截至目前，两个更稳定的通道尚未提供 Windows 11）。
 
@@ -66,7 +64,7 @@ brew install cabextract wimlib cdrtools sidneys/homebrew/chntpw
 
 遗憾的是，微软提供的是针对自家 Hyper-V 虚拟化平台的格式，而 Hyper-V 并没有 macOS 版本。因此，还需要将其转换为其他虚拟机软件能读取的格式。
 
-具体方法是：首先，访问 Windows 11 Insider Preview 的[下载页面](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64?wa=wsignin1.0)。注意，该页面需要登录[加入了「预览体验计划」](https://insider.windows.com/zh-cn/register)（但无任何门槛或费用）的微软账号才能访问。点击蓝色的「Windows Client ARM64 Insider Preview - \[版本号\]」按钮下载虚拟机，这将得到一个名称形如 `Windows11_InsiderPreview_Client_ARM64_en-us_22483.VHDX` 的文件（约 10GB）。
+具体方法是：首先，访问 Windows 11 Insider Preview 的 [下载页面](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64?wa=wsignin1.0)。注意，该页面需要登录 [加入了「预览体验计划」](https://insider.windows.com/zh-cn/register)（但无任何门槛或费用）的微软账号才能访问。点击蓝色的「Windows Client ARM64 Insider Preview - \[版本号、]」按钮下载虚拟机，这将得到一个名称形如 `Windows11_InsiderPreview_Client_ARM64_en-us_22483.VHDX` 的文件（约 10GB）。
 
 然后，通过 Homebrew 安装转换格式所需的工具：
 
@@ -84,9 +82,9 @@ qemu-img convert -p -f vmdk -O vmdk Windows11_InsiderPreview_Client_ARM64_en-us_
 
 ## 用 VMware Fusion 安装
 
-VMware Fusion 是老牌商业虚拟机开发商 VMware 针对 macOS 开发的虚拟机软件。该软件原为收费软件，但从 2020 年起宣布[针对非商业用途免费提供基础版](https://docs.vmware.com/en/VMware-Fusion/12/rn/VMware-Fusion-12-Release-Notes.html)，即 VMware Fusion Player。
+VMware Fusion 是老牌商业虚拟机开发商 VMware 针对 macOS 开发的虚拟机软件。该软件原为收费软件，但从 2020 年起宣布 [针对非商业用途免费提供基础版](https://docs.vmware.com/en/VMware-Fusion/12/rn/VMware-Fusion-12-Release-Notes.html)，即 VMware Fusion Player。
 
-截至目前，VMware Fusion 尚未正式支持 Apple silicon 处理器或 Windows 11 ARM64 版，但于 9 月[发布](https://blogs.vmware.com/teamfusion/2021/09/fusion-for-m1-public-tech-preview-now-available.html)了一个技术预览版（免费，但需要注册 VMware 账号）。根据 VMware 发布的[测试指南](https://communities.vmware.com/t5/Fusion-for-Apple-Silicon-Tech/Fusion-Tech-Preview-Testing-Guide/ta-p/2867908?attachment-id=105429)，Windows 10 或 11 的支持是隐藏的，需要通过手动修改参数的方法才能启用。
+截至目前，VMware Fusion 尚未正式支持 Apple silicon 处理器或 Windows 11 ARM64 版，但于 9 月 [发布](https://blogs.vmware.com/teamfusion/2021/09/fusion-for-m1-public-tech-preview-now-available.html) 了一个技术预览版（免费，但需要注册 VMware 账号）。根据 VMware 发布的 [测试指南](https://communities.vmware.com/t5/Fusion-for-Apple-Silicon-Tech/Fusion-Tech-Preview-Testing-Guide/ta-p/2867908?attachment-id=105429)，Windows 10 或 11 的支持是隐藏的，需要通过手动修改参数的方法才能启用。
 
 用 VMware Fusion 安装 Windows 11 的具体步骤是：下载安装后打开 VMware Fusion。点击左上角的加号，选择「新建」。在弹出的向导中，点击「创建自定义虚拟机」>「继续」。在「选择操作系统」步骤，可以发现软件只列举了少量 Linux 发行版，并不包含 Windows。因此，暂且选择兜底的「其他」>「其他 64 位 Arm」，然后点击「继续」。
 
@@ -94,7 +92,7 @@ VMware Fusion 是老牌商业虚拟机开发商 VMware 针对 macOS 开发的虚
 
 下一个「选择虚拟磁盘」步骤同样点击「继续」。在最后一步，点击「自定义设置」。为虚拟机指定一个存放位置后，会同时弹出虚拟机窗口和一个设置窗口。
 
-这里，先进入「处理器和内存」页面，分配 2 个核心，4GB（4096MB）内存。这是微软推荐的[最小配置](https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3)；根据经验，足以支撑系统本身和日常的浏览、办公操作了；更低的配置也可以开机，但可用性很差。
+这里，先进入「处理器和内存」页面，分配 2 个核心，4GB（4096MB）内存。这是微软推荐的 [最小配置](https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3)；根据经验，足以支撑系统本身和日常的浏览、办公操作了；更低的配置也可以开机，但可用性很差。
 
 完成这些设置后，先不要开机，回到 VMware Fusion 主窗口，在刚才创建的虚拟机名称上点击右键，选择「在 Finder 中显示」；然后，在显示出的虚拟机文件图标上再次点击右键，选择「显示包内容」，展示其内部文件。这里，找到以 vmx 结尾的配置文件，在其上点击右键，选择惯用的纯文本编辑器打开（也可以用自带的「文本编辑」）。
 
@@ -113,7 +111,7 @@ VMware Fusion 是老牌商业虚拟机开发商 VMware 针对 macOS 开发的虚
 
 ### 绕过 Windows 11 的安装限制
 
-Windows 11 对于硬件条件有比较特殊的要求，主要包括要求支持 TPM（可信平台模块）2.0 和安全引导（Secure Boot）等，否则会拒绝安装（相关讨论可参阅少数派此前的[指南](https://sspai.com/post/67498)）。
+Windows 11 对于硬件条件有比较特殊的要求，主要包括要求支持 TPM（可信平台模块）2.0 和安全引导（Secure Boot）等，否则会拒绝安装（相关讨论可参阅少数派此前的 [指南](https://sspai.com/post/67498)）。
 
 绕过方法也很简单。在安装界面的第一步，即显示「现在安装」（Install Now）按钮的界面，按 Shift\-F10 打开命令提示符界面，然后输入 `regedit` 并回车，打开注册表编辑器。
 
@@ -166,7 +164,7 @@ bcdedit /dbgsettings net hostip:10.0.0.1 port:50000
 
 ## 用 UTM 安装
 
-[UTM](https://mac.getutm.app/) 是一个开源的虚拟机软件，以命令行虚拟机工具 [QEMU](https://www.qemu.org/) 为底层，可以说是后者的图形界面包装。UTM 最为人所知的亮相可能是在 iOS 越狱新闻中——这是目前极少见能[在 iOS 上运行](https://getutm.app/install/)的虚拟机。
+[UTM](https://mac.getutm.app/) 是一个开源的虚拟机软件，以命令行虚拟机工具 [QEMU](https://www.qemu.org/) 为底层，可以说是后者的图形界面包装。UTM 最为人所知的亮相可能是在 iOS 越狱新闻中——这是目前极少见能 [在 iOS 上运行](https://getutm.app/install/) 的虚拟机。
 
 而在 macOS 上，UTM 的表现同样出色。最容易发现的特征之一，就是它严格按照现代 macOS 界面规范设计，与 macOS Big Sur 后的新原生风格非常搭调，在普遍「不修边幅」的开源世界显得鹤立鸡群。
 
@@ -174,7 +172,7 @@ bcdedit /dbgsettings net hostip:10.0.0.1 port:50000
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/WnukB5K8/762c0bbd-2c54-4e2d-889c-b8529e7577ee.png?v=62db63a9dcfb059339f5ab7ee9b42900)
 
-具体到用法上，UTM 的使用方式与 VMware 大同小异，且官方文档已经更新了[安装 Windows 11 的步骤](https://mac.getutm.app/gallery/windows-11-arm)，参照前文 VMware 的步骤和该文档提示操作即可。这里，仅对个人尝试后发现的常见问题作出提示。
+具体到用法上，UTM 的使用方式与 VMware 大同小异，且官方文档已经更新了 [安装 Windows 11 的步骤](https://mac.getutm.app/gallery/windows-11-arm)，参照前文 VMware 的步骤和该文档提示操作即可。这里，仅对个人尝试后发现的常见问题作出提示。
 
 ### 关于安装方式
 
@@ -184,7 +182,7 @@ bcdedit /dbgsettings net hostip:10.0.0.1 port:50000
 
 此外，使用 ISO 镜像安装的方案在 UTM 上仍然是可行的，但同样需要修改注册表来绕过 TPM 和 Secure Boot 这两项安装条件（方法见上文）。
 
-同时，由于 UTM 对 USB 总线的模拟[存在缺陷](https://github.com/utmapp/UTM/issues/3194)，安装过程中有一定机率会出现类似于「掉盘」的问题，即无法继续从 ISO 镜像读取数据。截至目前，社区没有发现能完全避免的方式，如果遇到从头安装即可，一般不会连续「中奖」。
+同时，由于 UTM 对 USB 总线的模拟 [存在缺陷](https://github.com/utmapp/UTM/issues/3194)，安装过程中有一定机率会出现类似于「掉盘」的问题，即无法继续从 ISO 镜像读取数据。截至目前，社区没有发现能完全避免的方式，如果遇到从头安装即可，一般不会连续「中奖」。
 
 ### 关于网络和显示驱动
 
@@ -192,7 +190,7 @@ bcdedit /dbgsettings net hostip:10.0.0.1 port:50000
 
 比 VMware 稍好一点的是，这边使用的驱动和辅助工具 [SPICE Guest Tools](https://mac.getutm.app/support/)（ISO 格式，下载后挂载到虚拟机的光驱安装）至少实现了网卡支持，不需要通过命令行魔改一个网卡出来。
 
-但是，显示驱动则同样很不完善，不仅无法支持高分辨率，而且还会随机发生[鼠标指针突然蒸发](https://github.com/utmapp/UTM/issues/3188)的问题。对此，建议同样是使用上文介绍的远程桌面方式，绕过这个问题。
+但是，显示驱动则同样很不完善，不仅无法支持高分辨率，而且还会随机发生 [鼠标指针突然蒸发](https://github.com/utmapp/UTM/issues/3188) 的问题。对此，建议同样是使用上文介绍的远程桌面方式，绕过这个问题。
 
 ## 性能比较及选择建议
 
@@ -200,7 +198,7 @@ bcdedit /dbgsettings net hostip:10.0.0.1 port:50000
 
 至于性能，我做了一个不严谨的测试。在一台配备 M1 Max 处理器的 16 寸 MacBook Pro 上，使用前文所述的配置（双核、4GB 内存）通过 ISO 镜像全新安装，GeekBench 5 的运行成绩如下表所示：
 
-| 虚拟机\\评分项 | 单核 | 多核 |
+| 虚拟机、\评分项 | 单核 | 多核 |
 | --- | --- | --- |
 | VMware Fusion | 1392 | 2485 |
 | UTM | 1307 | 2242 |

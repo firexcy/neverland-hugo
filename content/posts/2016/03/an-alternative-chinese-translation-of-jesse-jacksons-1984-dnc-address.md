@@ -1,9 +1,8 @@
 ---
 title: "An Alternative Chinese Translation of Jesse Jackson's 1984 DNC Address"
 date: "2016-03-17"
-categories: 
+tags:
   - "translations"
-tags: 
   - "academic"
   - "law"
 ---

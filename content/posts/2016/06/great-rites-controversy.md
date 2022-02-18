@@ -1,9 +1,7 @@
 ---
 title: "论世宗之失——从明代大礼议事件看传位礼制的内在价值"
 date: "2016-06-23"
-categories: 
-  - "post"
-tags: 
+tags:
   - "academic"
   - "history"
 ---

@@ -1,9 +1,7 @@
 ---
 title: "如何追踪电子邮件的已读状态"
 date: "2018-02-01"
-categories: 
-  - "post"
-tags: 
+tags:
   - "tutorial"
 ---
 

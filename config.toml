@@ -63,9 +63,13 @@ typographer = false
 [markup.goldmark.renderer]
 hardWraps = false
 unsafe = true
+[markup.tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2
 
 [outputFormats]
 [outputFormats.RSS]
-mediatype = "application/rss+xml"
 baseName = "feed"
+mediatype = "application/rss+xml"
 noUgly = true

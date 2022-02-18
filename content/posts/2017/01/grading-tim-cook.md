@@ -1,9 +1,8 @@
 ---
 title: "译文 | Tim Cook 的成绩单"
 date: "2017-01-20"
-categories: 
+tags:
   - "translations"
-tags: 
   - "apple"
 ---
 

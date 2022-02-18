@@ -1,9 +1,7 @@
 ---
 title: "Chenyang Hsu’s Mac and iOS Setup"
 date: "2015-12-28"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
 ---
 

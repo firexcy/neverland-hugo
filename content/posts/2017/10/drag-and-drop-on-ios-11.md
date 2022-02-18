@@ -1,9 +1,7 @@
 ---
 title: "论 iOS 11 上的 Drag and Drop"
 date: "2017-10-06"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
   - "design"
   - "opinion"

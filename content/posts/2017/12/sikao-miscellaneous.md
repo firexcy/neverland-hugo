@@ -1,9 +1,7 @@
 ---
 title: "司考思考"
 date: "2017-12-20"
-categories: 
-  - "post"
-tags: 
+tags:
   - "law"
   - "satire"
 ---

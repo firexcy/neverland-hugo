@@ -1,7 +1,7 @@
 ---
 title: "译文 | 用加拉蒙码字"
 date: "2022-02-01"
-categories: 
+tags:
   - "translations"
 ---
 

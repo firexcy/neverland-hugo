@@ -1,9 +1,7 @@
 ---
 title: "从邮件通讯的流行谈起"
 date: "2020-03-30"
-categories: 
-  - "post"
-tags: 
+tags:
   - "opinion"
 ---
 
@@ -11,17 +9,17 @@ tags:
 
 和时尚界类似，科技行业似乎也时常出现「复古」的风潮——沉寂的旧技术被发掘出新用途、重新走入聚光灯下，开拓出新的市场和商机。
 
-2018 年，在 [Facebook 泄露信息](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)等事件的催化下，RSS 这项有二十多年历史的资讯订阅技术，就突然重获科技媒体的关注，被誉为未被算法污染的净土；我还[撰文探讨](https://type.cyhsu.xyz/2018/04/on-the-so-called-revival-of-rss/)「RSS 的复兴」这个一度热门的话题。
+2018 年，在 [Facebook 泄露信息](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) 等事件的催化下，RSS 这项有二十多年历史的资讯订阅技术，就突然重获科技媒体的关注，被誉为未被算法污染的净土；我还 [撰文探讨](https://type.cyhsu.xyz/2018/04/on-the-so-called-revival-of-rss/)「RSS 的复兴」这个一度热门的话题。
 
 不过，当时被我忽略的是，另一项更为古老的技术——电子邮件也在悄悄积累势能。不知从何时起，邮件通讯（newsletter）已经成为社交媒体和新闻 app 外，获取资讯的另一个流行选择。
 
-如果留心观察，你很可能已经发现自己关注的媒体网站，都在醒目位置加上了邮件订阅入口。的确，无论老牌印刷媒体还是新生代互联网媒体，都在争相推出邮件通讯产品，将其视作新的流量增长点。两年前，[《纽约时报》制作的邮件通讯](https://www.nytimes.com/2018/07/09/insider/newsletters-briefing.html)数量就达到了 55 种，订阅量超过 1400 万。就连主打[专有排版格式](https://developer.apple.com/documentation/apple_news/apple_news_format)、大力推广 Apple News 服务的苹果，也在去年底加入赛场，推出了配套的[邮件新闻早报](https://9to5mac.com/2019/12/04/apple-news-launches-daily-email-newsletter/)。
+如果留心观察，你很可能已经发现自己关注的媒体网站，都在醒目位置加上了邮件订阅入口。的确，无论老牌印刷媒体还是新生代互联网媒体，都在争相推出邮件通讯产品，将其视作新的流量增长点。两年前，[《纽约时报》制作的邮件通讯](https://www.nytimes.com/2018/07/09/insider/newsletters-briefing.html) 数量就达到了 55 种，订阅量超过 1400 万。就连主打 [专有排版格式](https://developer.apple.com/documentation/apple_news/apple_news_format)、大力推广 Apple News 服务的苹果，也在去年底加入赛场，推出了配套的 [邮件新闻早报](https://9to5mac.com/2019/12/04/apple-news-launches-daily-email-newsletter/)。
 
 ![《纽约时报》数量繁多的邮件通讯产品](https://p178.p0.n0.cdn.getcloudapp.com/items/RBudDnPz/nyt_nl.png?v=590f06f5a8fac70b26d5962f099bbb0e)
 
 《纽约时报》数量繁多的邮件通讯产品
 
-邮件通讯也被证明是一条可行的创业、创收途径。由两名前媒体制作人创办的[新闻简报 theSkimm](https://www.investopedia.com/articles/markets/082515/how-theskimm-works-and-makes-money.asp) 积累了 700 万读者，每封邮件的广告收入可达六位数，并获得了两轮共计 2000 万美元的投资。随着邮件通讯市场逐渐壮大，还出现了 [Substack](https://substack.com/) 这样为独立创作者提供「一条龙」服务的付费通讯发布平台，其上不乏 [The Browser](https://thebrowser.com/)（5 美元/月）、[Sinocism](https://nb.sinocism.com/)（15 美元/月）等付费订户以万计的成功案例。
+邮件通讯也被证明是一条可行的创业、创收途径。由两名前媒体制作人创办的 [新闻简报 theSkimm](https://www.investopedia.com/articles/markets/082515/how-theskimm-works-and-makes-money.asp) 积累了 700 万读者，每封邮件的广告收入可达六位数，并获得了两轮共计 2000 万美元的投资。随着邮件通讯市场逐渐壮大，还出现了 [Substack](https://substack.com/) 这样为独立创作者提供「一条龙」服务的付费通讯发布平台，其上不乏 [The Browser](https://thebrowser.com/)（5 美元/月）、[Sinocism](https://nb.sinocism.com/)（15 美元/月）等付费订户以万计的成功案例。
 
 ![付费邮件通讯平台 Substack](https://p178.p0.n0.cdn.getcloudapp.com/items/bLumLKJ2/substack.png?v=41289369fbcc534dd2a635b40993042c)
 
@@ -65,11 +63,11 @@ tags:
 
 **其次，主动订阅并不代表真的感兴趣，更不代表能坚持阅读。**相信很多人都有过一时兴起留下邮箱，但通讯发来后一次都没有看过的经历。堆积在收件箱的通讯成了一种负担，顽固的未读计数仿佛在嘲讽自己过去的不理智选择。
 
-**邮件通讯也不是算法所造成问题的解药。**如我之前在讨论 RSS 的利弊时所[主张](https://type.cyhsu.xyz/2018/04/on-the-so-called-revival-of-rss/)的，算法推荐导致的「回音壁」和信息过载问题，并不能简单地靠回避算法内容而得到解决。相反，由于人工撰写和挑选的内容必然具有主观色彩，其信息价值有时并不见得更高。
+**邮件通讯也不是算法所造成问题的解药。**如我之前在讨论 RSS 的利弊时所 [主张](https://type.cyhsu.xyz/2018/04/on-the-so-called-revival-of-rss/) 的，算法推荐导致的「回音壁」和信息过载问题，并不能简单地靠回避算法内容而得到解决。相反，由于人工撰写和挑选的内容必然具有主观色彩，其信息价值有时并不见得更高。
 
 例如，我刚接触邮件通讯时，非常爱读的一封通讯是 [NextDraft](https://nextdraft.com/)。该通讯的主编 Dave Pell 号称「互联网总编辑」，每天从自己海量阅读的文章中挑选十篇，配上评注和延伸链接后发送给读者。Pell 的眼光和文采的确过人，我最初也受此吸引，对他的选文篇篇必读，把 NextDraft 当成了每天获取资讯的主要渠道。
 
-但在积累了一定阅读量、特别是在对[美国媒体生态](https://www.adfontesmedia.com/interactive-media-bias-chart/)有了进一步了解后，我逐渐发现 NextDraft 并不是一个很好的资讯来源。Pell 是硅谷投资人出身，浸淫科技圈多年，具有明显的自由派倾向；这种背景被他不加掩饰地体现在了文章选择和评论撰写中。NextDraft 涉及的议题和观点像是从民主党候选人的选纲里摘录出来的，推荐文章的来源也几乎清一色地落在媒体光谱的左侧，读来趣味有余，但全面性严重不足。发现了这个问题后，我便决定还是自行浏览各种机构性媒体了解时事资讯，而只把 NextDraft 当作日常阅读之外的补充和探索了。
+但在积累了一定阅读量、特别是在对 [美国媒体生态](https://www.adfontesmedia.com/interactive-media-bias-chart/) 有了进一步了解后，我逐渐发现 NextDraft 并不是一个很好的资讯来源。Pell 是硅谷投资人出身，浸淫科技圈多年，具有明显的自由派倾向；这种背景被他不加掩饰地体现在了文章选择和评论撰写中。NextDraft 涉及的议题和观点像是从民主党候选人的选纲里摘录出来的，推荐文章的来源也几乎清一色地落在媒体光谱的左侧，读来趣味有余，但全面性严重不足。发现了这个问题后，我便决定还是自行浏览各种机构性媒体了解时事资讯，而只把 NextDraft 当作日常阅读之外的补充和探索了。
 
 ![（一种版本的）媒体倾向图表，独立邮件通讯容易因作者个人偏好而倚重其中一侧的信源（来源：Ad Fontes Media）](https://p178.p0.n0.cdn.getcloudapp.com/items/5zuyqL5w/Media-Bias-Chart-5.1.jpg?v=f235bff59afbb58492daa7fb143ad641)
 
@@ -119,9 +117,9 @@ tags:
 
 这类内容的典型代表是时事新闻：不断更新，但契合个人兴趣的只是少数；虽有必要宏观了解，但频繁阅读也会浪费时间且容易疲劳。对于这类动态资讯，邮件通讯虽然不能抽刀断水，减缓世界变动的步伐，却可以将信息从持续且波动的流体，冷凝成频率和尺寸相对可控的固体，让用户可以按照自己选定的节奏和方式来获取。
 
-我也是近半年才发现了邮箱读新闻的优势。在 [2018 年的年度总结](https://type.cyhsu.xyz/2019/02/2018-review-art-of-forsaking/)中，我曾经提到自己通过《纽约时报》的数字版报纸获取新闻。后来发现，这种方法虽然利于把握新闻阅读的数量和质量，但效率却不那么理想：标题和寥寥一两行导语并不足以说清事件概况，而如果点开全文，其提供的信息量又往往超过了一般浏览所需。工作后，陡然减少的闲暇时间也让逐篇读完报纸头条成为了一种奢侈。
+我也是近半年才发现了邮箱读新闻的优势。在 [2018 年的年度总结](https://type.cyhsu.xyz/2019/02/2018-review-art-of-forsaking/) 中，我曾经提到自己通过《纽约时报》的数字版报纸获取新闻。后来发现，这种方法虽然利于把握新闻阅读的数量和质量，但效率却不那么理想：标题和寥寥一两行导语并不足以说清事件概况，而如果点开全文，其提供的信息量又往往超过了一般浏览所需。工作后，陡然减少的闲暇时间也让逐篇读完报纸头条成为了一种奢侈。
 
-《纽约时报》的[简报](https://www.nytimes.com/spotlight/us-briefing)（Briefing）系列邮件通讯成为了我新发现的平衡点。一方面，简报每天早晚定时发送，链接的文章数量相对固定，不用担心像读信息流那样浪费太多时间。另一方面，简报并不只是文章链接的机械汇总，而是会对新闻做出比较完整的总结。如果时间有限，只读邮件也足以了解事件概况。此外，简报的形式更加活泼，例如会附上背景报道和不同阵营的观点，编辑也会时不时穿插一两句呼应当天新闻的俏皮话等。
+《纽约时报》的 [简报](https://www.nytimes.com/spotlight/us-briefing)（Briefing）系列邮件通讯成为了我新发现的平衡点。一方面，简报每天早晚定时发送，链接的文章数量相对固定，不用担心像读信息流那样浪费太多时间。另一方面，简报并不只是文章链接的机械汇总，而是会对新闻做出比较完整的总结。如果时间有限，只读邮件也足以了解事件概况。此外，简报的形式更加活泼，例如会附上背景报道和不同阵营的观点，编辑也会时不时穿插一两句呼应当天新闻的俏皮话等。
 
 当然，如果你有意尝试用邮箱追踪时事新闻，可以选择的范围是非常广泛的。随着邮件通讯成为新的香饽饽，新老媒体几乎都加入了竞争，将新闻简报作为具有引流功能的重点产品来设计和推广。除了《纽约时报》的 Briefing，比较知名的还包括 Quartz 的 [Daily Brief](https://qz.com/emails/daily-brief/)、《华尔街日报》的 [The 10-Point](https://premiumnewsletters.wsj.com)（限付费订户）等。
 
@@ -135,7 +133,7 @@ tags:
 
 邮件通讯在这时同样可以起到分担压力的作用：通过只在 RSS 中保留一两个用于跟进动态的内容源，而改用邮件通讯订阅其余内容，既可以减少送达频率，也更方便根据精力情况灵活调整阅读量。
 
-例如，我在去年发现，《华尔街日报》虽然以其财经报道闻名，但其科技板块也是卧虎藏龙、内容质量很高，如将评测视频做得出神入化的 [Joanna Stern](https://en.wikipedia.org/wiki/Joanna_Stern) 就在其麾下，老将 [Walt Mossberg](https://en.wikipedia.org/wiki/Walt_Mossberg) 也在该版当过二十多年专栏作者。然而，科技新闻的更新实在过于频繁，我的 RSS 中光是一个 The Verge 就已经快要看不过来，实在没有再加入一个科技媒体的空档。好在 WSJ 科技版不那么追求时效，而是以评论文章见长；于是，我订阅了该版编辑制作、每周日发送的[《Tech Weekly》邮件周报](https://www.wsj.com/newsletters?sub=55&mod=article_inline)，这样，既不会错过近期的报道，又可以更集中地安排阅读时间。
+例如，我在去年发现，《华尔街日报》虽然以其财经报道闻名，但其科技板块也是卧虎藏龙、内容质量很高，如将评测视频做得出神入化的 [Joanna Stern](https://en.wikipedia.org/wiki/Joanna_Stern) 就在其麾下，老将 [Walt Mossberg](https://en.wikipedia.org/wiki/Walt_Mossberg) 也在该版当过二十多年专栏作者。然而，科技新闻的更新实在过于频繁，我的 RSS 中光是一个 The Verge 就已经快要看不过来，实在没有再加入一个科技媒体的空档。好在 WSJ 科技版不那么追求时效，而是以评论文章见长；于是，我订阅了该版编辑制作、每周日发送的 [《Tech Weekly》邮件周报](https://www.wsj.com/newsletters?sub=55&mod=article_inline)，这样，既不会错过近期的报道，又可以更集中地安排阅读时间。
 
 ![WSJ 科技版的《Tech Weekly》邮件周报](https://p178.p0.n0.cdn.getcloudapp.com/items/ApurdJy2/wsj-tech-weekly.png?v=ca5a0b5b5ca28df4471788e6a08c2f1c)
 
@@ -161,10 +159,10 @@ WSJ 科技版的《Tech Weekly》邮件周报
 
 **延伸阅读**
 
-- 《大英百科全书》中的[「邮件通讯」词条](https://www.britannica.com/print/article/413106)，提及了邮件通讯的历史起源
-- 《哈佛商业评论》2015 年对邮件通讯「回归」现象的[分析](https://hbr.org/2015/10/the-triumphant-return-of-the-email-newsletter)
-- 《纽约时报》2018 年对其邮件通讯制作流程的[报道](https://www.nytimes.com/2018/07/09/insider/newsletters-briefing.html)
-- 美国全国公共广播电台（NPR）的邮件通讯创作[入门指南](https://training.npr.org/2016/06/29/want-to-start-a-newsletter-read-this-first/)，对了解邮件通讯市场亦有帮助
-- 哈佛大学肯尼迪政治学院等机构共同制作的详尽[邮件通讯创作指南](https://newsletterguide.org/)
-- 《纽约客》揭示邮件通讯刻板化现象的[讽刺文章](https://www.newyorker.com/humor/daily-shouts/youve-been-signed-up-for-my-newsletter)
-- 方可成创办「新闻实验室」的[邮件通讯推荐](https://newslab2020.github.io/Collection/%E5%AA%92%E4%BD%93%E9%A3%9F%E8%B0%B1/%5B%E6%96%B0%E9%97%BB%E5%AE%9E%E9%AA%8C%E5%AE%A4%5D%20-%202017-05-10%20%E6%8A%8A%E4%BD%A0%E7%9A%84%E9%82%AE%E7%AE%B1%E8%B0%83%E6%95%99%E6%88%90%E6%9C%80%E5%A5%BD%E7%9A%84%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8%EF%BD%9C%E5%AA%92%E4%BD%93%E9%A3%9F%E8%B0%B107.html)
+- 《大英百科全书》中的 [「邮件通讯」词条](https://www.britannica.com/print/article/413106)，提及了邮件通讯的历史起源
+- 《哈佛商业评论》2015 年对邮件通讯「回归」现象的 [分析](https://hbr.org/2015/10/the-triumphant-return-of-the-email-newsletter)
+- 《纽约时报》2018 年对其邮件通讯制作流程的 [报道](https://www.nytimes.com/2018/07/09/insider/newsletters-briefing.html)
+- 美国全国公共广播电台（NPR）的邮件通讯创作 [入门指南](https://training.npr.org/2016/06/29/want-to-start-a-newsletter-read-this-first/)，对了解邮件通讯市场亦有帮助
+- 哈佛大学肯尼迪政治学院等机构共同制作的详尽 [邮件通讯创作指南](https://newsletterguide.org/)
+- 《纽约客》揭示邮件通讯刻板化现象的 [讽刺文章](https://www.newyorker.com/humor/daily-shouts/youve-been-signed-up-for-my-newsletter)
+- 方可成创办「新闻实验室」的 [邮件通讯推荐](https://newslab2020.github.io/Collection/%E5%AA%92%E4%BD%93%E9%A3%9F%E8%B0%B1/%5B%E6%96%B0%E9%97%BB%E5%AE%9E%E9%AA%8C%E5%AE%A4%5D%20-%202017-05-10%20%E6%8A%8A%E4%BD%A0%E7%9A%84%E9%82%AE%E7%AE%B1%E8%B0%83%E6%95%99%E6%88%90%E6%9C%80%E5%A5%BD%E7%9A%84%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8%EF%BD%9C%E5%AA%92%E4%BD%93%E9%A3%9F%E8%B0%B107.html)

@@ -1,9 +1,7 @@
 ---
 title: "数字世界中的纸张——理解 PDF"
 date: "2018-09-12"
-categories: 
-  - "post"
-tags: 
+tags:
   - "pdf"
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: "iPod touch — My Apple Product of the Decade"
 date: "2020-01-09"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
 ---
 
@@ -19,7 +17,7 @@ iPod touch 对我具有重要的地位，首先因为它是我接触的第一台
 
 最初见到 iPod touch 是在 2010 年。那是一节体育课的自由活动时间，同学从口袋里摸出一台 iPod touch 三代，自豪地向我展示——外观小巧精致到不像话，正面是一块色彩夺目的「巨屏」。这个场景虽然就像很多人结识苹果产品的故事一样俗套，但如果你还记得当时国产 MP4（5 6）的平均功能和设计水准，应该可以体谅我那种刘姥姥进大观园式的震撼。虽然这位同学并不是一个很好的展示者——我们接下来非常 nerdy 地躲在操场角落蹭着办公室 Wi-Fi 用 [BlackRa1n](https://www.idownloadblog.com/2009/10/11/jailbreak-iphone-blackra1n-tutorial/) 把这台机器越了狱——但这次惊艳的第一印象已经足以让 iPod touch 成为我想要拥有的梦幻设备。（这台 touch 后来被我「强行」借来霸占了几个月。）
 
-拥有自己的 iPod touch 则是 2011 年的事。此前，尽管对 touch 念念不忘，但迫于囊中羞涩，一直没有机会入手。我甚至还买过当时一度很热门的[国产安卓 MP4](https://baike.baidu.com/item/昂达VX580R) 作为替代、以解相思，但和 touch 的体验比只能说是天上地下。终于捱到寒假，我兜里揣着还热乎的压岁钱，偷偷跑到数码城买回了一台乞丐版（8GB）的四代 iPod touch。我不太能记得当时自己是怎么飘回家的了，但用现在流行的「真香」形容当时的心情，相当于用「微辣」形容重庆火锅。
+拥有自己的 iPod touch 则是 2011 年的事。此前，尽管对 touch 念念不忘，但迫于囊中羞涩，一直没有机会入手。我甚至还买过当时一度很热门的 [国产安卓 MP4](https://baike.baidu.com/item/昂达 VX580R) 作为替代、以解相思，但和 touch 的体验比只能说是天上地下。终于捱到寒假，我兜里揣着还热乎的压岁钱，偷偷跑到数码城买回了一台乞丐版（8GB）的四代 iPod touch。我不太能记得当时自己是怎么飘回家的了，但用现在流行的「真香」形容当时的心情，相当于用「微辣」形容重庆火锅。
 
 ![一些 iPod touch 4 截图](https://p178.p0.n0.cdn.getcloudapp.com/items/12uDgLQA/ipt4.png?v=be81bd47301ea73e3386f237299cdb48)
 
@@ -37,7 +35,7 @@ iPod touch 对我具有重要的地位，首先因为它是我接触的第一台
 
 但 iPod touch 之所以对我有特殊的意义，并不只是因为它恰好在我的数码生涯中赶了个早集，而更是因为我借助它做过的事、探索到的领域。
 
-iPod touch 见证了我从违反规矩中寻找乐趣的中学生活。它的存在本身就是一种违纪行为——家长不同意买、校规不允许带。但得益于它的轻薄小巧，我还是在多次走私中得逞，并且从未在突击搜查中翻车。（我至今感激拔下耳机自动暂停这个伟大的设计。）为了让没有手机模块的 touch 上网，我专门弄了一台廉价的电信合约机[华为 C8812](https://baike.baidu.com/item/华为C8812)，搭配电信廉价的夜间流量包，通过 [Bluetooth PAN](https://en.wikipedia.org/wiki/Personal_area_network#Bluetooth)（俗称蓝牙双环）共享网络。至于有没有耽误学业？我也不记得了，只记得晚自习做数学题时用函数绘图软件投机取巧的快感，和冬天中午反锁宿舍阳台门享用音乐和阳光的惬意。
+iPod touch 见证了我从违反规矩中寻找乐趣的中学生活。它的存在本身就是一种违纪行为——家长不同意买、校规不允许带。但得益于它的轻薄小巧，我还是在多次走私中得逞，并且从未在突击搜查中翻车。（我至今感激拔下耳机自动暂停这个伟大的设计。）为了让没有手机模块的 touch 上网，我专门弄了一台廉价的电信合约机 [华为 C8812](https://baike.baidu.com/item/华为 C8812)，搭配电信廉价的夜间流量包，通过 [Bluetooth PAN](https://en.wikipedia.org/wiki/Personal_area_network#Bluetooth)（俗称蓝牙双环）共享网络。至于有没有耽误学业？我也不记得了，只记得晚自习做数学题时用函数绘图软件投机取巧的快感，和冬天中午反锁宿舍阳台门享用音乐和阳光的惬意。
 
 ![iTunes 时代遗留的播放列表](https://p178.p0.n0.cdn.getcloudapp.com/items/P8uY17vG/ipt-playlist.png?v=9662e17ff57e8dbbce7d8ca4ded6243a)
 
@@ -49,7 +47,7 @@ iPod touch 是我当时（唯一）的播放器、游戏机、相机。它并不
 
 iCloud 相册最前面几张照片，都出自 iPod touch 5 的摄像头
 
-折腾 iPod touch 的过程也为我开辟了很多新的兴趣领域。为了越狱，我被迫走出 Windows 的舒适区，识记了很多 POSIX 风格的[系统路径](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)，为日后叛逃到 OS X 打下了基础。为了看电子书的体验更好，我接触到[「唐茶」](https://web.archive.org/web/20120914211400/http://tangcha.tc/)（网站已关闭，链接为归档版本）主导的精排版电子书概念，进而对字体排印、平面排版知识产生了系统学习的兴趣。为了在 iPod 上管理课业、冲抵自己「玩物丧志」的负罪感，我接触到各种任务管理和信息管理工具，进而对 GTD 方法有了最初的概念。
+折腾 iPod touch 的过程也为我开辟了很多新的兴趣领域。为了越狱，我被迫走出 Windows 的舒适区，识记了很多 POSIX 风格的 [系统路径](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)，为日后叛逃到 OS X 打下了基础。为了看电子书的体验更好，我接触到 [「唐茶」](https://web.archive.org/web/20120914211400/http://tangcha.tc/)（网站已关闭，链接为归档版本）主导的精排版电子书概念，进而对字体排印、平面排版知识产生了系统学习的兴趣。为了在 iPod 上管理课业、冲抵自己「玩物丧志」的负罪感，我接触到各种任务管理和信息管理工具，进而对 GTD 方法有了最初的概念。
 
 ![义务帮同学越狱一度成为我周末的主要工作之一](https://p178.p0.n0.cdn.getcloudapp.com/items/04ugEWzx/jb.jpeg?v=dbfdc8125c594b1e59c31f1bd98ea8cf)
 

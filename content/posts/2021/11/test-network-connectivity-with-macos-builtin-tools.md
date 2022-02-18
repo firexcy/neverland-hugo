@@ -1,9 +1,7 @@
 ---
 title: "用自带工具快速判断 macOS 和 iOS 的网络质量"
 date: "2021-11-17"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
 ---
 
@@ -45,7 +43,7 @@ Responsiveness: Low (188 RPM)
 
 其中，「Upload/download capacity」是指上传/下载的带宽；「Upload/download flows」是指刚才测试中完成传输的测速文件数量。
 
-至于「Upload/download responsiveness」，是指上传和下载的综合「响应能力」，根据 Apple 的[支持文档](https://support.apple.com/zh-cn/HT212313)，它的衡量指标是每分钟往返次数 (RPM)，即在正常工作条件下，网络能够在一分钟内完成的连续往返次数或事务数量。
+至于「Upload/download responsiveness」，是指上传和下载的综合「响应能力」，根据 Apple 的 [支持文档](https://support.apple.com/zh-cn/HT212313)，它的衡量指标是每分钟往返次数 (RPM)，即在正常工作条件下，网络能够在一分钟内完成的连续往返次数或事务数量。
 
 根据 RPM 的高低数值不同，networkQuality 对响应能力的评价也分为「低」「中」「高」三个等级。这可以大致反映当前网络的拥堵程度，从而帮助间接估测视频通话、游戏等应用的效果：
 
@@ -59,7 +57,7 @@ Responsiveness: Low (188 RPM)
 
 具体而言，该工具默认会从一个外部 json 格式文件（目前位于 [https://mensura.cdn-apple.com/api/v1/gm/config](https://mensura.cdn-apple.com/api/v1/gm/config) ）获取测试配置。该文件包含三个测试文件地址：
 
-- 一个小文件下载地址（目前位于 [https://mensura.cdn-apple.com/api/v1/gm/small，](https://mensura.cdn-apple.com/api/v1/gm/small%EF%BC%8C%E5%A4%A7%E5%B0%8F%E4%B8%BA)大小为 1 字节、内容为字母 x）；
+- 一个小文件下载地址（目前位于 [https://mensura.cdn-apple.com/api/v1/gm/small，](https://mensura.cdn-apple.com/api/v1/gm/small%EF%BC%8C%E5%A4%A7%E5%B0%8F%E4%B8%BA) 大小为 1 字节、内容为字母 x）；
 - 一个大文件下载地址（目前位于 [https://mensura.cdn-apple.com/api/v1/gm/large](https://mensura.cdn-apple.com/api/v1/gm/large%EF%BC%8C%E5%A4%A7%E7%BA%A6)，大约 4GB，内容为字母 x 的填充）；
 - 一个上传文件测试地址（目前位于 [https://mensura.cdn-apple.com/api/v1/gm/slurp](https://mensura.cdn-apple.com/api/v1/gm/slurp%EF%BC%89%E3%80%82)）。
 
@@ -75,7 +73,7 @@ Responsiveness: Low (188 RPM)
 
 `networkQuality` 除了可以在 macOS 上使用，iOS 中也藏着一个该工具的简化版本。
 
-首次使用前，需要安装 Apple 提供的[描述文件](https://developer.apple.com/bug-reporting/profiles-and-logs/?platform=ios&name=Wifi)（访问需要登录 Apple ID），并在「设置」中出现的「已下载描述文件」选择「安装」。
+首次使用前，需要安装 Apple 提供的 [描述文件](https://developer.apple.com/bug-reporting/profiles-and-logs/?platform=ios&name=Wifi)（访问需要登录 Apple ID），并在「设置」中出现的「已下载描述文件」选择「安装」。
 
 此后，在「无线局域网」设置页面中网络名称右侧点击「信息」图标，就可以看到一个额外的「诊断」菜单项。进入后，可以看到「响应能力」字样，点击「测试」按钮即可获得类似于 macOS 上的测速结论。
 

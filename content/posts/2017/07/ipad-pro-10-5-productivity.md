@@ -1,9 +1,7 @@
 ---
 title: "10.5 寸 iPad Pro 的学术应用体验——兼论 iPad 的「生产力」迷思"
 date: "2017-07-07"
-categories: 
-  - "post"
-tags: 
+tags:
   - "hardware"
   - "ipad"
   - "productivity"

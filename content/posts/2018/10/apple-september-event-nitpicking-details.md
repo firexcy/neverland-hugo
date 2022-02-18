@@ -1,9 +1,7 @@
 ---
 title: "苹果 2018 秋季新品的细节探讨"
 date: "2018-10-15"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
 ---
 

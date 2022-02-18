@@ -1,9 +1,8 @@
 ---
 title: "译文 | 那些遍布互联网的阴招"
 date: "2016-07-29"
-categories: 
+tags:
   - "translations"
-tags: 
   - "internet"
 ---
 

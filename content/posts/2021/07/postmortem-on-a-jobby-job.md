@@ -2,7 +2,6 @@
 title: "Postmortem on My Jobby Job"
 date: "2021-07-25"
 categories: 
-  - "post"
 ---
 
 This week witnessed the end of my career as a transactional lawyer.

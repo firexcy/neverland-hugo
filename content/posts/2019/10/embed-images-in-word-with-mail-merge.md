@@ -1,9 +1,7 @@
 ---
 title: "用邮件合并为 Word 文档批量配图"
 date: "2019-10-27"
-categories: 
-  - "post"
-tags: 
+tags:
   - "microsoft-office"
   - "tutorial"
 ---

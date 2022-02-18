@@ -1,9 +1,8 @@
 ---
 title: "‘I Am Your Father’"
 date: "2016-02-16"
-categories: 
+tags:
   - "translations"
-tags: 
   - "apple"
   - "excerpts"
 ---

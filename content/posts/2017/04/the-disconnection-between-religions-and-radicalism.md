@@ -1,9 +1,7 @@
 ---
 title: "The Disconnection Between Religions And Radicalism"
 date: "2017-04-25"
-categories: 
-  - "post"
-tags: 
+tags:
   - "excerpts"
   - "opinion"
 ---

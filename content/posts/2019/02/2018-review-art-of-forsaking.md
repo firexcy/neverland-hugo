@@ -1,9 +1,7 @@
 ---
 title: "信息消费——从入门到放弃"
 date: "2019-02-09"
-categories: 
-  - "post"
-tags: 
+tags:
   - "internet"
   - "opinion"
 ---

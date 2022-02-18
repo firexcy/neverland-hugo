@@ -2,7 +2,6 @@
 title: "订阅、云服务、套壳——关于 1Password 8 的是非争议"
 date: "2021-09-22"
 categories: 
-  - "post"
 ---
 
 _**Note:** The post was originally written as [a premium article](https://sspai.com/prime/story/1pw8-disputes) for members of SSPAI and subsequently released to the public as a trailer._ _You may want to [sign up for the membership](https://sspai.com/prime) if you’re interested in such content. Thanks for your support._ _Disclaimer of affiliation: employee._
@@ -25,21 +24,21 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 2021 年 5 月，1Password 团队宣布推出 Linux 版客户端。根据在同期发表的 [Medium 文章](https://dteare.medium.com/behind-the-scenes-of-1password-for-linux-d59b19143a23)，该版本使用了一种「混合」架构，其中前端（软件界面）部分使用 Electron 框架编写：
 
-> 1Password for Linux 是我们第一款混合 \[架构\] 应用。\[…\] **后端**用 Rust 写成，这个语言以其安全性和高性能而闻名。
+> 1Password for Linux 是我们第一款混合 \[架构、] 应用。\[…\] **后端**用 Rust 写成，这个语言以其安全性和高性能而闻名。
 
-> \[…\] **前端**使用 web 技术，这让我们得以能打造 1Password 的全新设计语言；不仅美观，而且让我们 \[的开发工作\] 高度敏捷、快速迭代。在为 [1Password.com](http://1password.com/) \[上的网页版\] 和浏览器插件开发界面时，我们就用了 TypeScript 和 React，并大获成功。因此，这次 \[继续使用这些框架\] 也就是自然而然的选择了。
+> \[…\] **前端**使用 web 技术，这让我们得以能打造 1Password 的全新设计语言；不仅美观，而且让我们 \[的开发工作、] 高度敏捷、快速迭代。在为 [1Password.com](http://1password.com/) \[上的网页版、] 和浏览器插件开发界面时，我们就用了 TypeScript 和 React，并大获成功。因此，这次 \[继续使用这些框架、] 也就是自然而然的选择了。
 
-> 我们此次发布 Linux 版的主要目标之一，就是打造一个**共用的内核**，其作用在于与 [1Password.com](http://1password.com/) \[上的服务端\] 通讯，并集中完成尽可能多的计算任务。我们希望在所有客户端共用一个代码库，实现集中开发功能、一次性修正漏洞。我们还希望通过组件架构的设计，避免这个共用的内核不会被恶意利用。
+> 我们此次发布 Linux 版的主要目标之一，就是打造一个**共用的内核**，其作用在于与 [1Password.com](http://1password.com/) \[上的服务端、] 通讯，并集中完成尽可能多的计算任务。我们希望在所有客户端共用一个代码库，实现集中开发功能、一次性修正漏洞。我们还希望通过组件架构的设计，避免这个共用的内核不会被恶意利用。
 
 ![](https://cdn.sspai.com/2021/09/19/article/18657924e6cb05f910db1af9e6f7bd01)
 
-随后，在 8 月，1Password 团队[宣布](https://blog.1password.com/1password-8-for-mac-is-now-in-early-access/) Mac 平台的下一版本——1Password 8 进入初期测试（early access）阶段，并开放下载。
+随后，在 8 月，1Password 团队 [宣布](https://blog.1password.com/1password-8-for-mac-is-now-in-early-access/) Mac 平台的下一版本——1Password 8 进入初期测试（early access）阶段，并开放下载。
 
-根据同期发布的[官方博客文章](https://appleinsider.com/articles/21/08/16/users-lobby-1password-to-abandon-new-electron-version)，不同于该软件过去在 Mac 平台一直坚持的原生框架开发路径，1Password 8 也已转向与 Linux 版相同的混合架构，即使用 Electron 框架编写用户界面，而原因则是「不得已而为之」：
+根据同期发布的 [官方博客文章](https://appleinsider.com/articles/21/08/16/users-lobby-1password-to-abandon-new-electron-version)，不同于该软件过去在 Mac 平台一直坚持的原生框架开发路径，1Password 8 也已转向与 Linux 版相同的混合架构，即使用 Electron 框架编写用户界面，而原因则是「不得已而为之」：
 
 > 如何为 macOS 开发 1Password 8，可能是我们做过的最复杂的决策。\[…\] 我们决定采取「双分支」的做法，开发两个 Mac 应用。其中一个用 SwiftUI 编写，面向最新版操作系统；另一个使用网页 UI，从而支持旧版系统。
 
-> 尽管 SwiftUI 让我们在 iOS 和 macOS 版本之间可以共享代码的比例达到有史最高，我们还是发现需要为某些组件单独开发 \[两种\] 实现，才能在相应的系统上显得自然，有时整个功能都得单独开发。\[…\]
+> 尽管 SwiftUI 让我们在 iOS 和 macOS 版本之间可以共享代码的比例达到有史最高，我们还是发现需要为某些组件单独开发 \[两种、] 实现，才能在相应的系统上显得自然，有时整个功能都得单独开发。\[…\]
 
 > 最终，我们痛苦地决定停止用 SwiftUI 开发 Mac 应用，把 SwiftUI 的开发集中在 iOS 上，靠 Electron 版应用支持所有版本的 Mac 操作系统。
 
@@ -47,19 +46,19 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 与开发框架的变动同步，1Password 8 的付费模式也发生了变化，取消了一直存在的「买断制」许可，只保留近年新增的订阅制。
 
-不过，官方最初并没有明确指出这一点，只是到了用户在官方论坛发帖质询后，创始人 Dave Teare 才[出面回应](https://1password.community/discussion/comment/601917/#Comment_601917)：
+不过，官方最初并没有明确指出这一点，只是到了用户在官方论坛发帖质询后，创始人 Dave Teare 才 [出面回应](https://1password.community/discussion/comment/601917/#Comment_601917)：
 
-> 鉴于 1Password 会员服务备受欢迎，而 [1Password.com](http://1password.com/) \[的网页版服务\] 在功能上远胜其他 \[既有客户端\]，我们下一代 1Password 应用将专注于会员 \[订阅制服务\]。\[…\] 现在是时候告别独立买断许可证了。
+> 鉴于 1Password 会员服务备受欢迎，而 [1Password.com](http://1password.com/) \[的网页版服务、] 在功能上远胜其他 \[既有客户端、]，我们下一代 1Password 应用将专注于会员 \[订阅制服务、]。\[…\] 现在是时候告别独立买断许可证了。
 
 对现有买断制用户，则提供专属优惠鼓励迁移：
 
 > \[为表感谢，\] 只要将你的现有许可证邮件发给我们，即可获得三年期的五折优惠。\[…\] 我们理解有人希望只在明确同意时付款；如果是这样，我们也提供了一项特惠：你可以花 99 美元购买一张价值 150 美元的礼品卡，足够使用 1Password 三年多。
 
-在[另一则回复](https://1password.community/discussion/comment/602340/#Comment_602340)中，Teare 则明确表示将停止提供独立密码库的功能，但不排除未来推出自建（self-host）服务端的选项：
+在 [另一则回复](https://1password.community/discussion/comment/602340/#Comment_602340) 中，Teare 则明确表示将停止提供独立密码库的功能，但不排除未来推出自建（self-host）服务端的选项：
 
-> 下一代 1Password 应用将仅能与 [1Password.com](http://1password.com/) \[上的订阅制服务\] 同步。\[…\] \[Mac 上的\] 1Password 7 不受影响，现有的同步方式均能继续使用。
+> 下一代 1Password 应用将仅能与 [1Password.com](http://1password.com/) \[上的订阅制服务、] 同步。\[…\] \[Mac 上的、] 1Password 7 不受影响，现有的同步方式均能继续使用。
 
-> \[…\] 我们已经在琢磨允许用户自主搭建云服务的思路。那将成为你个人专属的 1Password 服务，完全运行在你的主机，或者你掌控的云端。但一个大问题是：有多少用户朋友需要这个功能？\[…\] 请参与[这项调查](https://1password.community/home/leaving?allowTrusted=1&target=https%3A%2F%2Fsurvey.1password.com%2Fself-host%2F)，帮助我们进一步理解你的使用场景。
+> \[…\] 我们已经在琢磨允许用户自主搭建云服务的思路。那将成为你个人专属的 1Password 服务，完全运行在你的主机，或者你掌控的云端。但一个大问题是：有多少用户朋友需要这个功能？\[…\] 请参与 [这项调查](https://1password.community/home/leaving?allowTrusted=1&target=https%3A%2F%2Fsurvey.1password.com%2Fself-host%2F)，帮助我们进一步理解你的使用场景。
 
 ## 反对观点
 
@@ -78,11 +77,11 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 不过，仍然有一些观点**对仅保留订阅制、以及相关的取消独立密码库的变更提出了合理质疑**。
 
-例如，名为「MikeV99」的用户对于订阅制的价值[提出](https://1password.community/discussion/comment/603660/#Comment_603660)了一种尽管罕见、但也引人思考的疑问：
+例如，名为「MikeV99」的用户对于订阅制的价值 [提出](https://1password.community/discussion/comment/603660/#Comment_603660) 了一种尽管罕见、但也引人思考的疑问：
 
 > 我夫人今年 80 岁了，我明年一月也要满 80 岁。我做了你们这么多年顾客，升级过很多版本。如果我不按年订阅，终身订阅要收多少钱？
 
-名为「thundersparrow」的用户则[提出](https://1password.community/discussion/comment/606748/#Comment_606748)了一种可以接受订阅制、但不能接受在线密码库的合理场景：
+名为「thundersparrow」的用户则 [提出](https://1password.community/discussion/comment/606748/#Comment_606748) 了一种可以接受订阅制、但不能接受在线密码库的合理场景：
 
 > 我是个技术支持顾问，为多个客户工作。对于每个客户，我都会创建一个本地密码库存放这位客户的密码。
 
@@ -104,9 +103,9 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 例如，Hacker News 用户「bgentry」[表示](https://news.ycombinator.com/item?id=28143821)：
 
-> 最可气的地方在于他们的客服团队一上午都在 Twitter 上误导别人，而不是老实回答新版是不是 Electron \[写的\]，\[说什么 「[还是原生的](https://twitter.com/1Password/status/1425429965747720200)」「[后端是用 Rust 写的](https://twitter.com/1Password/status/1425429965747720200)」「[更快更灵敏](https://twitter.com/1Password/status/1425470169133031435)」。\]
+> 最可气的地方在于他们的客服团队一上午都在 Twitter 上误导别人，而不是老实回答新版是不是 Electron \[写的、]，\[说什么 「[还是原生的](https://twitter.com/1Password/status/1425429965747720200)」「[后端是用 Rust 写的](https://twitter.com/1Password/status/1425429965747720200)」「[更快更灵敏](https://twitter.com/1Password/status/1425470169133031435)」。\]
 
-用户「kup0」则[表示](https://news.ycombinator.com/item?id=28148070)：
+用户「kup0」则 [表示](https://news.ycombinator.com/item?id=28148070)：
 
 > 号称「顾客用钱包投票」选择了订阅制是很虚伪的。\[…\] 作为软硬件用户，我情绪上真的很烦老是遇到这样的反衬：喜欢一个产品、却对做产品的公司极度失望。
 
@@ -114,17 +113,17 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 尽管质疑声音颇多，也有不少一些观点则对 1Password 表达了支持，或至少表示理解。
 
-一些人指出，**对 Electron「膝跳反应」式的批评是非理性的**。较有代表性的是开发者 Thaddeus Ternes 的[推文串](https://twitter.com/thaddeus/status/1427005912842133512)：
+一些人指出，**对 Electron「膝跳反应」式的批评是非理性的**。较有代表性的是开发者 Thaddeus Ternes 的 [推文串](https://twitter.com/thaddeus/status/1427005912842133512)：
 
-> UI \[用户界面\] 工具的决策和开发时间是一大商业风险。在 Apple 平台上，新工具的功能几乎从不会向后移植到旧版。选择支持旧版操作系统，就要放弃 \[新的\] 平台功能。相反，如果选择新工具，目标受众就很有限，每年增增减减的意外 \[功能\] 变动也只能由你承担。
+> UI \[用户界面、] 工具的决策和开发时间是一大商业风险。在 Apple 平台上，新工具的功能几乎从不会向后移植到旧版。选择支持旧版操作系统，就要放弃 \[新的、] 平台功能。相反，如果选择新工具，目标受众就很有限，每年增增减减的意外 \[功能、] 变动也只能由你承担。
 
-> 但如果选择 Electron，就能 \[兼顾\] 支持旧版的系统和现代的功能，功能支持和排期也有清晰的路线图。Electron 实际上是一种降低开发风险的方式（有的服务商过去几十年就是靠帮人降低开发风险赚了大钱）。甚至可以说 Apple 的保密就是在强迫别的公司去用 Electron。
+> 但如果选择 Electron，就能 \[兼顾、] 支持旧版的系统和现代的功能，功能支持和排期也有清晰的路线图。Electron 实际上是一种降低开发风险的方式（有的服务商过去几十年就是靠帮人降低开发风险赚了大钱）。甚至可以说 Apple 的保密就是在强迫别的公司去用 Electron。
 
 > 我本身并不很喜欢 Electron，但考虑到做软件生意的各种内在挑战，如果能不花钱就将风险转移出去，那是很有吸引力的。
 
 另一些观点指出，1Password 弃用原生框架而转采 Electron 的决策中，**Apple 作为第一方、怠于提供良好的开发框架，也有一部分责任**。Jason Snell [撰文指出](https://sixcolors.com/post/2021/08/not-important-enough-1password-abandons-its-native-mac-app/)：
 
-> 问题的根源在于：1Password 是以「亲 Mac 阵营开发者」的身份起家的，现在却认定 Mac 不够重要了。\[官方博客文章\] 很清楚地表明了 AgileBits 的优先级。\[…\] AgileBits 愿意在 iOS 上多花功夫 \[使用 SwiftUI 开发\]，因为这是个重要的平台，而 SwiftUI 显然是它的未来。但在 Mac 上实现 SwiftUI 就要做很多重复工作了。\[…\] \[他们博客文章等于在说，\] Mac 很重要，但没有重要到让我们做一个专属应用。这道出了 Mac 软件未来之痛。
+> 问题的根源在于：1Password 是以「亲 Mac 阵营开发者」的身份起家的，现在却认定 Mac 不够重要了。\[官方博客文章、] 很清楚地表明了 AgileBits 的优先级。\[…\] AgileBits 愿意在 iOS 上多花功夫 \[使用 SwiftUI 开发、]，因为这是个重要的平台，而 SwiftUI 显然是它的未来。但在 Mac 上实现 SwiftUI 就要做很多重复工作了。\[…\] \[他们博客文章等于在说，\] Mac 很重要，但没有重要到让我们做一个专属应用。这道出了 Mac 软件未来之痛。
 
 > Apple 也难避其咎。如果 SwiftUI 真的是一统 Apple 各平台的钦定工具，那 1Password 就会用上了。\[…\] 一个历史悠久、受人喜爱的 Mac 应用被扔进废纸篓，被一个网页应用取而代之。这事不是没有先例；不幸的是，也不会后无来者。
 
@@ -147,7 +146,7 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 ## 相关事件/延伸阅读
 
-**用 Electron 框架制作出原生质感的应用并非天方夜谭。** GitHub 通知管理工具 Lotus 的开发者[讨论](https://getlotus.app/21-making-electron-apps-feel-native-on-mac)了如何从窗口加载、标题栏可拖拽区域、字体选用、鼠标指针、菜单设置等细节入手，让 Electron 尽可能贴近原生效果。
+**用 Electron 框架制作出原生质感的应用并非天方夜谭。** GitHub 通知管理工具 Lotus 的开发者 [讨论](https://getlotus.app/21-making-electron-apps-feel-native-on-mac) 了如何从窗口加载、标题栏可拖拽区域、字体选用、鼠标指针、菜单设置等细节入手，让 Electron 尽可能贴近原生效果。
 
 ![](https://cdn.sspai.com/2021/09/19/article/f89a2a5b991a7040da1d508caa840b37)
 
@@ -155,4 +154,4 @@ _**Note:** The post was originally written as [a premium article](https://sspai.
 
 ![](https://cdn.sspai.com/2021/09/19/article/df21d2b051c67cc2b276d3e924d91587)
 
-在收到大量负面评价后，开发者在几天后即[出面道歉](https://www.arqbackup.com/blog/arq-6-next-steps/)，宣布将逐渐加回缺失的功能。不到一年后的 2021 年 2 月，下一个大版本 [Arq 7](https://www.arqbackup.com/blog/arq-7-released/) 完全放弃了 Electron，重新用回了原生框架编写界面。
+在收到大量负面评价后，开发者在几天后即 [出面道歉](https://www.arqbackup.com/blog/arq-6-next-steps/)，宣布将逐渐加回缺失的功能。不到一年后的 2021 年 2 月，下一个大版本 [Arq 7](https://www.arqbackup.com/blog/arq-7-released/) 完全放弃了 Electron，重新用回了原生框架编写界面。

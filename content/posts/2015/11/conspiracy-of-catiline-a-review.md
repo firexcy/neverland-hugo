@@ -1,9 +1,7 @@
 ---
 title: "《喀提林阴谋》书评"
 date: "2015-11-17"
-categories: 
-  - "post"
-tags: 
+tags:
   - "book"
   - "law"
   - "review"

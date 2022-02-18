@@ -1,9 +1,8 @@
 ---
 title: "译文 | 英航诉欧共体委员会判决书"
 date: "2017-09-26"
-categories: 
+tags:
   - "translations"
-tags: 
   - "law"
   - "tech"
 ---

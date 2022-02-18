@@ -1,9 +1,7 @@
 ---
 title: "用 Calibre 命令行优化 Kindle 电子书字体"
 date: "2018-04-02"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ereader"
   - "kindle"
   - "tips"

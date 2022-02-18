@@ -27,7 +27,7 @@ body header a {
 }
 main h1 a {
   color: var(--maincolor);
-  border: none; 
+  border: none;
 }
 ::selection {
   background: var(--maincolor);
@@ -70,8 +70,12 @@ ul li {
   text-indent: -2ch;
 }
 ul > li::before {
-  content: "* ";
+  content: "· ";
   font-weight: bold;
+}
+
+::marker {
+  color: var(--maincolor);
 }
 
 img {
@@ -79,7 +83,8 @@ img {
   max-width: 70%;
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--mono-font);
 }
 
@@ -101,7 +106,6 @@ figure img {
 }
 
 figure h4 {
-  font-size: 1rem;
   margin: 0;
   margin-bottom: 1em;
 }
@@ -161,31 +165,33 @@ h5,
 h6 {
   font-size: 1.2rem;
   margin-top: 2em;
+  color: var(--maincolor); 
 }
+
 
 h1::before {
   color: var(--maincolor);
-  content: "# ";
+  content: "* ";
 }
 h2::before {
   color: var(--maincolor);
-  content: "## ";
+  content: "† ";
 }
 h3::before {
   color: var(--maincolor);
-  content: "### ";
+  content: "‡ ";
 }
 h4::before {
   color: var(--maincolor);
-  content: "#### ";
+  content: "§ ";
 }
 h5::before {
   color: var(--maincolor);
-  content: "##### ";
+  content: "‖ ";
 }
 h6::before {
   color: var(--maincolor);
-  content: "###### ";
+  content: "¶ ";
 }
 
 .meta {
@@ -294,4 +300,12 @@ table th {
 table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+}
+
+.post-tags {
+  border-top: 2px dotted var(--bordercl);
+}
+
+.tags li::before {
+  content: "# ";
 }

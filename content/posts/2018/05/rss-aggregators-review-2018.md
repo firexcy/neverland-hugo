@@ -1,9 +1,7 @@
 ---
 title: "RSS 服务对比评测"
 date: "2018-05-04"
-categories: 
-  - "post"
-tags: 
+tags:
   - "review"
   - "rss"
 ---

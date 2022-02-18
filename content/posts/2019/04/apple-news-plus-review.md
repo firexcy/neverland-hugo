@@ -1,9 +1,7 @@
 ---
 title: "Apple News+ 一周体验"
 date: "2019-04-02"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
   - "review"
 ---

@@ -1,9 +1,7 @@
 ---
 title: "Word 文档导出为 PDF 时出现额外脚注"
 date: "2020-06-10"
-categories: 
-  - "post"
-tags: 
+tags:
   - "microsoft-office"
   - "tips"
 ---
@@ -22,7 +20,7 @@ tags:
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/mXuAE8dk/field_code_docproperty.png?v=39b8491169c4a675b382231e30e317d9)
 
-查阅 Office 官方文档的[说明](https://support.microsoft.com/en-us/office/field-codes-docproperty-field-bf00526e-18cd-4515-8c8e-39d59094395a)，`DOCPROPERTY` 域的作用是显示当前文档的某个[属性](https://support.office.com/en-us/article/View-or-change-the-properties-for-an-Office-file-21D604C2-481E-4379-8E54-1DD4622C6B75)（property）。这个属性可能是内置的，例如文档的作者（`Author`）、创建时间（`CreateTime`）等；也可以是用户或者第三方软件后续添加的。进一步搜索发现，`SWDocID` 是 Litera 公司开发的法律文件自动化软件 Innova 创建的属性，正是起到给文件编号的作用。
+查阅 Office 官方文档的 [说明](https://support.microsoft.com/en-us/office/field-codes-docproperty-field-bf00526e-18cd-4515-8c8e-39d59094395a)，`DOCPROPERTY` 域的作用是显示当前文档的某个 [属性](https://support.office.com/en-us/article/View-or-change-the-properties-for-an-Office-file-21D604C2-481E-4379-8E54-1DD4622C6B75)（property）。这个属性可能是内置的，例如文档的作者（`Author`）、创建时间（`CreateTime`）等；也可以是用户或者第三方软件后续添加的。进一步搜索发现，`SWDocID` 是 Litera 公司开发的法律文件自动化软件 Innova 创建的属性，正是起到给文件编号的作用。
 
 ![Innova 文档关于 SWDocID 属性的说明](https://p178.p0.n0.cdn.getcloudapp.com/items/d5uWzBBv/innova_swdocid.png?v=9097ff06c6f582127f119cf449db7dda)
 

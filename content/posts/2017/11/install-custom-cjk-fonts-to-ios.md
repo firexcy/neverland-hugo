@@ -1,9 +1,7 @@
 ---
 title: "用 Apple Configurator 给 iOS 设备安装中文字体"
 date: "2017-11-08"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ios"
   - "tutorial"
 ---

@@ -2,7 +2,6 @@
 title: "WWDC’21: Resources"
 date: "2021-06-08"
 categories: 
-  - "post"
 ---
 
 ## Beta software

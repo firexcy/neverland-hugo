@@ -1,9 +1,8 @@
 ---
 title: "译文 | 会写代码的法官"
 date: "2017-10-28"
-categories: 
+tags:
   - "translations"
-tags: 
   - "law"
   - "tech"
 ---

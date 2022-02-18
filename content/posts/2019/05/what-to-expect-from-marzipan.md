@@ -1,9 +1,8 @@
 ---
 title: "译文 | Marzipan 带来的期待"
 date: "2019-05-16"
-categories: 
+tags:
   - "translations"
-tags: 
   - "apple"
   - "design"
   - "ios"

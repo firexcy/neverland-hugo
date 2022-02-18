@@ -1,9 +1,7 @@
 ---
 title: "Mac 迁移指南"
 date: "2021-01-04"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
   - "tutorial"
 ---
@@ -12,11 +10,11 @@ tags:
 
 苹果今年为 Mac 产品线带来了不少有意义的更新。适逢年末，不少人可能已经有了升级换新的计划。
 
-但在享受新机带来的喜悦同时，还有一件不得不做的麻烦事——数据迁移。尽管听起来只是初始设置中的一个步骤，但数据迁移的效果很大程度上影响到新机的使用体验和之后的工作效率，因此须加重视。苹果官方有一些指导教程，包括[出售、赠送或折抵 Mac 前应该执行的步骤](https://support.apple.com/zh-cn/HT201065)，如何[将内容迁移到一台新的 Mac](https://support.apple.com/zh-cn/HT204350) 等，但都略嫌简略，不足以解决迁移过程中的很多常见疑问。
+但在享受新机带来的喜悦同时，还有一件不得不做的麻烦事——数据迁移。尽管听起来只是初始设置中的一个步骤，但数据迁移的效果很大程度上影响到新机的使用体验和之后的工作效率，因此须加重视。苹果官方有一些指导教程，包括 [出售、赠送或折抵 Mac 前应该执行的步骤](https://support.apple.com/zh-cn/HT201065)，如何 [将内容迁移到一台新的 Mac](https://support.apple.com/zh-cn/HT204350) 等，但都略嫌简略，不足以解决迁移过程中的很多常见疑问。
 
 对此，本文准备结合自己几次迁移的经验，从可选途径、考虑因素和具体步骤等方面介绍在 Mac 间迁移数据的方法，希望能为有此需要的读者提供帮助。
 
-由于本文较长，为查阅方便，文中涉及的关键步骤如下图所示（或[下载 PDF 版](https://p178.p0.n0.cdn.getcloudapp.com/items/KoulEmeg/5cc80180-2676-4c63-a987-8a3c7c647db5.pdf?v=433209ce4d5779e9e7748ae1055bced2)）：
+由于本文较长，为查阅方便，文中涉及的关键步骤如下图所示（或 [下载 PDF 版](https://p178.p0.n0.cdn.getcloudapp.com/items/KoulEmeg/5cc80180-2676-4c63-a987-8a3c7c647db5.pdf?v=433209ce4d5779e9e7748ae1055bced2)）：
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/geuoPkr9/a3f9b9e9-de4c-49ac-9755-44299c6f9179.png?v=38f897fa646716d04a5626ebeb9c42fa)
 
@@ -24,7 +22,7 @@ tags:
 
 ### （一）使用「迁移助理」工具
 
-作为系统内置和官方推荐的工具，[迁移助理](https://support.apple.com/zh-cn/guide/mac-help/mh27921/11.0/mac/11.0)是大多数情况下**最简单、效果最好的迁移方式**。
+作为系统内置和官方推荐的工具，[迁移助理](https://support.apple.com/zh-cn/guide/mac-help/mh27921/11.0/mac/11.0) 是大多数情况下**最简单、效果最好的迁移方式**。
 
 ![迁移助理](https://p178.p0.n0.cdn.getcloudapp.com/items/bLu0Z6Av/4aa9faa7-50e6-4e95-9b29-359e504f0224.jpg?v=f8b9727dd521a9cf5b74ae309b5e060f)
 
@@ -34,13 +32,13 @@ tags:
 
 但是，和大多数苹果系统的内置功能类似，迁移助理同样具有**简洁度有余、灵活性和信息量不足的缺点**。在迁移范围的选择上，除了少数几个语焉不详的选项，用户并没有太多定制的空间，迁移过程中显示的进度条和时间预测也基本属于娱乐性质。
 
-此外，**迁移助理能否成功运行有一定运气成分**，在 MacRumors 等用户论坛上能看到大量「搬到一半卡住不动了」的哭诉。不过，这一问题似乎近年随系统升级有所改善——例如，John Gruber 就在 M1 版 Mac 的评测中对其[大为赞赏](https://daringfireball.net/2020/11/the_m1_macs#fn1-2020-11-17)，我自己两次使用迁移助理的经历也都比较顺利。
+此外，**迁移助理能否成功运行有一定运气成分**，在 MacRumors 等用户论坛上能看到大量「搬到一半卡住不动了」的哭诉。不过，这一问题似乎近年随系统升级有所改善——例如，John Gruber 就在 M1 版 Mac 的评测中对其 [大为赞赏](https://daringfireball.net/2020/11/the_m1_macs#fn1-2020-11-17)，我自己两次使用迁移助理的经历也都比较顺利。
 
 ### （二）全盘恢复
 
 有过 Windows 维护经验的读者一定对使用 Ghost 备份快速装机不陌生。类似地，Mac 系统的迁移也可以通过在新机上直接恢复旧机的全盘备份来实现。
 
-最简单的方式还是使用时间机器备份：将备份盘连接到新机上，启动到恢复模式，然后选择「从时间机器恢复」即可。此外，[SuperDuper!](https://www.shirt-pocket.com/SuperDuper/)、[Carbon Copy Cloner](https://bombich.com) 等第三方软件也可以创建具有完整启动盘结构（bootable）的克隆，将其[恢复到新机的内置硬盘](https://support.apple.com/zh-cn/guide/disk-utility/dskutl14062/mac)就实现了迁移的效果。
+最简单的方式还是使用时间机器备份：将备份盘连接到新机上，启动到恢复模式，然后选择「从时间机器恢复」即可。此外，[SuperDuper!](https://www.shirt-pocket.com/SuperDuper/)、[Carbon Copy Cloner](https://bombich.com) 等第三方软件也可以创建具有完整启动盘结构（bootable）的克隆，将其 [恢复到新机的内置硬盘](https://support.apple.com/zh-cn/guide/disk-utility/dskutl14062/mac) 就实现了迁移的效果。
 
 ![Carbon Copy Cloner](https://p178.p0.n0.cdn.getcloudapp.com/items/JruqeADw/10512af3-5b8e-42bd-8983-437e7604ec4a.jpg?v=ecc6eff45ae474876746696581b34f42)
 
@@ -66,8 +64,8 @@ Carbon Copy Cloner
 
 ### （二）新旧机器的差异
 
-- **硬件差异：** 新旧 Mac 之间的代际差别越大，旧机器上不适用于新硬件的软件、配置就越多，对迁移造成的潜在干扰也就越大。此外，Mac 产品线的移动型号（MacBook）和桌面型号（iMac、Mac mini 和 Mac Pro）在电源策略、硬件调度等方面有着不同的默认设置，同样可能不适合直接迁移。最后，有时还会存在新机的硬盘容量小于旧机的情况。因此，如果你是从一台[不再受官方支持](https://support.apple.com/zh-cn/HT201624)的 Mac 上迁移，或者在桌面和移动型号 Mac 之间迁移，那么应该考虑提高手动迁移的比例，不要把旧机的配置囫囵吞枣地套用到新机上。
-- **软件差异：** macOS 近年的历次更新都有些「伤筋动骨」的变化。例如，2017 年的 High Sierra 将默认磁盘格式从 HFS 改为 APFS；2019 年的 Catalina 不再支持 32 位软件，并将启动宗卷一分为二、密闭其中受保护的系统路径等。因此，迁移前最好将旧机器[升级到新版本](https://support.apple.com/zh-cn/HT201475)，避免因这些底层差异造成迁移失败。如果旧机器不支持 macOS Big Sur（全部 2012 年及更早上市的型号和部分 2013 年上市的型号，具体可以查阅[官方的支持列表](https://support.apple.com/zh-cn/HT211238)），那么最好不要使用迁移助理。
+- **硬件差异：** 新旧 Mac 之间的代际差别越大，旧机器上不适用于新硬件的软件、配置就越多，对迁移造成的潜在干扰也就越大。此外，Mac 产品线的移动型号（MacBook）和桌面型号（iMac、Mac mini 和 Mac Pro）在电源策略、硬件调度等方面有着不同的默认设置，同样可能不适合直接迁移。最后，有时还会存在新机的硬盘容量小于旧机的情况。因此，如果你是从一台 [不再受官方支持](https://support.apple.com/zh-cn/HT201624) 的 Mac 上迁移，或者在桌面和移动型号 Mac 之间迁移，那么应该考虑提高手动迁移的比例，不要把旧机的配置囫囵吞枣地套用到新机上。
+- **软件差异：** macOS 近年的历次更新都有些「伤筋动骨」的变化。例如，2017 年的 High Sierra 将默认磁盘格式从 HFS 改为 APFS；2019 年的 Catalina 不再支持 32 位软件，并将启动宗卷一分为二、密闭其中受保护的系统路径等。因此，迁移前最好将旧机器 [升级到新版本](https://support.apple.com/zh-cn/HT201475)，避免因这些底层差异造成迁移失败。如果旧机器不支持 macOS Big Sur（全部 2012 年及更早上市的型号和部分 2013 年上市的型号，具体可以查阅 [官方的支持列表](https://support.apple.com/zh-cn/HT211238)），那么最好不要使用迁移助理。
 
 ![macOS Big Sur 的启动宗卷结构（来源：The Eclectic Light Company）](https://p178.p0.n0.cdn.getcloudapp.com/items/8LunYm54/0f4ddbc7-eac1-4b18-ac4e-e9627f9d5271.jpg?v=d40e5a5e0b44d90774c1d9f570bde48b)
 
@@ -88,25 +86,25 @@ macOS Big Sur 的启动宗卷结构（来源：The Eclectic Light Company）
 
 备份是迁移工作的起点和基础。如果准备从时间机器迁移数据，备份的干净、完整性显然是迁移成功的关键。即使打算全部手动迁移，旧机的完整备份也可以在出现问题时作为安全网。
 
-如前所述，在创建用于迁移的备份之前，应当先**将系统升级到与新机相同的高版本。此外，最好先花点时间清理系统中的垃圾文件**（可以使用 [OmniDiskSweeper](https://www.omnigroup.com/more#OmniDiskSweeper) 等第三方工具，也可以使用内置的[「避免杂乱」功能](https://support.apple.com/zh-cn/HT206996#reduceclutter)），并使用磁盘工具中的[「急救」功能](https://support.apple.com/zh-cn/guide/disk-utility/dskutl1040/20.0/mac/11.0)**修复磁盘错误**，确保得到的是相对干净的备份。
+如前所述，在创建用于迁移的备份之前，应当先**将系统升级到与新机相同的高版本。此外，最好先花点时间清理系统中的垃圾文件**（可以使用 [OmniDiskSweeper](https://www.omnigroup.com/more#OmniDiskSweeper) 等第三方工具，也可以使用内置的 [「避免杂乱」功能](https://support.apple.com/zh-cn/HT206996#reduceclutter)），并使用磁盘工具中的 [「急救」功能](https://support.apple.com/zh-cn/guide/disk-utility/dskutl1040/20.0/mac/11.0) **修复磁盘错误**，确保得到的是相对干净的备份。
 
-备份步骤本身则非常简单：如果此前已经使用过时间机器备份系统，那么连上备份盘，点击菜单栏的时间机器图标 >「立刻备份」，等待创建一份最新的备份即可。否则，根据[官方指南](https://support.apple.com/zh-cn/HT201250)新建一份备份。
+备份步骤本身则非常简单：如果此前已经使用过时间机器备份系统，那么连上备份盘，点击菜单栏的时间机器图标 >「立刻备份」，等待创建一份最新的备份即可。否则，根据 [官方指南](https://support.apple.com/zh-cn/HT201250) 新建一份备份。
 
 此外，还有一些值得额外关注和单独备份的重点位置：
 
 - **照片图库：** 虽然时间机器备份包括了照片图库的位置（`~/Pictures/Photos Library.photoslibrary`），iCloud 也会同步照片，但考虑到 iCloud 并不完全靠谱，仍然建议将照片库**单独备份到安全位置**（如外置硬盘、NAS、其他云存储服务等）。 备份之前，注意确认在照片的偏好设置中选中了「将原片下载到此 Mac」而非「优化存储空间」，保证所备份的是完整的原始照片。
 - **音乐资料库：** Apple Music 本身是音乐流播服务，始终存在云端；但那些自行上传的音乐文件以及自建的播放列表（一般位于`~/Music/Music/`）仍然建议单独备份。 与照片库的情况类似，这些本地音乐文件有时会在释放空间的过程中被清除（在音乐 app 中曲名右侧显示一个云图标），从而无法被备份涵盖。**避免遗漏的技巧**是：点击「新建」>「智能播放列表」，将「云端状态」为「上传」设为筛选条件，即可找出所有自行上传的曲目；然后，在该播放列表上点击右键选择「下载」将其一次性保存到本地，单独备份即可。
-- **命令行工具配置：** 对于需要使用命令行工具的进阶用户，建议额外备份用户文件夹根目录下以 `.` 开头的配置文件或文件夹（「dotfiles」，如 `~/.zshrc`、`~/.vimrc`、`~/.config/`），并用 [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) 功能导出已安装的软件包列表。当然，dotfile 更好的备份方式或许是[使用 Git](https://dotfiles.github.io/)。
+- **命令行工具配置：** 对于需要使用命令行工具的进阶用户，建议额外备份用户文件夹根目录下以 `.` 开头的配置文件或文件夹（「dotfiles」，如 `~/.zshrc`、`~/.vimrc`、`~/.config/`），并用 [Homebrew Bundle](https://docs.brew.sh/Manpage#bundle-subcommand) 功能导出已安装的软件包列表。当然，dotfile 更好的备份方式或许是 [使用 Git](https://dotfiles.github.io/)。
 
 #### 第二步：退出、解绑各类账号、软件
 
 - **退出 iCloud：** 打开「系统偏好设置」>「Apple ID」。在边栏中选择「概览」，然后点击「退出登录」。
     - 退出过程中会提示是否将 iCloud 中的文档、照片、密码等信息从本机删除，可以根据旧机的处置计划自行判断：如果准备转手，由于后续步骤会抹除磁盘，这里可以暂时不删除以节省时间。
-    - 如果启用了「查找我的 Mac」功能，**务必根据系统提示在此时关闭**（特别是对于近年[配有 T2 芯片的 Mac](https://support.apple.com/zh-cn/HT208862)），以免激活锁残留，影响之后的重置和转让。如果确实忘记关闭就直接重置了系统，补救方法是通过 iCloud 网页版或其他设备上的「查找」app [远程关闭激活锁](https://support.apple.com/zh-cn/guide/icloud/mmfc0eeddd/icloud)。
+    - 如果启用了「查找我的 Mac」功能，**务必根据系统提示在此时关闭**（特别是对于近年 [配有 T2 芯片的 Mac](https://support.apple.com/zh-cn/HT208862)），以免激活锁残留，影响之后的重置和转让。如果确实忘记关闭就直接重置了系统，补救方法是通过 iCloud 网页版或其他设备上的「查找」app [远程关闭激活锁](https://support.apple.com/zh-cn/guide/icloud/mmfc0eeddd/icloud)。
 - **解除 Apple Music/iTunes 授权：** 对于 Apple Music 或者从 iTunes 上购买的内容，DRM 保护机制要求只有经授权的电脑才能访问。因此，建议解除旧机的授权，以免其继续占用 5 台设备的限额。方法是：打开音乐 app（或旧版系统中的 iTunes），点击「账户」>「授权」>「取消对这台电脑的授权」。如果重置旧机前忘记了取消授权，可以在新机上点击「账户」>「查看我的账户」，然后选择「取消对所有电脑的授权」。
 - **其他软件：** 大多数软件的授权都会限制同时安装的设备数量，因此在迁移之前应当进行反激活、退出登录等操作。简便起见，可以将软件的序列号、许可证文件等作为笔记和附件保存在备忘录 app 中，这样新机上打开 iCloud 同步即可直接找到；也可以用 1Password 等第三方软件管理。
 
-除此之外，苹果的官方指引还提示[重置 NVRAM](https://support.apple.com/zh-cn/HT204063)、取消配对蓝牙设备等。实践角度，这些步骤并非特别必要，对于迁移流程影响不大，可以跳过。
+除此之外，苹果的官方指引还提示 [重置 NVRAM](https://support.apple.com/zh-cn/HT204063)、取消配对蓝牙设备等。实践角度，这些步骤并非特别必要，对于迁移流程影响不大，可以跳过。
 
 ### （二）新机上的配置
 
@@ -138,7 +136,7 @@ macOS Big Sur 的启动宗卷结构（来源：The Eclectic Light Company）
 
 1. **高权限软件：** 主要是驱动程序等关系到硬件或系统底层的软件，如 Paragon NTFS（需要安装内核扩展来支持 Windows 文件格式）、Audio Hijack（需要安装高权限辅助程序来截获系统音频）等。随着 macOS 日益收紧第三方软件的权限，这些工具往往需要多次授权和重启才能完成安装，因此最好在系统比较干净时先做到一劳永逸，避免日后的麻烦。
 2. **同步工具：** 如果使用 iCloud Drive 以外的同步服务，一般需要重新登录。关于新机启用同步工具的注意事项见下文。
-3. **（可选）命令行工具：** 尽管未明确提及，但迁移助理的「其他文件与文件夹」选项涵盖了 `/Library/Developer/`（[Command Line Tools 软件包](https://developer.apple.com/library/archive/technotes/tn2339/*index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE*)的安装位置）和 `/usr/local/bin/`（Homebrew 等用户自行安装软件包的位置）等与命令行环境相关的路径；命令行软件用于存储配置的隐藏文件（「dotfiles」）一般位于用户文件夹根目录，同样会被迁移，因此检查是否迁移成功即可。如果发现有遗漏，可以通过之前步骤建立的备份和 Homebrew Bundle 功能找回。
+3. **（可选）命令行工具：** 尽管未明确提及，但迁移助理的「其他文件与文件夹」选项涵盖了 `/Library/Developer/`（[Command Line Tools 软件包](https://developer.apple.com/library/archive/technotes/tn2339/*index.html#//apple_ref/doc/uid/DTS40014588-CH1-WHAT_IS_THE_COMMAND_LINE_TOOLS_PACKAGE*) 的安装位置）和 `/usr/local/bin/`（Homebrew 等用户自行安装软件包的位置）等与命令行环境相关的路径；命令行软件用于存储配置的隐藏文件（「dotfiles」）一般位于用户文件夹根目录，同样会被迁移，因此检查是否迁移成功即可。如果发现有遗漏，可以通过之前步骤建立的备份和 Homebrew Bundle 功能找回。
 4. **操作辅助类工具：** 例如快速启动（Alfred）、窗口管理（Moom）、密码管理（1Password）、菜单栏整理（Bartender）等工具。这些工具虽然并非工作必须，但用惯后一旦缺失就会十分别扭，通常也需要授予辅助操控、磁盘访问等权限才能正常运行。因此，最好「长痛不如短痛」，尽早安装设置好，以免影响使用效率。
 5. **工作、学习中的常用软件：** Office、Adobe CC 等。
 6. 其他软件。
@@ -146,7 +144,7 @@ macOS Big Sur 的启动宗卷结构（来源：The Eclectic Light Company）
 **如果是迁移到 Apple 芯片的新机，还需要考虑处理器架构带来的变化：**
 
 - **图形界面软件：** 可以到 [Does it ARM](https://doesitarm.com/) 等网站查阅其是否适配了 ARM 架构。有的软件只要升级到最新版（如 Chrome 浏览器）即可原生运行在 ARM 环境，有的则需要安装专门的 ARM 版本（如 VS Code 的 Insider 测试版）。
-- **命令行工具：** 包管理工具 Homebrew 本身需要重新安装到新路径 `/opt/homebrew/`。其他工具可以到 [Homebrew 的 GitHub issue 页面](https://github.com/Homebrew/brew/issues/7857)查询适配情况。如果已经适配，则应该卸载旧版并重新安装针对 ARM 编译的版本到 `/opt` 路径。具体步骤和注意事项可以参考我[之前的文章](https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/)。
+- **命令行工具：** 包管理工具 Homebrew 本身需要重新安装到新路径 `/opt/homebrew/`。其他工具可以到 [Homebrew 的 GitHub issue 页面](https://github.com/Homebrew/brew/issues/7857) 查询适配情况。如果已经适配，则应该卸载旧版并重新安装针对 ARM 编译的版本到 `/opt` 路径。具体步骤和注意事项可以参考我 [之前的文章](https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/)。
 
 #### 第三步：迁移软件配置和数据
 
@@ -182,7 +180,7 @@ macOS Big Sur 的启动宗卷结构（来源：The Eclectic Light Company）
 
 ## （三）抹除和重置旧机
 
-当确认所需的数据都迁移完成、新机使用基本正常后，就可以重置旧机以便后续处置。这需要在恢复模式下完成，包括[抹除磁盘](https://support.apple.com/zh-cn/HT208496)和[重新安装系统](https://support.apple.com/zh-cn/HT204904)两步，官方支持文章都有详细的说明，在此不赘。
+当确认所需的数据都迁移完成、新机使用基本正常后，就可以重置旧机以便后续处置。这需要在恢复模式下完成，包括 [抹除磁盘](https://support.apple.com/zh-cn/HT208496) 和 [重新安装系统](https://support.apple.com/zh-cn/HT204904) 两步，官方支持文章都有详细的说明，在此不赘。
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/P8umXv6n/6ab8e73b-eb45-4bdf-8176-224b18072cdd.jpg?v=2763195bdd179de55a23c2636a2c86e6)
 
@@ -192,11 +190,11 @@ macOS Big Sur 的启动宗卷结构（来源：The Eclectic Light Company）
 
 如果你准备将旧机转售，可能会顾虑仅仅抹除硬盘并重装系统是否足以保护隐私，是否需要一些额外步骤来保证数据已经被充分擦除。这当然是合理的顾虑；事实上，早期版本磁盘工具曾经提供「将所有数据清零」和「安全抹掉」等功能，通过向硬盘中反复填充空白数据，减少事后通过软件恢复的可能性。
 
-但是，苹果已经在搭载固态硬盘的 Mac 上隐藏了这些功能。根据苹果一篇[支持文章](https://support.apple.com/zh-cn/HT201857)的说法，对固态硬盘执行标准的擦除操作已经能使数据难以恢复，因为固态硬盘的工作机制是将写入数据分散在各处（主要是出于减少磨损的考虑），擦除后很难从碎片中拼出完整的信息。
+但是，苹果已经在搭载固态硬盘的 Mac 上隐藏了这些功能。根据苹果一篇 [支持文章](https://support.apple.com/zh-cn/HT201857) 的说法，对固态硬盘执行标准的擦除操作已经能使数据难以恢复，因为固态硬盘的工作机制是将写入数据分散在各处（主要是出于减少磨损的考虑），擦除后很难从碎片中拼出完整的信息。
 
 苹果指出，确保固态硬盘上数据安全的更好方式是使用「文件保险箱」（FileVault），这是 macOS 系统自带的硬件加密技术，一般情况下已经默认启用了（你可以到「系统偏好设置」>「安全和隐私」>「FileVault」确认或手动启用）。由于 FileVault 加密后的数据只能通过加密密钥和对应的密码解锁，而擦除操作会删除加密密钥，即使有数据残留，也因无法解密而完全无用。
 
-当然，如果你确实希望通过反复写入方式擦除硬盘，仍然可以通过终端下的 `diskutil secureErase` 命令实现，具体方式参见该命令的手册（`man diskutil`）。你也可以阅读维基百科关于[固态硬盘数据遗留](https://en.wikipedia.org/wiki/Data_remanence#Data_on_solid-state_drives)的讨论和备份解决方案商 BackBlaze 的[博客文章](https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/)来进一步了解这一话题。
+当然，如果你确实希望通过反复写入方式擦除硬盘，仍然可以通过终端下的 `diskutil secureErase` 命令实现，具体方式参见该命令的手册（`man diskutil`）。你也可以阅读维基百科关于 [固态硬盘数据遗留](https://en.wikipedia.org/wiki/Data_remanence#Data_on_solid-state_drives) 的讨论和备份解决方案商 BackBlaze 的 [博客文章](https://www.backblaze.com/blog/how-to-wipe-a-mac-hard-drive/) 来进一步了解这一话题。
 
 * * *
 

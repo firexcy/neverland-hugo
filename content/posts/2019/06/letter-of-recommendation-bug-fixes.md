@@ -1,9 +1,8 @@
 ---
 title: "译文 | 推荐信：程序排错"
 date: "2019-06-14"
-categories: 
+tags:
   - "translations"
-tags: 
   - "tech"
 ---
 

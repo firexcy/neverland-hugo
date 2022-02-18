@@ -1,9 +1,8 @@
 ---
 title: "译文 | ‘The Developer Migration’"
 date: "2018-06-20"
-categories: 
+tags:
   - "translations"
-tags: 
   - "apple"
 ---
 

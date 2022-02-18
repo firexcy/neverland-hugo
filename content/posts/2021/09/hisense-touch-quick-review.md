@@ -1,14 +1,12 @@
 ---
 title: "海信 Touch 阅读器简评"
 date: "2021-09-09"
-categories: 
-  - "post"
-tags: 
+tags:
   - "eink"
   - "review"
 ---
 
-iPod touch 是我[最喜欢的电子产品](https://type.cyhsu.xyz/2020/01/ipod-touch-my-apple-product-of-the-decade/)之一。它寄居在手机的外壳中，让人用相对较低的成本体验到不输「完全体」的功能；虽然刨去了通讯模块，但对于已经不再需要另一台手机的用户而言，反倒也算一种优点而非缺陷。 在 iPod touch 久未更新、行将就木之际，我又迎来了另一台名为「touch」的产品——海信 Touch。这是海信在推出数代墨水屏（E-Ink）手机后，发布的一款不带通讯功能的纯阅读器产品。
+iPod touch 是我 [最喜欢的电子产品](https://type.cyhsu.xyz/2020/01/ipod-touch-my-apple-product-of-the-decade/) 之一。它寄居在手机的外壳中，让人用相对较低的成本体验到不输「完全体」的功能；虽然刨去了通讯模块，但对于已经不再需要另一台手机的用户而言，反倒也算一种优点而非缺陷。 在 iPod touch 久未更新、行将就木之际，我又迎来了另一台名为「touch」的产品——海信 Touch。这是海信在推出数代墨水屏（E-Ink）手机后，发布的一款不带通讯功能的纯阅读器产品。
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/2Nul6Kql/bdefe93a-82a8-45a0-859a-b6d1f6676b44.jpeg?v=74ec3a6e1454fda935aded69dcb32706)
 

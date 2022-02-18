@@ -1,9 +1,7 @@
 ---
 title: "iOS 11 中的新播客 App"
 date: "2017-07-01"
-categories: 
-  - "post"
-tags: 
+tags:
   - "app"
   - "ios"
 ---

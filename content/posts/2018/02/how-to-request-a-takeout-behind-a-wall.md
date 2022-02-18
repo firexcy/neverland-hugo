@@ -1,9 +1,7 @@
 ---
 title: "如何正确地叫外卖"
 date: "2018-02-28"
-categories: 
-  - "post"
-tags: 
+tags:
   - "networking"
   - "satire"
 ---

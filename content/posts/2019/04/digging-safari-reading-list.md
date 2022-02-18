@@ -1,9 +1,7 @@
 ---
 title: "挖掘 Safari 阅读列表的潜力"
 date: "2019-04-13"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ios"
   - "macos"
   - "tips"

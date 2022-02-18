@@ -1,9 +1,7 @@
 ---
 title: "Becoming Steve Jobs, Reviewed"
 date: "2015-05-03"
-categories: 
-  - "post"
-tags: 
+tags:
   - "book"
   - "review"
 ---

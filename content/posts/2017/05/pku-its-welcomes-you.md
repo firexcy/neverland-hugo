@@ -1,9 +1,7 @@
 ---
 title: "北京大学网络服务使用指南"
 date: "2017-05-20"
-categories: 
-  - "post"
-tags: 
+tags:
   - "satire"
 ---
 

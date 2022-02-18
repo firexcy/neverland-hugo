@@ -1,9 +1,7 @@
 ---
 title: "从「斗鱼案」看网络游戏直播的著作权问题"
 date: "2017-04-25"
-categories: 
-  - "post"
-tags: 
+tags:
   - "academic"
   - "intellectual-property"
   - "law"

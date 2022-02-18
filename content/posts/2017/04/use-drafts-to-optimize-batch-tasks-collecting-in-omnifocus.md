@@ -1,9 +1,7 @@
 ---
 title: "用 Drafts 优化 OmniFocus 的批量任务收集"
 date: "2017-04-15"
-categories: 
-  - "post"
-tags: 
+tags:
   - "gtd"
   - "ios"
   - "omnifocus"

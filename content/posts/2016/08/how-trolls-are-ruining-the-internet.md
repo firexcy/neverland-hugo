@@ -1,9 +1,8 @@
 ---
 title: "译文 | 暴民是怎样毁掉互联网的"
 date: "2016-08-30"
-categories: 
+tags:
   - "translations"
-tags: 
   - "internet"
   - "tech"
 ---

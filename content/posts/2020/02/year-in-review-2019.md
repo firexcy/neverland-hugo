@@ -1,9 +1,7 @@
 ---
 title: "Year in Review 2019 — 当数字生活与工作相遇"
 date: "2020-02-09"
-categories: 
-  - "post"
-tags: 
+tags:
   - "law"
   - "opinion"
   - "productivity"
@@ -66,7 +64,7 @@ Windows 也摘掉了「对命令行不友好」的帽子。例如，[WSL](https:
 
 Alfred 和 LaunchBar 的替代品 Listary
 
-最后，在我的 NUC 上，Windows 做起服务器系统也是有模有样。虽然可能不入资深运维人员的法眼，但 Windows 自带的 IIS、活动目录等管理工具，可以让我零基础实现内网 WebDAV、FTP 等服务的搭建以及权限管理；运行 [OpenWRT](https://openwrt.org/ "OpenWRT") 软路由组网的需求，也可以通过内置的虚拟机 Hyper-V 解决。反观 macOS，在苹果大幅[削减](https://support.apple.com/en-us/HT208312) macOS Server 的功能后，这些任务反倒都要求助于第三方软件了。此外，Windows 远程桌面功能所基于的 RDP 协议，虽然不比 Mac 和 Linux 上的 VNC 适用面广，但功能和性能表现却更好，例如无须额外配置就能串流声音、自适应客户端分辨率等。这为我用 iPad 躺在床上远程访问桌面软件提供了很大便利。
+最后，在我的 NUC 上，Windows 做起服务器系统也是有模有样。虽然可能不入资深运维人员的法眼，但 Windows 自带的 IIS、活动目录等管理工具，可以让我零基础实现内网 WebDAV、FTP 等服务的搭建以及权限管理；运行 [OpenWRT](https://openwrt.org/ "OpenWRT") 软路由组网的需求，也可以通过内置的虚拟机 Hyper-V 解决。反观 macOS，在苹果大幅 [削减](https://support.apple.com/en-us/HT208312) macOS Server 的功能后，这些任务反倒都要求助于第三方软件了。此外，Windows 远程桌面功能所基于的 RDP 协议，虽然不比 Mac 和 Linux 上的 VNC 适用面广，但功能和性能表现却更好，例如无须额外配置就能串流声音、自适应客户端分辨率等。这为我用 iPad 躺在床上远程访问桌面软件提供了很大便利。
 
 ![通过 Jump Desktop 远程访问的 NUC](https://p178.p0.n0.cdn.getcloudapp.com/items/ApuO728y/nuc.png?v=281e7b38dcda1ecebdb07f18a9f42ae8)
 
@@ -110,7 +108,7 @@ X390 连接外接显示器——一场噩梦
 
 ThinkPad 的性能优化问题成为了将我从 Windows 系统劝退的最后一根稻草。如果说操作逻辑的不同可以适应、软件质量的平庸可以忍耐，但在老板要求发去文件时突然死机，或者因为软件崩溃让数小时的工作功亏一篑，就是另外一回事了。
 
-表面上看，这些软硬件问题并不是 Windows 的责任。但一个平台的软硬件质量，很大程度上取决于平台给开发者和厂商提供了什么样的资源。Ars Technica 的资深 Windows 撰稿人 Peter Bright 就曾在比较 Windows 和 OS X 的软件开发生态时，[指出](https://arstechnica.com/gadgets/2018/05/microsoft-learn-from-apple-iii/)微软没有给软件开发提供足够的工具。例如，如果 OS X 开发者需要给软件加一个文本框，那么 [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) 不仅提供了统一的文本框样式，而且还附带了拼写检查、撤销、文本格式、自动折行等一系列相关功能。而换成开发 Windows 软件，很多类似效果的实现就需要自力更生，功能缺失和不一致性也随之而来。另外，微软为了维持 Windows 的兼容性，让系统背上了沉重的历史包袱，也削弱了开发者采用新技术、迁移到新架构的动力。
+表面上看，这些软硬件问题并不是 Windows 的责任。但一个平台的软硬件质量，很大程度上取决于平台给开发者和厂商提供了什么样的资源。Ars Technica 的资深 Windows 撰稿人 Peter Bright 就曾在比较 Windows 和 OS X 的软件开发生态时，[指出](https://arstechnica.com/gadgets/2018/05/microsoft-learn-from-apple-iii/) 微软没有给软件开发提供足够的工具。例如，如果 OS X 开发者需要给软件加一个文本框，那么 [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) 不仅提供了统一的文本框样式，而且还附带了拼写检查、撤销、文本格式、自动折行等一系列相关功能。而换成开发 Windows 软件，很多类似效果的实现就需要自力更生，功能缺失和不一致性也随之而来。另外，微软为了维持 Windows 的兼容性，让系统背上了沉重的历史包袱，也削弱了开发者采用新技术、迁移到新架构的动力。
 
 ![令人窒息的极限实验：在 Windows 10 上运行 WIN16 架构程序（来源：TechGenix）](https://p178.p0.n0.cdn.getcloudapp.com/items/jkunzNyq/16-bit-H-1024x641.jpg?v=a7d578d3daefff9c249d34e7469d2f08)
 
@@ -124,13 +122,13 @@ ThinkPad 的性能优化问题成为了将我从 Windows 系统劝退的最后�
 
 尽管我重新拥抱 Windows 的尝试以失败告终，这段经历也没有让我空手而归。最明显的收获，就是我终于重新捡起了不少 Windows 和 Office 技能，认识了一批 Windows 上的优秀软件，并积累了常用自动化流程在 Mac 之外的实现方法。
 
-其次，从一个软件爱好者的角度，深度使用 Windows 让我摆脱了对它的刻板印象和有色眼镜，在回过头来评价 Mac 平台时，也有了新的参照系。Mac 并不处处比 Windows 更好，相反，制约 Windows 平台软件质量的很多因素，如今在 macOS 上也有抬头之势。例如，[半桶水晃荡的 Catalyst](https://mjtsai.com/blog/2019/12/16/catalyst-and-cohesion/) 让开发者和用户都感到困惑，macOS Catalina [激进的安全策略](https://mjtsai.com/blog/2019/07/23/annoying-catalina-security-features/)严重影响了第三方软件的正常运行，苹果开发文档的质量出现[明显下滑](https://mjtsai.com/blog/2019/05/20/the-state-of-apples-developer-documentation/)；等等。
+其次，从一个软件爱好者的角度，深度使用 Windows 让我摆脱了对它的刻板印象和有色眼镜，在回过头来评价 Mac 平台时，也有了新的参照系。Mac 并不处处比 Windows 更好，相反，制约 Windows 平台软件质量的很多因素，如今在 macOS 上也有抬头之势。例如，[半桶水晃荡的 Catalyst](https://mjtsai.com/blog/2019/12/16/catalyst-and-cohesion/) 让开发者和用户都感到困惑，macOS Catalina [激进的安全策略](https://mjtsai.com/blog/2019/07/23/annoying-catalina-security-features/) 严重影响了第三方软件的正常运行，苹果开发文档的质量出现 [明显下滑](https://mjtsai.com/blog/2019/05/20/the-state-of-apples-developer-documentation/)；等等。
 
 ![macOS Catalina 上的地狱景象（来源：Twitter @tylerhall）](https://p178.p0.n0.cdn.getcloudapp.com/items/L1ukLZY7/catalina-vista.jpeg?v=8c26ee55ae6912a6bdacdebee973fcdb)
 
 macOS Catalina 上的地狱景象（来源：Twitter @tylerhall）
 
-最后，在两个系统上使用跨平台软件的体验，也让我感到跨平台的趋势并不会像很多评论认为的那样，让操作系统的区别变得无关紧要。Electron 等开发框架只是为软件运行提供了一个移动舞台，但最终的「演出效果」仍然取决于操作系统的后勤保障服务（如性能优化、字体渲染等）水平和开发者的用心程度。用户可能不关心或不了解自己用的是什么平台，但并不代表他们对于软件的差异和优劣就没有感知。正如 Twitterrific 的开发者在评价 Catalyst 时[说](https://sspai.com/post/54715)的那样，框架给跨平台开发带来的简便只是假象；没有为不同平台的针对性优化，没有对交互和设计的认真思考，就不可能做出真正优秀的跨平台软件。
+最后，在两个系统上使用跨平台软件的体验，也让我感到跨平台的趋势并不会像很多评论认为的那样，让操作系统的区别变得无关紧要。Electron 等开发框架只是为软件运行提供了一个移动舞台，但最终的「演出效果」仍然取决于操作系统的后勤保障服务（如性能优化、字体渲染等）水平和开发者的用心程度。用户可能不关心或不了解自己用的是什么平台，但并不代表他们对于软件的差异和优劣就没有感知。正如 Twitterrific 的开发者在评价 Catalyst 时 [说](https://sspai.com/post/54715) 的那样，框架给跨平台开发带来的简便只是假象；没有为不同平台的针对性优化，没有对交互和设计的认真思考，就不可能做出真正优秀的跨平台软件。
 
 ## 二、「一切程序都是过滤器」——对生产力软件的重新思考
 
@@ -146,7 +144,7 @@ OmniFocus 的组织层级，这反映了开发者对任务管理的理解（来�
 
 此外，既然是刻画，就必然存在遗漏，因为可能的观察角度是无限的。但「遗漏」并不等同于缺陷，而是不同软件主动取舍的产物，也是它们各自的特征甚至优势所在。实际上，任何任务管理软件在本质上都是一个「过滤器」，都代表着开发者基于对「任务」这一对象的理解，创作的一套过滤规则。
 
-这就解释了为什么任务管理软件市场看似一片红海，但仍有源源不断的新产品被开发出来——一千个用户有一千种对任务的理解角度，任何一种描述方式都有其潜在的受众。OmniFocus 的追随者可能很难想象一个任务没有开始日期，但 Todoist 阵营却[认为](https://get.todoist.help/hc/en-us/articles/360007312259)这是为了一览无余和便于管理，需要开始日期反而[说明](https://sspai.com/post/39702)任务拆分得还不够细。反过来，其他软件的用户可能习惯了将任务随意移动，但 OmniFocus 却坚持任务必须依附于项目，而不能被直接放在文件夹中，否则就可能[说明分类存在赘余](https://discourse.omnigroup.com/t/single-actions-in-a-folder-without-associated-project/25619/7)。
+这就解释了为什么任务管理软件市场看似一片红海，但仍有源源不断的新产品被开发出来——一千个用户有一千种对任务的理解角度，任何一种描述方式都有其潜在的受众。OmniFocus 的追随者可能很难想象一个任务没有开始日期，但 Todoist 阵营却 [认为](https://get.todoist.help/hc/en-us/articles/360007312259) 这是为了一览无余和便于管理，需要开始日期反而 [说明](https://sspai.com/post/39702) 任务拆分得还不够细。反过来，其他软件的用户可能习惯了将任务随意移动，但 OmniFocus 却坚持任务必须依附于项目，而不能被直接放在文件夹中，否则就可能 [说明分类存在赘余](https://discourse.omnigroup.com/t/single-actions-in-a-folder-without-associated-project/25619/7)。
 
 可见，选择一个任务管理软件，就是选择一种对任务的描述方式，就是在给开发者所宣传的那套过滤规则投票。既然如此，评价的标准就不应该是「比大小」，而是这些方式和规则在多大程度上符合自己的理解、契合自己的需求。
 
@@ -162,7 +160,7 @@ Scrivener 针对写作者设计的各种视图（来源：Literature & Latte）
 
 Scrivener 往往被认为特别适合小说等长篇写作。究其原因，正是它对于写作这件事的描述方式精准契合了作家的需求，例如以鸟瞰视角随意排布记录灵感的卡片、以时间线方式串联涉及特定角色的段落等。反过来说，如果你的需求只是做速记或写短文，或者习惯一气呵成的写作方式，那么自然会对 Scrivener 的体系和设计感到繁琐和困惑。
 
-这种将软件看成过滤器的思路并不是我的原创。在初版于 1994 年[《Linux 与 Unix 哲学》](https://www.goodreads.com/book/show/19380333-linux-and-the-unix-philosophy)（_Linux and the Unix Philosophy_）一书中，Mike Gancarz 就阐述过这种思想，并将其上升为 Linux 与 Unix 的一种「信条」。在他看来，计算机不能创造信息，只是在处理信息，把数据从一种形式转换为另一种形式——进行过滤。
+这种将软件看成过滤器的思路并不是我的原创。在初版于 1994 年 [《Linux 与 Unix 哲学》](https://www.goodreads.com/book/show/19380333-linux-and-the-unix-philosophy)（_Linux and the Unix Philosophy_）一书中，Mike Gancarz 就阐述过这种思想，并将其上升为 Linux 与 Unix 的一种「信条」。在他看来，计算机不能创造信息，只是在处理信息，把数据从一种形式转换为另一种形式——进行过滤。
 
 当然，Gancarz 的写作对象是开发者，意在通过让他们认清软件作为过滤器的角色，在开发时注重提高兼容性和普适性。但换一个角度，这也能指导用户在选择软件时，更多地从自身出发，而不是颠倒主客，「拿着解法找问题」。
 
@@ -170,9 +168,9 @@ Scrivener 往往被认为特别适合小说等长篇写作。究其原因，正�
 
 ## 三、如何「自动」别人——自动化的局限
 
-去年年底，一篇题为[《别学写代码——学会自动化》](https://daedtech.com/dont-learn-to-code-learn-to-automate/)（_Don’t Learn to Code — Learn to Automate_）的文章在 Hacker News 上被贴出并受到热议。文章本身的观点并不新颖，无非是鼓励读者不要畏惧编程的学习门槛，而是从发现身边可以被自动化的任务做起，在需求驱动下自然而然地入门编程。
+去年年底，一篇题为 [《别学写代码——学会自动化》](https://daedtech.com/dont-learn-to-code-learn-to-automate/)（_Don’t Learn to Code — Learn to Automate_）的文章在 Hacker News 上被贴出并受到热议。文章本身的观点并不新颖，无非是鼓励读者不要畏惧编程的学习门槛，而是从发现身边可以被自动化的任务做起，在需求驱动下自然而然地入门编程。
 
-但善于批判思考的 Hacker News 用户们似乎对此不太买账。他们指出，在工作环境下，自动化并不总是可行的。例如，排名最高的评论就[认为](https://news.ycombinator.com/item?id=21737488)，「对于切近问题的员工，问题不在于没有能力自动化，而在于有某些因素压倒性地阻碍着自动化的动机。」
+但善于批判思考的 Hacker News 用户们似乎对此不太买账。他们指出，在工作环境下，自动化并不总是可行的。例如，排名最高的评论就 [认为](https://news.ycombinator.com/item?id=21737488)，「对于切近问题的员工，问题不在于没有能力自动化，而在于有某些因素压倒性地阻碍着自动化的动机。」
 
 根据这则评论和其他用户在回应中的补充，这些「阻碍因素」包括：自动化方案的适用面过于狭窄、失败导致的翻工成本、向他人解释或推广的困难等。概言之，在工作环境下，自动化可能带来的有限收益，无法覆盖为之付出的成本和潜在的失败风险。
 
@@ -190,7 +188,7 @@ Scrivener 往往被认为特别适合小说等长篇写作。究其原因，正�
 
 其次，手工操作虽然繁琐，但却也具有结果可控、时间可预期的「好处」——只要老老实实做下去，总有熬出头的时候。即使因为失误耽误了时间，至少也能因为付出的劳动而博得点「同情分」，更容易得到谅解。相反，一旦在使用自动化的「奇技淫巧」时翻车，导致耽误期限或不合要求，只能自己承担全部的风险，而很难向他人解释。
 
-再者，工作中大多数任务都是需要团队协作的，一个人效率的提高并不足以拉动团队的效率，但自动化却经常是难以被推广的。琢磨出如何使用 Word 的邮件合并功能，[自动将上百张截图插入到多个文档的指定位置](https://sspai.com/post/57179)是一回事；但如何以一种通俗易懂的方式、向不知域代码为何物的同事介绍这种方法，就是我无能为力的另一回事了。
+再者，工作中大多数任务都是需要团队协作的，一个人效率的提高并不足以拉动团队的效率，但自动化却经常是难以被推广的。琢磨出如何使用 Word 的邮件合并功能，[自动将上百张截图插入到多个文档的指定位置](https://sspai.com/post/57179) 是一回事；但如何以一种通俗易懂的方式、向不知域代码为何物的同事介绍这种方法，就是我无能为力的另一回事了。
 
 ![通过邮件合并为 Word 文档批量配图](https://p178.p0.n0.cdn.getcloudapp.com/items/WnuELPb7/all-codes.png?v=518250af9061e0e65378434ff5e87df1)
 

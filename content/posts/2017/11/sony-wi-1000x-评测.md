@@ -1,9 +1,7 @@
 ---
 title: "SONY WI-1000X 评测"
 date: "2017-11-26"
-categories: 
-  - "post"
-tags: 
+tags:
   - "audiophile"
   - "hardware"
   - "review"

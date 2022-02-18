@@ -1,9 +1,7 @@
 ---
 title: "钥匙找不到以后"
 date: "2019-04-06"
-categories: 
-  - "post"
-tags: 
+tags:
   - "law"
   - "life"
 ---

@@ -1,9 +1,7 @@
 ---
 title: "如何不借助插件在全平台优化维基百科显示效果"
 date: "2017-11-05"
-categories: 
-  - "post"
-tags: 
+tags:
   - "tutorial"
 ---
 

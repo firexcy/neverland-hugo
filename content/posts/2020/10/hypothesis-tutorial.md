@@ -2,7 +2,6 @@
 title: "开源、可定制的网页批注工具——Hypothesis"
 date: "2020-10-04"
 categories: 
-  - "post"
 ---
 
 ## 引言
@@ -17,7 +16,7 @@ categories:
 
 ![Instapaper 等主流工具一般是在创建的网页「替身」上实现批注](https://p178.p0.n0.cdn.getcloudapp.com/items/JrugXQ4Q/instapaper.png?v=036d7ab80ee03606e6d3b1aa46f8b213)
 
-不过，今年早些时候，我偶然发现了一个名为 [Hypothesis](ttps://hypothes.is/) 的工具。这是一个[开源项目](https://github.com/hypothesis/h)，注册和使用完全免费，收入主要通过为教育行业[定制 LMS（学习管理系统）](https://web.hypothes.is/help/how-much-does-it-cost-to-use-hypothesis/)支撑。
+不过，今年早些时候，我偶然发现了一个名为 [Hypothesis](ttps://hypothes.is/) 的工具。这是一个 [开源项目](https://github.com/hypothesis/h)，注册和使用完全免费，收入主要通过为教育行业 [定制 LMS（学习管理系统）](https://web.hypothes.is/help/how-much-does-it-cost-to-use-hypothesis/) 支撑。
 
 与 Pocket、Instapaper 等知名服务相比，Hypothesis 给我的最初印象是其貌不扬、界面简陋，且上手门槛较高。但在熟悉操作后，我发现它正是一个能较好兼顾上述三个理想特性的工具。
 
@@ -31,7 +30,7 @@ categories:
 
 ## 一、简易上手
 
-我们以批注[随机挑选的一个网页](https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/)为例（好吧，并没有随机，是我写的文章，原谅这点私心），演示 Hypothesis 的基本用法。
+我们以批注 [随机挑选的一个网页](https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/) 为例（好吧，并没有随机，是我写的文章，原谅这点私心），演示 Hypothesis 的基本用法。
 
 ### （一）注册和配置
 
@@ -39,7 +38,7 @@ categories:
 
 完成注册并登录后，点击页面右上角的齿轮图标，选择「[Developer](https://hypothes.is/account/developer)」，生成自己账号对应的 **API token**，留存备用。
 
-然后，到[指引页面](https://web.hypothes.is/start/)找到「Hypothesis Bookmarklet」小书签按钮，将其拖拽到浏览器的书签栏，或者点击右键添加到书签。Chrome 用户也可以选择安装插件，但其功能与小书签并无差异，没有太大必要。
+然后，到 [指引页面](https://web.hypothes.is/start/) 找到「Hypothesis Bookmarklet」小书签按钮，将其拖拽到浏览器的书签栏，或者点击右键添加到书签。Chrome 用户也可以选择安装插件，但其功能与小书签并无差异，没有太大必要。
 
 ### （二）批注
 
@@ -121,7 +120,7 @@ Hypothesis 主界面会显示近期批注过的网页；点击标题将其展开
 2. 如果前一种方法未成功，说明网页的结构可能已经发生变化。这时，Hypothesis 会重新将网页转换为文本，然后根据 `TextPositionSelector` 记录的范围进行定位，并将结果和之前记录的内容比对，如一致，则认为匹配成功。
 3. 如果仍然未能准确定位，说明网页的结构和内容都发生了变化。这时，Hypothesis 会选择放弃准确定位，以 `TextQuoteSelector` 中记录的上下文为关键词作全文模糊搜索；如果能找到类似的上下文，并且其中「夹」着的内容和之前记录的标注内容大致相同，就认为这是原来的标注文本。
 4. 如果这种「前后夹击」还是查无结果，Hypothesis 会进行最后一次尝试，直接用 `TextQuoteSelector` 记录的原始标注内容在网页全文中作模糊搜索，并将大致相同的搜索结果看成是原来的标注文本。
-5. 如果上述努力全部归于失败，Hypothesis 就会将这段「无家可归」的标注显示在侧边栏的[「孤本」](https://web.hypothes.is/blog/showing-orphaned-annotations/)（orphaned）分类下，以供用户参考。
+5. 如果上述努力全部归于失败，Hypothesis 就会将这段「无家可归」的标注显示在侧边栏的 [「孤本」](https://web.hypothes.is/blog/showing-orphaned-annotations/)（orphaned）分类下，以供用户参考。
 
 在这样一套缜密机制的支撑下，Hypothesis 较强的定位回溯能力也就不难理解了。
 
@@ -143,7 +142,7 @@ Hypothesis 主界面会显示近期批注过的网页；点击标题将其展开
 
 （**注：**导入时，需要填写自己的用户名和 API token。该动作基于 Python 3，并且依赖 requests 和 pyperclip 用于发送请求和写入系统剪贴板：`python3 -m pip install requests pyperclip`。）
 
-对于 iOS 上的使用场景，我也制作了一个[捷径动作](https://www.icloud.com/shortcuts/83f06d40e12c4076ad4e6433abf77261)实现类似效果：
+对于 iOS 上的使用场景，我也制作了一个 [捷径动作](https://www.icloud.com/shortcuts/83f06d40e12c4076ad4e6433abf77261) 实现类似效果：
 
 ![导出近期批注的 iOS 捷径](https://p178.p0.n0.cdn.getcloudapp.com/items/YEuy8bYA/hypothesis-shortcuts-ios.gif?v=6583a675d677fe32a64802bf5d2d9cdd)
 
@@ -151,7 +150,7 @@ Hypothesis 主界面会显示近期批注过的网页；点击标题将其展开
 
 上面的效果都是通过调用 Hypothesis API 实现的。
 
-Hypothesis API 的功能非常完善，覆盖了批注从添加、搜索到编辑的整个周期，具体可以查阅 [API 文档](https://h.readthedocs.io/en/latest/api-reference/v1/#section/Hypothesis-API)来了解。其中，与获取和导出批注内容最相关的是**搜索 API**，使用要点是：
+Hypothesis API 的功能非常完善，覆盖了批注从添加、搜索到编辑的整个周期，具体可以查阅 [API 文档](https://h.readthedocs.io/en/latest/api-reference/v1/#section/Hypothesis-API) 来了解。其中，与获取和导出批注内容最相关的是**搜索 API**，使用要点是：
 
 - 地址：`https://api.hypothes.is/api/search`
 - 方法：`GET`
@@ -173,7 +172,7 @@ $['rows'][n]['target'][0]['selector'][2]['exact']
 
 ## 总结与建议
 
-除了上面提到的功能特性，Hypothesis 还有不少隐藏用法。例如，除了标注网页，Hypothesis 还可以用来[批注 PDF 文档](https://web.hypothes.is/help/annotating-locally-saved-pdfs/)，无论 PDF 是存在线上还是本地。另外，通过 Hypothesis 创建的公开批注可以通过 RSS 地址 `https://hypothes.is/stream.rss?user=<username>` 订阅，从而实现与 IFTTT 等自动化工具的整合等。
+除了上面提到的功能特性，Hypothesis 还有不少隐藏用法。例如，除了标注网页，Hypothesis 还可以用来 [批注 PDF 文档](https://web.hypothes.is/help/annotating-locally-saved-pdfs/)，无论 PDF 是存在线上还是本地。另外，通过 Hypothesis 创建的公开批注可以通过 RSS 地址 `https://hypothes.is/stream.rss?user=<username>` 订阅，从而实现与 IFTTT 等自动化工具的整合等。
 
 当然，Hypothesis 仍然有很多不足。例如，Hypothesis 通过 JavaScript 书签启用批注的方式，虽然具有较好的跨平台能力，但有时会影响页面的布局，或和网页原有的交互功能冲突。在 Safari 这类隐私管理较为严格的浏览器上，其 Cookies 信息会时常被清除，导致需要频繁重新登录，显得比较麻烦。
 

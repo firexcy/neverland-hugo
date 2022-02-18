@@ -1,9 +1,7 @@
 ---
 title: "如何临时修改 macOS 应用程序的显示语言"
 date: "2018-05-13"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
   - "tips"
 ---

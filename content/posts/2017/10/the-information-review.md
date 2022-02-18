@@ -1,9 +1,7 @@
 ---
 title: "The Information 体验记——一年 399 美元能让你得到什么"
 date: "2017-10-26"
-categories: 
-  - "post"
-tags: 
+tags:
   - "review"
 ---
 

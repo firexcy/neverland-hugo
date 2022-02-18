@@ -1,9 +1,7 @@
 ---
 title: "免费字体获取和使用指南"
 date: "2018-01-18"
-categories: 
-  - "post"
-tags: 
+tags:
   - "tutorial"
   - "typography"
 ---

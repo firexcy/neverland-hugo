@@ -1,9 +1,7 @@
 ---
 title: "Surge 的隐性价值"
 date: "2018-01-20"
-categories: 
-  - "post"
-tags: 
+tags:
   - "networking"
   - "opinion"
 ---

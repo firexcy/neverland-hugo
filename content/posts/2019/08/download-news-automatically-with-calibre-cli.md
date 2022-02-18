@@ -1,9 +1,7 @@
 ---
 title: "使用 Calibre 的命令行工具下载新闻"
 date: "2019-08-17"
-categories: 
-  - "post"
-tags: 
+tags:
   - "book"
   - "ereader"
   - "tutorial"

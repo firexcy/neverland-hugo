@@ -1,9 +1,7 @@
 ---
 title: "《超文本和超链接》, Excerpts & Notes"
 date: "2021-12-18"
-categories: 
-  - "post"
-tags: 
+tags:
   - "book"
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: "论 RSS 的「复兴」"
 date: "2018-04-07"
-categories: 
-  - "post"
-tags: 
+tags:
   - "opinion"
   - "rss"
 ---

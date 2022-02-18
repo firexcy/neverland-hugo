@@ -1,9 +1,7 @@
 ---
 title: "用自定义属性功能管理 Word 文档中的「待定内容」"
 date: "2021-01-26"
-categories: 
-  - "post"
-tags: 
+tags:
   - "microsoft-office"
   - "tutorial"
 ---
@@ -14,7 +12,7 @@ tags:
 
 这种方法是有很多缺陷的。如果待定内容很多，逐个输入这些「标记」和事后查找替换都很麻烦，而且容易遗漏（更别提它们真的很丑）。有什么办法可以更方便地插入、管理和更新这些待定内容呢？换种问法，Word 文档中有没有什么合适的地方存放这些信息呢？
 
-Word 文档的[「属性」](https://support.microsoft.com/en-us/office/view-or-change-the-properties-for-an-office-file-21d604c2-481e-4379-8e54-1dd4622c6b75)（properties）功能就是这样一个理想的容器。
+Word 文档的 [「属性」](https://support.microsoft.com/en-us/office/view-or-change-the-properties-for-an-office-file-21d604c2-481e-4379-8e54-1dd4622c6b75)（properties）功能就是这样一个理想的容器。
 
 提到 Word 文档属性，我们一般会想到创建日期、修改日期这些文件系统属性，或者作者、标题这些文档标准属性。但实际上，**Word 也支持用户创建「自定义属性」，其名称和值都可以自由设定。**不仅如此，Word 还提供了专门的文档属性设置界面，相当于附赠了「待定信息管理器」的功能。
 
@@ -42,10 +40,10 @@ Word 文档的[「属性」](https://support.microsoft.com/en-us/office/view-or-
 
 对于日期类型的属性，我们还可以进一步指定其格式，只要在域代码的结尾追加 `\@ <格式>` 即可。
 
-例如，对于中文合同，我们希望插入形如「2021年1月10日」这样的日期：
+例如，对于中文合同，我们希望插入形如「2021 年 1 月 10 日」这样的日期：
 
 ```
-{ DOCPROPERTY ExeDate \@ "yyyy年M月d日" }
+{ DOCPROPERTY ExeDate \@ "yyyy 年 M 月 d 日" }
 ```
 
 而对于英文合同，我们希望得到的格式就是「January 10, 2021」：

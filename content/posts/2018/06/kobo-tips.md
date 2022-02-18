@@ -1,9 +1,7 @@
 ---
 title: "Kobo 系统使用和修改综述"
 date: "2018-06-15"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ereader"
   - "kobo"
 ---

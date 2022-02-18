@@ -1,9 +1,8 @@
 ---
 title: "译文 | 对抗互联网的欧盟"
 date: "2018-09-20"
-categories: 
+tags:
   - "translations"
-tags: 
   - "law"
   - "stratechery"
   - "tech"

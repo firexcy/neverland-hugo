@@ -1,14 +1,12 @@
 ---
 title: "在 M1 芯片 Mac 上使用 Homebrew"
 date: "2020-12-07"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple-silicon"
   - "macos"
 ---
 
-Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的[说明](https://github.com/Homebrew/brew/issues/7857#issue-647960270)，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构的持续集成框架、很多软件包依赖的框架或编译器（`go`、`gcc`、`qt`）未适配等。
+Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的 [说明](https://github.com/Homebrew/brew/issues/7857#issue-647960270)，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构的持续集成框架、很多软件包依赖的框架或编译器（`go`、`gcc`、`qt`）未适配等。
 
 但是，Homebrew 目前在新 Mac 上仍然是可用的，并且已经发布了原生支持 ARM 架构的试验性版本。本文总结我在设置过程中探索出可行、相对实用的做法。
 
@@ -62,9 +60,9 @@ export PATH
 
 ### 2\. 安装 X86 版 Homebrew
 
-如上所述，由于很多软件包目前还没有适配 ARM 架构（可以在 [Homebrew 的 Apple silicon issue 页面](https://github.com/Homebrew/brew/issues/7857)查询），无法通过 ARM 版 Homebrew 安装，因此我们还需要安装一份 X86 版的 Homebrew 备用。
+如上所述，由于很多软件包目前还没有适配 ARM 架构（可以在 [Homebrew 的 Apple silicon issue 页面](https://github.com/Homebrew/brew/issues/7857) 查询），无法通过 ARM 版 Homebrew 安装，因此我们还需要安装一份 X86 版的 Homebrew 备用。
 
-X86 版 Homebrew 无法在 ARM 环境下安装。为此，需要先启动一个 X86 环境的终端。网络上[传播较广](https://osxdaily.com/2020/11/18/how-run-homebrew-x86-terminal-apple-silicon-mac/)的方法是创建一个 Terminal.app 的副本，然后令其在 Rosetta 兼容模式下运行，显得有些麻烦。
+X86 版 Homebrew 无法在 ARM 环境下安装。为此，需要先启动一个 X86 环境的终端。网络上 [传播较广](https://osxdaily.com/2020/11/18/how-run-homebrew-x86-terminal-apple-silicon-mac/) 的方法是创建一个 Terminal.app 的副本，然后令其在 Rosetta 兼容模式下运行，显得有些麻烦。
 
 其实，注意到在任何命令前增加 `arch -x86_64`，就可以以 X86 模式运行该命令。因此，运行：
 

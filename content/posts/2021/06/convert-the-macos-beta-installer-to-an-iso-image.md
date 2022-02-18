@@ -1,9 +1,7 @@
 ---
 title: "Convert the macOS Beta Installer to an ISO Image"
 date: "2021-06-13"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: "在移除 Word 文档样式的同时保留格式"
 date: "2016-10-13"
-categories: 
-  - "post"
-tags: 
+tags:
   - "microsoft-office"
   - "tips"
 ---

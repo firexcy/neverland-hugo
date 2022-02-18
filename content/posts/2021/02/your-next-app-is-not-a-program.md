@@ -2,7 +2,6 @@
 title: "你的下一个应用，未必是程序"
 date: "2021-02-19"
 categories: 
-  - "post"
 ---
 
 ## 一、程序的谢幕与应用的崛起
@@ -25,19 +24,19 @@ categories:
 
 可见，尽管常被混用，三个概念的侧重仍是各有不同的。「软件」强调「非物理」的属性，可以指可执行的代码、也可以指不用于执行的文档等；其中可执行、用于完成实际任务的才是「应用」。另一方面，「程序」强调代码的可执行性，也未必直接面向用户；一个应用可能是由无数个只具有抽象功能的程序模块组成的。
 
-再看辈份，《牛津英语词典》中，三个单词的在计算机领域的最早例句分别见于 1946 年（program）、1959 年（application）和 1960 年（software），相隔不远。就连让人感觉更时髦的缩写「app」也年届不惑。1981 年，就有科技公司雇主在《Computerworld》杂志（已停刊）的招聘版上[刊发广告](https://books.google.com/books?id=Ux9iw6tMs6MC&lpg=PA81&vq=apps&as_pt=MAGAZINES&pg=PA81#v=snippet&q=apps&f=false)：「Strong COBOL & fin’l or mfg _apps_ knowl req. \[Strong COBOL and financial or manufacturing applications knowledge required.\]」1985 年，苹果为其 Lisa 电脑推出了名为 [Mac_App_](http://en.wikipedia.org/wiki/MacApp) 的应用程序开发框架。同年，Ashton-Tate 公司一款名为 [Framework II](http://books.google.com/books?id=bi8EAAAAMBAJ&lpg=PA41&pg=PA41#v=onepage&q=apps&f=false) 的办公套件中也出现了名为「App」的菜单，其中包含通讯、拼写检查等功能。
+再看辈份，《牛津英语词典》中，三个单词的在计算机领域的最早例句分别见于 1946 年（program）、1959 年（application）和 1960 年（software），相隔不远。就连让人感觉更时髦的缩写「app」也年届不惑。1981 年，就有科技公司雇主在《Computerworld》杂志（已停刊）的招聘版上 [刊发广告](https://books.google.com/books?id=Ux9iw6tMs6MC&lpg=PA81&vq=apps&as_pt=MAGAZINES&pg=PA81#v=snippet&q=apps&f=false)：「Strong COBOL & fin’l or mfg _apps_ knowl req. \[Strong COBOL and financial or manufacturing applications knowledge required.\]」1985 年，苹果为其 Lisa 电脑推出了名为 [Mac_App_](http://en.wikipedia.org/wiki/MacApp) 的应用程序开发框架。同年，Ashton-Tate 公司一款名为 [Framework II](http://books.google.com/books?id=bi8EAAAAMBAJ&lpg=PA41&pg=PA41#v=onepage&q=apps&f=false) 的办公套件中也出现了名为「App」的菜单，其中包含通讯、拼写检查等功能。
 
 ![「app」的早期踪迹（来源：Google Books）](https://p178.p0.n0.cdn.getcloudapp.com/items/llu96j1l/90f47259-9d06-4327-9061-679822de28f5.png?source=viewer&v=5fbdd01c6bab95a339aaf1b9c66f576e)
 
 「app」的早期踪迹（来源：Google Books）
 
-但最终开启「应用」时代的并不是什么技术因素。使用 Google 的搜索趋势功能[比较](https://trends.google.com/trends/explore?date=all&q=app,program,software)「应用」（app）、「程序」（program）和「软件」（software）三个相关单词的搜索频率，就会发现 2008 年以降，「app」的热度就一路走高，而另外两个单词则不断走下坡路。
+但最终开启「应用」时代的并不是什么技术因素。使用 Google 的搜索趋势功能 [比较](https://trends.google.com/trends/explore?date=all&q=app,program,software)「应用」（app）、「程序」（program）和「软件」（software）三个相关单词的搜索频率，就会发现 2008 年以降，「app」的热度就一路走高，而另外两个单词则不断走下坡路。
 
 ![使用 Google 的搜索趋势功能比较「应用」（app）、「程序」（program）和「软件」（software）](https://p178.p0.n0.cdn.getcloudapp.com/items/WnuBq2Nv/2d281290-20f7-4e77-a728-01a26c45aa72.png?source=viewer&v=68a4a8050000db4bfd7cb6ecda2f5c79)
 
 使用 Google 的搜索趋势功能比较「应用」（app）、「程序」（program）和「软件」（software）
 
-2008 年——这正是苹果应用商店 App Store 上线的年份。正如美国方言协会（American Dialect Society）将「app」评为 [2010 年度单词](https://www.americandialect.org/app-voted-2010-word-of-the-year-by-the-american-dialect-society-updated)时所言，「『app』一词已经存在很久，但凭借『There’s an app for that』（苹果早年宣传 App Store 和 iOS 设备的著名广告语——笔者注）背后数百万美元的营销力量，以及一系列手机和电脑操作系统上应用商店的到来，『app』在过去 12 个月中真正爆发了。」
+2008 年——这正是苹果应用商店 App Store 上线的年份。正如美国方言协会（American Dialect Society）将「app」评为 [2010 年度单词](https://www.americandialect.org/app-voted-2010-word-of-the-year-by-the-american-dialect-society-updated) 时所言，「『app』一词已经存在很久，但凭借『There’s an app for that』（苹果早年宣传 App Store 和 iOS 设备的著名广告语——笔者注）背后数百万美元的营销力量，以及一系列手机和电脑操作系统上应用商店的到来，『app』在过去 12 个月中真正爆发了。」
 
 ## 二、新在何处
 
@@ -45,7 +44,7 @@ categories:
 
 ### （一）功能的情境化
 
-在「应用」的词典定义中，最明显的限定语就是「用于执行特定任务」。不过，传统软件的任务其实并没有那么「特定」；它只是一个泛用的工具，在用户手上发挥的实际用途可能远超开发者的预料。Excel 确实是「电子**表格**」，但本质上只是一张具有排版和计算功能的空白网格，用户可以用来记账、管理库存、安排日程，也可以脑洞大开，用来[下棋](http://www.excelhero.com/blog/2010/02/excel-2007-chess-game-viewer.html)、[做十字绣](https://www.lovecrafts.com/en-gb/c/article/design-cross-stitch-chart-on-your-computer)。Photoshop 确实是「**图片**编辑器」，但本质上只是提供了编辑位图像素的功能，至于是用这些像素的排列组合形成照片、绘画还是简历，完全取决于用户自己。
+在「应用」的词典定义中，最明显的限定语就是「用于执行特定任务」。不过，传统软件的任务其实并没有那么「特定」；它只是一个泛用的工具，在用户手上发挥的实际用途可能远超开发者的预料。Excel 确实是「电子**表格**」，但本质上只是一张具有排版和计算功能的空白网格，用户可以用来记账、管理库存、安排日程，也可以脑洞大开，用来 [下棋](http://www.excelhero.com/blog/2010/02/excel-2007-chess-game-viewer.html)、[做十字绣](https://www.lovecrafts.com/en-gb/c/article/design-cross-stitch-chart-on-your-computer)。Photoshop 确实是「**图片**编辑器」，但本质上只是提供了编辑位图像素的功能，至于是用这些像素的排列组合形成照片、绘画还是简历，完全取决于用户自己。
 
 ![用 Excel 下棋（来源：Pedro Wave for Excel Guys）](https://p178.p0.n0.cdn.getcloudapp.com/items/Z4u61dKq/c133a1c9-ae48-4df7-af82-9f91c6eaa8f4.png?source=viewer&v=d8e395bd524357f7cc07adf4d13fbc0a)
 
@@ -53,7 +52,7 @@ categories:
 
 相比之下，如今的应用则更加符合「执行特定任务」的定义，从设计之初就确定了面向的任务或场景——无论查天气、购物还是打车——并且前所未有地细分和具体。（微信、支付宝这类具有中国特色的「超级应用」虽然功能庞杂，但实际上可以看作是一系列应用的集合，而每个功能模块仍然是用于完成特定场景下的特定任务的。）如果说在过去，用户不仅要「发现问题」，还要进一步「分析问题」，将其表达为公式、图层等可被程序理解的特定范式，才能借助程序提供的计算能力「解决问题」；那么在当今，用户只需要负责发现问题，分析和解决都由应用承包了。
 
-不仅如此，近年很多应用还倾向于更进一步，与特定的方法甚至「哲学」联系在一起。这种趋势在效率类应用中尤为明显。在回顾自己 2019 年的数字生活时，我曾[提出](https://type.cyhsu.xyz/2020/02/year-in-review-2019/)各种任务管理工具本质上都是在从不同角度理解和刻画「任务」这一现实对象；选择了一个任务管理应用，也就是选择了一套任务管理方法论。2020 年，类似的现象又出现在笔记应用的新一波热潮中。前有 [Notion](https://www.notion.so/) 将笔记的颗粒度从「文档」分解到「段落」——可交互的「区块」（block）；后有 [Roam Research](https://roamresearch.com/) 将「双向链接」的概念从在线百科挪用到笔记领域。原本小众的「[卡片盒](https://en.wikipedia.org/wiki/Zettelkasten)」（zettelkasten）笔记论，由于与这股笔记原子化、网络化的潮流不谋而合，一时蔚然成风，成为新旧工具争相更新支持的功能。
+不仅如此，近年很多应用还倾向于更进一步，与特定的方法甚至「哲学」联系在一起。这种趋势在效率类应用中尤为明显。在回顾自己 2019 年的数字生活时，我曾 [提出](https://type.cyhsu.xyz/2020/02/year-in-review-2019/) 各种任务管理工具本质上都是在从不同角度理解和刻画「任务」这一现实对象；选择了一个任务管理应用，也就是选择了一套任务管理方法论。2020 年，类似的现象又出现在笔记应用的新一波热潮中。前有 [Notion](https://www.notion.so/) 将笔记的颗粒度从「文档」分解到「段落」——可交互的「区块」（block）；后有 [Roam Research](https://roamresearch.com/) 将「双向链接」的概念从在线百科挪用到笔记领域。原本小众的「[卡片盒](https://en.wikipedia.org/wiki/Zettelkasten)」（zettelkasten）笔记论，由于与这股笔记原子化、网络化的潮流不谋而合，一时蔚然成风，成为新旧工具争相更新支持的功能。
 
 ![2020 年风靡一时的 zettelkasten 笔记方法（来源：LessWrong）](https://p178.p0.n0.cdn.getcloudapp.com/items/qGuXrj6R/3ab1c5cc-3ce6-424d-99d9-8cd35ea94cc9.png?source=viewer&v=26e06ff95841f9010ba8c9e544d78601)
 
@@ -103,7 +102,7 @@ Dropbox 在桌面客户端中强行上马、广受批评的「协作」功能（
 
 如果说情境化、跨平台的趋势整体上还算顺应了大众需求、受到用户肯定的话，另一个大趋势——将应用作为一种「服务」而循环收费——则至今争论不休，总能引发供需双方的对立和情绪化表达。现有应用从买断制转为订阅制，用户反响强烈、怒斥「贪心」的桥段，每个月都在反复上演。在批判订阅制的观点看来，订阅制将「购买」降格为了「租用」，是对于用户权利的剥夺和一种变相涨价的伎俩。
 
-这种观点是不准确的。即使在充满拟物气息的盒装软件时代，用户买到的也远非「所有权」，而仅仅是一项**授权**（license），即在许可设备（往往限于一台）上安装和运行软件的一个**实例**的权利；「购买」「销售」等说法仅仅是因为更加方便、为人熟悉才被沿用到软件分发的语境中。(_[Adobe Sys. Inc. v. One Stop Micro, Inc.](https://law.justia.com/cases/federal/district-courts/FSupp2/84/1086/2497665/)_, 84 F. Supp. 2d 1086, 1091 (N.D. Cal. 2000).) 这也解释了为什么软件许可协议里总要澄清是在「许可，而非出售」（“licensed, not sold”），并且用大写字母和粗体明确排除有关适销性（merchantability）、针对特定目的的适用性（fitness for a particular purpose）和不侵权（noninfringement）的责任——[《统一商法典》](https://en.wikipedia.org/wiki/Uniform_Commercial_Code)和英美普通法下适用于「商品」的卖方保证。（一个典型和当代的例子可见 [Office 2019 的许可协议](https://www.microsoft.com/en-us/Useterms/Retail/Office/2019HomeandStudent/Useterms_Retail_Office_2019HomeandStudent_ChineseSimplified.htm)。）
+这种观点是不准确的。即使在充满拟物气息的盒装软件时代，用户买到的也远非「所有权」，而仅仅是一项**授权**（license），即在许可设备（往往限于一台）上安装和运行软件的一个**实例**的权利；「购买」「销售」等说法仅仅是因为更加方便、为人熟悉才被沿用到软件分发的语境中。(_[Adobe Sys. Inc. v. One Stop Micro, Inc.](https://law.justia.com/cases/federal/district-courts/FSupp2/84/1086/2497665/)_, 84 F. Supp. 2d 1086, 1091 (N.D. Cal. 2000).) 这也解释了为什么软件许可协议里总要澄清是在「许可，而非出售」（“licensed, not sold”），并且用大写字母和粗体明确排除有关适销性（merchantability）、针对特定目的的适用性（fitness for a particular purpose）和不侵权（noninfringement）的责任——[《统一商法典》](https://en.wikipedia.org/wiki/Uniform_Commercial_Code) 和英美普通法下适用于「商品」的卖方保证。（一个典型和当代的例子可见 [Office 2019 的许可协议](https://www.microsoft.com/en-us/Useterms/Retail/Office/2019HomeandStudent/Useterms_Retail_Office_2019HomeandStudent_ChineseSimplified.htm)。）
 
 不仅如此，即使用户在授权范围内使用软件，也要受到用途、备份、转让等多方面的限制；尽管没有明文规定使用期限，旧版软件也会逐渐失去安全补丁和新系统支持，从而事实上无法继续使用；技术支持也是软件厂商一大创收来源。
 
@@ -119,11 +118,11 @@ Dropbox 在桌面客户端中强行上马、广受批评的「协作」功能（
 
 但如果承认应用定价采用订阅制具有合理性，如何解释用户对它的普遍怀疑和反对呢？这种对立情绪的背后，是用户认为订阅支出和回报不成比例的观念。
 
-首先，「订阅制」的名称本身就存在歧义，容易让用户产生不准确的预期。诚然，从词源上看，「订阅」并无商业含义，仅仅是一个「报名支持」的动作——「在 \[文件\] 底部（_sub-_, “under”）写下（_scribere_, “write”）\[名字\]」。作为一种商业模式，它最早指的也是股份、保险的认购，到十六世纪才被用于出版物领域，而且是指为书籍的写作和出版募集资金，反倒更像如今的捐赠和众筹。（参见 Clapp, S. L. (1931). [_The beginnings of subscription publication in the seventeenth century._](https://doi.org/10.1086/387957) Modern Philology, 29(2), 199-224.）
+首先，「订阅制」的名称本身就存在歧义，容易让用户产生不准确的预期。诚然，从词源上看，「订阅」并无商业含义，仅仅是一个「报名支持」的动作——「在 \[文件、] 底部（_sub-_, “under”）写下（_scribere_, “write”）\[名字、]」。作为一种商业模式，它最早指的也是股份、保险的认购，到十六世纪才被用于出版物领域，而且是指为书籍的写作和出版募集资金，反倒更像如今的捐赠和众筹。（参见 Clapp, S. L. (1931). [_The beginnings of subscription publication in the seventeenth century._](https://doi.org/10.1086/387957) Modern Philology, 29(2), 199-224.）
 
 但必须承认，在大众语境下，「订阅」主要还是和「期刊」搭配出现的，以至于人们普遍认为但凡需要订阅的东西，都应该和期刊一样具有定期交付的属性。可应用开发不同于刊物出版，要求月月有新功能是不现实的，从而容易让不明就里的用户感到「有名无实」。这种预期落空的被欺骗感，与管理订阅的心理压力等负面情绪交织在一起，造成了用户对订阅制的抵触。
 
-何况，订阅制只是一个笼统的说法，其具体实施细节已经随着实践探索，有了很多变种和优化。例如，计费机制上，除了按自然年月循环收费，又出现了根据用量或设备数等因素调整费率的模式。升级政策上，因荷兰公司 Skech B.V. 于 2016 年[提出](https://www.sketch.com/blog/2016/06/08/versioning-licensing-and-sketch-4-0/)而得名的[「荷兰模式」](https://paddle.com/blog/should-you-use-hybrid-billing-model/)（Dutch Model）被广泛效仿。作为一种「无限期使用，有限期升级」的混合模式，它允许用户付费后获得全部现有功能和一定期限（常见为一年）内新增的功能；到期后如不续费，软件使用也不受任何限制，只是升级被冻结、无法获得此后新增的功能。然而，这些新模式在宣传、报道和讨论中仍被习惯性地归为订阅制，用户也因而继续套用着对旧订阅制的刻板印象，经常膝跳反射般地提出反对。
+何况，订阅制只是一个笼统的说法，其具体实施细节已经随着实践探索，有了很多变种和优化。例如，计费机制上，除了按自然年月循环收费，又出现了根据用量或设备数等因素调整费率的模式。升级政策上，因荷兰公司 Skech B.V. 于 2016 年 [提出](https://www.sketch.com/blog/2016/06/08/versioning-licensing-and-sketch-4-0/) 而得名的 [「荷兰模式」](https://paddle.com/blog/should-you-use-hybrid-billing-model/)（Dutch Model）被广泛效仿。作为一种「无限期使用，有限期升级」的混合模式，它允许用户付费后获得全部现有功能和一定期限（常见为一年）内新增的功能；到期后如不续费，软件使用也不受任何限制，只是升级被冻结、无法获得此后新增的功能。然而，这些新模式在宣传、报道和讨论中仍被习惯性地归为订阅制，用户也因而继续套用着对旧订阅制的刻板印象，经常膝跳反射般地提出反对。
 
 ![由 Sketch 首倡并被广泛借鉴的混合订阅模式](https://p178.p0.n0.cdn.getcloudapp.com/items/L1uNWKYN/b78356b7-fbea-4f07-a034-586c0e6164ca.png?source=viewer&v=74f7e3fea401b781b378115b6477879c)
 
@@ -147,7 +146,7 @@ Dropbox 在桌面客户端中强行上马、广受批评的「协作」功能（
 
 此外，既然当下应用已经较少能作为通用工具、而更多是作为专用解决方案，我们在学习和使用时也不必过多拘泥于具体的操作步骤，而是更多地观察和借鉴应用反映的工作流和方法论。这样，即使应用本身在一段时间后不复存在，这些非技术层面的东西却是不会消失、持续令人受益的。订阅制的流行在这样的视角下更是种福音，让人只需花费很低成本、甚至分文不出就能「偷师学艺」。
 
-例如，你没有必要接受 [HEY email 的高昂定价](https://hey.com/pricing/)，也不妨试试看它聚焦待回复邮件、严格筛选来件、「钉」住常用信息等特色功能，然后在传统邮箱中通过过滤规则、旗标等功能变通实现。你可以觉得 Headspace 这类[冥想应用的流行](https://www.nytimes.com/2021/02/17/magazine/wellness-apps.html)是硅谷式玄学，但蹭听几个课时、借鉴一些放松呼吸和情绪的技巧，也只是有益无害。
+例如，你没有必要接受 [HEY email 的高昂定价](https://hey.com/pricing/)，也不妨试试看它聚焦待回复邮件、严格筛选来件、「钉」住常用信息等特色功能，然后在传统邮箱中通过过滤规则、旗标等功能变通实现。你可以觉得 Headspace 这类 [冥想应用的流行](https://www.nytimes.com/2021/02/17/magazine/wellness-apps.html) 是硅谷式玄学，但蹭听几个课时、借鉴一些放松呼吸和情绪的技巧，也只是有益无害。
 
 ![完全可以通过「偷师学艺」的方式借鉴应用的方法论（来源：HEY）](https://p178.p0.n0.cdn.getcloudapp.com/items/04uJL9AX/5536ae6b-5566-4b39-8684-10770f012152.png?source=viewer&v=03e379433b4f0f439d55030f1c51c209)
 
@@ -167,7 +166,7 @@ Dropbox 在桌面客户端中强行上马、广受批评的「协作」功能（
 
 「啥是电脑？」（来源：苹果）
 
-这则广告发出后[受到大量嘲讽](https://www.businessinsider.com/apple-whats-a-computer-ad-sparks-anger-2018-1)，最后那句台词尤其被认为是不食人间烟火，令人感到冒犯。苹果后来从官方频道删除了这则广告，但并没有放弃将 iPad 定义为电脑的叙事，还在 2020 年将 iPad Pro 宣传口号定为「你的下一台电脑，何必是电脑」（Your next computer is not a computer）。
+这则广告发出后 [受到大量嘲讽](https://www.businessinsider.com/apple-whats-a-computer-ad-sparks-anger-2018-1)，最后那句台词尤其被认为是不食人间烟火，令人感到冒犯。苹果后来从官方频道删除了这则广告，但并没有放弃将 iPad 定义为电脑的叙事，还在 2020 年将 iPad Pro 宣传口号定为「你的下一台电脑，何必是电脑」（Your next computer is not a computer）。
 
 如果认为这些广告是在鼓吹「iPad 可以取代电脑」，那苹果的确有夸大和美化之嫌。但苹果的用意也可以从另一个角度理解：不必在意什么是电脑，能帮我们完成工作的就是电脑。
 

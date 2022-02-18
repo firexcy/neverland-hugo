@@ -1,9 +1,8 @@
 ---
 title: "译文 | 透视科技界对永生的执念"
 date: "2017-02-17"
-categories: 
+tags:
   - "translations"
-tags: 
   - "tech"
 ---
 

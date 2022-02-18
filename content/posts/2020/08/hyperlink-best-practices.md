@@ -1,9 +1,7 @@
 ---
 title: "小议超链接的规范使用"
 date: "2020-08-31"
-categories: 
-  - "post"
-tags: 
+tags:
   - "design"
   - "opinion"
 ---
@@ -21,9 +19,9 @@ tags:
 
 这些用法都是值得商榷的。
 
-超链接的正确用法并不是个新话题。早在 2004 年，谷歌工程师 Jed Hartman 就撰文讨论过[链接文本的合理用法](https://www.kith.org/jed/2004/12/09/link-text/)；上面列举的几种不当用例正是来源于该文。
+超链接的正确用法并不是个新话题。早在 2004 年，谷歌工程师 Jed Hartman 就撰文讨论过 [链接文本的合理用法](https://www.kith.org/jed/2004/12/09/link-text/)；上面列举的几种不当用例正是来源于该文。
 
-一些开发文档也涉及了这个问题。谷歌的[《开发文档风格指南》](https://developers.google.com/style/link-text)（Developer Documentation Style Guide）就为此专设一节，并指出链接文本应该「描述读者点击链接后将会看到的内容」，如被引文档的标题或对其内容的描述。Mozilla 维护的 MDN 文档库也讨论了「[链接最佳实践](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#Link_best_practices)」（link best practices），同样建议回避上述几种做法。
+一些开发文档也涉及了这个问题。谷歌的 [《开发文档风格指南》](https://developers.google.com/style/link-text)（Developer Documentation Style Guide）就为此专设一节，并指出链接文本应该「描述读者点击链接后将会看到的内容」，如被引文档的标题或对其内容的描述。Mozilla 维护的 MDN 文档库也讨论了「[链接最佳实践](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#Link_best_practices)」（link best practices），同样建议回避上述几种做法。
 
 但正如我们所见，时至今日，超链接的使用在实践中仍然是很随意的；不少网站超链接的外观设计也往往不尽人意。
 
@@ -35,9 +33,9 @@ tags:
 
 要回答链接文本如何设置，首先要从**什么是超链接**说起。
 
-根据 HTML 标准，[超链接](https://html.spec.whatwg.org/multipage/links.html#hyperlink)是「指向其他资源的链接，通常由用户代理（一般即为浏览器——笔者注）展示给用户，使用户可以令用户代理导航到这些资源」。
+根据 HTML 标准，[超链接](https://html.spec.whatwg.org/multipage/links.html#hyperlink) 是「指向其他资源的链接，通常由用户代理（一般即为浏览器——笔者注）展示给用户，使用户可以令用户代理导航到这些资源」。
 
-此外，超链接通常是通过[「锚」（anchor）元素](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)（`a`）构造的；当一个锚元素含有 `href` 属性时，该元素就代表一个由其内容标记（label）的超链接。
+此外，超链接通常是通过 [「锚」（anchor）元素](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element)（`a`）构造的；当一个锚元素含有 `href` 属性时，该元素就代表一个由其内容标记（label）的超链接。
 
 这些定义固然晦涩，但我们仍然可以从中得出一些有用结论：
 
@@ -50,7 +48,7 @@ tags:
 
 早年，并非人人都「认识」超链接，这么写或许还有些教育用户的意义，但这在今天已经不是个问题了。此外，这样的链接文本也无法说明被链接的内容。因此，不妨删去「点击」「更多」，代之对被引内容的说明：
 
-> 要进一步了解某话题，可以参阅[某文章](http://example.com/)。
+> 要进一步了解某话题，可以参阅 [某文章](http://example.com/)。
 
 第二种用法（将网址作为链接文本）同样会让读者无从知晓其内容。此外，从排版角度，冗长的网址也会给断行、对齐的处理造成不便，影响版面的整洁度。因此，更好的做法仍然是描述链接地址的内容，而不是直接把地址写进正文（当然，因行文需要展示链接地址的场合除外）。
 
@@ -58,15 +56,15 @@ tags:
 
 例如，与其使用上述那种抖机灵写法：「苹果在过去几个月和开发者可谓 [冲](https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust) [突](https://www.macrumors.com/2020/08/13/apple-removes-fortnite-from-app-store/) [不](https://arstechnica.com/tech-policy/2020/08/apple-apologizes-to-wordpress-no-longer-requires-free-app-to-add-purchases/) [断](https://www.engadget.com/apple-epic-app-store-account-212948667.html)」，不如原原本本地把具体内容呈现给读者：
 
-> 苹果在过去几个月和开发者可谓冲突不断，先后[拒收了电邮服务 Hey 的官方 app](https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust)、[下架了人气游戏 Fortnite](https://www.macrumors.com/2020/08/13/apple-removes-fortnite-from-app-store/)、[强迫 WordPress 通过内购销售域名](https://arstechnica.com/tech-policy/2020/08/apple-apologizes-to-wordpress-no-longer-requires-free-app-to-add-purchases/)，并[「言而有信」地关停了 Epic 的开发者账号](https://www.engadget.com/apple-epic-app-store-account-212948667.html)。
+> 苹果在过去几个月和开发者可谓冲突不断，先后 [拒收了电邮服务 Hey 的官方 app](https://www.theverge.com/2020/6/16/21293419/hey-apple-rejection-ios-app-store-dhh-gangsters-antitrust)、[下架了人气游戏 Fortnite](https://www.macrumors.com/2020/08/13/apple-removes-fortnite-from-app-store/)、[强迫 WordPress 通过内购销售域名](https://arstechnica.com/tech-policy/2020/08/apple-apologizes-to-wordpress-no-longer-requires-free-app-to-add-purchases/)，并 [「言而有信」地关停了 Epic 的开发者账号](https://www.engadget.com/apple-epic-app-store-account-212948667.html)。
 
 第四种用法（链接文本过长）是否不值得鼓励，现有讨论并未达成共识，但我的观点仍然是应该尽量避免。理由是，如果链接文本很长，它很可能是在摘录或描述被引内容的局部，而非全文；如果给这样的局部引用加上指向原文整体的超链接，不仅不具有对应关系，也不便于读者跳转之后找到相关段落。
 
 因此，更好的做法是把链接加在文章标题上（同时说明被引段落的位置），然后用普通文本做摘录和总结：
 
-> 根据[某文章](http://example.com/) \[某节\] 的观点，「……」。
+> 根据 [某文章](http://example.com/) \[某节、] 的观点，「……」。
 
-另外，不合规范的链接用法还会产生一些较为间接、但同样不容忽视的负面影响。例如，这会**降低网页的可访问性**（accessibility），给依赖于读屏器的用户造成不便，使他们很难通过听到的链接文本判断目标页面的内容（参见[不同读屏器对于链接文本的处理方式](https://www.deque.com/blog/text-links-practices-screen-readers/)）。又如，搜索引擎在索引网站时，常常[通过链接来判断网站的关键词](https://support.google.com/webmasters/answer/7451184#uselinkswisely)。如果一个网站的链接文本都是「跑题」的，它给搜索引擎的「印象分」就会大打折扣，**导致搜索排名降低**。
+另外，不合规范的链接用法还会产生一些较为间接、但同样不容忽视的负面影响。例如，这会**降低网页的可访问性**（accessibility），给依赖于读屏器的用户造成不便，使他们很难通过听到的链接文本判断目标页面的内容（参见 [不同读屏器对于链接文本的处理方式](https://www.deque.com/blog/text-links-practices-screen-readers/)）。又如，搜索引擎在索引网站时，常常 [通过链接来判断网站的关键词](https://support.google.com/webmasters/answer/7451184#uselinkswisely)。如果一个网站的链接文本都是「跑题」的，它给搜索引擎的「印象分」就会大打折扣，**导致搜索排名降低**。
 
 ### （二）先问「加不加」，再问「加在哪」
 
@@ -80,7 +78,7 @@ tags:
 
 如果文章讨论的话题线索复杂、众说纷纭，那么我们就有责任先梳理、溯源，筛选出尽可能一手、高质量的来源做成链接，而不是将大把链接一股脑塞给读者，同时产生「内容充实」的良好自我感觉。如果被引文章篇幅较长、内容艰深，或与当前段落的关系并不一目了然，那么我们也有责任作出必要的标注和解释，而不是抛出一个超链接，让读者自己点开「细品」「领悟」。
 
-例如，前段时间，美国国会召集四大科技公司 CEO 的反垄断听证会受到了媒体的广泛关注（可参阅[我介绍此事的文章](https://type.cyhsu.xyz/2020/08/big-tech-congressional-hearing/)）。不少报道在行文中提及了微软 20 年前受到的司法部指控，以此介绍美国法院的反垄断判案标准。
+例如，前段时间，美国国会召集四大科技公司 CEO 的反垄断听证会受到了媒体的广泛关注（可参阅 [我介绍此事的文章](https://type.cyhsu.xyz/2020/08/big-tech-congressional-hearing/)）。不少报道在行文中提及了微软 20 年前受到的司法部指控，以此介绍美国法院的反垄断判案标准。
 
 这个案例引用当然是切题的，但到了为其添加超链接时，很多文章就颇为随意，一般都选择链接到自己网站的其他文章，或是当年的媒体报道。然而，这并不符合前面介绍的「名副其实」原则（最相关的文件应当是判决书，或至少是对判决结果的报道），也不足以使读者了解判决逻辑是什么、从何而来。
 
@@ -120,7 +118,7 @@ https://en.wikipedia.org/wiki/Web_standards#Common_usage
 
 类似地，如果文章涉及 GitHub 代码或 YouTube 视频，也不妨利用它们为特定行号或时间戳创建链接的功能。
 
-前不久，谷歌还为 Chrome 浏览器开发了一个名为[「链接到文本片段」](https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg)（Link to Text Fragment）的插件，可以帮助用户制作出指向页面上任意文本的链接。遗憾的是，这个插件[背后的标准](https://wicg.github.io/ScrollToTextFragment/)仍处于早期草案阶段。在它被广泛采纳之前，更务实的做法或许还是像上文建议的那样，不怕啰嗦地向读者尽量具体描述引文的位置。
+前不久，谷歌还为 Chrome 浏览器开发了一个名为 [「链接到文本片段」](https://chrome.google.com/webstore/detail/link-to-text-fragment/pbcodcjpfjdpcineamnnmbkkmkdpajjg)（Link to Text Fragment）的插件，可以帮助用户制作出指向页面上任意文本的链接。遗憾的是，这个插件 [背后的标准](https://wicg.github.io/ScrollToTextFragment/) 仍处于早期草案阶段。在它被广泛采纳之前，更务实的做法或许还是像上文建议的那样，不怕啰嗦地向读者尽量具体描述引文的位置。
 
 ## 三、链接外观的设计——平衡谨慎与活泼
 

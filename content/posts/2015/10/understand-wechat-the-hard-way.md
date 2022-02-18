@@ -1,9 +1,7 @@
 ---
 title: "Understand WeChat The Hard Way"
 date: "2015-10-11"
-categories: 
-  - "post"
-tags: 
+tags:
   - "internet"
   - "opinion"
 ---

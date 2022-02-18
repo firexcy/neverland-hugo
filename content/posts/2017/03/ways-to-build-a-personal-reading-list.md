@@ -1,9 +1,7 @@
 ---
 title: "记构建阅读列表的几次尝试"
 date: "2017-03-12"
-categories: 
-  - "post"
-tags: 
+tags:
   - "app"
   - "ios"
 ---

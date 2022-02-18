@@ -37,7 +37,7 @@ description:
 date:
 tldr: (optional)
 draft: true/false (optional)
-tags: [tag names] (optional)
+tags:[tag names] (optional)
 ---
 ```
 

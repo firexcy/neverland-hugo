@@ -1,9 +1,7 @@
 ---
 title: "疑难符号使用与输入指南"
 date: "2018-07-05"
-categories: 
-  - "post"
-tags: 
+tags:
   - "typography"
 ---
 

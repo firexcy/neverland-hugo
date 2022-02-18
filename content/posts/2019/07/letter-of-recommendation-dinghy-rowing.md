@@ -1,7 +1,7 @@
 ---
 title: "译文 | 推荐信：小划艇"
 date: "2019-07-05"
-categories: 
+tags:
   - "translations"
 ---
 

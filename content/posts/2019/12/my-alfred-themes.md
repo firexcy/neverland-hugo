@@ -1,9 +1,7 @@
 ---
 title: "My Alfred Themes"
 date: "2019-12-27"
-categories: 
-  - "post"
-tags: 
+tags:
   - "design"
 ---
 

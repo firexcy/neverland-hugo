@@ -1,9 +1,7 @@
 ---
 title: "Yoink for iOS 评测"
 date: "2017-10-16"
-categories: 
-  - "post"
-tags: 
+tags:
   - "app"
   - "review"
 ---

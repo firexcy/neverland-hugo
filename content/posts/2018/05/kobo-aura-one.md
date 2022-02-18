@@ -1,9 +1,7 @@
 ---
 title: "电纸书的另一种定义——Kobo Aura ONE 体验"
 date: "2018-05-29"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ereader"
   - "kobo"
   - "review"

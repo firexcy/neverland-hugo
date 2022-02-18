@@ -1,9 +1,7 @@
 ---
 title: "科技新闻一则：图片分享网站 PINTEREST 宣布退出中国"
 date: "2017-03-12"
-categories: 
-  - "post"
-tags: 
+tags:
   - "satire"
 ---
 

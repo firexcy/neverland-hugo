@@ -1,13 +1,11 @@
 ---
 title: "基于 Notion 的若饭参数表"
 date: "2021-04-18"
-categories: 
-  - "post"
-tags: 
+tags:
   - "food"
 ---
 
-[上次写到若饭](https://type.cyhsu.xyz/2020/01/ruffood-solid-v1-7/)还是一年多前的事情。在那之后，若饭各个产品线都有了几次更新：
+[上次写到若饭](https://type.cyhsu.xyz/2020/01/ruffood-solid-v1-7/) 还是一年多前的事情。在那之后，若饭各个产品线都有了几次更新：
 
 - **液体版：**[更新到 3.7](https://www.ruffood.com/article/info/id/160.html)，主要减少了糖分，增加了纤维，包装从原来的纸瓶换成塑料瓶（可能为了运输起来比较稳，但反而不环保了），2020 年底又换了一次包装设计。跟旧版相比，整体趋势还是弱化「豆味」、强化「奶味」，现阶段基本喝不出明显的豆制品特征了。原价（一箱 12 瓶挂价 290）非常不划算，我一般只在折扣的时候会买。
 - **粉末版：**先后更新了 [2.9](https://www.ruffood.com/article/info/id/154.html) 和 [2.11](https://www.ruffood.com/article/info/id/167.html) 两个版本（本身没什么问题，但他们可能忘记了自己用过 2.10 这个版本号），宏观营养素变化不大，主打功能似乎是新增了微量元素和营养物质（叶黄素酯、植物甾醇、鱼油粉和海藻油）。因为并没有把代餐兼作补剂的需求，我对此不是特别感冒，不过没有专门研究过、故这里也不多评论。虽然有所涨价，粉末版仍然是相对最便宜的，也是我目前主要饮用的版本；我一般隔天喝一次。我的习惯是 80 克粉末加 250 毫升水，一茶匙木糖醇调味（还可以扔几颗冷冻芋圆进去丰富口感），微波炉稍微加热。
@@ -15,7 +13,7 @@ tags:
 
 经过这么几年的迭代，若饭的版本也积累了十几个，如果算上不同 SKU 变化就更多，让横向和纵向的比较都不太直观。此外，若饭的食品标签样式也不太统一，有时是以 100 克为基准，有时又以包装内的一份为标准，进一步增加了换算的麻烦。
 
-正好这两天翻出很久没用的 Notion 准备跟进一下近几个月的功能更新，发现对于数据表的 [relation 和 rollup](https://www.notion.so/Relations-rollups-fd56bfc6a3f0471a9f0cc3110ff19a79) 功能（大致像是 SQL 里的 join）以及公式的用法还是不太明白；于是索性借统计若饭历史参数这个使用场景，参考 [Blendrunner](https://www.blendrunner.com/) 的体例建了一个[数据库](https://www.notion.so/cyhsu/RuffoodDB-56e22b2b10094dbbae4bff62ae42609b)。
+正好这两天翻出很久没用的 Notion 准备跟进一下近几个月的功能更新，发现对于数据表的 [relation 和 rollup](https://www.notion.so/Relations-rollups-fd56bfc6a3f0471a9f0cc3110ff19a79) 功能（大致像是 SQL 里的 join）以及公式的用法还是不太明白；于是索性借统计若饭历史参数这个使用场景，参考 [Blendrunner](https://www.blendrunner.com/) 的体例建了一个 [数据库](https://www.notion.so/cyhsu/RuffoodDB-56e22b2b10094dbbae4bff62ae42609b)。
 
 数据库中包含三个表，前两个分别是 SKU 信息和营养标签，第三个表将各个 SKU 统一换算到 400 卡热量（代餐产品比较惯常的单份能量值）以便比较营养素比例。
 

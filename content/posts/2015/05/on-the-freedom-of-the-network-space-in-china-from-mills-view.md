@@ -1,9 +1,7 @@
 ---
 title: "从密尔视角看中国网络空间自由"
 date: "2015-05-24"
-categories: 
-  - "post"
-tags: 
+tags:
   - "academic"
   - "internet"
   - "law"

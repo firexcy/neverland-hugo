@@ -1,9 +1,7 @@
 ---
 title: "用小书签改善 Safari 网页阅读效果"
 date: "2019-01-04"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ios"
   - "tips"
 ---

@@ -1,9 +1,7 @@
 ---
 title: "如何在 Word 文档的同一段落内插入自动编号"
 date: "2019-12-26"
-categories: 
-  - "post"
-tags: 
+tags:
   - "microsoft-office"
   - "tips"
 ---
@@ -18,7 +16,7 @@ tags:
 
 不过，这并不意味着在段落内部就无法实现自动编号。解决方法就是使用 Word 的**域**（field）功能。
 
-关于「域」在 Word 中的含义和使用方法，我在[之前的文章](https://type.cyhsu.xyz/2019/10/embed-images-in-word-with-mail-merge/)中已经有所介绍，这里不再重复。简言之，所谓的「域」就是一个占位符，它的作用是告诉 Word「显示的时候把我换成别的东西」。
+关于「域」在 Word 中的含义和使用方法，我在 [之前的文章](https://type.cyhsu.xyz/2019/10/embed-images-in-word-with-mail-merge/) 中已经有所介绍，这里不再重复。简言之，所谓的「域」就是一个占位符，它的作用是告诉 Word「显示的时候把我换成别的东西」。
 
 这里，我们要使用的是 [`SEQ` 域](https://support.office.com/en-us/article/field-codes-seq-sequence-field-062a387b-dfc9-4ef8-8235-29ee113d59be?ui=en-US&rs=en-US&ad=US)。如名称（`SEQ`uence）所表明，它的作用就是产生一个数字「序列」。但与自动编号不同的是，`SEQ` 域可以在同一段落中多次出现，且位置不限于段落开头。因此，通过在段落中插入多个 `SEQ` 域，就可以实现段内自动编号的效果。
 
@@ -100,8 +98,8 @@ tags:
 
 以上就是通过 `SEQ` 域在段落内部插入自动编号、并结合自动更正功能提高操作效率的方法。
 
-篇幅所限，本文没有介绍一些进阶用法。例如，如果在 `SEQ` 代码的识别符部分后再追加一个书签名称（即形如 `{ SEQ NumList bookmark1 }`），就可以在文档的其他位置通过交叉引用功能定位到这个编号；又如，如果你需要在同一段落内插入**多级**自动编号（如「1) a) i)」），可以改用 [`LISTNUM` 域](https://support.office.com/en-us/article/listnum-field-557541b1-abb2-4959-a9f2-401639c8ff82)来实现；等等。
+篇幅所限，本文没有介绍一些进阶用法。例如，如果在 `SEQ` 代码的识别符部分后再追加一个书签名称（即形如 `{ SEQ NumList bookmark1 }`），就可以在文档的其他位置通过交叉引用功能定位到这个编号；又如，如果你需要在同一段落内插入**多级**自动编号（如「1) a) i)」），可以改用 [`LISTNUM` 域](https://support.office.com/en-us/article/listnum-field-557541b1-abb2-4959-a9f2-401639c8ff82) 来实现；等等。
 
 另一点想借本文说明的是，Word 通过按钮或菜单项提供的很多功能，其本质也就是插入具有相应作用的域。例如，本文的主角 `SEQ` 域或许并没有你想象的那么陌生——当你用 Word 的「插入题注」功能为文章中的图片、表格加编号时，实际上就是插入了一段域代码 `{ SEQ caption \* ARABIC \s 1 }`。
 
-然而，菜单和按钮往往不会提供对应域代码能实现的全部功能（可能是要照顾日常用户），而且经常产生一些奇怪 bug（自动编号按钮的效果[混乱到令人咋舌](https://wordmvp.com/FAQs/Numbering/WordsNumberingExplained.htm)）。因此，如果你特别依赖 Word 的某项功能，不妨看看它是否有[对应的域代码](https://support.office.com/en-us/article/List-of-field-codes-in-Word-1ad6d91a-55a7-4a8d-b535-cf7888659a51)实现方式，并熟悉一下相应的语法和可用选项。这既可以实现更高的灵活性，又有助于在出现问题时快速排查。
+然而，菜单和按钮往往不会提供对应域代码能实现的全部功能（可能是要照顾日常用户），而且经常产生一些奇怪 bug（自动编号按钮的效果 [混乱到令人咋舌](https://wordmvp.com/FAQs/Numbering/WordsNumberingExplained.htm)）。因此，如果你特别依赖 Word 的某项功能，不妨看看它是否有 [对应的域代码](https://support.office.com/en-us/article/List-of-field-codes-in-Word-1ad6d91a-55a7-4a8d-b535-cf7888659a51) 实现方式，并熟悉一下相应的语法和可用选项。这既可以实现更高的灵活性，又有助于在出现问题时快速排查。

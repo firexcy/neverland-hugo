@@ -1,9 +1,7 @@
 ---
 title: "Keynote | The Renaissance of Sound as A Medium"
 date: "2015-10-30"
-categories: 
-  - "portfolio"
-tags: 
+tags:
   - "academic"
   - "keynote"
   - "opinion"

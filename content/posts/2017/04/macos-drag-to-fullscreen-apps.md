@@ -1,9 +1,7 @@
 ---
 title: "[macOS] 如何在全屏 App 或拥挤的桌面间便捷拖动文件"
 date: "2017-04-29"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
   - "tips"
 ---

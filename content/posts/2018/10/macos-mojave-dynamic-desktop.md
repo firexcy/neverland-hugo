@@ -1,9 +1,7 @@
 ---
 title: "macOS Mojave 动态桌面功能探析"
 date: "2018-10-09"
-categories: 
-  - "post"
-tags: 
+tags:
   - "macos"
 ---
 

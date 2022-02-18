@@ -1,9 +1,8 @@
 ---
 title: "译文 | 「技术故障」"
 date: "2016-07-14"
-categories: 
+tags:
   - "translations"
-tags: 
   - "internet"
   - "stratechery"
 ---

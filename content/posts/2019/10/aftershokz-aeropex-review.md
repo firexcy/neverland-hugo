@@ -1,9 +1,7 @@
 ---
 title: "走向主流的尝试——Aftershokz Aeropex 评测"
 date: "2019-10-29"
-categories: 
-  - "post"
-tags: 
+tags:
   - "audiophile"
   - "hardware"
   - "review"

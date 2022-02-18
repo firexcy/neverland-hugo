@@ -1,9 +1,7 @@
 ---
 title: "Keynote | Security v. Privacy"
 date: "2016-02-29"
-categories: 
-  - "portfolio"
-tags: 
+tags:
   - "internet"
   - "keynote"
   - "law"

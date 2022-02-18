@@ -1,9 +1,7 @@
 ---
 title: "「第一步」>「第二步」，还是「第一步 - 第二步」？"
 date: "2019-04-17"
-categories: 
-  - "post"
-tags: 
+tags:
   - "design"
   - "typography"
 ---

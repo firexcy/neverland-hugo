@@ -1,9 +1,7 @@
 ---
 title: "实体笔记本启发的 iPad 笔记模板小改进"
 date: "2019-02-06"
-categories: 
-  - "post"
-tags: 
+tags:
   - "ipad"
   - "tips"
 ---

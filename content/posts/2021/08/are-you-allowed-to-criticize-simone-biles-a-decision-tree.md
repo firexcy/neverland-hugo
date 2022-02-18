@@ -2,7 +2,6 @@
 title: "译文 | 你有权批评西蒙·拜尔斯吗？"
 date: "2021-08-01"
 categories: 
-  - "post"
   - "translations"
 ---
 

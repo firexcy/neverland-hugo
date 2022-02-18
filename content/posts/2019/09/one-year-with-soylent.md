@@ -1,9 +1,7 @@
 ---
 title: "Soylent 一年体验记"
 date: "2019-09-14"
-categories: 
-  - "post"
-tags: 
+tags:
   - "eat"
   - "life"
   - "review"

@@ -1,9 +1,8 @@
 ---
 title: "译文 | 科技现状：2016 年末"
 date: "2016-12-14"
-categories: 
+tags:
   - "translations"
-tags: 
   - "stratechery"
   - "tech"
 ---

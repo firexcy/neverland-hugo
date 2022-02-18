@@ -1,9 +1,7 @@
 ---
 title: "The 21st Birthday"
 date: "2017-04-19"
-categories: 
-  - "post"
-tags: 
+tags:
   - "diary"
 ---
 

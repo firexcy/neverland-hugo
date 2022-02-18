@@ -1,9 +1,7 @@
 ---
 title: "Apple Watch 表盘的设计问题"
 date: "2018-10-25"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
   - "opinion"
 ---

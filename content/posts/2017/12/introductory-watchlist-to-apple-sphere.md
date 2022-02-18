@@ -1,9 +1,7 @@
 ---
 title: "国外苹果社群关注指南"
 date: "2017-12-22"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
   - "listicle"
 ---

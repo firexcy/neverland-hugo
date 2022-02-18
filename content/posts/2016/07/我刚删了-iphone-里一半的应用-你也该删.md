@@ -1,9 +1,8 @@
 ---
 title: "译文 | 我刚删了 iPhone 里一半的应用——你也该删"
 date: "2016-07-22"
-categories: 
+tags:
   - "translations"
-tags: 
   - "ios"
 ---
 

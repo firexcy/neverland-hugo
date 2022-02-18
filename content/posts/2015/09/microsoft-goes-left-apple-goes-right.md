@@ -1,24 +1,10 @@
 ---
 title: "Microsoft 向左，Apple 向右"
 date: "2015-09-20"
-categories: 
-  - "post"
-tags: 
-  - "apple"
-  - "design"
-  - "typography"
----
-
-* * *
-
-title: Microsoft 向左，Apple 向右
-
-date: 2015-09-20 22:56:26
-
 tags:
-
-- Typography
-- Apple
+  - "Typography"
+  - "Apple"
+---
 
 * * *
 

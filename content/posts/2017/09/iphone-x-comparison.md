@@ -1,9 +1,7 @@
 ---
 title: "iPhone X 参数深究"
 date: "2017-09-13"
-categories: 
-  - "post"
-tags: 
+tags:
   - "apple"
   - "iphone"
 ---
