@@ -4,12 +4,14 @@ date: "2022-02-12"
 tags:
 ---
 
-Previously: [给迟早过年的迟早反馈（2021）](https://type.cyhsu.xyz/2021/02/ones-podcast-feedback/)
+_Previously:_ [给迟早过年的迟早反馈（2021）](https://type.cyhsu.xyz/2021/02/ones-podcast-feedback/)
+
+* * * * *
 
 ```
 From:    Platy Hsu <me@cyhsu.xyz>
 Subject: 给迟早过年的迟早反馈
-Date:    February 12, 2021 at 11:11 PM
+Date:    February 12, 2022 at 11:11 PM
 To:	     embrace@weareones.com
 ```
 
@@ -26,6 +28,8 @@ _Scanned notes below_
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/geudGyOl/e5a9c176-6199-45e7-860a-fde0ae40f109.png?v=bcfce9daea9e4893fb0ac9903db2540d)
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/p9uXJQLA/77f8971d-f1c1-4bda-9283-92e8d3cd9bba.png?v=62b5033b85ca402d4abf396f95a83362)
+
+_End scanned notes_
 
 * * * * * 
 
@@ -49,3 +53,4 @@ _Transcript below_
 
 Platy
 
+_End transcript_
