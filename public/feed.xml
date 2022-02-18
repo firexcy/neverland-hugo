@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给迟早更新的迟早反馈（2022）</title>
+      <link>https://type.cyhsu.xyz/2022/02/ones-podcast-feedback-2022/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/02/ones-podcast-feedback-2022/</guid>
+      <description>迟早更新的两位主播， 新年好！ 今年写回复的时候临时「皮」了一下，试了试手写，请见附件。如结尾所提，可能没法像打字那样反复推敲，写到后面手麻了也就没能顾得上工整；如果因此造成读起来费劲，还请见谅啦。 迟早更</description>
+    </item>
+    
     <item>
       <title>译文 | 用加拉蒙码字</title>
       <link>https://type.cyhsu.xyz/2022/02/write-in-garamond/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/2022/02/write-in-garamond/</guid>
-      <description>**按：**本文 原文 发表在 2022 年 2 月 6 日出版的《纽约时报杂志》（The New York Times Magazine）上，作者为 R.E.Hawley，作家、设计师，其文章曾发表于《新共和》（The New Republic）、Gawk</description>
+      <description>按： 本文 原文 发表在 2022 年 2 月 6 日出版的《纽约时报杂志》（The New York Times Magazine）上，作者为 R.E.Hawley，作家、设计师，其文章曾发表于《新共和》（The New Republic）、Gawker 等。</description>
     </item>
     
     <item>
@@ -182,15 +191,6 @@ The process can be done within the following steps, which essentially (a) create
       <guid>https://type.cyhsu.xyz/2021/06/wwdc21-notable-documentations/</guid>
       <description>Most users don’t follow the WWDC beyond the Keynote session. The trove of recorded sessions are thought to be relevant to only coders, not to mention the developer documentations. However, there are actually many summary articles that are easy to follow and full of tasteful tidbits, and even the rest of us can find interesting to read. If you have ever wondered how sites like MacStories and Ars Techinica can dig out so many details in their reviews of the annual OS releases, here lies the answer.
 The following is an inconclusive list of such approachable documentations updated during WWDC’21 that I’ve discovered.</description>
-    </item>
-    
-    <item>
-      <title>WWDC’21: Resources</title>
-      <link>https://type.cyhsu.xyz/2021/06/wwdc-2021-resources/</link>
-      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/2021/06/wwdc-2021-resources/</guid>
-      <description>Beta software Release notes  iOS &amp;amp; iPadOS 15 Beta Release Notes macOS Monterey 12 Beta Release Notes tvOS 15 Beta Release Notes watchOS 8 Beta Release Notes Safari 15 Beta Release Notes  Downloads  Download Beta Profiles (use at your own risk, but YOLO) macOS 12 Monterey Full Installer Database  Features  Six Colors - Reports tagged WWDC 2021 MacStories - WWDC 2021: All The Small Things in Apple&#39;s Upcoming OS Releases MacRumors Forums - [Megapost] iOS 15: All the little things  Bugs &amp;amp; Regressions  macOS Monterey Working/Not Working Apps DP1 | MacRumors Forums macOS Monterey (12.</description>
     </item>
     
   </channel>
