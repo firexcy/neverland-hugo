@@ -8,6 +8,7 @@
   --mono-font: ui-monospace, sf mono, cascadia code, cascadia code pl,
     roboto mono, consolas, monaco, arimo, ubunto mono, source code mono,
     source han sans, sarasa mono, microsoft yahei, monospace;
+  --system-font: ui-sans-serif, -system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, apple color emoji, segoe ui emoji, segoe ui symbol, sans-serif;
 }
 html {
   background-color: #eceff4;
@@ -70,11 +71,11 @@ ul li {
   text-indent: -2ch;
 }
 ul > li::before {
-  content: "· ";
+  content: "• ";
   font-weight: bold;
 }
 
-::marker {
+::marker, ul > li::before {
   color: var(--maincolor);
 }
 
