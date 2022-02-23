@@ -6,7 +6,7 @@ tags:
   - "wellness"
 ---
 
-最近深圳的差天气屡成头条，户外跑步自然搁置。加上附近游泳馆也暂停开放早场，早上运动的刚需只能留在房间里实现。想到上个月 [Apple Fitness+](https://www.apple.com/apple-fitness-plus/)（苹果的健身课程订阅服务）[新提供](https://www.apple.com/newsroom/2022/01/apple-fitness-plus-introduces-collections-and-time-to-run-starting-january-10/) 了一类「Time to Run」音频陪跑课程，而且根据宣传，这类课程也适用于室内，我便拿出阻力带，尝试用「Time to Run」来为自己的土法御寒增添几分洋气。
+最近深圳的差天气屡成头条，户外跑步自然搁置。加上附近游泳馆也暂停开放早场，早上运动的刚需只能留在房间里实现。想到上个月 [Apple Fitness+](https://www.apple.com/apple-fitness-plus/)（苹果的健身课程订阅服务）[新提供](https://www.apple.com/newsroom/2022/01/apple-fitness-plus-introduces-collections-and-time-to-run-starting-january-10/) 了一类「Time to Run」音频陪跑课程，而且根据宣传，这类课程也适用于室内，我便拿出阻力带，尝试用「Time to Run」来为自己的土法御寒增添几分 <del>阳</del> 洋气。
 
 ![](https://p178.p0.n0.cdn.getcloudapp.com/items/nOu9jELg/33459372-bcd5-4eeb-bee0-d571858b9f00.jpg?v=cf58ee5d7cbac9275e410b0a09564e12)
 
