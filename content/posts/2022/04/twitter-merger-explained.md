@@ -6,6 +6,8 @@ tags:
   - "internet"
 ---
 
+**Note:** This article was published as a [member-exclusive post](https://sspai.com/prime/story/twitter-merger-explained) for [SSPAI Prime](https://sspai.com/prime), which was made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support.
+
 ## 引言
 
 假设你叫 Elon。
