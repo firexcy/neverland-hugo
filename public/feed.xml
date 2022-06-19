@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从 SEC 申报文件看推特收购案的细节</title>
+      <link>https://type.cyhsu.xyz/2022/06/kindle-exits/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/06/kindle-exits/</guid>
+      <description>Note: This article was originally published as a member-exclusive post for SSPAI Prime and made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 引言 6 月 2 日，亚马逊中国官网发布了一则《Kindle 中国电子书店运营调整通知》，宣布将在 2023 年 6 月 30 日停止中国区 Kindle 电子书店</description>
+    </item>
+    
     <item>
       <title>从 SEC 申报文件看推特收购案的细节</title>
       <link>https://type.cyhsu.xyz/2022/04/twitter-merger-explained/</link>
@@ -178,15 +187,6 @@ Among the invitees are experienced developers, venture capitalists, scholars/pro
       
       <guid>https://type.cyhsu.xyz/2021/12/finde-toolbar-add-app-folder-icons/</guid>
       <description>众所周知，去年的 macOS Big Sur 再一次更新了视觉设计风格，其中一项改动就是「焕然一新」的工具栏。至于焕然一新在哪……最明显的地方就是更大的额头。 这样的设计好不好看见仁见智，但有一点是肯定的：这么多的空间如果浪费</description>
-    </item>
-    
-    <item>
-      <title>[Preview] 条条大路通罗马：细数 macOS 版「快捷指令」的运行方式</title>
-      <link>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</link>
-      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</guid>
-      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 快捷指令的加入拓宽了 macOS 自动化的疆域。但对于任何自动化方案而言，一个基本的评价标准是运行是否方便——只有「随叫随到」的</description>
     </item>
     
   </channel>

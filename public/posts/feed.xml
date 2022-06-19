@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从 SEC 申报文件看推特收购案的细节</title>
+      <link>https://type.cyhsu.xyz/2022/06/kindle-exits/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/06/kindle-exits/</guid>
+      <description>Note: This article was originally published as a member-exclusive post for SSPAI Prime and made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 引言 6 月 2 日，亚马逊中国官网发布了一则《Kindle 中国电子书店运营调整通知》，宣布将在 2023 年 6 月 30 日停止中国区 Kindle 电子书店</description>
+    </item>
+    
     <item>
       <title>从 SEC 申报文件看推特收购案的细节</title>
       <link>https://type.cyhsu.xyz/2022/04/twitter-merger-explained/</link>
@@ -178,15 +187,6 @@ Among the invitees are experienced developers, venture capitalists, scholars/pro
       
       <guid>https://type.cyhsu.xyz/2021/11/m1-mac-win11-vm/</guid>
       <description>引言 随着搭载 M1 Pro 和 M1 Max 芯片的新款 MacBook Pro 上市，Apple 历史上的第二次平台迁移已经打下了扎实的基础；M1 系列芯片的优秀表现，也让用户在选购时无需在其与 Intel 平台旧款间纠结。 然而，如果说 M1 系列 Mac 机型目前还有什么</description>
-    </item>
-    
-    <item>
-      <title>巧用辅助功能单手操作 Apple Watch</title>
-      <link>https://type.cyhsu.xyz/2021/10/a11y-apple-watch/</link>
-      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/2021/10/a11y-apple-watch/</guid>
-      <description>从初代 Apple Watch 一路用上来，我始终困惑于为什么操作手表始终需要用到两只手。即使是在双手空闲的情况下，这么操作也会显得窘迫，更不要提撑雨伞、提重物这种一只手被占据的情况了。这个问题终于在今年得到了解决。wat</description>
     </item>
     
   </channel>

@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://type.cyhsu.xyz/tags/eink/</loc>
+    <lastmod>2022-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/</loc>
+    <lastmod>2022-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/posts/</loc>
+    <lastmod>2022-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/</loc>
+    <lastmod>2022-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/06/kindle-exits/</loc>
+    <lastmod>2022-06-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://type.cyhsu.xyz/tags/internet/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/tags/law/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/posts/</loc>
-    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2022/04/twitter-merger-explained/</loc>
@@ -139,9 +145,6 @@
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/09/1password-8-controversy/</loc>
     <lastmod>2021-09-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/eink/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/09/hisense-touch-quick-review/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
