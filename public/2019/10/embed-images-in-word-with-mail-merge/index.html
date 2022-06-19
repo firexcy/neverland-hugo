@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -88,13 +88,13 @@
 <p><img src="https://cl.ly/dc3d28/preview-merge-field.jpg" alt=""></p>
 <p>接下来的重点就是插入图片。上面提到，Word 中的图片可以通过链接的形式插入。用 Office 的术语来说，就是插入一个指向外部图片的<strong>域</strong>（field）。</p>
 <p>什么是域？这个名字听起来很玄乎，但所谓的「域」就是一个占位符，它的作用是告诉 Word「显示的时候把我换成别的东西」。例如，上一步插入的公司名称变量，本质也是一个域。我们可以通过按下 Option-F9 (macOS) / Alt-F9 (Windows) 让它现出原形：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ MERGEFIELD corpName }
-</code></pre></div><p>这就是 Office 中域代码的一般形式：大写字母标示的域类型，后接参数指定要显示的内容，最外部由一对花括号包裹。在上面的域代码中，<a href="https://support.office.com/en-us/article/mergefield-field-7a6d24a1-68a6-4b05-8359-1dc087daf4e6"><code>MERGEFIELD</code></a> 域告诉 Word：「把我换成数据源中 <code>corpName</code> 变量的内容」。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ MERGEFIELD corpName }
+</span></span></code></pre></div><p>这就是 Office 中域代码的一般形式：大写字母标示的域类型，后接参数指定要显示的内容，最外部由一对花括号包裹。在上面的域代码中，<a href="https://support.office.com/en-us/article/mergefield-field-7a6d24a1-68a6-4b05-8359-1dc087daf4e6"><code>MERGEFIELD</code></a> 域告诉 Word：「把我换成数据源中 <code>corpName</code> 变量的内容」。</p>
 <p>回到我们的问题，图片的插入是由 <a href="https://support.office.com/en-us/article/includepicture-field-a3aac6dc-4e08-4d62-9aac-794279d02de9"><code>INCLUDEPICTURE</code></a> 域实现的。它的语法是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ INCLUDEPICTURE [开关] &#34;文件名&#34; }
-</code></pre></div><p>其中，<strong>开关（switch）</strong> 是可写可不写的控制选项，位置也可以挪到代码最后。就 <code>INCLUDEPICTURE</code> 域而言，最常用的开关是 <code>\d</code>，其作用是避免把引用的图片文件嵌入到文档中。考虑到处于制作初期，图片资源可能还需要更新，同时出于节约空间和提高性能的考虑，建议使用这个选项。（后文会提及如何在定稿后嵌入图片的问题。）这样，如果要引用在《扭腰时报》网站上搜索魏国公司的截图，相应的域代码是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ INCLUDEPICTURE \d &#34;1-NYT.png&#34; }
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ INCLUDEPICTURE [开关] &#34;文件名&#34; }
+</span></span></code></pre></div><p>其中，<strong>开关（switch）</strong> 是可写可不写的控制选项，位置也可以挪到代码最后。就 <code>INCLUDEPICTURE</code> 域而言，最常用的开关是 <code>\d</code>，其作用是避免把引用的图片文件嵌入到文档中。考虑到处于制作初期，图片资源可能还需要更新，同时出于节约空间和提高性能的考虑，建议使用这个选项。（后文会提及如何在定稿后嵌入图片的问题。）这样，如果要引用在《扭腰时报》网站上搜索魏国公司的截图，相应的域代码是：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ INCLUDEPICTURE \d &#34;1-NYT.png&#34; }
+</span></span></code></pre></div><hr>
 <h5 id="延伸说明关于域代码的输入">延伸说明：关于域代码的输入</h5>
 <p>Word 中插入域的「官方」途径是使用「插入」选项卡下的「域」按钮。但这种方法不够快捷，也不能满足很多复杂的需求；手工输入域代码大多时候是更好的方式。不过，Word 并不会识别直接输入或从别处粘贴的域代码；要将文本形式的代码转换为实际起作用的域，需要按照如下步骤操作：</p>
 <ol>
@@ -105,8 +105,8 @@
 </ol>
 <hr>
 <p>域代码的另一项重要特性是可以<strong>相互嵌套</strong>。因此，既然邮件合并的变量本质上也是一个域，就可以一步到位地写出插入<strong>任何</strong>一家公司《扭腰时报》截图的代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ INCLUDEPICTURE \d &#34;{ MERGEFIELD pathNYT }.png&#34; }
-</code></pre></div><p>请注意，手工输入带有嵌套的域代码时，需要按照前段所述方法，<strong>自内而外</strong>地将各部分代码转化为实际起作用的域（如本例中，就应先处理内层的 <code>MERGEFIELD</code> 域，再处理外层的 <code>INCLUDEPICTURE</code> 域）。当然，你仍然可以通过「插入合并域」下拉菜单直接插入 <code>pathNYT</code> 变量，其效果是相同的。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ INCLUDEPICTURE \d &#34;{ MERGEFIELD pathNYT }.png&#34; }
+</span></span></code></pre></div><p>请注意，手工输入带有嵌套的域代码时，需要按照前段所述方法，<strong>自内而外</strong>地将各部分代码转化为实际起作用的域（如本例中，就应先处理内层的 <code>MERGEFIELD</code> 域，再处理外层的 <code>INCLUDEPICTURE</code> 域）。当然，你仍然可以通过「插入合并域」下拉菜单直接插入 <code>pathNYT</code> 变量，其效果是相同的。</p>
 <p><img src="https://cl.ly/86b953/nyt-code.png" alt=""></p>
 <hr>
 <h5 id="延伸说明关于-mergeformat-开关">延伸说明：关于 <code>MERGEFORMAT</code> 开关</h5>
@@ -127,14 +127,14 @@
 <p>出于简化演示的考虑，上述步骤将文档和图片资源<strong>平级</strong>地放在同一文件夹下，以便在域代码的路径部分直接通过文件名引用图片。但这未必是最佳实践方式；更多时候，我们倾向于将图片等外部资源进一步整理在项目文件夹的子文件夹，例如 <code>./res</code> 或 <code>./img</code> 等中。</p>
 <p>这就会涉及路径格式的问题。最省事的做法当然是直接用绝对路径；考虑到图片文件最终会被嵌入到文件内部，在准备步骤中使用绝对路径并不影响最终成品的可交换性。使用时，注意将路径中的分隔符同一为域代码可识别的双反斜杠（<code>\\</code>），斜杠（<code>/</code>）或冒号（<code>:</code>）即可。</p>
 <p>但绝对路径毕竟看起来有些蠢笨，用起来也不够灵活。能否在域代码中使用相对路径呢？答案是肯定的。注意到域代码 <code>{ FILENAME \p }</code> 会返回<strong>当前文档</strong>的完整路径，因此，域代码 <code>{ FILENAME \p }\\..\\</code> 返回的就是<strong>当前文件夹</strong>的完整路径。于是，路径</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ FILENAME \p }\\..\\Child\\image.png
-</code></pre></div><p>指向当前文件夹的名为 <code>Child</code> 的<strong>子文件夹</strong>下名为 <code>image.png</code> 的图片文件。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ FILENAME \p }\\..\\Child\\image.png
+</span></span></code></pre></div><p>指向当前文件夹的名为 <code>Child</code> 的<strong>子文件夹</strong>下名为 <code>image.png</code> 的图片文件。</p>
 <p>类似地，路径</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ FILENAME \p }\\..\\..\\scan.pdf
-</code></pre></div><p>指向当前文件夹的<strong>上一级文件夹</strong>下名为 <code>scan.pdf</code> 的 PDF 文档。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ FILENAME \p }\\..\\..\\scan.pdf
+</span></span></code></pre></div><p>指向当前文件夹的<strong>上一级文件夹</strong>下名为 <code>scan.pdf</code> 的 PDF 文档。</p>
 <p>据此，在上面的例子中，如果其他安排不变，只是所有图片素材存放在主文档所在文件夹下名为 <code>res</code> 的子文件夹中，那么插入《扭腰时报》网站截图的代码应改为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{ INCLUDEPICTURE \d &#34;{ FILENAME \p }\\..\\res\\{ MERGEFIELD pathNYT }.png&#34; }
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{ INCLUDEPICTURE \d &#34;{ FILENAME \p }\\..\\res\\{ MERGEFIELD pathNYT }.png&#34; }
+</span></span></code></pre></div><hr>
 <p>不过，这份文件现在还不能直接发给别人。如果你充分理解了上面步骤的原理，就会意识到目前所插入的图片并没有<strong>嵌入</strong>在文档中，而只是以<strong>链接</strong>的形式从文档外部调用的。因此，如果换一台电脑打开这份文件，图片就会因为那台电脑上没有相应的原件而不能显示。</p>
 <p>因此，解决的方法就是断开链接，让图片直接存储在文档内部。首先确保文件内容无误、图片均能正常显示。然后，对于 Windows 版 Word，点击「文件」&gt;「信息」，然后在右下角的「相关文档」 下, 单击「编辑文件链接」；对于 Word for Mac，点击「编辑」&gt;「链接…」。在弹出的对话框中，选中所有图片链接，然后单击「断开链接」。这样，以链接形式插入的图片就被固化在文档内部了。</p>
 <p><img src="https://cl.ly/fcd63f/break-links.png" alt=""></p>

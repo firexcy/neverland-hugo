@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>[Preview] 2022 年，搭配 Zotero 的 WebDAV 存储方案还有什么选择？ - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 引言 近日，Zotero 6 的发布让很多用户重新对这款工具产生了兴趣（参见少数派的 介绍文章）。在相关讨论中，一个常被提起" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="[Preview] 2022 年，搭配 Zotero 的 WebDAV 存储方案还有什么选择？" />
+<meta property="og:description" content="Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 引言 近日，Zotero 6 的发布让很多用户重新对这款工具产生了兴趣（参见少数派的 介绍文章）。在相关讨论中，一个常被提起" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://type.cyhsu.xyz/2022/03/webdav-services-compared/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-21T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Preview] 2022 年，搭配 Zotero 的 WebDAV 存储方案还有什么选择？"/>
+<meta name="twitter:description" content="Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 引言 近日，Zotero 6 的发布让很多用户重新对这款工具产生了兴趣（参见少数派的 介绍文章）。在相关讨论中，一个常被提起"/>
+<script src="https://type.cyhsu.xyz/js/feather.min.js"></script>
+	
+	
+        <link href="https://type.cyhsu.xyz/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://type.cyhsu.xyz/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		<a href="https://platylinks.substack.com">readings</a>
+		
+		<a href="/feed.xml">rss</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">[Preview] 2022 年，搭配 Zotero 的 WebDAV 存储方案还有什么选择？</h1>
+			<div class="meta">2022-03-21</div>
+		</div>
+		
+
+		<section class="body">
+			<p><strong>Note:</strong> This article was published as a member-exclusive post for <a href="https://sspai.com/prime">SSPAI Prime</a>, which you may find <a href="https://sspai.com/prime/story/webdav-services-compared">here</a>; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support.</p>
+<h2 id="引言">引言</h2>
+<p>近日，Zotero 6 的发布让很多用户重新对这款工具产生了兴趣（参见少数派的 <a href="https://sspai.com/post/72163">介绍文章</a>）。在相关讨论中，一个常被提起的话题就是怎样解决资料库同步的问题。</p>
+<p>的确，Zotero 虽然本身是一个开源项目，但存储服务是额外收费的，并且 <a href="https://www.zotero.org/settings/storage">价格</a> 很难说是便宜：</p>
+<table>
+<thead>
+<tr>
+<th>容量</th>
+<th>年费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300 MB</td>
+<td>免费</td>
+</tr>
+<tr>
+<td>2GB</td>
+<td>$20</td>
+</tr>
+<tr>
+<td>6GB</td>
+<td>$60</td>
+</tr>
+<tr>
+<td>无限</td>
+<td>$120</td>
+</tr>
+</tbody>
+</table>
+<p>其中，300MB 的免费档位放在今天实在是不够看；而各个付费档位即使与国外一线服务相比，也是偏高的；再考虑到付费了也仅限于 Zotero 使用，从性价比角度可以说是毫无竞争力，社区中也只有少数用户本着支持开源项目发展的心态而付费，当作一种捐助。</p>
+<p>好在，Zotero 并不是只能通过官方服务来同步，而还一直支持通过 WebDAV 协议同步数据（需桌面和移动端做相应设置，位置见下图，具体步骤参阅 <a href="https://www.zotero.org/support/sync#webdav">官方文档</a>）。</p>
+<p><img src="https://cdn.sspai.com/2022/03/22/489c77bed7ce5317e9c565cd32955b99.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>在 Zotero 桌面端和移动端配置 WebDAV 协议同步数据，注意两部分的对应</p>
+<p>借助这项功能，用户可以将 Zotero 数据库存储在自己拥有的其他网络位置，从而节约成本。不仅如此，OmniFocus、DEVONthink、2Do 等知名效率工具也支持 WebDAV 同步数据，搭配起来能起到一鱼多吃的效果。</p>
+<p>但一个相伴随的问题就是，<strong>从哪里找支持 WebDAV 的服务呢</strong>？答案并不乐观。随着时间推移，支持 WebDAV 协议的网盘服务已经越来越少，而通过家庭 NAS 或 VPS 服务器搭建，对于不少用户又门槛过高。</p>
+<h2 id="可选方案与挑选原则">可选方案与挑选原则</h2>
+<p>值得一提的是，Zotero 的官方文档库中提供了一份由社区维护的 <a href="https://www.zotero.org/support/kb/webdav_services">列表</a>，列举了经验证可以配合 Zotero 使用的、支持 WebDAV 的存储服务。可惜的是，这份列表上次更新还是一年半之前，其中列举的也都是国外服务，难以保证在国内能顺利访问。</p>
+<p>我们认为，从 Zotero 同步文件的使用场景出发，一个合格选择主要应当考虑的因素包括：</p>
+<ul>
+<li><strong>价格：</strong> 免费午餐当然最好，或者提供价格公允、不超出市场主流定价太多的升级选择。</li>
+<li><strong>容量：</strong> 考虑到文献主要为占据空间不大的 PDF 格式，平均尺寸以 MB 量级居多，并且多数人会另外选用高容量和廉价的方案存储占空间的文件，因此用来做 Zotero 服务的网盘无需太大，能达到 10GB 对不少人便可谓宽裕。</li>
+<li><strong>稳定：</strong> 这包含数据安全性和提供服务的稳定性。考虑到 Zotero 中存储的文件大多不是私人文件，而是公开发表的文献，数据安全性的标准可以相对个人资料备份用服务略微放宽（当然，用户自己也应该有冗余备份的意识）。服务的稳定性则主要取决于服务商的口碑和历史。服务时间越久、业务越稳定的服务商越值得信赖；那些名不见经传、动辄低价倾销的服务商，则很可能跑路就在眼前。</li>
+<li><strong>速度：</strong> 仍然是考虑到文献相对较小的尺寸，这个标准同样可以相对主力数据同步盘放宽。（为了反映这一真实场景，后文的速度测试中，我们用 <code>curl</code> 调用 WebDAV 协议，上传三个容量合计约 10MB 的 PDF 文件，统计各个服务完成上传的平均时间；测试环境为非晚高峰时段的广东电信 200M 宽带直连。）</li>
+</ul>
+<p><img src="https://cdn.sspai.com/2022/03/21/42e8073f4e56a4114ccfd024e4738287.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>基于此，我们逐一考察了上述列表中的服务，排除了那些国内访问不畅、免费空间过小的选择；再补充了一些我们所知的其他选项，得出了一份能反映当前（2022 年初）情况的列表：</p>
+<table>
+<thead>
+<tr>
+<th>服务</th>
+<th>免费空间</th>
+<th>升级方案</th>
+<th>速度</th>
+<th>限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Box</td>
+<td>10GB</td>
+<td>100GB: $120/年</td>
+<td>较快</td>
+<td>WebDAV 不在技术支持范围内</td>
+</tr>
+<tr>
+<td>Koofr</td>
+<td>最多 10GB</td>
+<td>10GB: €5/年</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25GB: €10/年，或 $20/终身</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>100GB: €20/年，或 $30/终身</td>
+<td>一般</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Koofr（连接其他网盘）</td>
+<td>取决于连接的服务</td>
+<td>取决于连接的服务</td>
+<td>取决于连接的服务</td>
+<td>免费账号每日限流 1GB</td>
+</tr>
+<tr>
+<td>TeraCLOUD</td>
+<td>最多 15GB</td>
+<td>300GB: $80/年</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3TB: $120/年</td>
+<td>快</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>坚果云</td>
+<td>1GB</td>
+<td>42GB: ¥200/年</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>96GB: ¥400/年</td>
+<td>快</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>简单结论如下：</strong></p>
+<ul>
+<li><strong>如果不想付费：</strong>
+<ul>
+<li>最稳定可靠、速度也可接受的是 Box 的免费方案；</li>
+<li>国内访问速度最快的是 TeraCLOUD 的免费方案；</li>
+<li>如果有大容量的 OneDrive 或 Dropbox 账号，则可以首选 Koofr 提供的 WebDAV 中转功能，性价比极高。</li>
+</ul>
+</li>
+<li><strong>如果愿意付费：</strong> 坚果云仍然是一个优秀的选择，Koofr 常年销售的廉价终身方案也可以作为备选。</li>
+</ul>
+<p>具体介绍和使用方法见下文。</p>
+<p>[ Intermediate content is omitted from this preview ]</p>
+<h2 id="题外话关于-webdav">题外话：关于 WebDAV</h2>
+<p>在涉及网盘的讨论中，支不支持 <a href="http://www.webdav.org/">WebDAV</a> 协议，经常被用来作为衡量服务商够不够「大方」、心态够不够开放的标准。诚然，在公开标准越发受到挤压，私有协议和臃肿客户端成为主流的市场环境下，能提供 WebDAV 协议是值得鼓励的；但也有必要指出，<strong>不应该因此过于拔高 WebDAV 协议的评价</strong>。</p>
+<p>事实上，WebDAV 是主流文件传输协议中较为落后的一种。作为一个诞生于 1996 年的协议，WebDAV 使用语法冗长的 XML 格式传递请求和响应，效率不高、开发起来也不方便。尽管实现了名义上的标准化（IEEE <a href="https://datatracker.ietf.org/doc/html/rfc4918">RFC 4918</a>），却一直缺乏统一的实现方式，以至于 <a href="https://www.ics.uci.edu/~ejw/authoring/implementation.html">实践中的做法</a> 四分五裂、不同软件商自说自话，相对主流的方案——例如微软在 Windows 和 Office 中的实现，以及苹果在 macOS Finder 中的实现——都存在或多或少的「怪癖」或 bug，进一步影响了用户的顺畅使用和存储提供商的有效支持。因此，<a href="https://news.ycombinator.com/item?id=19250319">有观点</a> 认为 WebDAV 只有在用户能同时控制客户端和服务端的场合才能稳定工作；但如果能做到这一点，其实有很多更好的协议可用，根本就没有 WebDAV 什么事了。</p>
+<p>某种意义上，WebDAV 之所以在今天还被保留使用，很大程度上是历史原因造成的：早期软件中的支持一直被保留下来，贸然移除必然面临阻力；苹果基于 WebDAV 开发的 CalDAV（用于访问远程日历）和 CardDAV（用于访问远程通讯录）成为了业界事实标准，也起到了「续命」作用。近年来，<a href="https://remotestorage.io/">remoteStorage</a>、<a href="https://jmap.io/">JMAP</a> 等较新的协议也一直在试图挑战 WebDAV 的地位，尽管尚未成功。</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/academic">academic</a></li>
+					
+					<li><a href="/tags/review">review</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>

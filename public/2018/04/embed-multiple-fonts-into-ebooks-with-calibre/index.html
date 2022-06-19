@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -86,13 +86,13 @@
 <p><img src="https://cl.ly/qbCs/iPad%20Copy.png" alt=""></p>
 <p>可以看到，这段 CSS 主要分为两大部分：</p>
 <p>首先，用 <code>@font-face</code> 来声明将要嵌入的字体文件的各项属性（上图第 1—36 行）。这本不是必须的（因为字体文件本身已经记载了这些信息），但当需要改变字体原有的属性时（如将较粗字体当作常规体来用），就要借助 <code>@font-face</code> 来进行修改。这里拿出上面代码中涉及中文粗体的部分来具体说明：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">@font-face {
-    font-family: &#34;Source Han Serif&#34;;
-    font-style: normal;
-    font-weight: normal;
-    src: url(SourceHanSerifCN-Medium.otf);
-}
-</code></pre></div><p>上面这段代码的作用是将名为 <code>SourceHanSerifSC-Medium.otf</code> 的字体文件重新定义为「Source Han Serif」家族中的常规体。其中：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>@font-face {
+</span></span><span style="display:flex;"><span>    font-family: &#34;Source Han Serif&#34;;
+</span></span><span style="display:flex;"><span>    font-style: normal;
+</span></span><span style="display:flex;"><span>    font-weight: normal;
+</span></span><span style="display:flex;"><span>    src: url(SourceHanSerifCN-Medium.otf);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>上面这段代码的作用是将名为 <code>SourceHanSerifSC-Medium.otf</code> 的字体文件重新定义为「Source Han Serif」家族中的常规体。其中：</p>
 <ul>
 <li><code>font-family</code>：字体家族名称，可以任意填写，易于识别即可；</li>
 <li><code>font-style</code>：字体样式，取值为 <code>normal</code>（常规体）或 <code>italic</code>（斜体）；</li>
@@ -104,11 +104,11 @@
 <p>最后，将写好的代码保存为一个 <code>.css</code> 文件（例如 <code>~/Documents/KindleFonts/KindleFonts.css</code>），记下其路径备用。</p>
 <h2 id="4-命令的构建">4. 命令的构建</h2>
 <p>完成上述准备后，就可以着手构建用来嵌入字体的终端命令了。该命令的结构如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ /Applications/calibre.app/Contents/MacOS/ebook-convert 原始电子书文件路径 ~/Desktop/temp.htmlz --extra-css &#34;$(cat 自定义CSS文件路径 | tr &#39;\n&#39;,&#39;\t&#39; &#39; &#39;)&#34; \
-&amp;&amp; zip -urj0 ~/Desktop/temp.htmlz 字体所在文件夹路径 \
-&amp;&amp; /Applications/calibre.app/Contents/MacOS/ebook-convert ~/Desktop/output.htmlz ~/Desktop/output.azw3 --language zh-Hans \
-&amp;&amp; rm ~/Desktop/temp.htmlz
-</code></pre></div><p>其中，<code>原始电子书文件路径</code>、<code>自定义 CSS 文件路径</code>和<code>字体所在文件夹路径</code>在上面的步骤中都已经准备好，填入对应位置即可。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ /Applications/calibre.app/Contents/MacOS/ebook-convert 原始电子书文件路径 ~/Desktop/temp.htmlz --extra-css &#34;$(cat 自定义CSS文件路径 | tr &#39;\n&#39;,&#39;\t&#39; &#39; &#39;)&#34; \
+</span></span><span style="display:flex;"><span>&amp;&amp; zip -urj0 ~/Desktop/temp.htmlz 字体所在文件夹路径 \
+</span></span><span style="display:flex;"><span>&amp;&amp; /Applications/calibre.app/Contents/MacOS/ebook-convert ~/Desktop/output.htmlz ~/Desktop/output.azw3 --language zh-Hans \
+</span></span><span style="display:flex;"><span>&amp;&amp; rm ~/Desktop/temp.htmlz
+</span></span></code></pre></div><p>其中，<code>原始电子书文件路径</code>、<code>自定义 CSS 文件路径</code>和<code>字体所在文件夹路径</code>在上面的步骤中都已经准备好，填入对应位置即可。</p>
 <p>**注：**如果你不确定文件路径的写法，可以将其拖入终端窗口来显示（macOS），或点击右键选择「属性」（Windows）来查看。</p>
 <p>一个填写完整的命令如下图所示（🔗 <a href="https://cl.ly/qb8g/Embed%20with%20custom%20fonts.sh">下载</a>）：</p>
 <p><img src="https://cl.ly/qaLH/carbon%20(7).png" alt=""></p>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workflow on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/workflow/</link>
+    <description>Recent content in workflow on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/workflow/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Preview] 为了「派早报」不翻车，我们做个了官方新闻搜索引擎</title>
+      <link>https://type.cyhsu.xyz/2022/01/whitelisted-news-custom-search/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/01/whitelisted-news-custom-search/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 「派早报」是最受少数派读者熟悉和喜爱的常规栏目之一。虽然这个栏目的主题说起来并不复杂——汇总前一天我们认为比较重要的</description>
+    </item>
+    
+    <item>
+      <title>为了「派早报」不翻车，我们做个了官方新闻搜索引擎</title>
+      <link>https://type.cyhsu.xyz/unpublished/2022/01/whitelisted-news-custom-search/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/unpublished/2022/01/whitelisted-news-custom-search/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 「派早报」是最受少数派读者熟悉和喜爱的常规栏目之一。虽然这个栏目的主题说起来并不复杂——汇总前一天我们认为比较重要的</description>
+    </item>
+    
+  </channel>
+</rss>

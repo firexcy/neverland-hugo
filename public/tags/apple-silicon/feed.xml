@@ -14,7 +14,7 @@
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/</guid>
-      <description>Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的说明，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构</description>
+      <description>Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的 说明，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构</description>
     </item>
     
   </channel>

@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -59,7 +59,7 @@
 <ol>
 <li>将 Word 格式的交易文件导出为 PDF 格式；</li>
 <li>逐页提取 PDF 版中的签字页部分；</li>
-<li>将单页签字页按照类似于 <code>合同名称_SigPage_01_签署方名称.pdf</code> 的格式重命名。</li>
+<li>将单页签字页按照类似于 <code>合同名称_SigPage_01_签署方名称。pdf</code> 的格式重命名。</li>
 </ol>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/8Lu7PdbE/sigpage_eg.png?v=7788fcec612983304f82e5ce43c1a258" alt="「签字页」"></p>
 <p>「签字页」</p>
@@ -82,8 +82,8 @@
 <li>签字页从第 26 页开始。</li>
 </ol>
 <p>那么，则执行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ ./sigpgs.sh &#39;Shareholders Agreement.pdf&#39; signatories.txt 26
-</code></pre></div><p>稍等片刻，就能在生成的 Shareholders Agreement 文件夹下看到分割好并且自动编号和命名的 10 张签字页：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ ./sigpgs.sh &#39;Shareholders Agreement.pdf&#39; signatories.txt 26
+</span></span></code></pre></div><p>稍等片刻，就能在生成的 Shareholders Agreement 文件夹下看到分割好并且自动编号和命名的 10 张签字页：</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/BluO5pG4/output.png?v=617da0f64c7bcbdf1e12894cf470d30a" alt=""></p>
 <hr>
 <p>下面简单介绍一下这段脚本的思路。整体而言，这段脚本分为三个部分：</p>
@@ -108,11 +108,11 @@
 <p>该部分用于将上面分割好的文件重命名为我们需要的格式。</p>
 <p>这里整体使用了一个 <code>while</code> 循环，通过 <code>read</code> 命令逐行从签署方名单（最后的 <code>&lt; &quot;$2&quot;</code>）中读取签署方名称，进而将其拼合到最终的文件名中。（之前要求签署方名单最后以空行结尾，是因为 <code>read</code> 命令以换行符 <code>\n</code> 为各条记录的分隔符；因此，如果最后一个签署方之后没有空行，它就不会被纳入循环。）</p>
 <p>在每次循环中，<code>$c</code> 变量起计数和编号作用，反映当前处理的是第几个签署方。（第 20–25 行的 <code>if</code> 循环用于处理上面提到的 <code>qpdf</code> 编号格式问题，即编号数超过两位数时在个位数编号前追加 <code>0</code>。）</p>
-<p>接着，第 27 行的 <code>mv</code> 命令找到对应序号的签字页，将其名称改为 <code>$newname</code> 变量指定的格式：<code>原始文件名_SigPage_编号_签署方名称.pdf</code>。</p>
+<p>接着，第 27 行的 <code>mv</code> 命令找到对应序号的签字页，将其名称改为 <code>$newname</code> 变量指定的格式：<code>原始文件名_SigPage_编号_签署方名称。pdf</code>。</p>
 <p>最后，第 28 行的 <code>echo</code> 命令提示最终输出的文件名。</p>
 <hr>
 <p>在此基础上，如果想把这个脚本做成独立应用程序的形式以方便运行，只要用内建的 Automator 应用简单包装一下即可。</p>
-<p>你可以<a href="https://p178.p0.n0.cdn.getcloudapp.com/items/wbuW7r4X/SigPgMaker.zip?v=a5f7eeb62f68aacf0c53bf4737a5f486v">下载</a>我打包好的 App Bundle。它的核心，就是下图中最后的 Run Shell Script 步骤，其内容原封不动地照搬了上面写好的 <code>sigpgs.sh</code> 脚本。图中上部还有几个要求选择或输入的步骤，作用都是引导用户提供脚本运行所需的变量（即原始 PDF 文件、签署方名单和签字页起始页码）。</p>
+<p>你可以 <a href="https://p178.p0.n0.cdn.getcloudapp.com/items/wbuW7r4X/SigPgMaker.zip?v=a5f7eeb62f68aacf0c53bf4737a5f486v">下载</a> 我打包好的 App Bundle。它的核心，就是下图中最后的 Run Shell Script 步骤，其内容原封不动地照搬了上面写好的 <code>sigpgs.sh</code> 脚本。图中上部还有几个要求选择或输入的步骤，作用都是引导用户提供脚本运行所需的变量（即原始 PDF 文件、签署方名单和签字页起始页码）。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/qGuKNg8o/automator.png?v=410fa814191c222c25cad9ede5f18e1f" alt=""></p>
 <p>最后有两个值得提示的地方：</p>
 <ol>

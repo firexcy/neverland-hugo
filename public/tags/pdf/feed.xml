@@ -14,7 +14,7 @@
       <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/2020/07/understand-pdf-page-boundaries/</guid>
-      <description>最近工作中，我经常遇到需要裁剪 PDF 页面的情况。例如，收到的扫描版 PDF 文件不是标准的 A4 尺寸，而是有些多余的白边需要裁掉。 过去偶尔需要裁剪 PDF 时，我一般会通过 macOS 自带的预览 app 实现：用标记工具栏中的「矩形选择」工具</description>
+      <description>最近工作中，我经常遇到需要裁剪 PDF 页面的情况。例如，收到的扫描版 PDF 文件不是标准的 A4 尺寸，而是有些多余的白边需要裁掉。 过去偶尔需要裁剪 PDF 时，我一般会 通过 macOS 自带的预览 app 实现：用标记工具栏中的「矩形选择」工具</description>
     </item>
     
     <item>

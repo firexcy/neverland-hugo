@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -73,15 +73,15 @@
 <p>首先，苹果重新启用了 Universal 技术，让软件可以同时包含适用于 Intel 和 ARM 两种处理器的可执行文件，称为「通用二进制」（universal binary）格式。其次，对于没有专门针对 ARM 架构编译的旧版软件，Rosetta 2 技术会将其「翻译」为新处理器可以运行的代码。与当年的初版相比，新版 Rosetta 可以在软件安装时就完成「翻译」工作，而不是等到每次运行时再翻译，因此理论上效率和性能都更高。</p>
 <p>不过，尽管迁移到 ARM 架构的整体前景是是乐观的，<strong>实际执行效果仍然存在不确定因素，并将很大程度上取决于第三方软件能否及时适配新架构。</strong></p>
 <p>首先，通过 Rosetta 2 翻译的未适配软件，<strong>性能会受到较大影响</strong>。</p>
-<p>根据部分开发者在收到 Developer Transition Kit 测试机（搭载与 iPad Pro 相同的 A12Z 处理器）后进行的 Geekbench 跑分测试，Rosetta 2 翻译造成的性能损耗<a href="https://9to5mac.com/2020/06/29/first-benchmarks-surface-for-apples-arm-based-developer-transition-kit/">大约为 25–40%</a>。这对于浏览网页等日常操作或许不会有很大影响，但对于处理复杂文档、多媒体编辑、软件开发等较为繁重的任务，就是比较明显的性能损失了。</p>
-<p>其次，尽管苹果宣称「大多数开发者将能在<a href="https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/">几天内</a>（in a matter of days）使其应用在新架构上运行」，但<strong>实际的适配工作仍然有着不少门槛</strong>。</p>
-<p>例如，苹果自己在<a href="https://developer.apple.com/documentation/xcode/porting_your_macos_apps_to_apple_silicon">开发文档</a>中就采用了更谨慎的口径，提示了架构迁移将会带来的适配成本。苹果指出，ARM 和 Intel 处理器在虚拟内存页面大小、缓存容量、指令集等参数上存在差异，依赖于这些特性的软件必须更新代码才能继续运行（首当其冲的就是虚拟机软件）；ARM 处理器独有的<a href="https://en.wikipedia.org/wiki/ARM_big.LITTLE">「大小核」</a>结构也要求开发者更积极地将能耗效率纳入考量。</p>
+<p>根据部分开发者在收到 Developer Transition Kit 测试机（搭载与 iPad Pro 相同的 A12Z 处理器）后进行的 Geekbench 跑分测试，Rosetta 2 翻译造成的性能损耗 <a href="https://9to5mac.com/2020/06/29/first-benchmarks-surface-for-apples-arm-based-developer-transition-kit/">大约为 25–40%</a>。这对于浏览网页等日常操作或许不会有很大影响，但对于处理复杂文档、多媒体编辑、软件开发等较为繁重的任务，就是比较明显的性能损失了。</p>
+<p>其次，尽管苹果宣称「大多数开发者将能在 <a href="https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/">几天内</a>（in a matter of days）使其应用在新架构上运行」，但<strong>实际的适配工作仍然有着不少门槛</strong>。</p>
+<p>例如，苹果自己在 <a href="https://developer.apple.com/documentation/xcode/porting_your_macos_apps_to_apple_silicon">开发文档</a> 中就采用了更谨慎的口径，提示了架构迁移将会带来的适配成本。苹果指出，ARM 和 Intel 处理器在虚拟内存页面大小、缓存容量、指令集等参数上存在差异，依赖于这些特性的软件必须更新代码才能继续运行（首当其冲的就是虚拟机软件）；ARM 处理器独有的 <a href="https://en.wikipedia.org/wiki/ARM_big.LITTLE">「大小核」</a> 结构也要求开发者更积极地将能耗效率纳入考量。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/ApuAgKmo/async_cores.png?v=90fa376487547a82aa73139b9b65bdd4" alt="Apple silicon 的「大小核」设计需要专门优化才能发挥优势"></p>
 <p>Apple silicon 的「大小核」设计需要专门优化才能发挥优势</p>
 <p>为此，苹果提倡尽可能使用 Metal、DriverKit 等官方提供的、较新的技术或接口，而不是 OpenGL、Kernel extension 等第三方或较旧的选项。但对于那些有较长开发历史的软件来说，改换这些较为底层的技术并不是一朝一夕可以完成的。</p>
 <p>何况，架构迁移的进度并不完全取决于开发者的积极性。所谓「一个好汉三个帮」，软件开发中，并不是所有功能都需要由开发者自己实现，而是往往可以借用很多别人造好的「轮子」——第三方库。但根据苹果的要求，架构迁移必须是以一个软件为整体进行的——只有主程序本身及其使用的所有第三方库都适配 ARM 架构，整个软件才能以原生模式运行。问题是，开发者并不能左右第三方库的适配进度，从而可能面临等待和重写/放弃部分功能的两难。</p>
 <p>不仅如此，对于用户购买决策和日常操作体验影响最大的，往往不是适配迅速的独立应用，而是那些由巨头们开发的「大型软件」——微软的 Office、Adobe 的 Creative Cloud 等。这些尾大不掉的软件能多快完成适配，恐怕只能靠求神拜佛才能知道。事实上，在 Mac 上一次从 PowerPC 到 Intel 架构的迁移中，Adobe 花了 10 个月才发布了能在 Intel 架构 Mac 上原生运行的 Create Suite 3，而微软则花了一年半才发布了适配新架构的 Office for Mac 2008。</p>
-<p>或许正是考虑到用户可能有此顾虑，苹果在 WWDC 上专门<a href="https://youtu.be/GEZhD3J89ZE?t=5742">演示</a>了这两家软件在 ARM Mac 上的运行效果，并且不惜用上了「super smooth」「responsive」这类平时只会用来修饰自家产品的溢美之词。然而，经过「精心」编排的操作演示也跟真实体验完全不是一回事（别忘了乔布斯演示的初代 iPhone <a href="https://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?pagewanted=all">必须遵守特定步骤才能不死机</a>）。考虑到 Word 目前在 Intel Mac 上都还运行得磕磕绊绊，我个人对于它适配 ARM Mac 的进度和效果只能持保留态度。</p>
+<p>或许正是考虑到用户可能有此顾虑，苹果在 WWDC 上专门 <a href="https://youtu.be/GEZhD3J89ZE?t=5742">演示</a> 了这两家软件在 ARM Mac 上的运行效果，并且不惜用上了「super smooth」「responsive」这类平时只会用来修饰自家产品的溢美之词。然而，经过「精心」编排的操作演示也跟真实体验完全不是一回事（别忘了乔布斯演示的初代 iPhone <a href="https://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?pagewanted=all">必须遵守特定步骤才能不死机</a>）。考虑到 Word 目前在 Intel Mac 上都还运行得磕磕绊绊，我个人对于它适配 ARM Mac 的进度和效果只能持保留态度。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/X6uo7qbq/office_on_mac.jpg?v=583b41ccf7844c344a59b201bb63b9fe" alt="苹果演示 Office 已经可以在新架构上运行，但实际效果仍然有待观察"></p>
 <p>苹果演示 Office 已经可以在新架构上运行，但实际效果仍然有待观察</p>
 <p>最后，迁移到 ARM 架构对于 Mac 应用生态还有一项重要影响——<strong>iOS 应用将可以不经修改地直接在 ARM Mac 上运行</strong>。苹果已经表示会把这做成一个默认选项——如果开发者不主动取消，其开发的 iOS 应用将可以直接在 ARM Mac 上的 App Store 被用户直接搜索到并下载安装。</p>
@@ -97,7 +97,7 @@
 <p>去年的 WWDC 上，苹果在一年的酝酿后正式向开发者开放了 Mac Catalyst 技术，其作用是将 UIKit 从 iOS 移植到了 macOS 上。由于有了完全相同的食材库，iOS 分店的菜也可以端上 macOS 分店的桌了。</p>
 <p>但 Mac Catalyst 并不是一个完美的解决方案。最大的问题在于食谱可以照搬，但食客的口味难以统一。</p>
 <p>想象一下，一家开在南方的分店，即使能 100% 复刻出北方分店里的咸豆腐脑，也难免显得格格不入。类似地，让 iOS 应用在 Mac 上能够运行只是最低限度的要求。两个平台的应用从控件外观（按钮、菜单等）、输入方式（触控/鼠标加键盘）到操作逻辑（全屏/多窗口）都有诸多区别，照搬照套只会得到「橘越淮而为枳」的古怪效果。</p>
-<p>去年 WWDC 前夕，知名 Mac 和 iOS 应用开发商 Iconfactory 曾<a href="https://sspai.com/post/54715">发文</a>表达过这种担忧，事实证明一语成谶：一年过去，Mac App Store 上使用 Mac Catalyst 开发的应用屈指可数；一些原本十分优秀的 iOS 应用经过移植，获得的反响也令人失望。</p>
+<p>去年 WWDC 前夕，知名 Mac 和 iOS 应用开发商 Iconfactory 曾 <a href="https://sspai.com/post/54715">发文</a> 表达过这种担忧，事实证明一语成谶：一年过去，Mac App Store 上使用 Mac Catalyst 开发的应用屈指可数；一些原本十分优秀的 iOS 应用经过移植，获得的反响也令人失望。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/eDu1EWNJ/home_app.png?v=7b796a7f81d808d2b7242d3e1e8d5126" alt="在 macOS Mojave 中作为首批 Catalyst 应用出现的 Home 应用，因为与 macOS 格格不入的设计受到批评"></p>
 <p>在 macOS Mojave 中作为首批 Catalyst 应用出现的 Home 应用，因为与 macOS 格格不入的设计受到批评</p>
 <p>这个问题在今年的 WWDC 上得到了回应。简单来说，苹果赋予了 Mac Catalyst 应用「入乡随俗」的能力，可以针对 iPad 和 Mac 两种运行环境，显示出不同的布局和外观。</p>
@@ -124,7 +124,7 @@
 <p>此外，macOS 和 iOS 在音视频处理、文件系统等层面也存在不同程度的差异；由于使用场景不同，macOS 应用还要额外考虑多用户切换、第三方硬件等因素的潜在影响。如果只满足于界面适配、而忽视了这些细节，所得的移植应用与 macOS 仍然只会是貌合神离的。</p>
 <p>其次，<strong>通过赋予 Mac Catalyst 更多的重要性，苹果似乎正在鼓励一种「iOS 本位」的应用开发思路</strong>。尽管 iOS 应用的功能已经今非昔比，但在深度上仍然整体弱于 Mac 应用，很多专业工具的 iOS 版都是 Mac 版的简化。这很多时候并非是开发者在偷懒，而是不同平台在性能、使用场景等方面的天生区别导致的。担忧在于，如果跨平台成为压倒一切的优先目标，是否可能促使开发者在设计软件功能时追求「最小公分母」、而不是充分挖掘 Mac 平台的特征和潜力？与之前提到的允许 Mac App Store 下载 iOS 应用类似，这或许是苹果追求充实 Mac 平台软件数量的同时，需要长远考虑和仔细衡量的。</p>
 <h2 id="设计">设计</h2>
-<p>在架构和开发框架的变动之外，macOS 今年在设计语言上也迎来了很大的<a href="https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/">更新</a>。</p>
+<p>在架构和开发框架的变动之外，macOS 今年在设计语言上也迎来了很大的 <a href="https://developer.apple.com/design/human-interface-guidelines/macos/overview/whats-new-in-macos/">更新</a>。</p>
 <p>最明显的变化在于图标。过去，macOS 的图标并没有固定的形状，只是根据应用的类型有一些较为模糊的设计惯例，如工具类应用使用圆形图标、文档类应用使用矩形透视图标等。macOS 11 则统一改用了和 iOS 一致的圆角矩形图标，但仍然保留了以往设计中的丰富细节和透视、阴影等元素。去年亮相的 SF Symbols 也登陆 Mac 平台，数量大增、且支持了彩色。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/JruLejA8/sf_symbols.png?v=009d2ca5e09e9b4d0ba89e547ef7037a" alt="更加丰富多彩的 SF Symbols 登陆 Mac 平台"></p>
 <p>更加丰富多彩的 SF Symbols 登陆 Mac 平台</p>
@@ -138,13 +138,13 @@
 <p>又如，新的留白尺寸颇有些大而无当，在空间寸土寸金的 MacBook 上更是接近一种挥霍。（颇为矛盾的是，苹果从几年前开始，就为了增加 MacBook 的可显示内容，默认启用了高于物理像素数的分辨率设置。）哪怕这真的是在为触控 Mac 作准备，也至少可以提供一个选项，允许用户切换回更「紧凑」的界面布局。</p>
 <h2 id="总结">总结</h2>
 <p>尽管 Mac 在本届 WWDC 上得到的关注不可谓不多，但似乎都缺少一根主轴——Mac 平台未来发展的清晰轨迹。</p>
-<p>近两周来，国外开发者社群的热门讨论点之一，就是「在 AppKit、UIKit 和 SwiftUI 间如何选择」（Craig Federighi 在接受访谈时含糊地<a href="https://daringfireball.net/thetalkshow/2020/06/24/ep-286">回答</a>「没有绝对的正确道路」）。这从侧面说明，比起获得更多的选项，开发者更需要的可能是一份时间表和路线图：AppKit 会不会像当年的 Carbon 一样最终谢幕？如果 SwiftUI 最终会成为各平台通用的唯一开发框架，它何时才能真正在功能上独当一面，目前的并行状态会维持多久？这些问题都是今年的 WWDC 付之阙如的，但如果一直悬而未决，显然会影响人们为 Mac 开发应用的信心。</p>
+<p>近两周来，国外开发者社群的热门讨论点之一，就是「在 AppKit、UIKit 和 SwiftUI 间如何选择」（Craig Federighi 在接受访谈时含糊地 <a href="https://daringfireball.net/thetalkshow/2020/06/24/ep-286">回答</a>「没有绝对的正确道路」）。这从侧面说明，比起获得更多的选项，开发者更需要的可能是一份时间表和路线图：AppKit 会不会像当年的 Carbon 一样最终谢幕？如果 SwiftUI 最终会成为各平台通用的唯一开发框架，它何时才能真正在功能上独当一面，目前的并行状态会维持多久？这些问题都是今年的 WWDC 付之阙如的，但如果一直悬而未决，显然会影响人们为 Mac 开发应用的信心。</p>
 <p>今年 WWDC 没有解决、反而在某种程度上放大的另一个问题，是 Mac 的「身份危机」：在 iOS 系统和硬件不断增强的背景下，Mac 如何维持自己在苹果生态中的独特价值，而不是在 iOS 的身后亦步亦趋，逐渐退化为一个「交差」式的产品线。</p>
 <p>如上文所述，Mac 平台在今年获得的更新几乎都是靠 iOS 反向输送的：Apple silicon 芯片是在 iOS 上多年打磨后成熟的，新的 UI 开发框架都是起源或率先应用于 iOS，界面设计的变化也是大幅取材于 iOS。这不禁让人担心，Mac 是不是会变成一位「差不多先生」，和 iOS 穿着差不多的衣服、提供着差不多的功能、运行着差不多的应用；却标着更高的售价、有着更不确定的未来？</p>
 <p>对此，苹果的官方口径始终是否认计划将 Mac 和 iPad 合二为一。但仅仅维持 Mac 的独立身份，并不足以维持它的独特性。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/2Nu5pJo6/mergingmacipadslide.jpg?v=b182adb6b33d29edea953628dae0b2e0" alt="“No.”"></p>
 <p>“No.”</p>
-<p>2015 年，苹果高级副总裁 Phil Schiller 在接受采访时，曾经<a href="https://medium.com/backchannel/exclusive-why-apple-is-still-sweating-the-details-on-imac-531a95e50c91#.wrz9at3q9">论述</a>过苹果各个产品线之间的关系：Apple Watch 的使命在于尽可能替代 iPhone 的使用场景，iPhone 要尽可能替代 iPad，iPad 要尽可能替代 Mac 笔记本，而 Mac 笔记本又越发能替代 Mac 桌面机。在这个传导关系的最前端，Mac 桌面机的作用「在于挑战我们对计算机能力的认识、完成其他计算机以往从未实现的任务」。</p>
+<p>2015 年，苹果高级副总裁 Phil Schiller 在接受采访时，曾经 <a href="https://medium.com/backchannel/exclusive-why-apple-is-still-sweating-the-details-on-imac-531a95e50c91#.wrz9at3q9">论述</a> 过苹果各个产品线之间的关系：Apple Watch 的使命在于尽可能替代 iPhone 的使用场景，iPhone 要尽可能替代 iPad，iPad 要尽可能替代 Mac 笔记本，而 Mac 笔记本又越发能替代 Mac 桌面机。在这个传导关系的最前端，Mac 桌面机的作用「在于挑战我们对计算机能力的认识、完成其他计算机以往从未实现的任务」。</p>
 <p>据此，苹果的产品线似乎是一列火车，后面的车厢随着位移、不断占据前面车厢曾经的位置，而前面的车厢此时则进入了新的领域。作为火车头牵引着整列火车的，正是 Mac 产品线——「如果 Mac 桌面机的任务是和笔记本竞争、追求轻薄，那么它就没有存在的必要了。」但从今天的现状看，即使 Mac 仍然在苹果的产品线中占据一席之地，它的「火车头」角色已经不保，从牵引者变成了被牵引者。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/wbuWLZD6/apple-prod-line.png?v=982100908acb5ab9a9c4353a69cdfafa" alt="Mac 在苹果产品线中的「火车头」地位不保"></p>
 <p>Mac 在苹果产品线中的「火车头」地位不保</p>

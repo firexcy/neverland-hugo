@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>typography on Neverland</title>
+    <title>Typography on Neverland</title>
     <link>https://type.cyhsu.xyz/tags/typography/</link>
-    <description>Recent content in typography on Neverland</description>
+    <description>Recent content in Typography on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
@@ -19,10 +19,10 @@
     
     <item>
       <title>疑难符号使用与输入指南</title>
-      <link>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions-2/</link>
+      <link>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions-2/</guid>
+      <guid>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions/</guid>
       <description>一、引言 在电脑和手机上，文本输入是我们再熟悉不过的操作。但提到输入，很多人首先想到的只是输入文字，而符号——包括标点符号和特殊字符——的输入则往往不太受到重视。观念上，这似乎是一件非常琐碎而简单的事情</description>
     </item>
     
@@ -41,7 +41,7 @@
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</guid>
-      <description>title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags:Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的</description>
+      <description>最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的内文，然后输入电脑，观察它在不同条件</description>
     </item>
     
   </channel>

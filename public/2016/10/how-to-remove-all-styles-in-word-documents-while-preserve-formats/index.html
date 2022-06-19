@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -67,24 +67,23 @@
 </li>
 <li>
 <p>在弹出的窗口右侧粘贴如下脚本：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Sub DirectFormat()
-            Dim para As Paragraph
-            Dim fnt As Font
-            Dim pfmt As ParagraphFormat
-            For Each para In ActiveDocument.Paragraphs
-                With para
-                    If .Style &lt;&gt; ActiveDocument.Styles(&#34;Normal&#34;) Then
-                    Set fnt = .Style.Font
-                    Set pfmt = .Style.ParagraphFormat
-                    .Style = ActiveDocument.Styles(&#34;Normal&#34;)
-                    .Range.Font = fnt
-                    .Range.ParagraphFormat = pfmt
-                    End If
-                End With
-            Next
-        End Sub
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Sub DirectFormat()
+</span></span><span style="display:flex;"><span>            Dim para As Paragraph
+</span></span><span style="display:flex;"><span>            Dim fnt As Font
+</span></span><span style="display:flex;"><span>            Dim pfmt As ParagraphFormat
+</span></span><span style="display:flex;"><span>            For Each para In ActiveDocument.Paragraphs
+</span></span><span style="display:flex;"><span>                With para
+</span></span><span style="display:flex;"><span>                    If .Style &lt;&gt; ActiveDocument.Styles(&#34;Normal&#34;) Then
+</span></span><span style="display:flex;"><span>                    Set fnt = .Style.Font
+</span></span><span style="display:flex;"><span>                    Set pfmt = .Style.ParagraphFormat
+</span></span><span style="display:flex;"><span>                    .Style = ActiveDocument.Styles(&#34;Normal&#34;)
+</span></span><span style="display:flex;"><span>                    .Range.Font = fnt
+</span></span><span style="display:flex;"><span>                    .Range.ParagraphFormat = pfmt
+</span></span><span style="display:flex;"><span>                    End If
+</span></span><span style="display:flex;"><span>                End With
+</span></span><span style="display:flex;"><span>            Next
+</span></span><span style="display:flex;"><span>        End Sub
+</span></span></code></pre></div></li>
 <li>
 <p>点击下方的「运行程序」按钮，执行上述命令；</p>
 <p><img src="https://ww1.sinaimg.cn/large/73403117gy1feq2sns0h6j217e0ww0v1.jpg" alt=""></p>
@@ -105,23 +104,22 @@
 </li>
 <li>
 <p>在弹出的窗口中，双击左侧的「ThisDocument」选项，并在右侧弹出的空白窗口中粘贴如下脚本：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Sub DirectFormat()
-            Dim para As Paragraph
-            Dim fnt As Font
-            Dim pfmt As ParagraphFormat
-            For Each para In ActiveDocument.Paragraphs
-                With para
-                    If .Style &lt;&gt; ActiveDocument.Styles(&#34;Normal&#34;) Then            Set fnt = .Style.Font
-                    Set pfmt = .Style.ParagraphFormat
-                    .Style = ActiveDocument.Styles(&#34;Normal&#34;)
-                    .Range.Font = fnt
-                    .Range.ParagraphFormat = pfmt
-                    End If
-                End With
-            Next
-        End Sub
-
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Sub DirectFormat()
+</span></span><span style="display:flex;"><span>            Dim para As Paragraph
+</span></span><span style="display:flex;"><span>            Dim fnt As Font
+</span></span><span style="display:flex;"><span>            Dim pfmt As ParagraphFormat
+</span></span><span style="display:flex;"><span>            For Each para In ActiveDocument.Paragraphs
+</span></span><span style="display:flex;"><span>                With para
+</span></span><span style="display:flex;"><span>                    If .Style &lt;&gt; ActiveDocument.Styles(&#34;Normal&#34;) Then            Set fnt = .Style.Font
+</span></span><span style="display:flex;"><span>                    Set pfmt = .Style.ParagraphFormat
+</span></span><span style="display:flex;"><span>                    .Style = ActiveDocument.Styles(&#34;Normal&#34;)
+</span></span><span style="display:flex;"><span>                    .Range.Font = fnt
+</span></span><span style="display:flex;"><span>                    .Range.ParagraphFormat = pfmt
+</span></span><span style="display:flex;"><span>                    End If
+</span></span><span style="display:flex;"><span>                End With
+</span></span><span style="display:flex;"><span>            Next
+</span></span><span style="display:flex;"><span>        End Sub
+</span></span></code></pre></div></li>
 <li>
 <p>点击上方工具栏中的「运行」按钮，执行上述命令；</p>
 <p><img src="https://ww1.sinaimg.cn/large/73403117gy1feq2snrj4pj21fa1060y7.jpg" alt=""></p>

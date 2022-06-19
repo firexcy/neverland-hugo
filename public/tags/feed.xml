@@ -7,7 +7,124 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Sat, 18 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>internet</title>
+      <link>https://type.cyhsu.xyz/tags/internet/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>law</title>
+      <link>https://type.cyhsu.xyz/tags/law/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/law/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>explainer</title>
+      <link>https://type.cyhsu.xyz/tags/explainer/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/explainer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://type.cyhsu.xyz/tags/markdown/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>academic</title>
+      <link>https://type.cyhsu.xyz/tags/academic/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://type.cyhsu.xyz/tags/review/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://type.cyhsu.xyz/tags/macos/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios</title>
+      <link>https://type.cyhsu.xyz/tags/ios/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://type.cyhsu.xyz/tags/tutorial/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wellness</title>
+      <link>https://type.cyhsu.xyz/tags/wellness/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/wellness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>translations</title>
+      <link>https://type.cyhsu.xyz/tags/translations/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/translations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://type.cyhsu.xyz/tags/workflow/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple</title>
+      <link>https://type.cyhsu.xyz/tags/apple/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/tags/apple/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>book</title>
       <link>https://type.cyhsu.xyz/tags/book/</link>
@@ -18,20 +135,20 @@
     </item>
     
     <item>
-      <title>macos</title>
-      <link>https://type.cyhsu.xyz/tags/macos/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      <title>automation</title>
+      <link>https://type.cyhsu.xyz/tags/automation/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://type.cyhsu.xyz/tags/macos/</guid>
+      <guid>https://type.cyhsu.xyz/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tutorial</title>
-      <link>https://type.cyhsu.xyz/tags/tutorial/</link>
-      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      <title>shortcuts</title>
+      <link>https://type.cyhsu.xyz/tags/shortcuts/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://type.cyhsu.xyz/tags/tutorial/</guid>
+      <guid>https://type.cyhsu.xyz/tags/shortcuts/</guid>
       <description></description>
     </item>
     
@@ -41,15 +158,6 @@
       <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/tags/eink/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://type.cyhsu.xyz/tags/review/</link>
-      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/review/</guid>
       <description></description>
     </item>
     
@@ -77,114 +185,6 @@
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/tags/apple-silicon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>translations</title>
-      <link>https://type.cyhsu.xyz/tags/translations/</link>
-      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/translations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>apple</title>
-      <link>https://type.cyhsu.xyz/tags/apple/</link>
-      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/apple/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>design</title>
-      <link>https://type.cyhsu.xyz/tags/design/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opinion</title>
-      <link>https://type.cyhsu.xyz/tags/opinion/</link>
-      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/opinion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pdf</title>
-      <link>https://type.cyhsu.xyz/tags/pdf/</link>
-      <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>automation</title>
-      <link>https://type.cyhsu.xyz/tags/automation/</link>
-      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>https://type.cyhsu.xyz/tags/tips/</link>
-      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>law</title>
-      <link>https://type.cyhsu.xyz/tags/law/</link>
-      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/law/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>productivity</title>
-      <link>https://type.cyhsu.xyz/tags/productivity/</link>
-      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>work</title>
-      <link>https://type.cyhsu.xyz/tags/work/</link>
-      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/work/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>https://type.cyhsu.xyz/tags/life/</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ereader</title>
-      <link>https://type.cyhsu.xyz/tags/ereader/</link>
-      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/tags/ereader/</guid>
       <description></description>
     </item>
     

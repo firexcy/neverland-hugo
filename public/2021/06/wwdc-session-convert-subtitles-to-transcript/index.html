@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -59,61 +59,61 @@
 <p>以上述 <a href="https://developer.apple.com/videos/play/wwdc2021/10029/">Design for Safari 15</a> 讲座为例。</p>
 <p>首先，用抓包工具（例如 Surge 或 Proxyman）抓取 WWDC 视频的域名 devstreaming-cdn.apple.com，并开始播放视频。</p>
 <p>请求中，形如</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://devstreaming-cdn.apple.com/videos/wwdc/2021/10029/4/8B75DA3D-09DF-40FD-AC0E-FB6A7EECE3F1/subtitles/eng/prog_index.m3u8 
-</code></pre></div><p>的即是获取字幕片段播放列表的请求，其内容为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">EXTM3U
-#EXT-X-TARGETDURATION:7.0
-#EXT-X-VERSION:3
-#EXT-X-MEDIA-SEQUENCE:0
-#EXT-X-PLAYLIST-TYPE:VOD
-#EXTINF:6.006
-sequence_0.webvtt
-#EXTINF:6.006
-sequence_1.webvtt
-[...]
-#EXTINF:6.006
-sequence_334.webvtt
-#EXTINF:0.3
-sequence_335.webvtt
-#EXT-X-ENDLIST
-</code></pre></div><p>显然，这表明该视频的字幕共有从 <code>sequence_0.webvtt</code> 到 <code>sequence_335.webvtt</code> 共 336 个片段。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://devstreaming-cdn.apple.com/videos/wwdc/2021/10029/4/8B75DA3D-09DF-40FD-AC0E-FB6A7EECE3F1/subtitles/eng/prog_index.m3u8 
+</span></span></code></pre></div><p>的即是获取字幕片段播放列表的请求，其内容为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>EXTM3U
+</span></span><span style="display:flex;"><span>#EXT-X-TARGETDURATION:7.0
+</span></span><span style="display:flex;"><span>#EXT-X-VERSION:3
+</span></span><span style="display:flex;"><span>#EXT-X-MEDIA-SEQUENCE:0
+</span></span><span style="display:flex;"><span>#EXT-X-PLAYLIST-TYPE:VOD
+</span></span><span style="display:flex;"><span>#EXTINF:6.006
+</span></span><span style="display:flex;"><span>sequence_0.webvtt
+</span></span><span style="display:flex;"><span>#EXTINF:6.006
+</span></span><span style="display:flex;"><span>sequence_1.webvtt
+</span></span><span style="display:flex;"><span>[...]
+</span></span><span style="display:flex;"><span>#EXTINF:6.006
+</span></span><span style="display:flex;"><span>sequence_334.webvtt
+</span></span><span style="display:flex;"><span>#EXTINF:0.3
+</span></span><span style="display:flex;"><span>sequence_335.webvtt
+</span></span><span style="display:flex;"><span>#EXT-X-ENDLIST
+</span></span></code></pre></div><p>显然，这表明该视频的字幕共有从 <code>sequence_0.webvtt</code> 到 <code>sequence_335.webvtt</code> 共 336 个片段。</p>
 <p>这样，在终端通过 <code>wget</code> 配合简单的循环即可批量下载：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">counter=0
-while [[ $counter -le 335 ]]
-do
-  wget &#34;https://devstreaming-cdn.apple.com/videos/wwdc/2021/10029/4/8B75DA3D-09DF-40FD-AC0E-FB6A7EECE3F1/subtitles/eng/sequence_$counter.webvtt&#34;
-  ((counter++))
-done
-</code></pre></div><p>然后再通过一个循环将这些分段字幕合并为一个完整字幕：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">counter=0
-while [[ $counter -le 335 ]]                                                                  130
-do
-  cat &#34;sequence_$counter.webvtt&#34; &gt;&gt; full.webvtt
-  ((counter++))
-done
-</code></pre></div><p>不过，<code>webvtt</code> 格式的字幕文件里有时间轴、格式信息和很多空行，并不方便阅读：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">WEBVTT
-
-00:19:58.498 --&gt; 00:20:01.735 line:-2 align:center
-Next, let’s talk about several
-of the amazing new features
-
-00:20:01.768 --&gt; 00:20:03.904 align:center line:-1
-of macOS, iOS, and iPadOS
-
-00:20:03.937 --&gt; 00:20:06.306 line:-1 align:center
-and how they’ll impact the web.
-
-00:20:06.340 --&gt; 00:20:10.043 line:-2 align:center
-Often, the very first experience
-people will have of your website
-</code></pre></div><p>解决方法也很简单，用随便一个支持正则表达式的文本编辑器搜索相关 pattern 批量删除即可。例如 Vim 中可以：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">:g/WEBVTT/d
-:g/--&gt;/d
-:g/\v^$/d
-</code></pre></div><p>最后，由于是自动生成的字幕，会有不少同一句话出现两次的情况，这也可以通过正则表达式批量清理：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">:g/\n^(.*)$\n\1/d
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>counter=0
+</span></span><span style="display:flex;"><span>while [[ $counter -le 335 ]]
+</span></span><span style="display:flex;"><span>do
+</span></span><span style="display:flex;"><span>  wget &#34;https://devstreaming-cdn.apple.com/videos/wwdc/2021/10029/4/8B75DA3D-09DF-40FD-AC0E-FB6A7EECE3F1/subtitles/eng/sequence_$counter.webvtt&#34;
+</span></span><span style="display:flex;"><span>  ((counter++))
+</span></span><span style="display:flex;"><span>done
+</span></span></code></pre></div><p>然后再通过一个循环将这些分段字幕合并为一个完整字幕：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>counter=0
+</span></span><span style="display:flex;"><span>while [[ $counter -le 335 ]]                                                                  130
+</span></span><span style="display:flex;"><span>do
+</span></span><span style="display:flex;"><span>  cat &#34;sequence_$counter.webvtt&#34; &gt;&gt; full.webvtt
+</span></span><span style="display:flex;"><span>  ((counter++))
+</span></span><span style="display:flex;"><span>done
+</span></span></code></pre></div><p>不过，<code>webvtt</code> 格式的字幕文件里有时间轴、格式信息和很多空行，并不方便阅读：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>WEBVTT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>00:19:58.498 --&gt; 00:20:01.735 line:-2 align:center
+</span></span><span style="display:flex;"><span>Next, let’s talk about several
+</span></span><span style="display:flex;"><span>of the amazing new features
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>00:20:01.768 --&gt; 00:20:03.904 align:center line:-1
+</span></span><span style="display:flex;"><span>of macOS, iOS, and iPadOS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>00:20:03.937 --&gt; 00:20:06.306 line:-1 align:center
+</span></span><span style="display:flex;"><span>and how they’ll impact the web.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>00:20:06.340 --&gt; 00:20:10.043 line:-2 align:center
+</span></span><span style="display:flex;"><span>Often, the very first experience
+</span></span><span style="display:flex;"><span>people will have of your website
+</span></span></code></pre></div><p>解决方法也很简单，用随便一个支持正则表达式的文本编辑器搜索相关 pattern 批量删除即可。例如 Vim 中可以：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:g/WEBVTT/d
+</span></span><span style="display:flex;"><span>:g/--&gt;/d
+</span></span><span style="display:flex;"><span>:g/\v^$/d
+</span></span></code></pre></div><p>最后，由于是自动生成的字幕，会有不少同一句话出现两次的情况，这也可以通过正则表达式批量清理：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>:g/\n^(.*)$\n\1/d
+</span></span></code></pre></div>
 		</section>
 
 		<div class="post-tags">

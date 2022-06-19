@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/macos/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/macos/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac 的内置硬盘「作弊」了吗？</title>
+      <link>https://type.cyhsu.xyz/2022/03/mac-ssd-cheating/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/03/mac-ssd-cheating/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, in three installments (part I, II, and III), of which the first was made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 一 Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内</description>
+    </item>
+    
+    <item>
+      <title>Mac 的内置硬盘「作弊」了吗？</title>
+      <link>https://type.cyhsu.xyz/unpublished/2022/03/mac-ssd-cheating/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/unpublished/2022/03/mac-ssd-cheating/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, in three installments (part I, II, and III), of which the first was made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 一 Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内</description>
+    </item>
+    
+    <item>
+      <title>[Preview] 用快捷指令将 Safari 标签页导出为文本链接</title>
+      <link>https://type.cyhsu.xyz/2022/03/safari-export-link/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/03/safari-export-link/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 使用场景 「标签页组」 是 Safari 15 新增的重要功能，为 Safari 补齐了相比于 Chrome 和 Firefox 的一项短板。标签页组可以将主题相关的标签页整合起来；</description>
+    </item>
+    
+    <item>
+      <title>用快捷指令将 Safari 标签页导出为文本链接</title>
+      <link>https://type.cyhsu.xyz/unpublished/2022/03/safari-export-link/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/unpublished/2022/03/safari-export-link/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 「标签页组」是 Safari 15 新增的重要功能，除了整理归组之外，还可以通过「复制链接」导出组内所有页面的链接。这对于备份和分享都</description>
+    </item>
+    
+    <item>
+      <title>[Preview] 条条大路通罗马：细数 macOS 版「快捷指令」的运行方式</title>
+      <link>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 快捷指令的加入拓宽了 macOS 自动化的疆域。但对于任何自动化方案而言，一个基本的评价标准是运行是否方便——只有「随叫随到」的</description>
+    </item>
+    
     <item>
       <title>用自带工具快速判断 macOS 和 iOS 的网络质量</title>
       <link>https://type.cyhsu.xyz/2021/11/test-network-connectivity-with-macos-builtin-tools/</link>
@@ -52,7 +97,7 @@ The process can be done within the following steps, which essentially (a) create
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/</guid>
-      <description>Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的说明，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构</description>
+      <description>Homebrew 是 Mac 上管理软件包的最实用工具之一。但截至目前，它还没有对搭载 Apple silicon 的新 Mac 机型完成适配。根据维护者在 GitHub 上发布的 说明，Homebrew 正在积极适配新架构的过程中，但目前还面临一些较大障碍，如缺少基于 ARM 架构</description>
     </item>
     
     <item>

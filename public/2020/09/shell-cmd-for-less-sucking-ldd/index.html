@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -61,52 +61,52 @@
 <p>错误的做法：一个个点开看。</p>
 <p>好一点的做法：<code>tree /path/to/LDD_docs -N</code></p>
 <p>输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.
-├── 1、股权
-│   ├── 母公司
-│   │   ├── 公司章程.pdf
-│   │   ├── 营业执照.pdf
-│   │   ├── 工商调档单2019.rar
-│   │   └── 组织架构图.pdf
-…
-├── 2、业务和合同
-│   ├── 2020年
-│   │   ├── Acme Co
-│   │   │   ├── NDA11111.pdf
-│   │   │   ├── Order22222.pdf
-…
-└── 9、其他
-    ├── 附件.pdf
-    └── 董监高基本情况.pdf
-</code></pre></div><h3 id="seq"><code>seq</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── 1、股权
+</span></span><span style="display:flex;"><span>│   ├── 母公司
+</span></span><span style="display:flex;"><span>│   │   ├── 公司章程.pdf
+</span></span><span style="display:flex;"><span>│   │   ├── 营业执照.pdf
+</span></span><span style="display:flex;"><span>│   │   ├── 工商调档单2019.rar
+</span></span><span style="display:flex;"><span>│   │   └── 组织架构图.pdf
+</span></span><span style="display:flex;"><span>…
+</span></span><span style="display:flex;"><span>├── 2、业务和合同
+</span></span><span style="display:flex;"><span>│   ├── 2020年
+</span></span><span style="display:flex;"><span>│   │   ├── Acme Co
+</span></span><span style="display:flex;"><span>│   │   │   ├── NDA11111.pdf
+</span></span><span style="display:flex;"><span>│   │   │   ├── Order22222.pdf
+</span></span><span style="display:flex;"><span>…
+</span></span><span style="display:flex;"><span>└── 9、其他
+</span></span><span style="display:flex;"><span>    ├── 附件.pdf
+</span></span><span style="display:flex;"><span>    └── 董监高基本情况.pdf
+</span></span></code></pre></div><h3 id="seq"><code>seq</code></h3>
 <p>场景：老板说，这里加一段话，把这十条总结一下，每条前面加一个序号。</p>
 <p>错误的做法：切换到英文输入法，输入括号，输入数字 1，输入括号，输入空格，切换到中文输入法，输入一段中文，切换到英文输入法，输入括号，输入数字 2，输入括号，输入空格，切换到中文输入法，输入一段中文，切换到英文输入法，输入括号，输入数字 3，输入括号，输入空格，切换到中文输入法，输入一段中文……</p>
 <p>好一点的做法：<code>seq -s &quot;; &quot; -f &quot;(%g) &quot; 1 10</code></p>
 <p>输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#81a1c1">(</span>1<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>2<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>3<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>4<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>5<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>6<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>7<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>8<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>9<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>10<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> 
-</code></pre></div><h3 id="pdfgrep"><code>pdfgrep</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#81a1c1">(</span>1<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>2<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>3<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>4<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>5<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>6<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>7<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>8<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>9<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> <span style="color:#81a1c1">(</span>10<span style="color:#81a1c1">)</span> <span style="color:#eceff4">;</span> 
+</span></span></code></pre></div><h3 id="pdfgrep"><code>pdfgrep</code></h3>
 <p>场景：老板说，看一下这个公司的（二三十个）贷款合同里有没有对控制权变更的限制。</p>
 <p>错误的做法：一个个点开看。</p>
 <p>好一点的做法：<code>pdfgrep -n -r -C 2 &quot;股东&quot;</code></p>
 <p>输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./2020年/火星银行100万.pdf-13-10.7 未经贷款人书面同意，不擅自向第三方提供额外债务担保或向其他
-./2020年/火星银行100万.pdf-13-债权人抵押资产。
-./2020年/火星银行100万.pdf:13: <span style="color:#81a1c1">(</span>4<span style="color:#81a1c1">)</span> 股东、实际控制人、董事和现任高级管理人员发生变动、失踪、被司法
-./2020年/火星银行100万.pdf-13-机关依法调查或限制人身自由 ， 出现赌博、吸毒等情形或者涉嫌重大案件或经
-./2020年/火星银行100万.pdf-13-济纠纷 。
-…
-</code></pre></div><h3 id="pandoc"><code>pandoc</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./2020年/火星银行100万.pdf-13-10.7 未经贷款人书面同意，不擅自向第三方提供额外债务担保或向其他
+</span></span><span style="display:flex;"><span>./2020年/火星银行100万.pdf-13-债权人抵押资产。
+</span></span><span style="display:flex;"><span>./2020年/火星银行100万.pdf:13: <span style="color:#81a1c1">(</span>4<span style="color:#81a1c1">)</span> 股东、实际控制人、董事和现任高级管理人员发生变动、失踪、被司法
+</span></span><span style="display:flex;"><span>./2020年/火星银行100万.pdf-13-机关依法调查或限制人身自由 ， 出现赌博、吸毒等情形或者涉嫌重大案件或经
+</span></span><span style="display:flex;"><span>./2020年/火星银行100万.pdf-13-济纠纷 。
+</span></span><span style="display:flex;"><span>…
+</span></span></code></pre></div><h3 id="pandoc"><code>pandoc</code></h3>
 <p>场景：对付那种屁大点事都要用 Word 写的，快速转成 markdown 存进剪贴板。</p>
 <p>错误的做法：屁大点事都要用 Word 写就是错误的做法。</p>
 <p>好一点的做法： <code>pandoc 情况说明.docx --to markdown | pbcopy</code></p>
 <p>输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">本公司资不抵债，**即将倒闭**。截至今天，股权结构如下：
-
-  股东      认缴资本   比例
-  --------- ---------- ------
-  Founder   10万元     100%
-  合计      10万元     100%
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>本公司资不抵债，**即将倒闭**。截至今天，股权结构如下：
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  股东      认缴资本   比例
+</span></span><span style="display:flex;"><span>  --------- ---------- ------
+</span></span><span style="display:flex;"><span>  Founder   10万元     100%
+</span></span><span style="display:flex;"><span>  合计      10万元     100%
+</span></span></code></pre></div>
 		</section>
 
 		<div class="post-tags">

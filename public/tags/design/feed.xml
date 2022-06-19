@@ -55,14 +55,5 @@ Note: Alfred 4 supports macOS’s scheduled dark mode natively. Simply switch to
       <description>曾几何时，「交互简单」一直是 iOS 引以为傲的资本。WWDC 2007 上，乔布斯演示的点击（tap）、滑动（swipe）、捏合（pinch）三个手势惊艳了世界，也奠定了 iOS 交互方式的基本格局。此后，iOS 极少引入新的</description>
     </item>
     
-    <item>
-      <title>Microsoft 向左，Apple 向右</title>
-      <link>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</link>
-      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</guid>
-      <description>title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags:Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的</description>
-    </item>
-    
   </channel>
 </rss>

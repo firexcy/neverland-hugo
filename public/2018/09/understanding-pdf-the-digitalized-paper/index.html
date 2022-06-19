@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -70,57 +70,57 @@
 <p>为了进一步理解这种区别，让我们来对比一组外观上完全相同的 Word 文档和 PDF 文档。下图中，右侧的 PDF 格式文件是由左侧的 Word 文件导出得到的，两者的内容都只有「Hello world!」一行居中文字。（**注：**为了避免不必要的复杂性，我们暂时只以英文文档为例。）</p>
 <p><img src="https://cl.ly/be8777d3d234/hello-world.png" alt="一对内容相同的 Word 文档和 PDF 文档"></p>
 <p>先来看 Word 是如何实现这一版式效果的。用任意解压工具将该文档解开（docx 文件<a href="https://en.wikipedia.org/wiki/Office_Open_XML">实质上</a>就是一个压缩包），找到其中的 <code>/word/_rels/document.xml</code> 并打开。其中的关键部分如下（代码经过整理）：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;w:pPr&gt;
-    &lt;w:jc w:val=&#34;center&#34;/&gt;
-    &lt;w:rPr&gt;&lt;w:rFonts w:ascii=&#34;Times&#34; w:hAnsi=&#34;Times&#34;/&gt;&lt;w:lang w:val=&#34;en-US&#34;/&gt;&lt;/w:rPr&gt;
-&lt;/w:pPr&gt;
-&lt;w:r w:rsidRPr=&#34;003C75CF&#34;&gt;
-    &lt;w:rPr&gt;&lt;w:rFonts w:ascii=&#34;Times&#34; w:hAnsi=&#34;Times&#34;/&gt;&lt;/w:rPr&gt;
-    &lt;w:t&gt;Hello world&lt;/w:t&gt;
-&lt;/w:r&gt;
-</code></pre></div><p>不必恐惧这些陌生的代码，它们的意义很容易从文档内容本身反推出来。先看倒数第二行，这里记录了整个文档最重要的信息——「Hello world!」这串文字。在它的上面一行，<code>w:rFonts</code> 属性将字体设置为 Times。那么前四行是做什么的呢？从第二行的 <code>center</code> 字样不难猜出，它们控制的是文字所在<strong>段落</strong>的样式，包括居中对齐等等。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;w:pPr&gt;
+</span></span><span style="display:flex;"><span>    &lt;w:jc w:val=&#34;center&#34;/&gt;
+</span></span><span style="display:flex;"><span>    &lt;w:rPr&gt;&lt;w:rFonts w:ascii=&#34;Times&#34; w:hAnsi=&#34;Times&#34;/&gt;&lt;w:lang w:val=&#34;en-US&#34;/&gt;&lt;/w:rPr&gt;
+</span></span><span style="display:flex;"><span>&lt;/w:pPr&gt;
+</span></span><span style="display:flex;"><span>&lt;w:r w:rsidRPr=&#34;003C75CF&#34;&gt;
+</span></span><span style="display:flex;"><span>    &lt;w:rPr&gt;&lt;w:rFonts w:ascii=&#34;Times&#34; w:hAnsi=&#34;Times&#34;/&gt;&lt;/w:rPr&gt;
+</span></span><span style="display:flex;"><span>    &lt;w:t&gt;Hello world&lt;/w:t&gt;
+</span></span><span style="display:flex;"><span>&lt;/w:r&gt;
+</span></span></code></pre></div><p>不必恐惧这些陌生的代码，它们的意义很容易从文档内容本身反推出来。先看倒数第二行，这里记录了整个文档最重要的信息——「Hello world!」这串文字。在它的上面一行，<code>w:rFonts</code> 属性将字体设置为 Times。那么前四行是做什么的呢？从第二行的 <code>center</code> 字样不难猜出，它们控制的是文字所在<strong>段落</strong>的样式，包括居中对齐等等。</p>
 <p>这就是 docx 格式这类<a href="https://en.wikipedia.org/wiki/Markup_language"><strong>标记语言</strong></a>（Markup Language）文档的特征：在纯文本的基础上，通过包裹各种「标签」（tag）来描述文本的样式（颜色、位置、字体等等），从而获得格式丰富多变的文档。常见的网页（HTML）、Evernote 笔记（<a href="https://dev.evernote.com/doc/articles/enml.php">ENML</a>）所用的语法本质上都是标记语言，区别只在于支持的标签各不相同、因此能实现的格式有多有少罢了。</p>
 <p>PDF 又是怎么做的呢？我们用纯文本编辑器打开上图中的 PDF 文件（是的，PDF 可以用文本编辑器打开查看源码），其中的关键部分如下（经过处理）：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">BT
-    1 0 0 1 1036 572 Tm
-    /TT1 12 Tf
-    [ (He) 24 (l) -48 (l) -48 (o) ] TJ
-ET
-BT
-    1 0 0 1 1147 572 Tm
-    /TT1 12 Tf
-    ( ) Tj
-ET
-BT
-    1 0 0 1 1160 572 Tm
-    /TT1 12 Tf
-    [ (w) 24 (or) -84 (l) -24 (d) ] TJ
-ET
-</code></pre></div><p>即使你被这些凌乱的数字和代号弄得一头雾水，大概也能看出它与 docx 格式有着截然不同的画风。如果我们粗略地把这些语句翻译成「人话」：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">【文字开始】
-    缩放比例1倍 坐标(1036,572) 【文字定位】
-    /TT1 12磅 【选择字体】
-    [ (He) 间距24 (l) 间距-48 (l) 间距-48 (o) ] 【绘制文字】
-【文字结束】 
-【文字开始】
-    缩放比例1倍 坐标(1147,572) 【文字定位】
-    /TT1 12磅 【选择字体】
-    (空格) 【绘制文字】
-【文字结束】
-【文字开始】
-    缩放比例1倍 坐标(1060,572) 【文字定位】
-    /TT1 12磅 【选择字体】
-    [ (w) 间距24 (or) 间距-84 (l) 间距-24 (d) ] 【绘制文字】
-【文字结束】
-</code></pre></div><p>请在头脑中想象一下这个过程——是不是有一种强烈的「机械感」？如果说 Word 文档使用的标记语言很像是给人下命令（「这里有一段话，把它用 Times 字体写出来，位置上居中对齐……」），那么 PDF 的语言则更像是在控制机器，定位、调整、落笔、抬起，移动到下一行；如此重复。联想一下，铅字排版和打印机的工作机制不也是类似的吗？可见，用「打印」一词来搭配 PDF 是十分恰当的。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>BT
+</span></span><span style="display:flex;"><span>    1 0 0 1 1036 572 Tm
+</span></span><span style="display:flex;"><span>    /TT1 12 Tf
+</span></span><span style="display:flex;"><span>    [ (He) 24 (l) -48 (l) -48 (o) ] TJ
+</span></span><span style="display:flex;"><span>ET
+</span></span><span style="display:flex;"><span>BT
+</span></span><span style="display:flex;"><span>    1 0 0 1 1147 572 Tm
+</span></span><span style="display:flex;"><span>    /TT1 12 Tf
+</span></span><span style="display:flex;"><span>    ( ) Tj
+</span></span><span style="display:flex;"><span>ET
+</span></span><span style="display:flex;"><span>BT
+</span></span><span style="display:flex;"><span>    1 0 0 1 1160 572 Tm
+</span></span><span style="display:flex;"><span>    /TT1 12 Tf
+</span></span><span style="display:flex;"><span>    [ (w) 24 (or) -84 (l) -24 (d) ] TJ
+</span></span><span style="display:flex;"><span>ET
+</span></span></code></pre></div><p>即使你被这些凌乱的数字和代号弄得一头雾水，大概也能看出它与 docx 格式有着截然不同的画风。如果我们粗略地把这些语句翻译成「人话」：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>【文字开始】
+</span></span><span style="display:flex;"><span>    缩放比例1倍 坐标(1036,572) 【文字定位】
+</span></span><span style="display:flex;"><span>    /TT1 12磅 【选择字体】
+</span></span><span style="display:flex;"><span>    [ (He) 间距24 (l) 间距-48 (l) 间距-48 (o) ] 【绘制文字】
+</span></span><span style="display:flex;"><span>【文字结束】 
+</span></span><span style="display:flex;"><span>【文字开始】
+</span></span><span style="display:flex;"><span>    缩放比例1倍 坐标(1147,572) 【文字定位】
+</span></span><span style="display:flex;"><span>    /TT1 12磅 【选择字体】
+</span></span><span style="display:flex;"><span>    (空格) 【绘制文字】
+</span></span><span style="display:flex;"><span>【文字结束】
+</span></span><span style="display:flex;"><span>【文字开始】
+</span></span><span style="display:flex;"><span>    缩放比例1倍 坐标(1060,572) 【文字定位】
+</span></span><span style="display:flex;"><span>    /TT1 12磅 【选择字体】
+</span></span><span style="display:flex;"><span>    [ (w) 间距24 (or) 间距-84 (l) 间距-24 (d) ] 【绘制文字】
+</span></span><span style="display:flex;"><span>【文字结束】
+</span></span></code></pre></div><p>请在头脑中想象一下这个过程——是不是有一种强烈的「机械感」？如果说 Word 文档使用的标记语言很像是给人下命令（「这里有一段话，把它用 Times 字体写出来，位置上居中对齐……」），那么 PDF 的语言则更像是在控制机器，定位、调整、落笔、抬起，移动到下一行；如此重复。联想一下，铅字排版和打印机的工作机制不也是类似的吗？可见，用「打印」一词来搭配 PDF 是十分恰当的。</p>
 <p>对比之下，PDF 显示效果的保真性就容易解释了。虽然 Word 格式使用的语法明显更容易理解，但问题在于不同「人」——不同软件环境——听到同样一段指令，头脑中的反应未必是相同的。「用 Times 字体显示」——哪个是 Times 字体？没有安装这个字体怎么办？「居中对齐」——以什么为参照物居中？怎么计算居中？Word 文档对此笑而不语，把问题留给了软件去思考。正是这种自由裁量的空间为显示效果的差异留下了隐患。</p>
 <p><img src="https://cl.ly/d0a3f407cf9f/docx-font-missing.png" alt="用 Pages 打开 Word 文档出现的字体缺失问题"></p>
 <p>在 PDF 中，这样的问题就很难出现。与标记语言那种相对的、描述式的标签不同，PDF 语言几乎都是绝对的、指令式的。例如，上面的 PDF 中，文字明显是居中的，但代码中从头到尾没有半个字提到「居中」；相反，它直接指明了文字的<strong>坐标</strong>。因此，无论什么阅读器读到这份文件，只要根据坐标「照葫芦画瓢」地绘制，一定能得到相同的显示效果。</p>
 <p>类似地，下面这段代码的作用是绘制出一个点状的「L」形，很难想象它会给软件留下什么「自由发挥」的空间：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">8 w 1 J [20] 0 d【设置画笔为 8pt 宽、末端圆角、20pt 点状线】 
-200 200 m 200 100 l 250 100 l 【移动到(200,200) 画直线到(200,100) 画直线到(250,100) 】 
-S 【确认绘制】
-</code></pre></div><p>PDF 外观稳定性的另一个原因是它<strong>嵌入</strong>了各种需要用到的外部资源。我们注意到，上面的 PDF 在设置字体时，没有像 docx 文件那样直接指定字体名称，而是引用了一个代号般的 <code>/TT1</code>。实际上，<code>/TT1</code> 指向的是一个内嵌的字体，存储在 PDF 内部的偏后位置。显示时，阅读器将根据这个代号找到字体，按照其中记载的形状、宽度等信息，将字符「书写」在指定的坐标上——就好比活字排版工按指示从字盘中取出字模，并放在母版上的特定位置一样。相反，Word 文档默认是不嵌入字体的；只要另一台电脑上没有安装用到的字体，或者安装了不同版本的字体，就会导致显示效果的差异。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>8 w 1 J [20] 0 d【设置画笔为 8pt 宽、末端圆角、20pt 点状线】 
+</span></span><span style="display:flex;"><span>200 200 m 200 100 l 250 100 l 【移动到(200,200) 画直线到(200,100) 画直线到(250,100) 】 
+</span></span><span style="display:flex;"><span>S 【确认绘制】
+</span></span></code></pre></div><p>PDF 外观稳定性的另一个原因是它<strong>嵌入</strong>了各种需要用到的外部资源。我们注意到，上面的 PDF 在设置字体时，没有像 docx 文件那样直接指定字体名称，而是引用了一个代号般的 <code>/TT1</code>。实际上，<code>/TT1</code> 指向的是一个内嵌的字体，存储在 PDF 内部的偏后位置。显示时，阅读器将根据这个代号找到字体，按照其中记载的形状、宽度等信息，将字符「书写」在指定的坐标上——就好比活字排版工按指示从字盘中取出字模，并放在母版上的特定位置一样。相反，Word 文档默认是不嵌入字体的；只要另一台电脑上没有安装用到的字体，或者安装了不同版本的字体，就会导致显示效果的差异。</p>
 <p><img src="https://cl.ly/f03bc7553794/type.jpg" alt="活字"></p>
 <h3 id="二保真性的例外">（二）保真性的例外</h3>
 <p>不过，PDF 的这种保真性也不是绝对的。尽管 PDF 语句已经非常精确，也不能排除存在不同解读方式的可能。特别是在 PDF 文件本身有瑕疵（例如语法不合规范、资源文件缺损等）时，阅读器就必须「猜测」文件原本的意图，误差也就因此产生了。</p>
@@ -142,23 +142,23 @@ S 【确认绘制】
 <p><img src="https://cl.ly/83d872a7cdda/pdf-copy.png" alt="复制操作把连字符也一并复制出来"></p>
 <p>这类现象仍然可以从「纸」的比喻中得到解释。和纸质文件一样，PDF 只负责记载形态而不记载含义。一个可能违反直觉的事实是，<strong>PDF 对于「段落」是没有概念的。<strong>在其他格式中复制跨越两行的文本，之所以能得到连续的结果，是因为软件知道这串文字</strong>属于同一个段落</strong>，显示成两行只是因为文档宽度的限制。类似地，如果一个长单词被拆成两行显示，其他格式在复制时是不会带上连字符的，因为软件知道那<strong>不是单词的一部分</strong>。</p>
 <p>在 PDF 中，这些结论都不适用。还是以上面那份 PDF 为例。观察它的第一段第二行到第二段第一行：这三行涉及了分词（行尾连字符）和分段两个排版要素。这一部分在 PDF 代码中的反映是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">q 1 0 0 1 57 755 cm BT 【定位到(57,755)】
-    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
-    [(…略去之前部分…) -141.7 (indepen) ] TJ 【绘制第一段第二行】
-ET Q 
-q 1 0 0 1 533 755 cm BT 【定位到(533,755)】
-    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
-    (-) Tj 【绘制行尾的连字符】
-ET Q 
-q 1 0 0 1 57 738 cm BT 【定位到(57,738)】
-    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
-    [ (dent o) 6 (…略去中间部分…) (ems) 5 (. ) ] TJ 【绘制第一段第三行】
-ET Q 
-q 1 0 0 1 57 715 cm BT 【定位到(57,715)】
-    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
-    [ (Based ) (…略去之后部分…)] TJ 【绘制第二段第一行】
-ET Q
-</code></pre></div><p>这里，我们需要关注的只有两点：第一，代码中的 <code>Tj</code> 或 <code>TJ</code>（绘制文字）命令每次处理的文字都不超过一行。实际上，PDF 实现换行和分段的方法，只不过是把那个「想象中的笔尖」移动到下一行或下一段的起始坐标处罢了。换句话说，除了笔尖移动幅度更大（以反映段间距），<strong>分段和普通分行在 PDF 中没有任何区别。</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>q 1 0 0 1 57 755 cm BT 【定位到(57,755)】
+</span></span><span style="display:flex;"><span>    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
+</span></span><span style="display:flex;"><span>    [(…略去之前部分…) -141.7 (indepen) ] TJ 【绘制第一段第二行】
+</span></span><span style="display:flex;"><span>ET Q 
+</span></span><span style="display:flex;"><span>q 1 0 0 1 533 755 cm BT 【定位到(533,755)】
+</span></span><span style="display:flex;"><span>    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
+</span></span><span style="display:flex;"><span>    (-) Tj 【绘制行尾的连字符】
+</span></span><span style="display:flex;"><span>ET Q 
+</span></span><span style="display:flex;"><span>q 1 0 0 1 57 738 cm BT 【定位到(57,738)】
+</span></span><span style="display:flex;"><span>    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
+</span></span><span style="display:flex;"><span>    [ (dent o) 6 (…略去中间部分…) (ems) 5 (. ) ] TJ 【绘制第一段第三行】
+</span></span><span style="display:flex;"><span>ET Q 
+</span></span><span style="display:flex;"><span>q 1 0 0 1 57 715 cm BT 【定位到(57,715)】
+</span></span><span style="display:flex;"><span>    13 0 0 13 0 0 Tm /Tc1 1 Tf 【设定字体】
+</span></span><span style="display:flex;"><span>    [ (Based ) (…略去之后部分…)] TJ 【绘制第二段第一行】
+</span></span><span style="display:flex;"><span>ET Q
+</span></span></code></pre></div><p>这里，我们需要关注的只有两点：第一，代码中的 <code>Tj</code> 或 <code>TJ</code>（绘制文字）命令每次处理的文字都不超过一行。实际上，PDF 实现换行和分段的方法，只不过是把那个「想象中的笔尖」移动到下一行或下一段的起始坐标处罢了。换句话说，除了笔尖移动幅度更大（以反映段间距），<strong>分段和普通分行在 PDF 中没有任何区别。</strong></p>
 <p>第二，原文第二行行尾的连字符<strong>明示</strong>地出现在了 PDF 代码中。在同一份文档的 Word 版本代码中，这个连字符是不存在的，因为它并不是输入内容的一部分。换句话说，其他格式不在文件中记录，只在打开时才根据需要显示的排版特性，制成 PDF 后却被**「固化」**下来了。</p>
 <p>既然 PDF 不记录段落信息，而换行和连字符又明明白白地写在文件中，它们会出现在复制结果里也就并不奇怪了。</p>
 <p>当然，阅读器可以根据文本的内容和布局等特征进行推断，提供更为合理的复制效果。例如打开上面的 PDF 时，PDF Expert 和 Chrome 浏览器内建的阅读器都会对行尾的连字符作特殊处理，复制的结果是一个完整的单词，搜索中间断开的「independent」整词也能定位到结果；相反，用 macOS 自带的预览 app 和 Firefox 内建的阅读器（<a href="https://mozilla.github.io/pdf.js/">PDF.js</a>）打开时，复制操作会把连字符当作单词的一部分，搜索整词也得不到结果。</p>
@@ -175,10 +175,10 @@ ET Q
 <p>让我们来做一个「指鹿为马」的实验。下图是一个非常简单的 PDF 文件，上面只有一个「鹿」字。</p>
 <p><img src="https://cl.ly/39ae78968e87/deer.png" alt="示例 PDF 和它的 CMap"></p>
 <p>用文本编辑器打开 PDF，可以看到 <code>&lt;ba6f&gt; Tj</code> 这一语句。不难猜出，该语句的作用是绘制字体文件中编码为 <code>0xBA6F</code> 的字符。根据 PDF 对象的交叉引用关系（后文会介绍）找到 CMap，其关键部分为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">1 beginbfrange
-&lt;ba6f&gt; &lt;ba6f&gt; &lt;2fc5&gt;
-endbfrange
-</code></pre></div><p>不难看出，这个 CMap 告诉阅读器：字体文件中编码为 <code>0x6ABF</code> 的字符对应 Unicode 中的 <code>U+2FC5</code>。查 Unicode 码表可知，<code>U+2FC5</code> 正是汉字「鹿」。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1 beginbfrange
+</span></span><span style="display:flex;"><span>&lt;ba6f&gt; &lt;ba6f&gt; &lt;2fc5&gt;
+</span></span><span style="display:flex;"><span>endbfrange
+</span></span></code></pre></div><p>不难看出，这个 CMap 告诉阅读器：字体文件中编码为 <code>0x6ABF</code> 的字符对应 Unicode 中的 <code>U+2FC5</code>。查 Unicode 码表可知，<code>U+2FC5</code> 正是汉字「鹿」。</p>
 <p>现在，我们将上面代码中的 <code>2FC5</code> 改成 <code>9A6C</code>，然后重新打开 PDF 文件。外观上，文件似乎并没有任何变化。但如果你试着把这个字复制出来，会发现得到的结果是「马」。</p>
 <p><img src="https://cl.ly/e1c32cabd5b8/deer-to-horse.gif" alt="「指鹿为马」"></p>
 <p>这并不是什么灵异事件，因为「马」在 Unicode 中正是 <code>U+9A6C</code>。</p>

@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -66,15 +66,15 @@
 <p>在打开的终端窗口中，输入 <code>networkQuality</code>（注意大小写），然后回车。</p>
 <p><img src="https://cdn.sspai.com/2021/11/17/article/b6ac52917165bba1d690c7fa3ed43861?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
 <p>此时，系统会开始同时测试下载和上传速度，并将当前速率实时显示在终端窗口中，形如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">current download capacity: 247.850 Mbps - current upload capacity: 9.545 Mbps
-</code></pre></div><p>大约半分钟后，测速完成，终端会显示一段测速结果，形如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Upload capacity: 16.938 Mbps
-Download capacity: 232.850 Mbps
-Upload flows: 20
-Download flows: 16
-Responsiveness: Low (188 RPM)
-</code></pre></div><p>其中，「Upload/download capacity」是指上传/下载的带宽；「Upload/download flows」是指刚才测试中完成传输的测速文件数量。</p>
-<p>至于「Upload/download responsiveness」，是指上传和下载的综合「响应能力」，根据 Apple 的<a href="https://support.apple.com/zh-cn/HT212313">支持文档</a>，它的衡量指标是每分钟往返次数 (RPM)，即在正常工作条件下，网络能够在一分钟内完成的连续往返次数或事务数量。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>current download capacity: 247.850 Mbps - current upload capacity: 9.545 Mbps
+</span></span></code></pre></div><p>大约半分钟后，测速完成，终端会显示一段测速结果，形如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Upload capacity: 16.938 Mbps
+</span></span><span style="display:flex;"><span>Download capacity: 232.850 Mbps
+</span></span><span style="display:flex;"><span>Upload flows: 20
+</span></span><span style="display:flex;"><span>Download flows: 16
+</span></span><span style="display:flex;"><span>Responsiveness: Low (188 RPM)
+</span></span></code></pre></div><p>其中，「Upload/download capacity」是指上传/下载的带宽；「Upload/download flows」是指刚才测试中完成传输的测速文件数量。</p>
+<p>至于「Upload/download responsiveness」，是指上传和下载的综合「响应能力」，根据 Apple 的 <a href="https://support.apple.com/zh-cn/HT212313">支持文档</a>，它的衡量指标是每分钟往返次数 (RPM)，即在正常工作条件下，网络能够在一分钟内完成的连续往返次数或事务数量。</p>
 <p>根据 RPM 的高低数值不同，networkQuality 对响应能力的评价也分为「低」「中」「高」三个等级。这可以大致反映当前网络的拥堵程度，从而帮助间接估测视频通话、游戏等应用的效果：</p>
 <ul>
 <li>评价为「Low」（低），说明同一网络的设备会互相影响，导致其他设备的网络连接不可靠；</li>
@@ -85,7 +85,7 @@ Responsiveness: Low (188 RPM)
 <p>如上所述，<code>networkQuality</code> 工具会使用 Apple 的 CDN 作为测试服务器。</p>
 <p>具体而言，该工具默认会从一个外部 json 格式文件（目前位于 <a href="https://mensura.cdn-apple.com/api/v1/gm/config">https://mensura.cdn-apple.com/api/v1/gm/config</a> ）获取测试配置。该文件包含三个测试文件地址：</p>
 <ul>
-<li>一个小文件下载地址（目前位于 <a href="https://mensura.cdn-apple.com/api/v1/gm/small%EF%BC%8C%E5%A4%A7%E5%B0%8F%E4%B8%BA">https://mensura.cdn-apple.com/api/v1/gm/small，</a>大小为 1 字节、内容为字母 x）；</li>
+<li>一个小文件下载地址（目前位于 <a href="https://mensura.cdn-apple.com/api/v1/gm/small%EF%BC%8C%E5%A4%A7%E5%B0%8F%E4%B8%BA">https://mensura.cdn-apple.com/api/v1/gm/small，</a> 大小为 1 字节、内容为字母 x）；</li>
 <li>一个大文件下载地址（目前位于 <a href="https://mensura.cdn-apple.com/api/v1/gm/large%EF%BC%8C%E5%A4%A7%E7%BA%A6">https://mensura.cdn-apple.com/api/v1/gm/large</a>，大约 4GB，内容为字母 x 的填充）；</li>
 <li>一个上传文件测试地址（目前位于 <a href="https://mensura.cdn-apple.com/api/v1/gm/slurp%EF%BC%89%E3%80%82">https://mensura.cdn-apple.com/api/v1/gm/slurp</a>）。</li>
 </ul>
@@ -98,7 +98,7 @@ Responsiveness: Low (188 RPM)
 <p>更多参数和说明，可以用如下命令查阅手册页面 <code>networkQuality(8)</code>：<code>man networkQuality</code></p>
 <h3 id="ios-上的使用">iOS 上的使用</h3>
 <p><code>networkQuality</code> 除了可以在 macOS 上使用，iOS 中也藏着一个该工具的简化版本。</p>
-<p>首次使用前，需要安装 Apple 提供的<a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?platform=ios&amp;name=Wifi">描述文件</a>（访问需要登录 Apple ID），并在「设置」中出现的「已下载描述文件」选择「安装」。</p>
+<p>首次使用前，需要安装 Apple 提供的 <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?platform=ios&amp;name=Wifi">描述文件</a>（访问需要登录 Apple ID），并在「设置」中出现的「已下载描述文件」选择「安装」。</p>
 <p>此后，在「无线局域网」设置页面中网络名称右侧点击「信息」图标，就可以看到一个额外的「诊断」菜单项。进入后，可以看到「响应能力」字样，点击「测试」按钮即可获得类似于 macOS 上的测速结论。</p>
 <p><img src="https://cdn.sspai.com/2021/11/17/article/a9fe3b973c93e2d33ddfb64c35d82cd7?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
 <p>稍有遗憾的是，这个测试并不显示具体网速，但用来临时判断一下网络条件还是堪用的。</p>

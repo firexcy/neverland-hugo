@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -64,7 +64,7 @@
 </ul>
 <p>究其原因，上述目标在网页环境下中并不容易达成，甚至是相互矛盾的：不同平台的功能和交互逻辑各异，很难开发出通用的解决方案；网页文本很不稳定，其内容和格式经常随着编辑、改版而变化。因此，为实现跨平台和可溯源，大多数产品都选择了牺牲可迁移性，以私有格式存储批注数据，并且批注的对象往往并非原始网页，而是其经过优化和重排版后的「替身」。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/JrugXQ4Q/instapaper.png?v=036d7ab80ee03606e6d3b1aa46f8b213" alt="Instapaper 等主流工具一般是在创建的网页「替身」上实现批注"></p>
-<p>不过，今年早些时候，我偶然发现了一个名为 <a href="ttps://hypothes.is/">Hypothesis</a> 的工具。这是一个<a href="https://github.com/hypothesis/h">开源项目</a>，注册和使用完全免费，收入主要通过为教育行业<a href="https://web.hypothes.is/help/how-much-does-it-cost-to-use-hypothesis/">定制 LMS（学习管理系统）</a>支撑。</p>
+<p>不过，今年早些时候，我偶然发现了一个名为 <a href="ttps://hypothes.is/">Hypothesis</a> 的工具。这是一个 <a href="https://github.com/hypothesis/h">开源项目</a>，注册和使用完全免费，收入主要通过为教育行业 <a href="https://web.hypothes.is/help/how-much-does-it-cost-to-use-hypothesis/">定制 LMS（学习管理系统）</a> 支撑。</p>
 <p>与 Pocket、Instapaper 等知名服务相比，Hypothesis 给我的最初印象是其貌不扬、界面简陋，且上手门槛较高。但在熟悉操作后，我发现它正是一个能较好兼顾上述三个理想特性的工具。</p>
 <p>概括而言，Hypothesis 实现这些特性的方式是：</p>
 <ul>
@@ -74,11 +74,11 @@
 </ul>
 <p>下文将首先演示 Hypothsis 的基础操作，然后在实验基础上解释该服务实现原理中的独特之处，最后介绍基于 Hypothsis API 的一些进阶用法。</p>
 <h2 id="一简易上手">一、简易上手</h2>
-<p>我们以批注<a href="https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/">随机挑选的一个网页</a>为例（好吧，并没有随机，是我写的文章，原谅这点私心），演示 Hypothesis 的基本用法。</p>
+<p>我们以批注 <a href="https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/">随机挑选的一个网页</a> 为例（好吧，并没有随机，是我写的文章，原谅这点私心），演示 Hypothesis 的基本用法。</p>
 <h3 id="一注册和配置">（一）注册和配置</h3>
 <p>首先，前往 Hypothesis 官网，<a href="https://hypothes.is/signup">注册一个账号</a>。</p>
 <p>完成注册并登录后，点击页面右上角的齿轮图标，选择「<a href="https://hypothes.is/account/developer">Developer</a>」，生成自己账号对应的 <strong>API token</strong>，留存备用。</p>
-<p>然后，到<a href="https://web.hypothes.is/start/">指引页面</a>找到「Hypothesis Bookmarklet」小书签按钮，将其拖拽到浏览器的书签栏，或者点击右键添加到书签。Chrome 用户也可以选择安装插件，但其功能与小书签并无差异，没有太大必要。</p>
+<p>然后，到 <a href="https://web.hypothes.is/start/">指引页面</a> 找到「Hypothesis Bookmarklet」小书签按钮，将其拖拽到浏览器的书签栏，或者点击右键添加到书签。Chrome 用户也可以选择安装插件，但其功能与小书签并无差异，没有太大必要。</p>
 <h3 id="二批注">（二）批注</h3>
 <p>打开要批注的网页，点击上面步骤添加的小书签。稍等片刻，Hypothesis 的工具条就会出现在页面右侧。点击其顶部的箭头按钮将面板展开，然后点击「Log in」登录自己的账号。</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/jkuDJjZe/hypothesis-toolbar.png?v=f0ce0ab1f4a259477662c617aab87673" alt="Hypothesis 的批注工具栏"></p>
@@ -125,24 +125,24 @@
 <li>如果前一种方法未成功，说明网页的结构可能已经发生变化。这时，Hypothesis 会重新将网页转换为文本，然后根据 <code>TextPositionSelector</code> 记录的范围进行定位，并将结果和之前记录的内容比对，如一致，则认为匹配成功。</li>
 <li>如果仍然未能准确定位，说明网页的结构和内容都发生了变化。这时，Hypothesis 会选择放弃准确定位，以 <code>TextQuoteSelector</code> 中记录的上下文为关键词作全文模糊搜索；如果能找到类似的上下文，并且其中「夹」着的内容和之前记录的标注内容大致相同，就认为这是原来的标注文本。</li>
 <li>如果这种「前后夹击」还是查无结果，Hypothesis 会进行最后一次尝试，直接用 <code>TextQuoteSelector</code> 记录的原始标注内容在网页全文中作模糊搜索，并将大致相同的搜索结果看成是原来的标注文本。</li>
-<li>如果上述努力全部归于失败，Hypothesis 就会将这段「无家可归」的标注显示在侧边栏的<a href="https://web.hypothes.is/blog/showing-orphaned-annotations/">「孤本」</a>（orphaned）分类下，以供用户参考。</li>
+<li>如果上述努力全部归于失败，Hypothesis 就会将这段「无家可归」的标注显示在侧边栏的 <a href="https://web.hypothes.is/blog/showing-orphaned-annotations/">「孤本」</a>（orphaned）分类下，以供用户参考。</li>
 </ol>
 <p>在这样一套缜密机制的支撑下，Hypothesis 较强的定位回溯能力也就不难理解了。</p>
 <h2 id="三api-的进阶使用以将最近批注导出为-markdown-为例">三、API 的进阶使用——以将最近批注导出为 Markdown 为例</h2>
 <p>尽管 Hypothesis 网站和 Facet 已经能实现多数常用功能，但还是不足以满足更个性化的需求。我自己的习惯就是标注完一个网页后以 Markdown 格式导出，其内容包括带链接的标题和列表形式的摘录内容：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#88c0d0;font-weight:bold">### [标题](http://examples.com)
-</span><span style="color:#88c0d0;font-weight:bold"></span>
-<span style="color:#81a1c1;font-weight:bold">-</span> 第一条高亮内容
-<span style="color:#81a1c1;font-weight:bold">-</span> 第二条高亮内容
-…
-</code></pre></div><p>为此，我制作了一个相应的 <a href="https://get.cyhsu.xyz/DOu9QjbB">Alfred 动作</a>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#88c0d0;font-weight:bold">### [标题](http://examples.com)
+</span></span></span><span style="display:flex;"><span><span style="color:#88c0d0;font-weight:bold"></span>
+</span></span><span style="display:flex;"><span><span style="color:#81a1c1;font-weight:bold">-</span> 第一条高亮内容
+</span></span><span style="display:flex;"><span><span style="color:#81a1c1;font-weight:bold">-</span> 第二条高亮内容
+</span></span><span style="display:flex;"><span>…
+</span></span></code></pre></div><p>为此，我制作了一个相应的 <a href="https://get.cyhsu.xyz/DOu9QjbB">Alfred 动作</a>：</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/Blu1pPe0/hypothesis-alfred.gif?v=621317f5de08e67eb12a3941748e443e" alt="导出近期批注的 Alfred 动作"></p>
 <p>（**注：**导入时，需要填写自己的用户名和 API token。该动作基于 Python 3，并且依赖 requests 和 pyperclip 用于发送请求和写入系统剪贴板：<code>python3 -m pip install requests pyperclip</code>。）</p>
-<p>对于 iOS 上的使用场景，我也制作了一个<a href="https://www.icloud.com/shortcuts/83f06d40e12c4076ad4e6433abf77261">捷径动作</a>实现类似效果：</p>
+<p>对于 iOS 上的使用场景，我也制作了一个 <a href="https://www.icloud.com/shortcuts/83f06d40e12c4076ad4e6433abf77261">捷径动作</a> 实现类似效果：</p>
 <p><img src="https://p178.p0.n0.cdn.getcloudapp.com/items/YEuy8bYA/hypothesis-shortcuts-ios.gif?v=6583a675d677fe32a64802bf5d2d9cdd" alt="导出近期批注的 iOS 捷径"></p>
 <p>（**注：**限于捷径 app 的功能，该动作无法像 Alfred 版本那样实现按批注在原文中的位置排列的功能，而只能根据创建批注的顺序排列。）</p>
 <p>上面的效果都是通过调用 Hypothesis API 实现的。</p>
-<p>Hypothesis API 的功能非常完善，覆盖了批注从添加、搜索到编辑的整个周期，具体可以查阅 <a href="https://h.readthedocs.io/en/latest/api-reference/v1/#section/Hypothesis-API">API 文档</a>来了解。其中，与获取和导出批注内容最相关的是<strong>搜索 API</strong>，使用要点是：</p>
+<p>Hypothesis API 的功能非常完善，覆盖了批注从添加、搜索到编辑的整个周期，具体可以查阅 <a href="https://h.readthedocs.io/en/latest/api-reference/v1/#section/Hypothesis-API">API 文档</a> 来了解。其中，与获取和导出批注内容最相关的是<strong>搜索 API</strong>，使用要点是：</p>
 <ul>
 <li>地址：<code>https://api.hypothes.is/api/search</code></li>
 <li>方法：<code>GET</code></li>
@@ -155,10 +155,10 @@
 <li>每个批注对象中的 <code>target</code> 数组都包含 3 个对象，依次对应上文介绍过的「范围选择器」（<code>RangeSelector</code>）、「文本位置选择器」（<code>TextPositionSelector</code>）和「文本引用选择器」（<code>TextQuoteSelector</code>）。</li>
 </ul>
 <p>因此，就获取高亮文本内容而言，应当获取文本引用选择器对象下的 <code>exact</code>（原文）键值。换言之，对于序号为 n（从 0 起算）的批注，其原文内容在输出中的位置（JSONPath）是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#bf616a">$</span><span style="color:#eceff4">[</span><span style="color:#bf616a">&#39;rows&#39;</span><span style="color:#eceff4">][</span><span style="color:#bf616a">n</span><span style="color:#eceff4">][</span><span style="color:#bf616a">&#39;target&#39;</span><span style="color:#eceff4">][</span><span style="color:#b48ead">0</span><span style="color:#eceff4">][</span><span style="color:#bf616a">&#39;selector&#39;</span><span style="color:#eceff4">][</span><span style="color:#b48ead">2</span><span style="color:#eceff4">][</span><span style="color:#bf616a">&#39;exact&#39;</span><span style="color:#eceff4">]</span>
-</code></pre></div><p>在此基础上，我们就可以通过程序方式获取符合指定条件的批注文本，并整理为任意所需的格式。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#bf616a">$</span><span style="color:#eceff4">[</span><span style="color:#bf616a">&#39;rows&#39;</span><span style="color:#eceff4">][</span><span style="color:#bf616a">n</span><span style="color:#eceff4">][</span><span style="color:#bf616a">&#39;target&#39;</span><span style="color:#eceff4">][</span><span style="color:#b48ead">0</span><span style="color:#eceff4">][</span><span style="color:#bf616a">&#39;selector&#39;</span><span style="color:#eceff4">][</span><span style="color:#b48ead">2</span><span style="color:#eceff4">][</span><span style="color:#bf616a">&#39;exact&#39;</span><span style="color:#eceff4">]</span>
+</span></span></code></pre></div><p>在此基础上，我们就可以通过程序方式获取符合指定条件的批注文本，并整理为任意所需的格式。</p>
 <h2 id="总结与建议">总结与建议</h2>
-<p>除了上面提到的功能特性，Hypothesis 还有不少隐藏用法。例如，除了标注网页，Hypothesis 还可以用来<a href="https://web.hypothes.is/help/annotating-locally-saved-pdfs/">批注 PDF 文档</a>，无论 PDF 是存在线上还是本地。另外，通过 Hypothesis 创建的公开批注可以通过 RSS 地址 <code>https://hypothes.is/stream.rss?user=&lt;username&gt;</code> 订阅，从而实现与 IFTTT 等自动化工具的整合等。</p>
+<p>除了上面提到的功能特性，Hypothesis 还有不少隐藏用法。例如，除了标注网页，Hypothesis 还可以用来 <a href="https://web.hypothes.is/help/annotating-locally-saved-pdfs/">批注 PDF 文档</a>，无论 PDF 是存在线上还是本地。另外，通过 Hypothesis 创建的公开批注可以通过 RSS 地址 <code>https://hypothes.is/stream.rss?user=&lt;username&gt;</code> 订阅，从而实现与 IFTTT 等自动化工具的整合等。</p>
 <p>当然，Hypothesis 仍然有很多不足。例如，Hypothesis 通过 JavaScript 书签启用批注的方式，虽然具有较好的跨平台能力，但有时会影响页面的布局，或和网页原有的交互功能冲突。在 Safari 这类隐私管理较为严格的浏览器上，其 Cookies 信息会时常被清除，导致需要频繁重新登录，显得比较麻烦。</p>
 <p>又如，Hypothesis 并不像很多其他服务那样提供网页备份功能，从而将其拿手的「模糊锚定」功能置于一种尴尬境地：如果连网页本身都被删除，再强的批注定位能力也无用武之处。因此，对于具有较高保存价值的网页，先用 <a href="https://archive.org/web/">Wayback Machine</a> 等工具创建快照副本，再用 Hypothesis 对副本做批注，会是更稳妥的做法。</p>
 <p>更重要的是，Hypothesis 归根结底是一个面向教育和学术应用场景开发的项目，网页版服务只是将相关技术简单包装后提供给公众的公益「副业」。外观简陋、上手门槛较高等特点不仅是情理之中，而且在今后很可能也会一直如此，不太可能像某些资金充裕的明星服务那样快速迭代、花样频出。</p>

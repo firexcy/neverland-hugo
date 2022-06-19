@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -69,26 +69,26 @@
 <p>再次进入设置页面，点击 MinervaNeue 主题右侧的 <strong>Custom CSS/自定义 CSS</strong> 链接。由于我们是第一次修改该主题的样式，将会直接跳转到创建页面。</p>
 <p><img src="https://i.loli.net/2017/11/05/59fe5dbf151f3.png" alt="CSS 编辑界面"></p>
 <p>在代码框中输入下列内容：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">.mw-body {
-    font-size: 1.25em !important;
-    text-align: justify;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-}
-</code></pre></div><p>这段代码的作用是将正文部分的字号修改为 1.25 <a href="https://www.zhihu.com/question/46279241">em</a>（可以反复尝试出最适合自己的值；维基百科默认值是 0.85 em，小得丧心病狂），并开启两端对齐和英文连字符。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>.mw-body {
+</span></span><span style="display:flex;"><span>    font-size: 1.25em !important;
+</span></span><span style="display:flex;"><span>    text-align: justify;
+</span></span><span style="display:flex;"><span>    -moz-hyphens: auto;
+</span></span><span style="display:flex;"><span>    -webkit-hyphens: auto;
+</span></span><span style="display:flex;"><span>    hyphens: auto;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>这段代码的作用是将正文部分的字号修改为 1.25 <a href="https://www.zhihu.com/question/46279241">em</a>（可以反复尝试出最适合自己的值；维基百科默认值是 0.85 em，小得丧心病狂），并开启两端对齐和英文连字符。</p>
 <p>输入完成后，点击页面底部的 <strong>Save page/发布页面</strong>按钮。这时，再刷新维基百科的页面，就可以看到修改后的效果了。</p>
 <p><img src="https://i.loli.net/2017/11/05/59fe5dbfdc6c7.png" alt="修改了字号和对齐属性后的效果"></p>
 <p>另一个需要解决的问题是字体。维基百科默认只指定 <code>Serif</code> （无衬线）字体。实践中，这种将决定权完全交给浏览器和系统的做法往往不尽如人意，而且在不同配置环境下的表现很不统一。为了让其<a href="https://www.zhihu.com/question/19911793">在各平台上都显示为较高质量的黑体</a>，可以在上述代码中加上一行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">font-family: -apple-system, &#34;Helvetica Neue&#34;, Helvetica, &#34;Nimbus Sans L&#34;, Arial, &#34;Liberation Sans&#34;, &#34;PingFang SC&#34;, &#34;Hiragino Sans GB&#34;, &#34;Source Han Sans CN&#34;, &#34;Source Han Sans SC&#34;, &#34;Microsoft YaHei&#34;, &#34;Wenquanyi Micro Hei&#34;, &#34;WenQuanYi Zen Hei&#34;, &#34;ST Heiti&#34;, SimHei, &#34;WenQuanYi Zen Hei Sharp&#34;, sans-serif;
-</code></pre></div><p>类似地，如果想在正文中使用宋体（西文部分使用衬线体），则可以将这行代码改为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">font-family: Georgia, &#34;Nimbus Roman No9 L&#34;, &#34;Songti SC&#34;, STSong, &#34;AR PL New Sung&#34;, &#34;AR PL SungtiL GB&#34;, NSimSun, SimSun, &#34;TW\-Sung&#34;, &#34;WenQuanYi Bitmap Song&#34;, &#34;AR PL UMing CN&#34;, &#34;AR PL UMing HK&#34;, &#34;AR PL UMing TW&#34;, &#34;AR PL UMing TW MBE&#34;, PMingLiU, MingLiU, serif;
-</code></pre></div><p>效果如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>font-family: -apple-system, &#34;Helvetica Neue&#34;, Helvetica, &#34;Nimbus Sans L&#34;, Arial, &#34;Liberation Sans&#34;, &#34;PingFang SC&#34;, &#34;Hiragino Sans GB&#34;, &#34;Source Han Sans CN&#34;, &#34;Source Han Sans SC&#34;, &#34;Microsoft YaHei&#34;, &#34;Wenquanyi Micro Hei&#34;, &#34;WenQuanYi Zen Hei&#34;, &#34;ST Heiti&#34;, SimHei, &#34;WenQuanYi Zen Hei Sharp&#34;, sans-serif;
+</span></span></code></pre></div><p>类似地，如果想在正文中使用宋体（西文部分使用衬线体），则可以将这行代码改为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>font-family: Georgia, &#34;Nimbus Roman No9 L&#34;, &#34;Songti SC&#34;, STSong, &#34;AR PL New Sung&#34;, &#34;AR PL SungtiL GB&#34;, NSimSun, SimSun, &#34;TW\-Sung&#34;, &#34;WenQuanYi Bitmap Song&#34;, &#34;AR PL UMing CN&#34;, &#34;AR PL UMing HK&#34;, &#34;AR PL UMing TW&#34;, &#34;AR PL UMing TW MBE&#34;, PMingLiU, MingLiU, serif;
+</span></span></code></pre></div><p>效果如下：</p>
 <p><img src="https://i.loli.net/2017/11/05/59fe5dbfd9c30.png" alt="将正文修改为衬线字体的效果"></p>
 <p>（上面的字体回退顺序参考了<a href="http://zenozeng.github.io/fonts.css/">此 GitHub 项目</a>，在此感谢。）</p>
 <p>当然，你也可以改为自己喜欢的字体，如<a href="https://github.com/adobe-fonts/source-han-serif">思源宋体</a>：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">font-family: Source Serif Pro, Source Han Serif, serif;
-</code></pre></div><p>需要注意的是，维基百科不同语言版本虽然账号是互通的，<strong>但偏好设置和自定义 CSS 却相互独立</strong>。因此，你需要为自己常用的每种语言版本（如中文和英文）重复一次上述设置。另外，iPad 上的 Safari 浏览器默认访问的是移动版页面；如果想在 iPad 上看到同样的效果，需要在词条底部切换为桌面版。（如果想在 iPad 上使用自定义字体，可以参考少数派之前发表的<a href="https://sspai.com/post/36259">这篇文章</a>。）</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>font-family: Source Serif Pro, Source Han Serif, serif;
+</span></span></code></pre></div><p>需要注意的是，维基百科不同语言版本虽然账号是互通的，<strong>但偏好设置和自定义 CSS 却相互独立</strong>。因此，你需要为自己常用的每种语言版本（如中文和英文）重复一次上述设置。另外，iPad 上的 Safari 浏览器默认访问的是移动版页面；如果想在 iPad 上看到同样的效果，需要在词条底部切换为桌面版。（如果想在 iPad 上使用自定义字体，可以参考少数派之前发表的<a href="https://sspai.com/post/36259">这篇文章</a>。）</p>
 <hr>
 <p>当然，上面步骤所实现的效果是比较基础的，CSS 的潜力远不止这些。前面提到的页面美化插件 Stylish，其原理就是额外加载一段自定义的 CSS 代码，以达到修改页面外观的效果。因此，既然维基百科本身支持自定义 CSS，我们完全可以「移花接木」，借用他人已经写好的样式文件，达到不借助插件实现复杂效果的目的。</p>
 <p>为此，我们先安装 <a href="https://sspai.com/post/34508">Stylish 插件</a>，然后在 <a href="https://userstyles.org/">UserStyles</a> 网站（Stylish 插件的样式库）上搜索 Wikipedia，从中挑选一个符合自己口味的，例如<a href="https://userstyles.org/styles/140009/wikipedia-material-updated-12-8-2017">这个</a>采用仿 Material 设计的主题，点击 <strong>Install Style</strong> 安装。</p>

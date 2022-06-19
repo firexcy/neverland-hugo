@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -58,42 +58,42 @@
 			<p>一般情况下，应用程序的界面语言会和系统语言保持一致。但有些时候，我们也会希望临时换用一种不同的界面语言。例如，一些程序的中文翻译词不达意，有必要参考英文界面来确定功能的准确含义；又如，一些网页会强制按照浏览器语言显示不同版本，因此必须通过切换浏览器语言来控制网页语言。</p>
 <p>问题是，并不是所有的应用程序都提供了切换界面语言的选项。事实上，大多数 macOS 的内建应用都没有这样的设置。如果每次遇到这种需求都去临时改变系统语言，未免过于耗时和麻烦。</p>
 <p>这个问题可以通过终端命令来解决。macOS 允许在运行应用程序时向其传递特定参数，其中，<strong><code>-AppleLanguages</code></strong> 参数就是用来控制应用程序的语言的。例如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># 以简体中文界面启动 Safari 浏览器
-$ open -a /Applications/Safari.app --args -AppleLanguages &#39;(zh-CN)&#39; 
-
-# 以英文界面启动 Pages
-$ open -a /Applications/Pages.app --args -AppleLanguages &#39;(en)&#39;
-</code></pre></div><p>如果想以其他语言启动某个应用程序，只需要修改上述命令最后的地区代码。其他一些常用的代码包括繁体中文（<code>zh-TW</code>）、日文（<code>ja</code>）、法文（<code>fr</code>）、德文（<code>de</code>）等。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 以简体中文界面启动 Safari 浏览器
+</span></span><span style="display:flex;"><span>$ open -a /Applications/Safari.app --args -AppleLanguages &#39;(zh-CN)&#39; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 以英文界面启动 Pages
+</span></span><span style="display:flex;"><span>$ open -a /Applications/Pages.app --args -AppleLanguages &#39;(en)&#39;
+</span></span></code></pre></div><p>如果想以其他语言启动某个应用程序，只需要修改上述命令最后的地区代码。其他一些常用的代码包括繁体中文（<code>zh-TW</code>）、日文（<code>ja</code>）、法文（<code>fr</code>）、德文（<code>de</code>）等。</p>
 <p><strong>要知道一个应用都支持哪些界面语言</strong>，可以在 Finder 中找到该应用，点击右键选择 <strong>显示包内容</strong>，然后查看 <code>/Contents/Resources</code> 目录下以 <code>.lproj</code> 结尾的语言文件目录；<code>.lproj</code> 之前的部分就是各语言对应的地区代码。</p>
 <p><img src="https://cl.ly/rWgk/Screen%20Shot%202018-05-12%20at%208.17.46%20PM.png" alt="Safari 的语言文件目录"></p>
 <p>当然，更快捷的方法还是使用终端命令。例如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># 查看 Ulysses 支持的界面语言
-$ ls /Applications/Ulysses.app/Contents/Resources | grep lproj
-&gt; Base.lproj
-&gt; de.lproj
-&gt; en.lproj
-&gt; …
-</code></pre></div><h2 id="为应用程序的特定语言创建快捷方式">为应用程序的特定语言创建快捷方式</h2>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 查看 Ulysses 支持的界面语言
+</span></span><span style="display:flex;"><span>$ ls /Applications/Ulysses.app/Contents/Resources | grep lproj
+</span></span><span style="display:flex;"><span>&gt; Base.lproj
+</span></span><span style="display:flex;"><span>&gt; de.lproj
+</span></span><span style="display:flex;"><span>&gt; en.lproj
+</span></span><span style="display:flex;"><span>&gt; …
+</span></span></code></pre></div><h2 id="为应用程序的特定语言创建快捷方式">为应用程序的特定语言创建快捷方式</h2>
 <p><strong>如果需要比较频繁地用不同语言显示某个应用</strong>，那么可以为其创建一个快捷方式。</p>
 <p>方法是：打开系统内建的「脚本编辑器」应用，新建一个文档，在命令栏输入：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">do shell script &#34;open -a [应用程序路径] --args -AppleLanguages &#39;([要显示的语言])&#39;&#34;
-</code></pre></div><p>点击 <strong>文件</strong> &gt; <strong>导出</strong>，起一个易认的名字（例如「Safari CN」），并将「文件格式」选为「脚本」，然后将其导出到 Applications 文件夹。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>do shell script &#34;open -a [应用程序路径] --args -AppleLanguages &#39;([要显示的语言])&#39;&#34;
+</span></span></code></pre></div><p>点击 <strong>文件</strong> &gt; <strong>导出</strong>，起一个易认的名字（例如「Safari CN」），并将「文件格式」选为「脚本」，然后将其导出到 Applications 文件夹。</p>
 <p><img src="https://cl.ly/rXBR/script-applelanguages.png" alt="用脚本编辑器为特定语言创建快捷方式"></p>
 <p>这样，就可以直接从 Launchpad 以特定语言启动这一应用了。</p>
 <p>Alfred 或 LaunchBar 用户可以用该原理制作动作来实现同样效果，在此不赘。</p>
 <h2 id="默认以特定语言启动应用程序">默认以特定语言启动应用程序</h2>
 <p>最后，<strong>如果希望始终以某种与系统设置不同的语言启动特定应用</strong>，可以用 <code>defaults write</code> 命令来修改其默认设置。具体语法是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ defaults write [应用的 Bundle ID] AppleLanguages &#39;([要默认显示的语言])&#39;
-</code></pre></div><p>例如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># 默认以简体中文打开「文本编辑」应用
-$ defaults write com.apple.TextEdit AppleLanguages &#39;(zh-CN)&#39;
-</code></pre></div><p>其中，应用的 Bundle ID 可以通过运行 <code>mdls -name kMDItemCFBundleIdentifier [应用程序路径]</code> 来查找。例如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># Chrome 浏览器的 Bundle ID
-$ mdls -name kMDItemCFBundleIdentifier /Applications/Google\ Chrome.app
-&gt; kMDItemCFBundleIdentifier = &#34;com.google.Chrome&#34;
-</code></pre></div><p>如果不再需要固定应用程序的显示语言，在终端运行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ defaults delete [应用的 Bundle ID] AppleLanguages
-</code></pre></div><p>即可解除上述默认语言设置。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ defaults write [应用的 Bundle ID] AppleLanguages &#39;([要默认显示的语言])&#39;
+</span></span></code></pre></div><p>例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 默认以简体中文打开「文本编辑」应用
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.TextEdit AppleLanguages &#39;(zh-CN)&#39;
+</span></span></code></pre></div><p>其中，应用的 Bundle ID 可以通过运行 <code>mdls -name kMDItemCFBundleIdentifier [应用程序路径]</code> 来查找。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Chrome 浏览器的 Bundle ID
+</span></span><span style="display:flex;"><span>$ mdls -name kMDItemCFBundleIdentifier /Applications/Google\ Chrome.app
+</span></span><span style="display:flex;"><span>&gt; kMDItemCFBundleIdentifier = &#34;com.google.Chrome&#34;
+</span></span></code></pre></div><p>如果不再需要固定应用程序的显示语言，在终端运行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ defaults delete [应用的 Bundle ID] AppleLanguages
+</span></span></code></pre></div><p>即可解除上述默认语言设置。</p>
 <p>-- NORMAL --</p>
 
 		</section>

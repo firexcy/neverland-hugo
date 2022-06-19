@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>apple on Neverland</title>
+    <title>Apple on Neverland</title>
     <link>https://type.cyhsu.xyz/tags/apple/</link>
-    <description>Recent content in apple on Neverland</description>
+    <description>Recent content in Apple on Neverland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/apple/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/apple/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Eng. Ver.] Apple in 2021: The SSPAI Report Card</title>
+      <link>https://type.cyhsu.xyz/2022/01/apple-report-card-2021-cn/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/01/apple-report-card-2021-cn/</guid>
+      <description>Apple in 2021: The SSPAI Report Card is one of SSPAI’s year-end programs. Modeled after Jason Snell’s The Six Colors Report Card series and the first among Chinese tech media, the event asked 20 influential Apple users to reflect on Apple’s performance in the past year.
+Among the invitees are experienced developers, venture capitalists, scholars/professors, video game journalists, and photo/video professionals. They were prompted with 9 Apple-related subjects and were asked to rate them on a scale from 1 to 5 with commentary on their grading. We believe there is value in profiling Chinese users’ impression of Apple with a comprehensive approach and plan to conduct it as a multi-year program.</description>
+    </item>
+    
     <item>
       <title>Apple Watch 指针表盘 —— The Missing Manual</title>
       <link>https://type.cyhsu.xyz/2020/10/apple-watch-analog-faces-the-missing-manual/</link>
@@ -158,7 +168,7 @@
       <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://type.cyhsu.xyz/2015/09/microsoft-goes-left-apple-goes-right/</guid>
-      <description>title: Microsoft 向左，Apple 向右 date: 2015-09-20 22:56:26 tags:Typography Apple 最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的</description>
+      <description>最近被周围的人问到一个很有意思的问题： 为什么宋体字在屏幕上和纸上看起来不一样？ 要回答这个问题，就得先从对现象的验证开始。我们首先从一本印刷书中截取一段用宋体1排印的内文，然后输入电脑，观察它在不同条件</description>
     </item>
     
   </channel>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>用快捷指令将 Safari 标签页导出为文本链接 - Neverland</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 「标签页组」是 Safari 15 新增的重要功能，除了整理归组之外，还可以通过「复制链接」导出组内所有页面的链接。这对于备份和分享都" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="用快捷指令将 Safari 标签页导出为文本链接" />
+<meta property="og:description" content="Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 「标签页组」是 Safari 15 新增的重要功能，除了整理归组之外，还可以通过「复制链接」导出组内所有页面的链接。这对于备份和分享都" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://type.cyhsu.xyz/unpublished/2022/03/safari-export-link/" /><meta property="article:section" content="unpublished" />
+<meta property="article:published_time" content="2022-03-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-02T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="用快捷指令将 Safari 标签页导出为文本链接"/>
+<meta name="twitter:description" content="Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 「标签页组」是 Safari 15 新增的重要功能，除了整理归组之外，还可以通过「复制链接」导出组内所有页面的链接。这对于备份和分享都"/>
+<script src="https://type.cyhsu.xyz/js/feather.min.js"></script>
+	
+	
+        <link href="https://type.cyhsu.xyz/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://type.cyhsu.xyz/">Neverland</a>
+	</div>
+	<nav>
+		
+		<a href="/colophon/">colophon</a>
+		
+		<a href="/posts/">archive</a>
+		
+		<a href="/topics/">topics</a>
+		
+		<a href="https://platylinks.substack.com">readings</a>
+		
+		<a href="/feed.xml">rss</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">用快捷指令将 Safari 标签页导出为文本链接</h1>
+			<div class="meta">2022-03-02</div>
+		</div>
+		
+
+		<section class="body">
+			<p><strong>Note:</strong> This article was published as a member-exclusive post for <a href="https://sspai.com/prime">SSPAI Prime</a>, which you may find <a href="https://sspai.com/prime/story/safari-export-link">here</a>; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support.</p>
+<p>「标签页组」是 Safari 15 新增的重要功能，除了整理归组之外，还可以通过「复制链接」导出组内所有页面的链接。这对于备份和分享都非常方便。但 Safari 所能导出的只是富文本格式的链接，但很多场景下都是无法粘贴、或者不方便处理的。本文将指导制作一个快捷指令来搭配使用，导出的链接变为更方便处理的 Markdown 或纯文本格式。</p>
+<h2 id="使用场景">使用场景</h2>
+<p>**「标签页组」**是 Safari 15 新增的重要功能，为 Safari 补齐了相比于 Chrome 和 Firefox 的一项短板。标签页组可以将主题相关的标签页整合起来；例如，将工作中常用的内网办公系统页面整理为「工作」标签组；将为了写论文而检索资料用到的页面整理为「论文」标签组；等等。这大大减少了标签栏的负担，也是患有「标签囤积症」用户的救星。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/article/782e424fb358d370a44e1bea734bebc0?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>Safari 标签页组</p>
+<p>除了整理归组之外，标签页组还有很多额外的辅助功能。其中最实用的一项莫过于**「复制链接」**，即可以导出组内所有页面的链接。这对于备份和分享都非常方便。</p>
+<p>稍显遗憾的是，Safari 所能导出的只是<strong>富文本</strong>格式的链接，但很多场景下——例如 Markdown 笔记软件、聊天软件输入框，这样的链接都是无法粘贴、或者不方便处理的。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/c18e4c7312d7c731e1923e60ba0639dc.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>直接复制得到的富文本链接</p>
+<p>因此，我们不妨用一个快捷指令来搭配使用，<strong>将 Safari 导出的链接变为更方便处理的 Markdown 或纯文本格式</strong>。这就是本文要实现的目的。</p>
+<p><strong>注：</strong> 你可以通过 Apple 的支持文章来进一步了解标签组功能在 <a href="https://support.apple.com/zh-cn/guide/iphone/iph3028ebf68/ios">iPhone</a>、<a href="https://support.apple.com/zh-cn/guide/ipad/ipada3308ec5/ipados">iPad</a> 和 <a href="https://support.apple.com/zh-cn/guide/safari/ibrwa2d73908/mac">Mac</a> 上的功能和使用方法。</p>
+<h2 id="使用方法">使用方法</h2>
+<p>本文方法构建的快捷指令（<a href="https://www.icloud.com/shortcuts/6ff72928dc084420a4d2facf63546b49">下载</a>）同时适用于 iOS 和 macOS。</p>
+<p><strong>第一步</strong> 通过 Safari 的复制链接功能获得原始链接。具体而言：</p>
+<p><strong>在 iOS 上：</strong></p>
+<ol>
+<li>点击 Safari 工具栏最右侧的标签页按钮，然后点击底部的「[标签数] 个标签」字样，展开标签组菜单（对于 iPad，则点击 Safari 工具栏左侧的侧边栏开关，打开工具栏，即可看到标签组）；</li>
+<li>长按要导出链接的标签组（或者 「[标签数] 个标签」字样来导出未分组的标签），然后选择「复制链接」。</li>
+</ol>
+<p><img src="https://cdn.sspai.com/2022/03/02/617f75b408ac4c6557fa70138cbf6c3b.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p><strong>在 Mac 上：</strong></p>
+<ol>
+<li>点击 Safari 左侧的侧边栏开关，打开侧边栏，即可看到标签组；</li>
+<li>右键点击要导出链接的标签组（或者 「[标签数] 个标签」字样来导出未分组的标签），然后选择「复制链接」。</li>
+</ol>
+<p><img src="https://cdn.sspai.com/2022/03/02/f5ad8b5d00ff6777cb45c54ba1bbde97.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p><strong>第二步</strong> 运行本快捷指令后，会弹出一个菜单显示剪贴板中已复制的标签页列表。如果有不想包含在导出结果中的网址，可以取消其勾选。</p>
+<p><strong>第三步</strong> 从菜单中选择要导出的格式（Markdown 列表或纯文本列表），到其他应用中粘贴即可。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/91d8115e3253d1d29b66a87697168e41.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<h2 id="步骤解析">步骤解析</h2>
+<p>本快捷指令主要用到了<strong>菜单</strong>、<strong>列表</strong>和<strong>循环</strong>等功能。</p>
+<p>开头的几个步骤中，我们首先从剪贴板获取了原始链接，然后串接到一个「列表」步骤，让用户从中选择要导出的项目。这里，「多选」和「默认全选」两个选项非常有用。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/0dbb4d984a572b3eafa3de1dacfd532c.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>然后，我们使用「菜单」步骤构建一个菜单，让用户从 Markdown 和纯文本这两种常见格式中选择。</p>
+<p>以选择 Markdown 格式为例。由于从上一步传来的是一个列表，我们使用一个「循环」步骤来依次处理其中的每一个项目——富文本格式的链接。然后，我们用「文本」步骤构造一段文本，其内容是 Markdown 语法下的链接列表格式：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>- [ &lt;链接标题&gt; ]( &lt;链接地址&gt; )
+</span></span></code></pre></div><p>要获取上述格式中的链接标题，首先将光标放在方框 <code>[ ]</code> 之间，从键盘上方选择「重复项目」（在 Mac 上，则在方框之间点击右键，选择「插入变量」 &gt;「重复项目」）。</p>
+<p>然后，点击刚才插入的重复项目，选择其类型为「URL」，以及要获取其「名称」（即网页标题）。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/5368742d0c4cd7e3aed0d8f87c4428a0.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>获取链接地址的步骤与之完全一致，只是最后一步选择获取的是「URL」。</p>
+<p>这样，就完成了单条 Markdown 格式链接的构建。我们串接一个「添加到变量」步骤，将每条循环结果都放进 <code>output</code> 变量。这样循环结束后，<code>output</code> 变量就是一个包含了所有标签页对应的 Markdown 格式链接的集合。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/7eda40a527995d6da44b0c3d2fcef3b7.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>类似地，我们对选择纯文本格式时的步骤做类似设置。唯一的区别在于「文本」步骤的模板现在是：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;链接标题&gt; &lt;链接地址&gt;
+</span></span></code></pre></div><p>这里，别忘了善用快捷指令的「复制」步骤功能，即在这些多次用到的上长按（macOS 上则点击右键，还可以按住 Shift 键点选多个步骤）、选择「复制」，快速克隆出相同的步骤。</p>
+<p>最后，我们获取包含了文本链接的集合的 output 变量，串接一个「合并文本」步骤，分隔符选择「新行」（即每行一条链接），输出给「复制到剪贴板」步骤即可。</p>
+<p><img src="https://cdn.sspai.com/2022/03/02/ceb20463672b07496e10f3dfe7af9806.png?imageView2/2/w/1120/q/40/interlace/1/ignore-error/1" alt=""></p>
+<p>你可以将这个快捷指令 <a href="https://support.apple.com/zh-cn/guide/shortcuts/apd735880972/ios">添加到 iOS 桌面</a>、<a href="https://support.apple.com/zh-cn/guide/shortcuts/apd029b36d05/ios">主屏幕小组件</a>，或 <a href="https://support.apple.com/zh-cn/guide/shortcuts-mac/apd163eb9f95/5.0/mac/12.0">macOS 菜单栏</a> 方便调用。</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/macos">macOS</a></li>
+					
+					<li><a href="/tags/ios">iOS</a></li>
+					
+					<li><a href="/tags/tutorial">tutorial</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>
+
+2022  © Platy Hsu |  Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>

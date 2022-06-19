@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>explainer on Neverland</title>
+    <link>https://type.cyhsu.xyz/tags/explainer/</link>
+    <description>Recent content in explainer on Neverland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Platy Hsu</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/explainer/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给你的 Markdown 挑挑刺——语法检查器入门与进阶</title>
+      <link>https://type.cyhsu.xyz/2022/03/markdown-linter-a-primer/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/03/markdown-linter-a-primer/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which is made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. Note, redux: This article is another installment in my (informal and implied) series of “nitpicking workflows for writing.” The previous posts in this bucket were concerning misuses and abuses of punctuation marks (2018), hyperlinks (2020), and formatting (2021). I humbly offer these</description>
+    </item>
+    
+    <item>
+      <title>Mac 的内置硬盘「作弊」了吗？</title>
+      <link>https://type.cyhsu.xyz/2022/03/mac-ssd-cheating/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2022/03/mac-ssd-cheating/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, in three installments (part I, II, and III), of which the first was made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 一 Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内</description>
+    </item>
+    
+    <item>
+      <title>Mac 的内置硬盘「作弊」了吗？</title>
+      <link>https://type.cyhsu.xyz/unpublished/2022/03/mac-ssd-cheating/</link>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/unpublished/2022/03/mac-ssd-cheating/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, in three installments (part I, II, and III), of which the first was made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 一 Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内</description>
+    </item>
+    
+  </channel>
+</rss>

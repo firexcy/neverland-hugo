@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -65,13 +65,13 @@
 <p>我在之前的文章中提到，PDF 格式是「不识字」的。在显示文字时，阅读器只是机械地根据 PDF 语句的指令，将字体资源中特定码位的字形绘制在坐标指定的位置，而并不关心自己画出来的到底是什么字。只有在进行复制、搜索等操作时，PDF 才会根据内嵌的 CMap，将内部字体的编码和 Unicode 编码对应起来。因此，如果 CMap 缺失或损坏，就无法从 PDF 中正常复制文字，但并不影响文档的外观。</p>
 <p><img src="https://cl.ly/1b5446/pdf-encoding.png" alt="PDF 中文本编码的原理"></p>
 <p>这次的问题会不会也跟 CMap 有关呢？这就要查看 PDF 的源码才能知道。不过，大多数 PDF 都经过压缩，用文本编辑器直接打开是不可读的。为此，我们首先用 <a href="http://qpdf.sourceforge.net"><code>qpdf</code></a> 将其解压：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">qpdf --stream-data=uncompress sspai.pdf sspai_unzip.pdf
-</code></pre></div><p>这样，就可以用任意文本编辑器打开查看代码了。但即使如此，PDF 的源码结构也很混乱，从头翻看很难找到头绪。因此，我们可以找准一个小处入手——例如标题中的这个「工」字。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>qpdf --stream-data=uncompress sspai.pdf sspai_unzip.pdf
+</span></span></code></pre></div><p>这样，就可以用任意文本编辑器打开查看代码了。但即使如此，PDF 的源码结构也很混乱，从头翻看很难找到头绪。因此，我们可以找准一个小处入手——例如标题中的这个「工」字。</p>
 <p>查询 <a href="https://unicode-table.com/en/5DE5/">Unicode 字符表</a>，可以知道「工」字的编码是 <code>U+5DE5</code>。既然 PDF 中有「工」字，那么源码中的某处一定会提到 <code>5de5</code> 这个编码。确实，简单搜索一下就可以找到这么一段：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">1 beginbfchar
-&lt;0ae1&gt;&lt;2f2f 5de5&gt;
-endbfchar
-</code></pre></div><p>其中，<code>beginbfchar</code> 和 <code>endbfchar</code> 正是 CMap 所用的语句。根据 PDF 语法，它表明 PDF <strong>内嵌字体</strong>中编码为 <code>0ae1</code> 的字形，对应 Unicode 编码为 <code>U+2F2F</code> 和 <code>U+5DE5</code> 的两个字符。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1 beginbfchar
+</span></span><span style="display:flex;"><span>&lt;0ae1&gt;&lt;2f2f 5de5&gt;
+</span></span><span style="display:flex;"><span>endbfchar
+</span></span></code></pre></div><p>其中，<code>beginbfchar</code> 和 <code>endbfchar</code> 正是 CMap 所用的语句。根据 PDF 语法，它表明 PDF <strong>内嵌字体</strong>中编码为 <code>0ae1</code> 的字形，对应 Unicode 编码为 <code>U+2F2F</code> 和 <code>U+5DE5</code> 的两个字符。</p>
 <p><img src="https://cl.ly/824412/locating.png" alt="PDF 源码中提及的「工」字 Unicode 编码"></p>
 <p>奇怪了，为什么是<strong>两个</strong>字符？</p>
 <p>我们已经知道，<code>U+5DE5</code> 就是汉字「工」，那这个多出来的 <code>U+2F2F</code> 又是什么？再次<a href="https://unicode-table.com/en/2F2F/">查询 Unicode 表</a>，会发现 <code>U+2F2F</code> 竟然也是「工」。这两个字符是什么关系？它们是一回事吗？</p>

@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -89,8 +89,8 @@
 <h3 id="阅读列表的工作原理">阅读列表的工作原理</h3>
 <p>在介绍具体的方法之前，首先铺垫一下阅读列表的工作原理。在实现层面，Safari 阅读列表是与 Safari 书签一起存放和同步的。实际上，阅读列表不过是收藏夹中一个特殊的文件夹。</p>
 <p>在 macOS 上，阅读列表的路径位于 <code>~/Library/Safari/Bookmarks.plist</code>。原始状态下，该 plist 文件是以二进制格式存储的；我们可以通过</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">plutil -convert xml1 -o Bookmarks.xml Bookmarks.plist
-</code></pre></div><p>转换出一份可读的 XML 格式副本以观察其内部结构。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>plutil -convert xml1 -o Bookmarks.xml Bookmarks.plist
+</span></span></code></pre></div><p>转换出一份可读的 XML 格式副本以观察其内部结构。</p>
 <p><img src="https://cl.ly/f14bba/bookmarks_internal.png" alt="转换为 XML 后的阅读列表文件结构"></p>
 <p>转换为 XML 后的阅读列表文件结构</p>
 <p>可以看到，针对每条阅读列表中的链接，Safari 存储的信息包括其标题、URL、摘要、缩略图链接、添加日期和最近打开日期等。从 <code>ReadingListNonSync</code> 这一子键名称及其包含的内容还可以看出，阅读列表中网页的缓存是不会被同步的，每台设备都会自己重新抓取一次网页信息及其缓存。（网页缓存位于 <code>~/Library/Safari/ReadingListArchives</code> 目录下，以 <a href="https://en.wikipedia.org/wiki/Webarchive">Web Archive</a> 格式存储。）</p>
@@ -101,8 +101,8 @@
 <h3 id="解析-bookmarksplist-文件">解析 <code>Bookmarks.plist</code> 文件</h3>
 <p>对于 (a)，GitHub 上可以找到现成的解决方案：<a href="https://github.com/anoved/ReadingListReader"><code>ReadingListReader</code></a>。这是一组基于 Python 的脚本，其功能正是解析 <code>Bookmarks.plist</code> 文件并将其导出为 HTML、CSV 格式，或者发送到 Pocket/Instapaper/Pinboard。</p>
 <p>以导出到 Pocket 为例。先在 <a href="https://getpocket.com/developer/apps/">Pocket 网站</a>上新建一个私人应用，保存得到的 Consumer Key。接着，编辑上述项目中的 <code>readinglist2pocket.py</code> 文件，填入该 Consumer Key。这样，就可以通过在终端运行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ReadingListReader $ python ./readinglist2instapaper.py
-</code></pre></div><p>将阅读列表导出到 Pocket。导出到 Pinboard 或 Instapaper 的方法同理，在此不赘。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ReadingListReader $ python ./readinglist2instapaper.py
+</span></span></code></pre></div><p>将阅读列表导出到 Pocket。导出到 Pinboard 或 Instapaper 的方法同理，在此不赘。</p>
 <h3 id="监控-bookmarksplist-文件的变动">监控 <code>Bookmarks.plist</code> 文件的变动</h3>
 <p>剩下的问题就是如何监控阅读列表的变动，实现新增链接时自动通过上述脚本发送到第三方服务。最简单的方法是使用 Hazel。在 Hazel 中，新建一条针对 <code>~/Library/Safari</code> 文件夹的规则，并设定两个匹配条件：</p>
 <ol>
@@ -123,33 +123,32 @@
 <p>阅读列表不擅长处理需要跳转的特殊 URL</p>
 <p>我的解决方法是引入 Mercury。Mercury 原本是一个在线 API，很多 RSS 工具曾经用它来抓取全文。但其提供方前不久宣布停止提供服务，转而将代码<a href="https://github.com/postlight/mercury-parser">开源</a>在 GitHub 上供人自行搭建使用。对于本文的目的而言，这倒不是坏事，因为在本地运行代码的效率反而更高。</p>
 <p>Mercury 是基于 JavaScript 的，首先使用</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">npm -g install @postlight/mercury-parser
-</code></pre></div><p>将其安装到系统中（依赖于 <a href="https://nodejs.org/en/"><code>npm</code></a>）。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>npm -g install @postlight/mercury-parser
+</span></span></code></pre></div><p>将其安装到系统中（依赖于 <a href="https://nodejs.org/en/"><code>npm</code></a>）。</p>
 <p>然后，可以试着在终端执行 <code>mercury-parser [网址]</code> 来测试能否正常运行。</p>
 <p><img src="https://cl.ly/a100cc/mercury-parser.jpeg" alt="Mercury 正确获取了跳转 URL 指向的原始网页相关信息"></p>
 <p>Mercury 正确获取了跳转 URL 指向的原始网页相关信息</p>
 <p>Mercury 的解析结果以 JSON 格式输出，其中对本文有意义的是 <code>url</code>（原始链接）、<code>title</code>（网页标题） 和 <code>excerpt</code>（文章摘要）这三个键。为了在 Python 脚本中调用 Mercury 及其输出结果，需要对原始代码作一些修改：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">from readinglistlib import ReadingListReader
-import urllib
-import subprocess # 用于运行 Mercury 终端命令
-import json # 用于解析 Mercury 输出结果
-
-auth_token = &#39;REPLACE_WITH_YOUR_API&#39;; # 替换为你自己的 API Key
-api_url = &#39;https://api.pinboard.in/v1/posts/add?&#39;
-
-rlr = ReadingListReader()
-bookmarks = rlr.read()
-for bookmark in bookmarks:
-  parser = json.loads(subprocess.check_output([&#34;mercury-parser&#34;, bookmark[&#39;url&#39;]])) # 将脚本解析出的阅读列表链接提供给 Mercury 并获取其输出
-  params = urllib.urlencode({
-	&#39;url&#39;: parser[&#39;url&#39;].encode(&#39;utf-8&#39;),
-	&#39;description&#39;: parser[&#39;title&#39;].encode(&#39;utf-8&#39;),
-	&#39;extended&#39;: parser[&#39;excerpt&#39;].encode(&#39;utf-8&#39;),
-	&#39;toread&#39;: &#39;yes&#39;,
-	&#39;auth_token&#39;: auth_token}) # 将 Mercury 的解析结果作为参数传输给 Pinboard 的 API
-  urllib.urlopen(api_url + params)
-
-</code></pre></div><p>你可以在<a href="https://cl.ly/824ae2/readinglist2pinboard_mercury.py">这里</a>找到我修改好的脚本。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>from readinglistlib import ReadingListReader
+</span></span><span style="display:flex;"><span>import urllib
+</span></span><span style="display:flex;"><span>import subprocess # 用于运行 Mercury 终端命令
+</span></span><span style="display:flex;"><span>import json # 用于解析 Mercury 输出结果
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>auth_token = &#39;REPLACE_WITH_YOUR_API&#39;; # 替换为你自己的 API Key
+</span></span><span style="display:flex;"><span>api_url = &#39;https://api.pinboard.in/v1/posts/add?&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rlr = ReadingListReader()
+</span></span><span style="display:flex;"><span>bookmarks = rlr.read()
+</span></span><span style="display:flex;"><span>for bookmark in bookmarks:
+</span></span><span style="display:flex;"><span>  parser = json.loads(subprocess.check_output([&#34;mercury-parser&#34;, bookmark[&#39;url&#39;]])) # 将脚本解析出的阅读列表链接提供给 Mercury 并获取其输出
+</span></span><span style="display:flex;"><span>  params = urllib.urlencode({
+</span></span><span style="display:flex;"><span>	&#39;url&#39;: parser[&#39;url&#39;].encode(&#39;utf-8&#39;),
+</span></span><span style="display:flex;"><span>	&#39;description&#39;: parser[&#39;title&#39;].encode(&#39;utf-8&#39;),
+</span></span><span style="display:flex;"><span>	&#39;extended&#39;: parser[&#39;excerpt&#39;].encode(&#39;utf-8&#39;),
+</span></span><span style="display:flex;"><span>	&#39;toread&#39;: &#39;yes&#39;,
+</span></span><span style="display:flex;"><span>	&#39;auth_token&#39;: auth_token}) # 将 Mercury 的解析结果作为参数传输给 Pinboard 的 API
+</span></span><span style="display:flex;"><span>  urllib.urlopen(api_url + params)
+</span></span></code></pre></div><p>你可以在<a href="https://cl.ly/824ae2/readinglist2pinboard_mercury.py">这里</a>找到我修改好的脚本。</p>
 <p>最后，将 Hazel 的匹配后动作改为执行该脚本，就可以获得比较即时和完善的同步结果。</p>
 <p><img src="https://cl.ly/cf7dd7/instant-save.gif" alt=""></p>
 

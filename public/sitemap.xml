@@ -2,56 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://type.cyhsu.xyz/tags/internet/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/law/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://type.cyhsu.xyz/</loc>
-    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/posts/</loc>
-    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/04/twitter-merger-explained/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/explainer/</loc>
+    <lastmod>2022-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/markdown/</loc>
+    <lastmod>2022-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/03/markdown-linter-a-primer/</loc>
+    <lastmod>2022-03-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/03/webdav-services-compared/</loc>
+    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/unpublished/2022/03/webdav-services-compared/</loc>
+    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/academic/</loc>
+    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/review/</loc>
+    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/unpublished/</loc>
+    <lastmod>2022-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/03/mac-ssd-cheating/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/unpublished/2022/03/mac-ssd-cheating/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/macos/</loc>
+    <lastmod>2022-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/03/safari-export-link/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/ios/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/tutorial/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/unpublished/2022/03/safari-export-link/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/02/time-to-run/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/wellness/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2022/02/ones-podcast-feedback-2022/</loc>
     <lastmod>2022-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/categories/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/categories/translations/</loc>
+    <loc>https://type.cyhsu.xyz/tags/translations/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2022/02/write-in-garamond/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/categories/post/</loc>
-    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
+    <loc>https://type.cyhsu.xyz/2022/01/whitelisted-news-custom-search/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/workflow/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/unpublished/2022/01/whitelisted-news-custom-search/</loc>
+    <lastmod>2022-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2022/01/apple-report-card-2021-cn/</loc>
+    <lastmod>2022-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/apple/</loc>
+    <lastmod>2022-01-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/12/linking-manifesto/</loc>
     <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/book/</loc>
-    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/</loc>
-    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/2021/12/hypertext-and-hyperlinks-excerpts-notes/</loc>
     <lastmod>2021-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/2021/12/spay-outing-2021/</loc>
-    <lastmod>2021-12-13T00:00:00+00:00</lastmod>
+    <loc>https://type.cyhsu.xyz/tags/book/</loc>
+    <lastmod>2021-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/12/understand-log4shell-exploit/</loc>
+    <lastmod>2021-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2021/12/spay-outing-2021/</loc>
     <lastmod>2021-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/12/finde-toolbar-add-app-folder-icons/</loc>
     <lastmod>2021-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/macos/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
+    <loc>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</loc>
+    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/automation/</loc>
+    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/tags/shortcuts/</loc>
+    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/2021/11/quick-ideas-shortcuts/</loc>
+    <lastmod>2021-11-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/unpublished/2021/11/quick-ideas-shortcuts/</loc>
+    <lastmod>2021-11-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/11/test-network-connectivity-with-macos-builtin-tools/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/tutorial/</loc>
-    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/11/m1-mac-win11-vm/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
@@ -65,9 +143,6 @@
     <loc>https://type.cyhsu.xyz/tags/eink/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/review/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/2021/09/hisense-touch-quick-review/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -79,6 +154,12 @@
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/08/word-numbering-internals/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/categories/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/categories/translations/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2021/08/are-you-allowed-to-criticize-simone-biles-a-decision-tree/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
@@ -137,14 +218,8 @@
     <loc>https://type.cyhsu.xyz/2020/12/use-homebred-on-m1-macs/</loc>
     <lastmod>2020-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/translations/</loc>
-    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/2020/11/snowed-under/</loc>
     <lastmod>2020-11-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/apple/</loc>
-    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2020/10/apple-watch-analog-faces-the-missing-manual/</loc>
     <lastmod>2020-10-31T00:00:00+00:00</lastmod>
@@ -176,9 +251,6 @@
     <loc>https://type.cyhsu.xyz/2020/07/wwdc-2020-unfinished-answer-on-the-future-of-mac/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/automation/</loc>
-    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/2020/06/make-signature-pages-with-shell-script/</loc>
     <lastmod>2020-06-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -196,9 +268,6 @@
   </url><url>
     <loc>https://type.cyhsu.xyz/2020/03/ruffood-new-versions/</loc>
     <lastmod>2020-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/law/</loc>
-    <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/tags/productivity/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
@@ -260,16 +329,13 @@
     <loc>https://type.cyhsu.xyz/2019/06/letter-of-recommendation-bug-fixes/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/ios/</loc>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/2019/05/what-to-expect-from-marzipan/</loc>
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/typography/</loc>
+    <loc>https://type.cyhsu.xyz/2019/04/how-to-style-multiple-step-procedures/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/2019/04/how-to-style-multiple-step-procedures/</loc>
+    <loc>https://type.cyhsu.xyz/tags/typography/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2019/04/digging-safari-reading-list/</loc>
@@ -280,9 +346,6 @@
   </url><url>
     <loc>https://type.cyhsu.xyz/2019/04/apple-news-plus-review/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://type.cyhsu.xyz/tags/internet/</loc>
-    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2019/02/2018-review-art-of-forsaking/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
@@ -320,7 +383,7 @@
     <loc>https://type.cyhsu.xyz/2018/09/understanding-pdf-the-digitalized-paper/</loc>
     <lastmod>2018-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions-2/</loc>
+    <loc>https://type.cyhsu.xyz/2018/07/a-guide-to-compositions/</loc>
     <lastmod>2018-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2018/06/the-developer-migration/</loc>
@@ -446,9 +509,6 @@
     <loc>https://type.cyhsu.xyz/2017/04/macos-drag-to-fullscreen-apps/</loc>
     <lastmod>2017-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/tags/academic/</loc>
-    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/tags/excerpts/</loc>
     <lastmod>2017-04-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -485,10 +545,10 @@
     <loc>https://type.cyhsu.xyz/2017/03/podcast-apps-audio-fx-internals/</loc>
     <lastmod>2017-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/2017/03/fake-news-pinterest-announcing-to-exit-china/</loc>
+    <loc>https://type.cyhsu.xyz/2017/03/ways-to-build-a-personal-reading-list/</loc>
     <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/2017/03/ways-to-build-a-personal-reading-list/</loc>
+    <loc>https://type.cyhsu.xyz/2017/03/fake-news-pinterest-announcing-to-exit-china/</loc>
     <lastmod>2017-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2017/02/only-human/</loc>
@@ -539,9 +599,6 @@
     <loc>https://type.cyhsu.xyz/2016/02/security-v-privacy/</loc>
     <lastmod>2016-02-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://type.cyhsu.xyz/categories/portfolio/</loc>
-    <lastmod>2016-02-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://type.cyhsu.xyz/2016/02/i-am-your-father/</loc>
     <lastmod>2016-02-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -573,6 +630,9 @@
     <lastmod>2015-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://type.cyhsu.xyz/2015/04/graphic-design-the-life-of-law/</loc>
+    <lastmod>2015-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://type.cyhsu.xyz/categories/portfolio/</loc>
     <lastmod>2015-04-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>

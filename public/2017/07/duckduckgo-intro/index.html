@@ -21,7 +21,7 @@
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.13f2ad8d0d59de1e546df889540293b892e79f7bec9a0216e9984d00229472fc.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://type.cyhsu.xyz/css/main.8b38b0d7da617241fb660b4f8156d9438a76c98131881f7a02553b711ac2ac70.css" />
 	
 	
 </head>
@@ -80,8 +80,8 @@
 <h4 id="211-基础搜索与-url-参数">2.1.1 基础搜索与 URL 参数</h4>
 <p>DuckDuckGo 最基础的搜索功能与其他主流产品别无二致，对常见的 <code>OR</code>、<code>-</code>、<code>site:</code>、<code>filetype:</code> 等<a href="https://duck.co/help/results/syntax">语法</a>也有良好支持，搜索结果页亦支持通过语言、更新时间等参数进一步过滤结果，不会给从其他搜索引擎切换来的用户施加额外的学习成本。</p>
 <p>对于进阶用户，DuckDuckGo 也支持通过在 URL 上附加参数（parameter）的方式进行高级搜索。例如，下面的 URL：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"> https://duckduckgo.com/?q=wikipedia&amp;kp=0&amp;kl=cn-zh
-</code></pre></div><p>将会发起一次关键词为「wikipedia」（<code>q=wikipedia</code>）、不过滤搜索结果（<code>kp=0</code>）、地区范围为中国（<code>kl=cn-zh</code>）的搜索。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> https://duckduckgo.com/?q=wikipedia&amp;kp=0&amp;kl=cn-zh
+</span></span></code></pre></div><p>将会发起一次关键词为「wikipedia」（<code>q=wikipedia</code>）、不过滤搜索结果（<code>kp=0</code>）、地区范围为中国（<code>kl=cn-zh</code>）的搜索。</p>
 <p><img src="https://ww1.sinaimg.cn/large/73403117ly1fhsqrvq968j223w16gn29.jpg" alt="DuckDuckGo URL 参数"></p>
 <p>但与 Google 等具备类似功能的搜索引擎不同的是，DuckDuckGo 不仅支持通过 URL 参数定义搜索的<strong>方式</strong>，而且支持定义搜索页面的<strong>行为</strong>（如是否在新标签页中打开链接）和<strong>外观</strong>（如主题背景）。（可以在 DuckDuckGo 的<a href="https://duckduckgo.com/params">文档</a>中找到全部可用的参数。）</p>
 <p>这就进一步提高了使用自定义搜索引擎或启动器 app 调用 DuckDuckGo 时的灵活性。举一例以抛砖引玉：使用 iOS 上的 Workflow 调用 DuckDuckGo 搜索时，只要加上一个基于当前时间的 if 判断，当运行时间为夜间时，在打开的搜索 URL 尾部附加上 <code>&amp;kae=d</code>（意为启用暗色主题）这一参数，就可以达到自动「夜间模式」的效果。</p>
@@ -130,8 +130,8 @@
 <p>调用默认之外的其他搜索引擎是一个非常经典且常见的需求，现有的解决方案也很成熟，如在 Mac 上利用 Alfred、LaunchBar 等启动器的自定义动作，在 iOS 上利用 Drafts、Launch Center Pro 等可启动自定义 URL 的 app 等。但 DuckDuckGo 直接将这个功能放进了搜索引擎里，并将其称为 <strong>Bangs</strong>。不夸张地说，这个功能填平了将其真正作为默认搜索引擎的最后一道障碍。</p>
 <p><img src="https://ww1.sinaimg.cn/large/73403117ly1fhsqrvwww7j223w1kw0z6.jpg" alt="Bangs 功能"></p>
 <p>Bang 的运行机制很简单，只要在你的搜索关键词之前（或结尾）加上一个以半角感叹号 <code>!</code> 开头的标识符（称为 <strong>bang</strong>），DuckDuckGo 就会替你调用这个 bang 所指向的搜索引擎或网站进行搜索。例如，如果你搜索：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">!g Wikipedia
-</code></pre></div><p>DuckDuckGo 就会跳转到 Google 搜索 Wikipedia 这个关键词。类似地，<code>!bd</code>、<code>!bing</code> 会分别将你跳转到百度或必应进行搜索。这样一来，如果你对 DuckDuckGo 的某次搜索的准确度抱有怀疑、或想通过比较各个搜索引擎的结果获得最多的信息，只要在 DuckDuckGo 的搜索框中就能完成，无须借助其他工具。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>!g Wikipedia
+</span></span></code></pre></div><p>DuckDuckGo 就会跳转到 Google 搜索 Wikipedia 这个关键词。类似地，<code>!bd</code>、<code>!bing</code> 会分别将你跳转到百度或必应进行搜索。这样一来，如果你对 DuckDuckGo 的某次搜索的准确度抱有怀疑、或想通过比较各个搜索引擎的结果获得最多的信息，只要在 DuckDuckGo 的搜索框中就能完成，无须借助其他工具。</p>
 <p>上述只是 Bangs 功能最简单的应用。事实上，DuckDuckGo 目前支持的 Bang 语法已经接近五位数个，而且还在不断增加，其覆盖面之广超乎想象。这里只举几个常用的例子：</p>
 <ul>
 <li>指定类型搜索：<code>!gi</code>（Google 图片搜索）、<code>!itunes</code>（iTunes 搜索）</li>
@@ -141,10 +141,10 @@
 <p>你可以在 <a href="https://duckduckgo.com/bang">Bangs 功能的页面</a>看到所有的语法，如果其中没有你想要的，还可以<a href="https://duckduckgo.com/newbang">自行提交建议</a>来新增语法。</p>
 <p>当然，从技术实现的角度看，Bangs 功能并没有什么高深之处——无非就是识别特定关键词并转发到其他网站，起一个「跳板」作用罢了。然而，仔细思考就会发现，这个简单的「跳板」正是该功能真正的价值所在。</p>
 <p>首先，通过 Bangs 转发的搜索是<strong>完全匿名</strong>的。当你用 Bangs 发起搜索时，目标网站收到的请求是来自 DuckDuckGo 而非你本人，因此它无法将这次搜索与你关联起来，也就无法据此为你「画像」，进行追踪、广告推荐等后续行为。因此，即使你完全不用 DuckDuckGo 来搜索，也可以利用 Bangs 这个跳板来处理日常的搜索需求，只要修改你的浏览器/启动器中的搜索引擎 URL 即可。例如，我就将 LaunchBar 中 Google 搜索的 URL 从：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://www.google.com/search?q=*
-</code></pre></div><p>换成了：</p>
-<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://duckduckgo.com/?q=!g%20*
-</code></pre></div><p>其中，<code>%20</code> 是 URL 编码中表达空格的方式，<code>*</code> 是 LaunchBar 自定义搜索引擎中代表关键词部分的占位符，对应的占位符在 Alfred 中是 <code>{query}</code>，在 iOS 上的 Pin 中则是 <code>%@</code>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://www.google.com/search?q=*
+</span></span></code></pre></div><p>换成了：</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://duckduckgo.com/?q=!g%20*
+</span></span></code></pre></div><p>其中，<code>%20</code> 是 URL 编码中表达空格的方式，<code>*</code> 是 LaunchBar 自定义搜索引擎中代表关键词部分的占位符，对应的占位符在 Alfred 中是 <code>{query}</code>，在 iOS 上的 Pin 中则是 <code>%@</code>。</p>
 <p>其次，Bangs 是整合在搜索引擎之中的，不依赖于特定的 app。这意味着只要将 DuckDuckGo 设为默认搜索引擎，只靠浏览器的地址栏就可以实现原本需要其他效率工具辅助才能实现的功能。在移动端，这样的优势体现得格外明显：比起以往要下拉通知中心/退回主屏启动 Launch Center Pro 才能调用其他搜索引擎的繁琐操作，我现在可以随时在 Safari 以至 Spotlight 中用 Google 香港（<strong>而不是 Google 日本</strong>，相信有特定需求的读者知道我为什么这么说）或百度发起一次搜索。如果嫌中文状态下输入半角感叹号不方便，还可以通过在 iOS 的键盘设置中将 <code>vghk</code> 替换为 <code>!ghk</code>、<code>vbb</code> 替换为 <code>!bd</code> 等，进一步提高效率。</p>
 <p>话虽如此，Bangs 功能也有其不足：由于搜索请求经过 DuckDuckGo 的转发，使用中会明显感到一个停顿过程，没有直接搜索来得迅速；而且，如果你无法正常访问 DuckDuckGo，即使搜索目标是连接通畅的网站，等着你的也只有 404 而已。当然，这还是为了隐私和「自由」必须付出的代价；孰轻孰重，就是你自己的选择了。</p>
 <h2 id="3-题外话">3. 题外话</h2>

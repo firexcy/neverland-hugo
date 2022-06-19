@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Platy Hsu</copyright>
-    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/automation/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://type.cyhsu.xyz/tags/automation/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Preview] 条条大路通罗马：细数 macOS 版「快捷指令」的运行方式</title>
+      <link>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://type.cyhsu.xyz/2021/11/macos-shortcuts-methods-of-execution/</guid>
+      <description>Note: This article was published as a member-exclusive post for SSPAI Prime, which you may find here; the content below is a selected preview thereof. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support. 快捷指令的加入拓宽了 macOS 自动化的疆域。但对于任何自动化方案而言，一个基本的评价标准是运行是否方便——只有「随叫随到」的</description>
+    </item>
+    
     <item>
       <title>用 Shell 脚本制作签字页</title>
       <link>https://type.cyhsu.xyz/2020/06/make-signature-pages-with-shell-script/</link>
