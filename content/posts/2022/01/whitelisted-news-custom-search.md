@@ -1,5 +1,5 @@
 ---
-title: "[Preview] 为了「派早报」不翻车，我们做个了官方新闻搜索引擎"
+title: "[Preview] 为了「派早报」不翻车，我们做了个官方新闻搜索引擎"
 date: 2022-01-18
 tags:
   - "tutorial"
