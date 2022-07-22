@@ -1,7 +1,6 @@
 ---
 title: "康熙来了"
 date: 2022-07-22T17:59:51+08:00
-draft: true
 ---
 
 [ Note: The post was originally written for the [launch edition](https://sspai.com/prime/story/pi-weekly-001) of *Pi Weekly*, a column of SSPAI’s member subscription that summarizes premium posts published during the current week, lead with an explainer or commentary of recent tech news. If you’re interested by the post, please consider [purchasing](https://dwurl.cn/nWnn38) a subscription. Thanks for your support. ]
