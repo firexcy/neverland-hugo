@@ -18,6 +18,14 @@ html {
   line-height: 1.7;
 }
 
+header {
+  align-items:baseline;
+}
+
+nav {
+  font-variant: small-caps;
+}
+
 body {
   display: block;
   margin: 8px;
@@ -176,6 +184,9 @@ header {
 
 header .main {
   font-size: 1.5rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
 }
 
 h1,
