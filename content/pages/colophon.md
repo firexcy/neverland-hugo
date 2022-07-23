@@ -104,7 +104,7 @@ For two reasons:
 
 *The philosophical reason* is the separation of language can serve as a [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). As the mother tongue, Chinese can sometimes feel too intimate and natural to express in candidly. Modern Chinese is also becoming regretfully meme- and Newspeak-liked, lacking the tool to write seriously and analytically with. English, though not without problem of its own, provides an alternative for a cowardly, escapist, or cynical me to think and write in. See also Yiyun Li’s [*To Speak Is to Blunder*](https://www.newyorker.com/magazine/2017/01/02/to-speak-is-to-blunder), one of my favorite essays of all time.
 
-### How is this site built?
+### Making-of?
 
 As of February 2022, *Neverland* is built with Hugo and hosted on Netlify. Prior to that, it was a self-hosted instance of WordPress. I may write about the rationale and process when time permits, but the gist is that the WordPress’ block-based [Gutenberg](https://wordpress.org/gutenberg/) experience turns out to be too voracious for my low-end virtual box and too fiddly for me as a minimalist. On the other hand, the static site generators and serverless providers have really come a long way since my previous flirting with Hexo. That you can set up a simple blog, certificated and CDN’d in minutes is no longer a goal, but a given.
 
