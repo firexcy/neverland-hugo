@@ -22,7 +22,7 @@ UX 设计师 [Jeremy Rosenberg](http://www.jeremyrosenberg.co.uk/) 是 Dark Patt
 
 网络作为交互途径的本质、越来越精明的公司、用户直线上升的上网时间——把这几点结合起来，你就掌握了制造阴招、兴风作浪的窍门。而且，一旦理解了这种欺骗行为，你就会发现它近乎无处不在。
 
-![](http://ww2.sinaimg.cn/large/73403117gw1f6daa2oxehj20r80olgri.jpg)
+![](https://cdn.arstechnica.net/wp-content/uploads/2016/07/BA-980x885.jpg)
 
 > 排在最上面的机票最便宜，不是吗？是吗？
 > 
@@ -42,7 +42,7 @@ UX 设计师 [Jeremy Rosenberg](http://www.jeremyrosenberg.co.uk/) 是 Dark Patt
 
 Brignull 说，虽然直接欺骗和糟糕设计之间的界限往往难以区分，「但是有的网站明显是故意的。要说他们只是不小心，那未免也太不小心了。」他举了「波士顿环球」（_The Boston Globe_）的例子：因为用了好几种阴招，这家网站[最近被公开揪了出来](https://rationalconspiracy.com/2016/04/24/dark-patterns-by-the-boston-globe/)。它的恶行之一就是向订户隐瞒涨价，把费率隐藏在网站的常见问题板块中。
 
-![](http://ww2.sinaimg.cn/large/73403117gw1f6daa26hi0j20r80jw763.jpg)
+![](https://cdn.arstechnica.net/wp-content/uploads/2016/07/ArsMagic-980x716.jpg)
 
 > 一样是玩弄机关的好手，20 世纪 80 年代英国魔术师 Paul Daniels 的机关却不会害人，还能带来乐趣。
 > 

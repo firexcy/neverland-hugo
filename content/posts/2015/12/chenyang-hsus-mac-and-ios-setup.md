@@ -5,7 +5,7 @@ tags:
   - "apple"
 ---
 
-_This interview was first seen on [The Sweet Setup](http://thesweetsetup.com/chenyang-hsus-mac-and-ios-setup/) and edited by Jeffrey Abbott. Some of my setups have changed or are subject to changes with time._
+_This interview was first seen on [The Sweet Setup](https://thesweetsetup.com/chenyang-hsus-mac-and-ios-setup/) and edited by Jeffrey Abbott. Some of my setups have changed or are subject to changes with time._
 
 ### Who are you and what do you do?
 
@@ -15,7 +15,7 @@ In my free time, I work in student union in charge of the department of publicit
 
 ### What is your current setup?
 
-![Chenyang Hsu's desk](http://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-setup-01.jpg)
+![Chenyang Hsu's desk](https://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-setup-01.jpg)
 
 My current setup is an early-2015 13″ Retina MacBook Pro with 8GB memory and 256GB storage. In fact, I was using a MacBook Air until this July. I really love the Air’s thin and light design, but since all my other devices are Retina, it feels strange when I switch from iPhone to Mac, as if my eyesight is worsened; moreover, its color reproduction always deviates from what it is meant to be, which is disturbing for my design work. So, I decided to upgrade, and that turned out to be a wise choice.
 
@@ -23,7 +23,7 @@ My Mac setup is companied with a [Bluelounge Kickflip](http://www.amazon.com/gp/
 
 ### Where can we find your OS X wallpaper?
 
-I’m always trying to make my devices work together, and for that I can set a unified HD wallpaper for them. With thousands of stock photos, [Unsplash](http://thesweetsetup.com/chenyang-hsus-mac-and-ios-setup/unsplash.com) is my first choice to find new wallpapers, [including the current one](https://unsplash.com/photos/Swlm_w1hdMs).
+I’m always trying to make my devices work together, and for that I can set a unified HD wallpaper for them. With thousands of stock photos, [Unsplash](https://thesweetsetup.com/chenyang-hsus-mac-and-ios-setup/unsplash.com) is my first choice to find new wallpapers, [including the current one](https://unsplash.com/photos/Swlm_w1hdMs).
 
 ### What software do you use and for what do you use it?
 
@@ -31,7 +31,7 @@ As mentioned above, I’m a student and amateur designer, so I have two sets of 
 
 For school, I use [PDF Expert](https://itunes.apple.com/us/app/pdf-expert-by-readdle/id1055273043?mt=12&at=11l7ja&ct=tss), [MindNode](https://itunes.apple.com/us/app/mindnode-2-delightful-mind/id992076693?mt=12&at=11l7ja&ct=tss), [MWeb](https://itunes.apple.com/us/app/mweb-pro-markdown-writing/id954188948?mt=12&at=11l7ja&ct=tss) and Pages. I have to read a lot of PDF documents for law school, and many of them are scanned versions, consisting of hundreds of pictures. PDF Expert is the only one I found thus far that shows no latency when scrolling between pages.
 
-![Chenyang Hsu's desk](http://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-setup-03.jpg)
+![Chenyang Hsu's desk](https://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-setup-03.jpg)
 
 Before I’m going to write something, I use MindNode to organise my thoughts and “draw” the outline down. I consider it the most simple but elegant app in the mind-mapping category.
 
@@ -49,7 +49,7 @@ I’m quite satisfied with my current setup because it keeps a great balance bet
 
 ### What iPhone do you have?
 
-![Chenyang Hsu's iPhone](http://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-iphone.jpg)
+![Chenyang Hsu's iPhone](https://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-iphone.jpg)
 
 I upgraded to a 64GB iPhone 6s the day it launched, and I found its faster A9 chip and 3D Touch helps boost productivity. I chose the space gray model, which might be the least prevalent in China where many people consider the gold (along with the new rose gold option) as their first choice. But, as mentioned in [a recent episode of ATP](http://atp.fm/episodes/139), black is for Pro, and I’m really fascinated with the feeling of integrity that the dark screen and frame blend seamlessly with each other. I chose the 4.7″ size for its better single-hand control and lighter weight.
 
@@ -69,7 +69,7 @@ For the rest, I use [Drafts](https://itunes.apple.com/us/app/drafts-4-quickly-ca
 
 And, please allow me to show you my Today screens. My iPhone can’t be a handy and productive tool without these versatile widgets.
 
-![Chenyang's Today screens](http://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-iphone-today.jpg)
+![Chenyang's Today screens](https://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-iphone-today.jpg)
 
 ### Which app could you not live without?
 
@@ -81,7 +81,7 @@ _Editor’s note: [Surge was removed from the App Store](http://technode.com/201
 
 ### Which iPad do you have?
 
-![Chenyang Hsu's iPad](http://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-ipad.jpg)
+![Chenyang Hsu's iPad](https://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-ipad.jpg)
 
 I have a space gray iPad Air 2, 64GB. I also considered an iPad mini, but since I have to read a lot of A4-sized PDFs, a larger screen frees me from frequent resizing. Also, the Air 2’s performance has never disappointed me and I’ll be happy to work with it for another several months until the next iPad Air launches (I’ve tried iPad Pro, but determined it wasn’t for me).
 
@@ -89,7 +89,7 @@ I have a space gray iPad Air 2, 64GB. I also considered an iPad mini, but since 
 
 If my Mac is for productivity, and my iPhone is for personal management and communication, then my iPad is for content consumption and note-taking. It’s an all-day device for me: during breakfast, I use it to check my RSS feeds and emails. When I attend a class, I’ll pack it with a [Logitech Keys-to-go keyboard](http://www.amazon.com/gp/product/B00R0I71S4/ref=nosim&tag=sweetsetup-20) instead of my MacBook, which is a relief to my shoulders.
 
-![Chenyang Hsu's iPad and keyboard](http://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-setup-02.jpg)
+![Chenyang Hsu's iPad and keyboard](https://thesweetsetup.com/wp-content/uploads/2015/12/chenyang-xu-setup-02.jpg)
 
 After class, I organise notes and read law cases and papers on it. During my work time, I place it on a stand and use it as a secondary display to view reference content and messaging apps. Before I go to bed, I grab it and browse several webpages or iBooks as an evening ritual.
 
@@ -109,6 +109,6 @@ I have little time for playing games, but I still keep some gorgeous or inspirin
 
 * * *
 
-There are more Sweet Setup interviews right [here](http://thesweetsetup.com/category/sweet-setup-interview/).
+There are more Sweet Setup interviews right [here](https://thesweetsetup.com/category/sweet-setup-interview/).
 
 \-- NORMAL --
