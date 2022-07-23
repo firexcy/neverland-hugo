@@ -1,6 +1,7 @@
 ---
 title: "Apple Fitness+「Time to Run」迷你评测"
 date: "2022-02-23"
+summary: "瑕不掩瑜，Time to Run 给我的整体印象是很不错的，在这轮阴雨中发挥了很好的临时救场作用。尽管等风停雨散后，我还是会回到听播客户外跑的常态；但对于这种在室内蹦跶的偶发需求，我很乐于手边有这样一套水准在线的选择，也推荐订阅了 Apple Fitness+ 的朋友一起尝试。"
 tags:
   - "review"
   - "wellness"

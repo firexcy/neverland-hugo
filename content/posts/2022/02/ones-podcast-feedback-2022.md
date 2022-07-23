@@ -8,11 +8,11 @@ _Previously:_ [给迟早过年的迟早反馈（2021）](https://type.cyhsu.xyz/
 
 * * * * *
 
-```
+```text
 From:    Platy Hsu <me@cyhsu.xyz>
 Subject: 给迟早过年的迟早反馈
 Date:    February 12, 2022 at 11:11 PM
-To:	     embrace@weareones.com
+To:      embrace@weareones.com
 ```
 
 迟早更新的两位主播，

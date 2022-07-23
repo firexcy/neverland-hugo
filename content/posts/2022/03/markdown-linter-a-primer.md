@@ -1,6 +1,7 @@
 ---
 title: "给你的 Markdown 挑挑刺——语法检查器入门与进阶"
 date: 2022-03-25
+summary: "会写 Markdown 的人很多，但写得好 Markdown 的人却很少。有没有什么工具能充当「秘书」，检查文件中的 Markdown 语法和风格，并且提出解决方案、自动修复问题，甚至自动补齐中英文之间的「盘古之白」呢？本文介绍的 Markdown 语法检查器（linter）就能做到。"
 tags:
   - "markdown"
   - "explainer"
@@ -8,7 +9,7 @@ tags:
 
 **Note:** This article was published as a member-exclusive post for [SSPAI Prime](https://sspai.com/prime), which is made [freely available](https://sspai.com/prime/story/markdown-linter-a-primer) as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support.
 
-**Note, redux:** This article is another installment in my (informal and implied) series of “nitpicking workflows for writing.” The previous posts in this bucket were concerning misuses and abuses of [punctuation marks](https://type.cyhsu.xyz/2018/07/a-guide-to-compositions/) (2018), [hyperlinks](https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/) (2020), and [formatting](https://type.cyhsu.xyz/2021/03/do-not-shout/) (2021). I humbly offer these as my way of conducting public service.
+This article is also another installment in my (informal and implied) series of “nitpicking workflows for writing.” The previous posts in this bucket were concerning misuses and abuses of [punctuation marks](https://type.cyhsu.xyz/2018/07/a-guide-to-compositions/) (2018), [hyperlinks](https://type.cyhsu.xyz/2020/08/hyperlink-best-practices/) (2020), and [formatting](https://type.cyhsu.xyz/2021/03/do-not-shout/) (2021). I humbly offer these as my way of conducting public service.
 
 ## 引言
 

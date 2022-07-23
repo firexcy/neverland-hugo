@@ -1,6 +1,7 @@
 ---
 title: "Mac 的内置硬盘「作弊」了吗？"
 date: 2022-03-11
+summary: "Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内置固态硬盘相比竞品的性能优势似乎越发明显。在这样的背景下，如果有人站出来说「Mac 的固态硬盘速度有作弊之嫌」，想必会引起不少关注和争议。上个月，这样的讨论确实发生了。"
 tags:
   - "macOS"
   - "explainer"
@@ -9,8 +10,6 @@ tags:
 **Note:** This article was published as a member-exclusive post for [SSPAI Prime](https://sspai.com/prime), in three installments (part [I](https://sspai.com/prime/story/mac-ssd-cheating-1), [II](https://sspai.com/prime/story/mac-ssd-cheating-2), and [III](https://sspai.com/prime/story/mac-ssd-cheating-3)), of which the first was made freely available as a preview and republished here. Please consider subscribing to SSPAI Prime if you find content like this helpful. Thanks for your support.
 
 ## 一
-
-Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内置固态硬盘相比竞品的性能优势似乎越发明显。在这样的背景下，如果有人站出来说「Mac 的固态硬盘速度有作弊之嫌」，想必会引起不少关注和争议。上个月，这样的讨论确实发生了。
 
 Mac 的固态硬盘性能一直是苹果宣传的重点。特别是近年 Apple T2、M1 等自研芯片整合了主控芯片后，Mac 内置固态硬盘相比竞品的性能优势似乎越发明显。在这样的背景下，如果有人站出来说「Mac 的固态硬盘速度有作弊之嫌」，想必会引起不少关注和争议。
 

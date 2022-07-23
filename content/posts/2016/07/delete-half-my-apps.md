@@ -6,7 +6,7 @@ tags:
   - "ios"
 ---
 
-**按：沃特·莫斯伯格（Walt Mossberg）是美国知名的资深科技记者，现在科技媒体 The Verge 担任执行编辑，兼任 Recode 的总编，并在两站上设有以自己名字命名的每周专栏，内容主要为科技评论和设备评测。本文译自他 2016 年 7 月 20 日发表在该专栏中的文章《I just deleted half my iPhone apps — you should too》。**
+**按：沃特·莫斯伯格（Walt Mossberg）是美国知名的资深科技记者，现在科技媒体 The Verge 担任执行编辑，兼任 Recode 的总编，并在两站上设有以自己名字命名的每周专栏，内容主要为科技评论和设备评测。本文译自他 2016 年 7 月 20 日发表在该专栏中的文章 *I just deleted half my iPhone apps — you should too*。**
 
 > Pokémon Go 也许算是引发了轰动，可 App Store 的新颖再也回不来了。
 

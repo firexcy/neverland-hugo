@@ -1,6 +1,7 @@
 ---
 title: "Excerpts from 《西方现代思想讲义》"
 date: 2022-07-18T11:42:46+08:00
+summary: "「明白自己是谁、自己在做什么，以及为什么会这么做。在理解的基础上，建立起反思性的思维。」"
 ---
 
 *[ Note: If you’re interested by these excerpts, I encourage you to purchase the book to support the author. Although IMO the book could’ve been more succinct as it’s essencially a transcript of the namesake audio program, it’s nonetheless well structured and inspiring, worth every penny of the price. ]*
