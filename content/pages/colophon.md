@@ -123,4 +123,4 @@ Reasonable care has been taken to ensure the information I provided here is expe
 
 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) unless otherwise suggested, which means you are free to copy and redistribute the material from this site in any medium or format, as long as you give appropriate credit without remixing, transforming, and using for commercial purposes.
 
-Exceptions are mostly due to works for hire, contract works, and translated works. Kindly ask when there’s ambiguity.
+Exceptions are mostly works for hire, contract works, and translated works. Kindly ask when there’s ambiguity.
