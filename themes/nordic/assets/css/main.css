@@ -85,7 +85,8 @@ ul.pagination {
   padding-left: 0ch;
 }
 
-.page-item a {
+.page-item a,
+a.readmore {
   border: none;
   color: var(--maincolor);
   font-weight: bold;

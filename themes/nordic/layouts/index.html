@@ -21,7 +21,8 @@
 						{{ if isset .Params "description" }}
 						{{ .Description }}
 						{{ else }}
-						{{ .Summary }}&hellip;
+						{{ .Summary }}
+						<a class="readmore" href="{{.RelPermalink}}">[…]</a>
 						{{ end }}
 					</div>
 				</section>
