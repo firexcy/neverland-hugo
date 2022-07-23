@@ -49,11 +49,6 @@ name = "readings"
 url = "https://platylinks.substack.com"
 weight = 10
 
-[[menu.main]]
-name = 'rss'
-url = '/feed.xml'
-weight = 100
-
 [markup]
 [markup.goldmark]
 [markup.goldmark.extensions]
