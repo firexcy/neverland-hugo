@@ -7,10 +7,8 @@
 <ul class="posts">
   {{ range .Pages }}
   <li class="post">
-    <span class="meta"
-      >{{ dateFormat "01-02" .Date }}{{ if .Draft }}
-      <span class="draft-label">DRAFT</span> {{ end }}  </span
-    ><a href="{{ .RelPermalink }}">{{.Title}}</a>
+    <a href="{{ .RelPermalink }}">{{.Title}}</a>
+    <span class="meta">{{ dateFormat "01-02" .Date }}{{ if .Draft }}<span class="draft-label">DRAFT</span> {{ end }}</span>
   </li>
   {{ end }}
 </ul>

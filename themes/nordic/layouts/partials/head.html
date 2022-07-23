@@ -4,7 +4,7 @@
 	</div>
 	<nav>
 		{{ range .Site.Menus.main }}
-		<a href="{{ .URL }}">{{ .Name }}</a>
+		<a class="nav-links" href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
 	</nav>
 </header>

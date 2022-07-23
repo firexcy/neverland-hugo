@@ -1,6 +1,7 @@
 ---
 title: "快捷指令搭配提醒事项，打造 iOS 和 macOS 的「闪念胶囊」"
 date: 2021-11-22
+draft: true
 tags:
   - "iOS"
   - "shortcuts"

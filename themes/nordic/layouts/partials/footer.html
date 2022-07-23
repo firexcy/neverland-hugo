@@ -1,7 +1,6 @@
 <footer>
 <hr>
-
-{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} Built with <a href="https://gohugo.io">Hugo</a>
+{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }}{{ end }}
 </footer>
 {{ if not .Site.IsServer }}
 {{ template "_internal/google_analytics_async.html" . }}

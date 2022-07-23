@@ -29,8 +29,6 @@ url = "https://twitter.com/platyhsu"
 pages = '/:filename/'
 posts = '/:year/:month/:filename/'
 
-[menu]
-
 [[menu.main]]
 name = "colophon"
 url = "/colophon/"
@@ -42,8 +40,8 @@ url = "/posts/"
 weight = 2
 
 [[menu.main]]
-name = "topics"
-url = "/topics/"
+name = "tags"
+url = "/tags/"
 weight = 3
 
 [[menu.main]]

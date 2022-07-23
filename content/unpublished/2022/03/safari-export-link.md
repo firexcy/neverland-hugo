@@ -1,6 +1,7 @@
 ---
 title: "用快捷指令将 Safari 标签页导出为文本链接"
 date: 2022-03-02
+draft: true
 tags:
   - "macOS"
   - "iOS"

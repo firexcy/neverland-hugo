@@ -22,7 +22,7 @@ header {
   align-items:baseline;
 }
 
-nav {
+a.nav-links {
   font-variant: small-caps;
 }
 
@@ -201,9 +201,14 @@ h6 {
 }
 
 
-h1::before {
+h1.title::before {
   color: var(--maincolor);
   content: "* ";
+}
+
+h1.tags::before {
+  color: var(--maincolor);
+  content: "# ";
 }
 
 h2::before {
@@ -281,6 +286,10 @@ article .title {
   justify-content: space-between;
 }
 
+.tags {
+  font-variant: small-caps;
+}
+
 .tags a {
   border-bottom: 2px solid var(--maincolor);
 }
@@ -333,17 +342,27 @@ svg {
 table {
   border-spacing: 0;
   border-collapse: collapse;
+  font-size: smaller;
 }
 
 table th {
-  padding: 6px 13px;
-  border: 1px solid #dfe2e5;
-  font-size: large;
+  padding: 0.5em;
+  border-width: 3px 0 1px 0;
+  border-color: var(--maincolor);
+  border-style: solid;
+  font-weight: bold;
+  color: var(--maincolor);
+  text-align: start;
+}
+
+table tr {
+  border-width: 0 0 1px 0;
+  border-color: var(--maincolor);
+  border-style: solid;
 }
 
 table td {
-  padding: 6px 13px;
-  border: 1px solid #dfe2e5;
+  padding: 0.5em;
 }
 
 .post-tags {

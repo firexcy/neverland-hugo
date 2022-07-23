@@ -1,6 +1,7 @@
 ---
 title: "条条大路通罗马：细数 macOS 版「快捷指令」的运行方式"
 date: 2022-11-26
+draft: true
 tags:
   - "macOS"
   - "shortcuts"
