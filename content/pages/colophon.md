@@ -58,14 +58,15 @@ Flagging spams — but waiting for humanely greetings — at `hi (at) cyhsu.net`
 | Feedreading    | NewsBlur as the backend; <br> Reeder as the reader                                                                                                                                           |
 | Podcatching    | Pocket Casts                                                                                                                                                                                 |
 | Task-managing  | Task lists in Markdown; <br> Apple Reminders                                                                                                                                                 |
-| Photo-editing  | VSCO as I’m cheap <br> Pixelmator as I’m not so much so                                                                                                                                      |
+| Photo-editing  | VSCO as I’m cheap; <br> Pixelmator as I’m not so much so                                                                                                                                     |
 | Subscriptions  | Streaming: Apple Music, QQ Music, Apple TV+, YouTube Premium; <br> Publications: The New York *Times*, The *New Yorker*, The Wall Street *Journal*; <br> Misc.: Apple Arcade, Apple Fitness+ |
 
 ## The site
 
 ### What for?
 
-*Neverland* is a place for me to store trivia which I think are even ineligible for Evernote. So far, it contains verbose logs of fiddling with my devices, buggy translations of articles that caught my (not necessarily your) eyes, casual excerpts from the Internet, et cetera. As the name conveys, you could *never* expect something useful from it, but neither could you expect you will *never* find one.
+*Neverland* is a place for me to store trivia which I think are even ineligible for <del>Evernote</del> Obsidian.
+So far, it contains verbose logs of fiddling with my devices, buggy translations of articles that caught my (not necessarily your) eyes, casual excerpts from the Internet, et cetera. As the name conveys, you could *never* expect something useful from it, but neither could you expect you will *never* find one.
 
 Blogging seems to be an anachronism in this information-abundant era. After all, what’s the point jotting down words that may *never* be revisited even by yourself, only to add entropy to a system already chaotic enough to make people fatigue?
 
@@ -106,7 +107,12 @@ For two reasons:
 
 ### Making-of?
 
-As of February 2022, *Neverland* is built with Hugo and hosted on Netlify. Prior to that, it was a self-hosted instance of WordPress. I may write about the rationale and process when time permits, but the gist is that the WordPress’ block-based [Gutenberg](https://wordpress.org/gutenberg/) experience turns out to be too voracious for my low-end virtual box and too fiddly for me as a minimalist. On the other hand, the static site generators and serverless providers have really come a long way since my previous flirting with Hexo. That you can set up a simple blog, certificated and CDN’d in minutes is no longer a goal, but a given.
+As of February 2022, *Neverland* is built with Hugo and hosted on Netlify.
+Prior to that, it was a self-hosted instance of WordPress.
+I may write about the rationale and process when time permits,
+    but the gist is that the WordPress’ block-based [Gutenberg](https://wordpress.org/gutenberg/) experience turns out to be too voracious for my low-end virtual box and too fiddly for me as a minimalist.
+On the other hand, the static site generators and serverless providers have really come a long way since my previous flirting with Hexo.
+That you can set up a simple blog, certificated and CDN’d in minutes is no longer a goal, but a given.
 
 ### Feeling generous?
 
@@ -117,7 +123,8 @@ As of February 2022, *Neverland* is built with Hugo and hosted on Netlify. Prior
 
 ### *Caveat emptor*?
 
-Reasonable care has been taken to ensure the information I provided here is experimented or checked by myself and up to date at the time of publication, but it is still subject to inaccuracies and changes. I take no responsibility for any errors, omissions, damages, or distress resulting from following the advice or information made available.
+Reasonable care has been taken to ensure the information I provided here is experimented or checked by myself and up to date at the time of publication, but it is still subject to inaccuracies and changes.
+I take no responsibility for any errors, omissions, damages, or distress resulting from following the advice or information made available.
 
 ### License?
 
