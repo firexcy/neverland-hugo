@@ -1,9 +1,13 @@
 ---
 title: "康熙来了"
 date: 2022-07-22T17:59:51+08:00
+tags:
+  - "explainer"
+  - "typography"
+summary: "在一则引发争议的微博话题中，汉字「入」被发布者换成了一个看起来一模一样、但输入法打不出来的近似字符。就此，本文讨论了两个问题：第一，汉字「入」和部首 `⼊` 是什么关系，为何在电脑上是两个不同的字符？第二，涉事的两个微博话题为什么在一些截图中难辨真伪，而在另一些截图中则能看出破绽？"
 ---
 
-[ Note: The post was originally written for the [launch edition](https://sspai.com/prime/story/pi-weekly-001) of *Pi Weekly*, a column of SSPAI’s member subscription that summarizes premium posts published during the current week, lead with an explainer or commentary of recent tech news. If you’re interested by the post, please consider [purchasing](https://dwurl.cn/nWnn38) a subscription. Thanks for your support. ]
+[ Note: The post was originally written for the [launch edition](https://sspai.com/prime/story/pi-weekly-001) of *Pi Weekly*, a column of SSPAI’s member subscription that summarizes premium posts published during the current week, led by an explainer or commentary of recent tech news. If you’re interested by the post, please consider [purchasing](https://dwurl.cn/nWnn38) a subscription. Thanks for your support. ]
 
 有时，技术问题与现实议题可能会以奇特的方式结合在一起。本周，这种情况就生动地发生了。
 
