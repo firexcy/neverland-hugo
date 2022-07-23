@@ -1,5 +1,5 @@
 ---
-title: "Keynote | The Renaissance of Sound as A Medium"
+title: "The renaissance of sound as a medium, a presentation"
 date: "2015-10-30"
 tags:
   - "academic"

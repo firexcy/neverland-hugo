@@ -26,22 +26,22 @@ name = "Twitter"
 url = "https://twitter.com/platyhsu"
 
 [permalinks]
-pages = '/:filename/'
-posts = '/:year/:month/:filename/'
+pages = '/:filename'
+posts = '/:year/:month/:filename'
 
 [[menu.main]]
 name = "colophon"
-url = "/colophon/"
+url = "/colophon"
 weight = 1
 
 [[menu.main]]
 name = "archive"
-url = "/posts/"
+url = "/posts"
 weight = 2
 
 [[menu.main]]
 name = "tags"
-url = "/tags/"
+url = "/tags"
 weight = 3
 
 [[menu.main]]
@@ -49,8 +49,7 @@ name = "readings"
 url = "https://platylinks.substack.com"
 weight = 10
 
-[markup]
-[markup.goldmark]
+
 [markup.goldmark.extensions]
 typographer = false
 [markup.goldmark.renderer]
@@ -61,8 +60,8 @@ endLevel = 3
 ordered = false
 startLevel = 2
 
-[outputFormats]
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss+xml"
 noUgly = true
+
