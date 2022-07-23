@@ -31,35 +31,35 @@ Flagging spams — but waiting for humanely greetings — at `hi (at) cyhsu.net`
 
 #### Metal?
 
-| For | I use |
-| --- | --- |
-| Audiophiling | Apple AirPods Pro <br> AKG N5005 <br> Senheiser IE800S <br> UE900 (remodeled as custom-fitted) <br> Fiio Q5s (Type-C, 2020) |
-| Bingeconsuming | iPad Pro (12.9 in, 2021) |
-| Clicking | Apple Magic Mouse ([Review](/2020/05/defense-for-magic-mouse/))<br> Apple Magic Trackpad |
-| Computing | MacBook Pro 16 in (2021) <br> Mac mini (2018) |
-| Deathscrolling | iPhone 13 Pro |
-| Gaming | Nintendo Switch (battery-enhanced revision) |
-| Reading | Boox Nova Air |
-| Staring | LG UltraFine 4K (21.5 in) at home <br> BenQ EW2780U at work|
-| Typing | Keychron K3 at work<br> Apple Magic Keyboard at home|
+| For            | I use                                                                                                                       |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Audiophiling   | Apple AirPods Pro <br> AKG N5005 <br> Senheiser IE800S <br> UE900 (remodeled as custom-fitted) <br> Fiio Q5s (Type-C, 2020) |
+| Bingeconsuming | iPad Pro (12.9 in, 2021)                                                                                                    |
+| Clicking       | Apple Magic Mouse ([Review](/2020/05/defense-for-magic-mouse/))<br> Apple Magic Trackpad                                    |
+| Computing      | MacBook Pro 16 in (2021) <br> Mac mini (2018)                                                                               |
+| Deathscrolling | iPhone 13 Pro                                                                                                               |
+| Gaming         | Nintendo Switch (battery-enhanced revision)                                                                                 |
+| Reading        | Boox Nova Air                                                                                                               |
+| Staring        | LG UltraFine 4K (21.5 in) at home <br> BenQ EW2780U at work                                                                 |
+| Typing         | Keychron K3 at work<br> Apple Magic Keyboard at home                                                                        |
 
 #### Binaries?
 
-| For | I use |
-| --- | --- |
-| Desktop OS | macOS, dedicately <br> Linux, flirtatiously |
-| Mobile OS | iOS, period with hesitate |
-| Editor | VS Code with Vim keybindings, for the extensibility <br> iA Writer, for the vibe <br> Taio, for scratching on the go <br> Obsidian, idk, for productivity AF? |
-| Browsing | Firefox, mostly <br> Safari or Chromium, randomly <br> Chrome or Edge, never ever |
-| Emailing | Apple Mail |
-| Term. emu. | iTerm 2 |
-| Notable utils. | GUI: Alfred, Keyboard Maestro, BetterTouchTool, `yabai` <br> CLI: `fzf`, `ranger`, `yt-dlp` |
-| Bookmarking | Instapaper for long-reads <br> Raindrop for archiving <br> good old bookmarks for quick access |
-| Feedreading | NewsBlur as backend <br> Reeder as reader |
-| Podcatching | Pocket Casts |
-| Task-managing | Task lists in Markdown <br> Apple Reminders |
-| Photo-editing | VSCO as I’m cheap <br> Pixelmator as I’m not so |
-| Subs. | Streaming: Apple Music, QQ Music, Apple TV+, YouTube Premium <br> Publications: The New York *Times*, The *New Yorker*, The Wall Street *Journal* <br> Misc.: Apple Arcade, Apple Fitness+ |
+| For            | I use                                                                                                                                                                                        |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Desktop OS     | macOS, dedicately; <br> Linux, flirtatiously                                                                                                                                                 |
+| Mobile OS      | iOS, period with hesitate                                                                                                                                                                    |
+| Editor         | VS Code with Vim keybindings, for the extensibility; <br> iA Writer, for the vibe; <br> Taio, for scratching on the go; <br> Obsidian, idk, for productivity AF?                             |
+| Browsing       | Firefox, mostly; <br> Safari or Chromium, randomly; <br> Chrome or Edge, never ever                                                                                                          |
+| Emailing       | Apple Mail                                                                                                                                                                                   |
+| Terminal       | iTerm 2 + zsh                                                                                                                                                                                |
+| Notable utils. | GUI: Alfred, Keyboard Maestro, BetterTouchTool, `yabai` <br> CLI: `fzf`, `ranger`, `yt-dlp`                                                                                                  |
+| Bookmarking    | Instapaper for long-reads; <br> Raindrop for archiving; <br> good old bookmarks for quick access                                                                                             |
+| Feedreading    | NewsBlur as the backend; <br> Reeder as the reader                                                                                                                                           |
+| Podcatching    | Pocket Casts                                                                                                                                                                                 |
+| Task-managing  | Task lists in Markdown; <br> Apple Reminders                                                                                                                                                 |
+| Photo-editing  | VSCO as I’m cheap <br> Pixelmator as I’m not so much so                                                                                                                                      |
+| Subscriptions  | Streaming: Apple Music, QQ Music, Apple TV+, YouTube Premium; <br> Publications: The New York *Times*, The *New Yorker*, The Wall Street *Journal*; <br> Misc.: Apple Arcade, Apple Fitness+ |
 
 ## The site
 
@@ -82,16 +82,16 @@ Here are some posts I’m satisfied with and illustrative of my personality and 
     - [Word 编号的内部结构与工作原理](/2021/08/word-numbering-internals/)
     - [Apple Watch 指针表盘 —— The Missing Manual](/2020/10/apple-watch-analog-faces-the-missing-manual/)
     - [数字世界中的纸张——理解 PDF](/2018/09/understanding-pdf-the-digitalized-paper/)
-- Legal:
+- Legal
     - [从 SEC 申报文件看推特收购案的细节](/2022/04/twitter-merger-explained)
     - [The “Big Tech” Congressional Hearing: Things to Know](/2020/08/big-tech-congressional-hearing/)
-- Pedant:
+- Pedant
     - [不要大喊大叫](/2021/03/do-not-shout/)
     - [从邮件通讯的流行谈起](/2020/03/on-the-popularity-of-newsletters/)
     - [信息消费——从入门到放弃](/2019/02/2018-review-art-of-forsaking/)
-- ESL:
+- ESL
     - [译文 | 雪埋](/2020/11/snowed-under/)
-- Reviews:
+- Reviews
     - [一次「买椟还珠」的选择——得到阅读器体验](/2019/12/flow-ereader-review/)
     - [Soylent 一年体验记](/2019/09/one-year-with-soylent/)
     - [播客客户端音频特效探微](/2017/03/podcast-apps-audio-fx-internals/)

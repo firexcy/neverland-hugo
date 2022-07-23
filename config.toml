@@ -49,7 +49,6 @@ name = "readings"
 url = "https://platylinks.substack.com"
 weight = 10
 
-
 [markup.goldmark.extensions]
 typographer = false
 [markup.goldmark.renderer]
@@ -64,4 +63,3 @@ startLevel = 2
 baseName = "feed"
 mediatype = "application/rss+xml"
 noUgly = true
-
