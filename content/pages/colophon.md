@@ -7,7 +7,8 @@ date: "2022-07-23"
 
 ### Who?
 
-*Happen to be* an editor and membership program producer at [SSPAI](https://sspai.com), a content community focused on digital products and cultures.
+*Happen to be* an editor and membership program producer at [SSPAI](https://sspai.com),
+    a content community focused on digital products and cultures.
 
 *Used to be* a transactional lawyer ([until July 2021](/2021/07/postmortem-on-a-jobby-job/)).
 
@@ -15,9 +16,11 @@ date: "2022-07-23"
 
 ### Whereof?
 
-*Personalities* are hard to describe, but I’m constantly tested as an [INTJ](https://en.wikipedia.org/w/index.php?title=INTJ&redirect=no), which means — if you insist — more Introverted than extraverted, perceiving by iNtuition more than sensing, judging by Thinking more than feeling, and perferring use of the Judging function than the perceiving one. I don’t take MBTI seriously, though, and the reference here is only for convenience.
+*Personalities* are hard to describe,
+    but I’m constantly tested as an [INTJ](https://en.wikipedia.org/w/index.php?title=INTJ&redirect=no), which means — if you insist — more Introverted than extraverted, perceiving by iNtuition more than sensing, judging by Thinking more than feeling, and perferring use of the Judging function than the perceiving one. I don’t take MBTI seriously, though, and the reference here is only for convenience.
 
-*Politics* are hard to discuss, but I roughly identify as a [progressive conservatist](https://en.wikipedia.org/wiki/Progressive_conservatism), which means when there’s a conflict, I generally put more vaule on the market than equality, liberty than authority, progress than tradition, and ecology than production.
+*Politics* are hard to discuss,
+    but I roughly identify as a [progressive conservatist](https://en.wikipedia.org/wiki/Progressive_conservatism), which means when there’s a conflict, I generally put more vaule on the market than equality, liberty than authority, progress than tradition, and ecology than production.
 
 ### Whence?
 
@@ -25,7 +28,9 @@ Shouting and murmuring on [Twitter](https://twitter.com/PlatyHsu) and [Weibo](ht
 
 iPhoneographing on [Instagram](https://instagram.com/platy_hsu).
 
-Flagging spams — but waiting for humanely greetings — at `hi (at) cyhsu.net`, or `platyhsu (at) sspai.com` for work purposes.
+Flagging spams — but waiting for humanely greetings —
+    at `hi (at) cyhsu.net`,
+    or `platyhsu (at) sspai.com` for work purposes.
 
 ### Which?
 
@@ -48,7 +53,7 @@ Flagging spams — but waiting for humanely greetings — at `hi (at) cyhsu.net`
 | For            | I use                                                                                                                                                                                        |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Desktop OS     | macOS, dedicately; <br> Linux, flirtatiously                                                                                                                                                 |
-| Mobile OS      | iOS, period with hesitate                                                                                                                                                                    |
+| Mobile OS      | iOS, period with hesitation                                                                                                                                                                  |
 | Editor         | VS Code with Vim keybindings, for the extensibility; <br> iA Writer, for the vibe; <br> Taio, for scratching on the go; <br> Obsidian, idk, for productivity AF?                             |
 | Browsing       | Firefox, mostly; <br> Safari or Chromium, randomly; <br> Chrome or Edge, never ever                                                                                                          |
 | Emailing       | Apple Mail                                                                                                                                                                                   |
@@ -65,12 +70,26 @@ Flagging spams — but waiting for humanely greetings — at `hi (at) cyhsu.net`
 
 ### What for?
 
-*Neverland* is a place for me to store trivia which I think are even ineligible for <del>Evernote</del> Obsidian.
-So far, it contains verbose logs of fiddling with my devices, buggy translations of articles that caught my (not necessarily your) eyes, casual excerpts from the Internet, et cetera. As the name conveys, you could *never* expect something useful from it, but neither could you expect you will *never* find one.
+*Neverland* is the name of a fictional island in certain literature and cartoon works. However, I appropriate the name not for the cultural reference but simply the vibe.
 
-Blogging seems to be an anachronism in this information-abundant era. After all, what’s the point jotting down words that may *never* be revisited even by yourself, only to add entropy to a system already chaotic enough to make people fatigue?
+*Neverland* unapologetically acknowledge that it’s a nonplace.
+Like an airport or motorway, *Neverland* is meant to be left behind.
+I land pieces of idea and go on. You land fractions of attention and turn over.
+And that’s exactly what the content here deserves —
+you could *never* expect something useful from it,
+but neither could you expect you will *never* find one.
 
-There is a distinction, however, between being selective to consume and to produce content. Surely it won’t make any visible contribution to enlarge a huge pie by a zillionth in, but neither will it do any harm. And, it might be this very addition that helps one in need. As such, the words here don’t exist for being useful. They exist for a potential future me or someone else in search of resonance, recollections, or reconcilement. If there is a possibility, there is a dynamic.
+Blogging seems to be an anachronism in this information-abundant era.
+After all, what’s the point jotting down words
+that may *never* be revisited even by yourself,
+only to add entropy to a system already chaotic enough to make people fatigue?
+
+There is a distinction, however, between being selective to consume and to produce content.
+Surely it won’t make any visible contribution to enlarge a huge pie by a zillionth in, but neither will it do any harm. And, it might be this very addition that helps one in need.
+
+As such, the words here don’t exist for being useful.
+They exist for a potential future me or someone else in search of resonance, recollections, or reconcilement.
+If there is a possibility, there is a dynamic.
 
 Never say never — Because we say “never” by believing in the “ever.”
 
